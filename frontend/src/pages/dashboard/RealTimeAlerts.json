@@ -1,0 +1,37 @@
+[
+    {
+        "emirate": "Abu Dhabi",
+        "agency": "Customs",
+        "alertType": "Suspicious Cargo Entry",
+        "severity": "High",
+        "time": "2025-07-01T10:45:00Z"
+    },
+    {
+        "emirate": "Dubai",
+        "agency": "Health",
+        "alertType": "Unverified Crew Health Report",
+        "severity": "Medium",
+        "time": "2025-07-01T10:20:00Z"
+    },
+    {
+        "emirate": "Sharjah",
+        "agency": "Immigration",
+        "alertType": "Visa Mismatch Detection",
+        "severity": "High",
+        "time": "2025-07-01T09:55:00Z"
+    },
+    {
+        "emirate": "Fujairah",
+        "agency": "Customs",
+        "alertType": "Container Anomaly",
+        "severity": "Low",
+        "time": "2025-07-01T09:40:00Z"
+    },
+    {
+        "emirate": "Ajman",
+        "agency": "Health",
+        "alertType": "Expired Medical Certificate",
+        "severity": "Medium",
+        "time": "2025-07-01T09:25:00Z"
+    }
+]

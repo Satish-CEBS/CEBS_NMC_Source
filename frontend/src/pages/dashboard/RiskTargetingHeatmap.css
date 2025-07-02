@@ -1,0 +1,140 @@
+.heatmap-container {
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.heatmap-header {
+    margin-bottom: 15px;
+}
+
+.section-icon {
+    margin-right: 10px;
+}
+
+.heatmap-subtitle {
+    background-color: #fff3cd;
+    color: #664d03;
+    padding: 10px;
+    border-left: 4px solid #ffc107;
+    font-size: 0.95rem;
+    margin-top: 10px;
+    border-radius: 4px;
+}
+
+.emirate-filters {
+    margin: 10px 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.emirate-chip {
+    background: #efefef;
+    border: none;
+    padding: 6px 14px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+    font-weight: 500;
+}
+
+    .emirate-chip:hover {
+        background: #ddd;
+    }
+
+    .emirate-chip.selected {
+        background: #111;
+        color: #fff;
+    }
+
+.heatmap-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.heatmap-header-row,
+.heatmap-row {
+    display: flex;
+    font-weight: bold;
+}
+
+.col-emirate {
+    flex: 1.5;
+    padding: 10px;
+    border: 1px solid #ddd;
+    background: #fafafa;
+}
+
+.col-risk {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.risk-label {
+    font-weight: bold;
+}
+
+.risk-desc {
+    font-size: 0.8rem;
+    color: #FFF;
+}
+
+.risk-critical {
+    background: #7a0000;
+    color: #fff;
+}
+
+.risk-high {
+    background: #f44336;
+    color: #fff;
+}
+
+.risk-low {
+    background-color: #2db7a3;
+    color: #003c3c; 
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+}
+
+.risk-medium {
+    background-color: #f2c744;
+    color: #2d2d2d;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+}
+
+.risk-none {
+    background: #cfd8dc;
+    color: #333;
+}
+
+.ai-insight-box {
+    background: #f0f8ff;
+    border-left: 5px solid #2196f3;
+    padding: 12px 18px;
+    font-size: 0.9rem;
+    margin-bottom: 18px;
+    margin-top: -1px;
+}
+
+    .ai-insight-box ul {
+        margin: 8px 0 0;
+        padding-left: 20px;
+    }
+
+.ai-insight-title {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    color: #0d47a1;
+    font-weight: 600;
+}
+
+.ai-icon {
+    margin-right: 6px;
+}

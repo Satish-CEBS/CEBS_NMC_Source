@@ -1,0 +1,26 @@
+.cebs-footer {
+    background-color: #e2d5cc; /* Matching your site theme */
+    padding: 0.75rem 1rem;
+    text-align: center;
+    font-size: 0.875rem;
+    border-top: 2px solid #ccc;
+}
+
+    .cebs-footer p {
+        margin: 0;
+        color: #1f2937;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+.cebs-highlight {
+    color: #111827;
+    font-weight: 600;
+    font-size: 1rem;
+    letter-spacing: 0.3px;
+    text-shadow: 0px 1px 1px rgba(0,0,0,0.1);
+}
+
+.cebs-warning {
+    color: #7f1d1d;
+    font-weight: 500;
+}

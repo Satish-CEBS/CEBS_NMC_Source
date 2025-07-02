@@ -1,0 +1,40 @@
+.chatbot-modal {
+    background: #f9f9f9;
+    padding: 1.25rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    position: relative;
+    margin-top: 2rem;
+}
+
+.chat-history {
+    max-height: 240px;
+    overflow-y: auto;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    background: #fff;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+}
+
+.chatbot-modal input {
+    width: calc(100% - 120px);
+    padding: 8px;
+    margin-right: 10px;
+    border-radius: 4px;
+    border: 1px solid #aaa;
+}
+
+.chatbot-modal button {
+    padding: 8px 16px;
+    background: #0061b0;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.chatbot-modal .close {
+    background: #b00020;
+    margin-left: 10px;
+}

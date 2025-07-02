@@ -1,0 +1,1129 @@
+{
+    "workflowStatus": [
+        {
+            "emirate": "Dubai",
+            "customs": {
+                "status": "Flagged",
+                "aiNote": "Irregular cargo description. Recommend physical inspection."
+            },
+            "immigration": {
+                "status": "Processing",
+                "aiNote": "Crew data under verification. ETA confirmation pending."
+            },
+            "health": {
+                "status": "Processing",
+                "aiNote": "Vaccination records under review. Holding for health officer confirmation."
+            }
+        },
+        {
+            "emirate": "Abu Dhabi",
+            "customs": {
+                "status": "Flagged",
+                "aiNote": "Irregular cargo description. Recommend physical inspection."
+            },
+            "immigration": {
+                "status": "Processing",
+                "aiNote": "Crew data under verification. ETA confirmation pending."
+            },
+            "health": {
+                "status": "Flagged",
+                "aiNote": "Potential medical risk. Notify port health authority for inspection."
+            }
+        },
+        {
+            "emirate": "Abu Dhabi",
+            "customs": {
+                "status": "Flagged",
+                "aiNote": "Irregular cargo description. Recommend physical inspection."
+            },
+            "immigration": {
+                "status": "Cleared",
+                "aiNote": "All crew and passenger IDs verified. Immigration cleared."
+            },
+            "health": {
+                "status": "Flagged",
+                "aiNote": "Potential medical risk. Notify port health authority for inspection."
+            }
+        },
+        {
+            "emirate": "Fujairah",
+            "customs": {
+                "status": "Cleared",
+                "aiNote": "Cargo and documentation cleared successfully. No anomalies detected."
+            },
+            "immigration": {
+                "status": "Cleared",
+                "aiNote": "All crew and passenger IDs verified. Immigration cleared."
+            },
+            "health": {
+                "status": "Flagged",
+                "aiNote": "Potential medical risk. Notify port health authority for inspection."
+            }
+        },
+        {
+            "emirate": "Ajman",
+            "customs": {
+                "status": "Flagged",
+                "aiNote": "Irregular cargo description. Recommend physical inspection."
+            },
+            "immigration": {
+                "status": "Processing",
+                "aiNote": "Crew data under verification. ETA confirmation pending."
+            },
+            "health": {
+                "status": "Flagged",
+                "aiNote": "Potential medical risk. Notify port health authority for inspection."
+            }
+        },
+        {
+            "emirate": "Dubai",
+            "customs": {
+                "status": "Processing",
+                "aiNote": "Documents submitted. Awaiting customs officer review."
+            },
+            "immigration": {
+                "status": "Cleared",
+                "aiNote": "All crew and passenger IDs verified. Immigration cleared."
+            },
+            "health": {
+                "status": "Flagged",
+                "aiNote": "Potential medical risk. Notify port health authority for inspection."
+            }
+        },
+        {
+            "emirate": "Umm Al Quwain",
+            "customs": {
+                "status": "Flagged",
+                "aiNote": "Irregular cargo description. Recommend physical inspection."
+            },
+            "immigration": {
+                "status": "Processing",
+                "aiNote": "Crew data under verification. ETA confirmation pending."
+            },
+            "health": {
+                "status": "Flagged",
+                "aiNote": "Potential medical risk. Notify port health authority for inspection."
+            }
+        },
+        {
+            "emirate": "Abu Dhabi",
+            "customs": {
+                "status": "Flagged",
+                "aiNote": "Irregular cargo description. Recommend physical inspection."
+            },
+            "immigration": {
+                "status": "Cleared",
+                "aiNote": "All crew and passenger IDs verified. Immigration cleared."
+            },
+            "health": {
+                "status": "Flagged",
+                "aiNote": "Potential medical risk. Notify port health authority for inspection."
+            }
+        },
+        {
+            "emirate": "Abu Dhabi",
+            "customs": {
+                "status": "Flagged",
+                "aiNote": "Irregular cargo description. Recommend physical inspection."
+            },
+            "immigration": {
+                "status": "Flagged",
+                "aiNote": "Suspicious crew history detected. Manual check required."
+            },
+            "health": {
+                "status": "Cleared",
+                "aiNote": "Sanitation certificates validated. Health clearance approved."
+            }
+        },
+        {
+            "emirate": "Dubai",
+            "customs": {
+                "status": "Processing",
+                "aiNote": "Documents submitted. Awaiting customs officer review."
+            },
+            "immigration": {
+                "status": "Cleared",
+                "aiNote": "All crew and passenger IDs verified. Immigration cleared."
+            },
+            "health": {
+                "status": "Processing",
+                "aiNote": "Vaccination records under review. Holding for health officer confirmation."
+            }
+        },
+        {
+            "emirate": "Umm Al Quwain",
+            "customs": {
+                "status": "Processing",
+                "aiNote": "Documents submitted. Awaiting customs officer review."
+            },
+            "immigration": {
+                "status": "Cleared",
+                "aiNote": "All crew and passenger IDs verified. Immigration cleared."
+            },
+            "health": {
+                "status": "Flagged",
+                "aiNote": "Potential medical risk. Notify port health authority for inspection."
+            }
+        },
+        {
+            "emirate": "Ras Al Khaimah",
+            "customs": {
+                "status": "Processing",
+                "aiNote": "Documents submitted. Awaiting customs officer review."
+            },
+            "immigration": {
+                "status": "Cleared",
+                "aiNote": "All crew and passenger IDs verified. Immigration cleared."
+            },
+            "health": {
+                "status": "Processing",
+                "aiNote": "Vaccination records under review. Holding for health officer confirmation."
+            }
+        },
+        {
+            "emirate": "Ras Al Khaimah",
+            "customs": {
+                "status": "Flagged",
+                "aiNote": "Irregular cargo description. Recommend physical inspection."
+            },
+            "immigration": {
+                "status": "Flagged",
+                "aiNote": "Suspicious crew history detected. Manual check required."
+            },
+            "health": {
+                "status": "Processing",
+                "aiNote": "Vaccination records under review. Holding for health officer confirmation."
+            }
+        },
+        {
+            "emirate": "Ajman",
+            "customs": {
+                "status": "Processing",
+                "aiNote": "Documents submitted. Awaiting customs officer review."
+            },
+            "immigration": {
+                "status": "Cleared",
+                "aiNote": "All crew and passenger IDs verified. Immigration cleared."
+            },
+            "health": {
+                "status": "Flagged",
+                "aiNote": "Potential medical risk. Notify port health authority for inspection."
+            }
+        },
+        {
+            "emirate": "Sharjah",
+            "customs": {
+                "status": "Processing",
+                "aiNote": "Documents submitted. Awaiting customs officer review."
+            },
+            "immigration": {
+                "status": "Cleared",
+                "aiNote": "All crew and passenger IDs verified. Immigration cleared."
+            },
+            "health": {
+                "status": "Flagged",
+                "aiNote": "Potential medical risk. Notify port health authority for inspection."
+            }
+        },
+        {
+            "emirate": "Umm Al Quwain",
+            "customs": {
+                "status": "Processing",
+                "aiNote": "Documents submitted. Awaiting customs officer review."
+            },
+            "immigration": {
+                "status": "Flagged",
+                "aiNote": "Suspicious crew history detected. Manual check required."
+            },
+            "health": {
+                "status": "Cleared",
+                "aiNote": "Sanitation certificates validated. Health clearance approved."
+            }
+        },
+        {
+            "emirate": "Ajman",
+            "customs": {
+                "status": "Processing",
+                "aiNote": "Documents submitted. Awaiting customs officer review."
+            },
+            "immigration": {
+                "status": "Cleared",
+                "aiNote": "All crew and passenger IDs verified. Immigration cleared."
+            },
+            "health": {
+                "status": "Cleared",
+                "aiNote": "Sanitation certificates validated. Health clearance approved."
+            }
+        },
+        {
+            "emirate": "Ras Al Khaimah",
+            "customs": {
+                "status": "Flagged",
+                "aiNote": "Irregular cargo description. Recommend physical inspection."
+            },
+            "immigration": {
+                "status": "Processing",
+                "aiNote": "Crew data under verification. ETA confirmation pending."
+            },
+            "health": {
+                "status": "Processing",
+                "aiNote": "Vaccination records under review. Holding for health officer confirmation."
+            }
+        },
+        {
+            "emirate": "Fujairah",
+            "customs": {
+                "status": "Processing",
+                "aiNote": "Documents submitted. Awaiting customs officer review."
+            },
+            "immigration": {
+                "status": "Flagged",
+                "aiNote": "Suspicious crew history detected. Manual check required."
+            },
+            "health": {
+                "status": "Cleared",
+                "aiNote": "Sanitation certificates validated. Health clearance approved."
+            }
+        },
+        {
+            "emirate": "Dubai",
+            "customs": {
+                "status": "Flagged",
+                "aiNote": "Irregular cargo description. Recommend physical inspection."
+            },
+            "immigration": {
+                "status": "Cleared",
+                "aiNote": "All crew and passenger IDs verified. Immigration cleared."
+            },
+            "health": {
+                "status": "Cleared",
+                "aiNote": "Sanitation certificates validated. Health clearance approved."
+            }
+        },
+        {
+            "emirate": "Sharjah",
+            "customs": {
+                "status": "Flagged",
+                "aiNote": "Irregular cargo description. Recommend physical inspection."
+            },
+            "immigration": {
+                "status": "Processing",
+                "aiNote": "Crew data under verification. ETA confirmation pending."
+            },
+            "health": {
+                "status": "Cleared",
+                "aiNote": "Sanitation certificates validated. Health clearance approved."
+            }
+        },
+        {
+            "emirate": "Ajman",
+            "customs": {
+                "status": "Flagged",
+                "aiNote": "Irregular cargo description. Recommend physical inspection."
+            },
+            "immigration": {
+                "status": "Flagged",
+                "aiNote": "Suspicious crew history detected. Manual check required."
+            },
+            "health": {
+                "status": "Processing",
+                "aiNote": "Vaccination records under review. Holding for health officer confirmation."
+            }
+        },
+        {
+            "emirate": "Ajman",
+            "customs": {
+                "status": "Flagged",
+                "aiNote": "Irregular cargo description. Recommend physical inspection."
+            },
+            "immigration": {
+                "status": "Flagged",
+                "aiNote": "Suspicious crew history detected. Manual check required."
+            },
+            "health": {
+                "status": "Processing",
+                "aiNote": "Vaccination records under review. Holding for health officer confirmation."
+            }
+        },
+        {
+            "emirate": "Ajman",
+            "customs": {
+                "status": "Cleared",
+                "aiNote": "Cargo and documentation cleared successfully. No anomalies detected."
+            },
+            "immigration": {
+                "status": "Cleared",
+                "aiNote": "All crew and passenger IDs verified. Immigration cleared."
+            },
+            "health": {
+                "status": "Cleared",
+                "aiNote": "Sanitation certificates validated. Health clearance approved."
+            }
+        },
+        {
+            "emirate": "Sharjah",
+            "customs": {
+                "status": "Flagged",
+                "aiNote": "Irregular cargo description. Recommend physical inspection."
+            },
+            "immigration": {
+                "status": "Processing",
+                "aiNote": "Crew data under verification. ETA confirmation pending."
+            },
+            "health": {
+                "status": "Cleared",
+                "aiNote": "Sanitation certificates validated. Health clearance approved."
+            }
+        },
+        {
+            "emirate": "Ras Al Khaimah",
+            "customs": {
+                "status": "Flagged",
+                "aiNote": "Irregular cargo description. Recommend physical inspection."
+            },
+            "immigration": {
+                "status": "Flagged",
+                "aiNote": "Suspicious crew history detected. Manual check required."
+            },
+            "health": {
+                "status": "Processing",
+                "aiNote": "Vaccination records under review. Holding for health officer confirmation."
+            }
+        },
+        {
+            "emirate": "Umm Al Quwain",
+            "customs": {
+                "status": "Flagged",
+                "aiNote": "Irregular cargo description. Recommend physical inspection."
+            },
+            "immigration": {
+                "status": "Flagged",
+                "aiNote": "Suspicious crew history detected. Manual check required."
+            },
+            "health": {
+                "status": "Cleared",
+                "aiNote": "Sanitation certificates validated. Health clearance approved."
+            }
+        },
+        {
+            "emirate": "Umm Al Quwain",
+            "customs": {
+                "status": "Processing",
+                "aiNote": "Documents submitted. Awaiting customs officer review."
+            },
+            "immigration": {
+                "status": "Processing",
+                "aiNote": "Crew data under verification. ETA confirmation pending."
+            },
+            "health": {
+                "status": "Flagged",
+                "aiNote": "Potential medical risk. Notify port health authority for inspection."
+            }
+        },
+        {
+            "emirate": "Dubai",
+            "customs": {
+                "status": "Flagged",
+                "aiNote": "Irregular cargo description. Recommend physical inspection."
+            },
+            "immigration": {
+                "status": "Flagged",
+                "aiNote": "Suspicious crew history detected. Manual check required."
+            },
+            "health": {
+                "status": "Cleared",
+                "aiNote": "Sanitation certificates validated. Health clearance approved."
+            }
+        },
+        {
+            "emirate": "Ajman",
+            "customs": {
+                "status": "Flagged",
+                "aiNote": "Irregular cargo description. Recommend physical inspection."
+            },
+            "immigration": {
+                "status": "Cleared",
+                "aiNote": "All crew and passenger IDs verified. Immigration cleared."
+            },
+            "health": {
+                "status": "Processing",
+                "aiNote": "Vaccination records under review. Holding for health officer confirmation."
+            }
+        },
+        {
+            "emirate": "Sharjah",
+            "customs": {
+                "status": "Flagged",
+                "aiNote": "Irregular cargo description. Recommend physical inspection."
+            },
+            "immigration": {
+                "status": "Cleared",
+                "aiNote": "All crew and passenger IDs verified. Immigration cleared."
+            },
+            "health": {
+                "status": "Processing",
+                "aiNote": "Vaccination records under review. Holding for health officer confirmation."
+            }
+        },
+        {
+            "emirate": "Sharjah",
+            "customs": {
+                "status": "Processing",
+                "aiNote": "Documents submitted. Awaiting customs officer review."
+            },
+            "immigration": {
+                "status": "Flagged",
+                "aiNote": "Suspicious crew history detected. Manual check required."
+            },
+            "health": {
+                "status": "Cleared",
+                "aiNote": "Sanitation certificates validated. Health clearance approved."
+            }
+        },
+        {
+            "emirate": "Abu Dhabi",
+            "customs": {
+                "status": "Cleared",
+                "aiNote": "Cargo and documentation cleared successfully. No anomalies detected."
+            },
+            "immigration": {
+                "status": "Flagged",
+                "aiNote": "Suspicious crew history detected. Manual check required."
+            },
+            "health": {
+                "status": "Flagged",
+                "aiNote": "Potential medical risk. Notify port health authority for inspection."
+            }
+        },
+        {
+            "emirate": "Dubai",
+            "customs": {
+                "status": "Flagged",
+                "aiNote": "Irregular cargo description. Recommend physical inspection."
+            },
+            "immigration": {
+                "status": "Flagged",
+                "aiNote": "Suspicious crew history detected. Manual check required."
+            },
+            "health": {
+                "status": "Processing",
+                "aiNote": "Vaccination records under review. Holding for health officer confirmation."
+            }
+        },
+        {
+            "emirate": "Fujairah",
+            "customs": {
+                "status": "Flagged",
+                "aiNote": "Irregular cargo description. Recommend physical inspection."
+            },
+            "immigration": {
+                "status": "Cleared",
+                "aiNote": "All crew and passenger IDs verified. Immigration cleared."
+            },
+            "health": {
+                "status": "Cleared",
+                "aiNote": "Sanitation certificates validated. Health clearance approved."
+            }
+        },
+        {
+            "emirate": "Ajman",
+            "customs": {
+                "status": "Processing",
+                "aiNote": "Documents submitted. Awaiting customs officer review."
+            },
+            "immigration": {
+                "status": "Processing",
+                "aiNote": "Crew data under verification. ETA confirmation pending."
+            },
+            "health": {
+                "status": "Flagged",
+                "aiNote": "Potential medical risk. Notify port health authority for inspection."
+            }
+        },
+        {
+            "emirate": "Umm Al Quwain",
+            "customs": {
+                "status": "Processing",
+                "aiNote": "Documents submitted. Awaiting customs officer review."
+            },
+            "immigration": {
+                "status": "Flagged",
+                "aiNote": "Suspicious crew history detected. Manual check required."
+            },
+            "health": {
+                "status": "Processing",
+                "aiNote": "Vaccination records under review. Holding for health officer confirmation."
+            }
+        },
+        {
+            "emirate": "Ras Al Khaimah",
+            "customs": {
+                "status": "Cleared",
+                "aiNote": "Cargo and documentation cleared successfully. No anomalies detected."
+            },
+            "immigration": {
+                "status": "Flagged",
+                "aiNote": "Suspicious crew history detected. Manual check required."
+            },
+            "health": {
+                "status": "Flagged",
+                "aiNote": "Potential medical risk. Notify port health authority for inspection."
+            }
+        },
+        {
+            "emirate": "Dubai",
+            "customs": {
+                "status": "Processing",
+                "aiNote": "Documents submitted. Awaiting customs officer review."
+            },
+            "immigration": {
+                "status": "Processing",
+                "aiNote": "Crew data under verification. ETA confirmation pending."
+            },
+            "health": {
+                "status": "Processing",
+                "aiNote": "Vaccination records under review. Holding for health officer confirmation."
+            }
+        },
+        {
+            "emirate": "Abu Dhabi",
+            "customs": {
+                "status": "Cleared",
+                "aiNote": "Cargo and documentation cleared successfully. No anomalies detected."
+            },
+            "immigration": {
+                "status": "Processing",
+                "aiNote": "Crew data under verification. ETA confirmation pending."
+            },
+            "health": {
+                "status": "Processing",
+                "aiNote": "Vaccination records under review. Holding for health officer confirmation."
+            }
+        },
+        {
+            "emirate": "Ras Al Khaimah",
+            "customs": {
+                "status": "Cleared",
+                "aiNote": "Cargo and documentation cleared successfully. No anomalies detected."
+            },
+            "immigration": {
+                "status": "Cleared",
+                "aiNote": "All crew and passenger IDs verified. Immigration cleared."
+            },
+            "health": {
+                "status": "Cleared",
+                "aiNote": "Sanitation certificates validated. Health clearance approved."
+            }
+        },
+        {
+            "emirate": "Ras Al Khaimah",
+            "customs": {
+                "status": "Flagged",
+                "aiNote": "Irregular cargo description. Recommend physical inspection."
+            },
+            "immigration": {
+                "status": "Flagged",
+                "aiNote": "Suspicious crew history detected. Manual check required."
+            },
+            "health": {
+                "status": "Cleared",
+                "aiNote": "Sanitation certificates validated. Health clearance approved."
+            }
+        },
+        {
+            "emirate": "Abu Dhabi",
+            "customs": {
+                "status": "Cleared",
+                "aiNote": "Cargo and documentation cleared successfully. No anomalies detected."
+            },
+            "immigration": {
+                "status": "Cleared",
+                "aiNote": "All crew and passenger IDs verified. Immigration cleared."
+            },
+            "health": {
+                "status": "Cleared",
+                "aiNote": "Sanitation certificates validated. Health clearance approved."
+            }
+        },
+        {
+            "emirate": "Umm Al Quwain",
+            "customs": {
+                "status": "Flagged",
+                "aiNote": "Irregular cargo description. Recommend physical inspection."
+            },
+            "immigration": {
+                "status": "Cleared",
+                "aiNote": "All crew and passenger IDs verified. Immigration cleared."
+            },
+            "health": {
+                "status": "Cleared",
+                "aiNote": "Sanitation certificates validated. Health clearance approved."
+            }
+        },
+        {
+            "emirate": "Ajman",
+            "customs": {
+                "status": "Flagged",
+                "aiNote": "Irregular cargo description. Recommend physical inspection."
+            },
+            "immigration": {
+                "status": "Flagged",
+                "aiNote": "Suspicious crew history detected. Manual check required."
+            },
+            "health": {
+                "status": "Processing",
+                "aiNote": "Vaccination records under review. Holding for health officer confirmation."
+            }
+        },
+        {
+            "emirate": "Abu Dhabi",
+            "customs": {
+                "status": "Processing",
+                "aiNote": "Documents submitted. Awaiting customs officer review."
+            },
+            "immigration": {
+                "status": "Flagged",
+                "aiNote": "Suspicious crew history detected. Manual check required."
+            },
+            "health": {
+                "status": "Cleared",
+                "aiNote": "Sanitation certificates validated. Health clearance approved."
+            }
+        },
+        {
+            "emirate": "Sharjah",
+            "customs": {
+                "status": "Processing",
+                "aiNote": "Documents submitted. Awaiting customs officer review."
+            },
+            "immigration": {
+                "status": "Cleared",
+                "aiNote": "All crew and passenger IDs verified. Immigration cleared."
+            },
+            "health": {
+                "status": "Processing",
+                "aiNote": "Vaccination records under review. Holding for health officer confirmation."
+            }
+        },
+        {
+            "emirate": "Abu Dhabi",
+            "customs": {
+                "status": "Cleared",
+                "aiNote": "Cargo and documentation cleared successfully. No anomalies detected."
+            },
+            "immigration": {
+                "status": "Flagged",
+                "aiNote": "Suspicious crew history detected. Manual check required."
+            },
+            "health": {
+                "status": "Processing",
+                "aiNote": "Vaccination records under review. Holding for health officer confirmation."
+            }
+        },
+        {
+            "emirate": "Ras Al Khaimah",
+            "customs": {
+                "status": "Cleared",
+                "aiNote": "Cargo and documentation cleared successfully. No anomalies detected."
+            },
+            "immigration": {
+                "status": "Flagged",
+                "aiNote": "Suspicious crew history detected. Manual check required."
+            },
+            "health": {
+                "status": "Cleared",
+                "aiNote": "Sanitation certificates validated. Health clearance approved."
+            }
+        },
+        {
+            "emirate": "Fujairah",
+            "customs": {
+                "status": "Cleared",
+                "aiNote": "Cargo and documentation cleared successfully. No anomalies detected."
+            },
+            "immigration": {
+                "status": "Processing",
+                "aiNote": "Crew data under verification. ETA confirmation pending."
+            },
+            "health": {
+                "status": "Flagged",
+                "aiNote": "Potential medical risk. Notify port health authority for inspection."
+            }
+        },
+        {
+            "emirate": "Fujairah",
+            "customs": {
+                "status": "Processing",
+                "aiNote": "Documents submitted. Awaiting customs officer review."
+            },
+            "immigration": {
+                "status": "Processing",
+                "aiNote": "Crew data under verification. ETA confirmation pending."
+            },
+            "health": {
+                "status": "Cleared",
+                "aiNote": "Sanitation certificates validated. Health clearance approved."
+            }
+        },
+        {
+            "emirate": "Ajman",
+            "customs": {
+                "status": "Processing",
+                "aiNote": "Documents submitted. Awaiting customs officer review."
+            },
+            "immigration": {
+                "status": "Processing",
+                "aiNote": "Crew data under verification. ETA confirmation pending."
+            },
+            "health": {
+                "status": "Processing",
+                "aiNote": "Vaccination records under review. Holding for health officer confirmation."
+            }
+        },
+        {
+            "emirate": "Dubai",
+            "customs": {
+                "status": "Cleared",
+                "aiNote": "Cargo and documentation cleared successfully. No anomalies detected."
+            },
+            "immigration": {
+                "status": "Flagged",
+                "aiNote": "Suspicious crew history detected. Manual check required."
+            },
+            "health": {
+                "status": "Flagged",
+                "aiNote": "Potential medical risk. Notify port health authority for inspection."
+            }
+        },
+        {
+            "emirate": "Abu Dhabi",
+            "customs": {
+                "status": "Processing",
+                "aiNote": "Documents submitted. Awaiting customs officer review."
+            },
+            "immigration": {
+                "status": "Processing",
+                "aiNote": "Crew data under verification. ETA confirmation pending."
+            },
+            "health": {
+                "status": "Flagged",
+                "aiNote": "Potential medical risk. Notify port health authority for inspection."
+            }
+        },
+        {
+            "emirate": "Abu Dhabi",
+            "customs": {
+                "status": "Processing",
+                "aiNote": "Documents submitted. Awaiting customs officer review."
+            },
+            "immigration": {
+                "status": "Processing",
+                "aiNote": "Crew data under verification. ETA confirmation pending."
+            },
+            "health": {
+                "status": "Flagged",
+                "aiNote": "Potential medical risk. Notify port health authority for inspection."
+            }
+        },
+        {
+            "emirate": "Abu Dhabi",
+            "customs": {
+                "status": "Flagged",
+                "aiNote": "Irregular cargo description. Recommend physical inspection."
+            },
+            "immigration": {
+                "status": "Processing",
+                "aiNote": "Crew data under verification. ETA confirmation pending."
+            },
+            "health": {
+                "status": "Processing",
+                "aiNote": "Vaccination records under review. Holding for health officer confirmation."
+            }
+        },
+        {
+            "emirate": "Ras Al Khaimah",
+            "customs": {
+                "status": "Flagged",
+                "aiNote": "Irregular cargo description. Recommend physical inspection."
+            },
+            "immigration": {
+                "status": "Flagged",
+                "aiNote": "Suspicious crew history detected. Manual check required."
+            },
+            "health": {
+                "status": "Cleared",
+                "aiNote": "Sanitation certificates validated. Health clearance approved."
+            }
+        },
+        {
+            "emirate": "Fujairah",
+            "customs": {
+                "status": "Processing",
+                "aiNote": "Documents submitted. Awaiting customs officer review."
+            },
+            "immigration": {
+                "status": "Processing",
+                "aiNote": "Crew data under verification. ETA confirmation pending."
+            },
+            "health": {
+                "status": "Processing",
+                "aiNote": "Vaccination records under review. Holding for health officer confirmation."
+            }
+        },
+        {
+            "emirate": "Ajman",
+            "customs": {
+                "status": "Cleared",
+                "aiNote": "Cargo and documentation cleared successfully. No anomalies detected."
+            },
+            "immigration": {
+                "status": "Cleared",
+                "aiNote": "All crew and passenger IDs verified. Immigration cleared."
+            },
+            "health": {
+                "status": "Flagged",
+                "aiNote": "Potential medical risk. Notify port health authority for inspection."
+            }
+        },
+        {
+            "emirate": "Ras Al Khaimah",
+            "customs": {
+                "status": "Flagged",
+                "aiNote": "Irregular cargo description. Recommend physical inspection."
+            },
+            "immigration": {
+                "status": "Flagged",
+                "aiNote": "Suspicious crew history detected. Manual check required."
+            },
+            "health": {
+                "status": "Flagged",
+                "aiNote": "Potential medical risk. Notify port health authority for inspection."
+            }
+        },
+        {
+            "emirate": "Fujairah",
+            "customs": {
+                "status": "Flagged",
+                "aiNote": "Irregular cargo description. Recommend physical inspection."
+            },
+            "immigration": {
+                "status": "Processing",
+                "aiNote": "Crew data under verification. ETA confirmation pending."
+            },
+            "health": {
+                "status": "Flagged",
+                "aiNote": "Potential medical risk. Notify port health authority for inspection."
+            }
+        },
+        {
+            "emirate": "Sharjah",
+            "customs": {
+                "status": "Flagged",
+                "aiNote": "Irregular cargo description. Recommend physical inspection."
+            },
+            "immigration": {
+                "status": "Processing",
+                "aiNote": "Crew data under verification. ETA confirmation pending."
+            },
+            "health": {
+                "status": "Cleared",
+                "aiNote": "Sanitation certificates validated. Health clearance approved."
+            }
+        },
+        {
+            "emirate": "Ajman",
+            "customs": {
+                "status": "Processing",
+                "aiNote": "Documents submitted. Awaiting customs officer review."
+            },
+            "immigration": {
+                "status": "Cleared",
+                "aiNote": "All crew and passenger IDs verified. Immigration cleared."
+            },
+            "health": {
+                "status": "Processing",
+                "aiNote": "Vaccination records under review. Holding for health officer confirmation."
+            }
+        },
+        {
+            "emirate": "Abu Dhabi",
+            "customs": {
+                "status": "Cleared",
+                "aiNote": "Cargo and documentation cleared successfully. No anomalies detected."
+            },
+            "immigration": {
+                "status": "Processing",
+                "aiNote": "Crew data under verification. ETA confirmation pending."
+            },
+            "health": {
+                "status": "Flagged",
+                "aiNote": "Potential medical risk. Notify port health authority for inspection."
+            }
+        },
+        {
+            "emirate": "Ajman",
+            "customs": {
+                "status": "Cleared",
+                "aiNote": "Cargo and documentation cleared successfully. No anomalies detected."
+            },
+            "immigration": {
+                "status": "Cleared",
+                "aiNote": "All crew and passenger IDs verified. Immigration cleared."
+            },
+            "health": {
+                "status": "Processing",
+                "aiNote": "Vaccination records under review. Holding for health officer confirmation."
+            }
+        },
+        {
+            "emirate": "Umm Al Quwain",
+            "customs": {
+                "status": "Cleared",
+                "aiNote": "Cargo and documentation cleared successfully. No anomalies detected."
+            },
+            "immigration": {
+                "status": "Cleared",
+                "aiNote": "All crew and passenger IDs verified. Immigration cleared."
+            },
+            "health": {
+                "status": "Flagged",
+                "aiNote": "Potential medical risk. Notify port health authority for inspection."
+            }
+        },
+        {
+            "emirate": "Ras Al Khaimah",
+            "customs": {
+                "status": "Flagged",
+                "aiNote": "Irregular cargo description. Recommend physical inspection."
+            },
+            "immigration": {
+                "status": "Processing",
+                "aiNote": "Crew data under verification. ETA confirmation pending."
+            },
+            "health": {
+                "status": "Processing",
+                "aiNote": "Vaccination records under review. Holding for health officer confirmation."
+            }
+        },
+        {
+            "emirate": "Ajman",
+            "customs": {
+                "status": "Cleared",
+                "aiNote": "Cargo and documentation cleared successfully. No anomalies detected."
+            },
+            "immigration": {
+                "status": "Cleared",
+                "aiNote": "All crew and passenger IDs verified. Immigration cleared."
+            },
+            "health": {
+                "status": "Flagged",
+                "aiNote": "Potential medical risk. Notify port health authority for inspection."
+            }
+        },
+        {
+            "emirate": "Abu Dhabi",
+            "customs": {
+                "status": "Processing",
+                "aiNote": "Documents submitted. Awaiting customs officer review."
+            },
+            "immigration": {
+                "status": "Cleared",
+                "aiNote": "All crew and passenger IDs verified. Immigration cleared."
+            },
+            "health": {
+                "status": "Cleared",
+                "aiNote": "Sanitation certificates validated. Health clearance approved."
+            }
+        },
+        {
+            "emirate": "Umm Al Quwain",
+            "customs": {
+                "status": "Flagged",
+                "aiNote": "Irregular cargo description. Recommend physical inspection."
+            },
+            "immigration": {
+                "status": "Flagged",
+                "aiNote": "Suspicious crew history detected. Manual check required."
+            },
+            "health": {
+                "status": "Flagged",
+                "aiNote": "Potential medical risk. Notify port health authority for inspection."
+            }
+        },
+        {
+            "emirate": "Ras Al Khaimah",
+            "customs": {
+                "status": "Flagged",
+                "aiNote": "Irregular cargo description. Recommend physical inspection."
+            },
+            "immigration": {
+                "status": "Processing",
+                "aiNote": "Crew data under verification. ETA confirmation pending."
+            },
+            "health": {
+                "status": "Flagged",
+                "aiNote": "Potential medical risk. Notify port health authority for inspection."
+            }
+        },
+        {
+            "emirate": "Ras Al Khaimah",
+            "customs": {
+                "status": "Cleared",
+                "aiNote": "Cargo and documentation cleared successfully. No anomalies detected."
+            },
+            "immigration": {
+                "status": "Flagged",
+                "aiNote": "Suspicious crew history detected. Manual check required."
+            },
+            "health": {
+                "status": "Processing",
+                "aiNote": "Vaccination records under review. Holding for health officer confirmation."
+            }
+        },
+        {
+            "emirate": "Sharjah",
+            "customs": {
+                "status": "Cleared",
+                "aiNote": "Cargo and documentation cleared successfully. No anomalies detected."
+            },
+            "immigration": {
+                "status": "Flagged",
+                "aiNote": "Suspicious crew history detected. Manual check required."
+            },
+            "health": {
+                "status": "Processing",
+                "aiNote": "Vaccination records under review. Holding for health officer confirmation."
+            }
+        },
+        {
+            "emirate": "Umm Al Quwain",
+            "customs": {
+                "status": "Cleared",
+                "aiNote": "Cargo and documentation cleared successfully. No anomalies detected."
+            },
+            "immigration": {
+                "status": "Flagged",
+                "aiNote": "Suspicious crew history detected. Manual check required."
+            },
+            "health": {
+                "status": "Cleared",
+                "aiNote": "Sanitation certificates validated. Health clearance approved."
+            }
+        },
+        {
+            "emirate": "Ajman",
+            "customs": {
+                "status": "Processing",
+                "aiNote": "Documents submitted. Awaiting customs officer review."
+            },
+            "immigration": {
+                "status": "Processing",
+                "aiNote": "Crew data under verification. ETA confirmation pending."
+            },
+            "health": {
+                "status": "Processing",
+                "aiNote": "Vaccination records under review. Holding for health officer confirmation."
+            }
+        }
+    ]
+}

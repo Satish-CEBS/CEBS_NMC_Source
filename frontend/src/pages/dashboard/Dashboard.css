@@ -1,0 +1,450 @@
+/* === Dashboard Layout === */
+.dashboard {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: #f8fafc;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.dashboard-body {
+    display: flex;
+    flex-grow: 1;
+}
+
+.dashboard-content {
+    flex-grow: 1;
+    padding: 1.5rem 2rem;
+    overflow-y: auto;
+}
+
+/* === Top Section Navigation === */
+.section-nav {
+    display: flex;
+    gap: 1.5rem;
+    padding: 1rem 0;
+    background: #f3f6f9;
+    border-bottom: 1px solid #ccc;
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: #000000;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+    .section-nav a {
+        cursor: pointer;
+        text-decoration: none;
+        color: #000000;
+        padding: 6px 10px;
+        border-radius: 6px;
+        transition: all 0.2s ease;
+    }
+
+        .section-nav a:hover {
+            background-color: #000000;
+            color: #FFFFFF;
+        }
+
+/* === Emirate Filter Chips === */
+.emirate-filter {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    margin: 1rem 0 2rem;
+}
+
+    .emirate-filter span {
+        padding: 0.45rem 1.1rem;
+        background: #e3e8ef;
+        color: #333;
+        border-radius: 999px;
+        font-size: 0.85rem;
+        cursor: pointer;
+        transition: 0.3s ease;
+    }
+
+        .emirate-filter span:hover {
+            background: #ccd8e5;
+        }
+
+        .emirate-filter span.active {
+            background: #000000;
+            color: #fff;
+            font-weight: 600;
+        }
+
+/* === Section Headers === */
+.section-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+    background: #ebe4df;
+    padding: 0.85rem 1.25rem;
+    border-left: 5px solid #ddd0c8;
+    border-radius: 6px;
+    font-size: 1rem;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+}
+
+    .section-header h2 {
+        flex: 1;
+        margin: 0;
+        font-size: 1.15rem;
+        font-weight: 600;
+        color: #000000;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .section-header span {
+        font-size: 1.5rem;
+        font-weight: bold;
+        cursor: pointer;
+        color: #555;
+    }
+
+/* === KPI Cards === */
+.kpi-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    gap: 1.25rem;
+    margin-top: 1rem;
+}
+
+.kpi-card {
+    background: #f1ede8;
+    padding: 1rem 1.25rem;
+    border-radius: 10px;
+    border-left: 5px solid #2b2b2b;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+
+    .kpi-card h4 {
+        font-size: 1rem;
+        font-weight: 600;
+        color: #FFFFFF; /* Updated from rgb(0, 64, 128) */
+        margin-bottom: 6px;
+    }
+
+
+    .kpi-card p {
+        font-size: 1.7rem;
+        font-weight: bold;
+        color: #FFFFFF;
+        margin: 0.25rem 0;
+    }
+
+    .kpi-card small {
+        font-size: 0.8rem;
+        color: #555;
+    }
+
+/* === AI Insights === */
+.ai-insights-container {
+    margin-top: 1rem;
+    background-color: #f0f7ff;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.insights-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.insight-box {
+    background: #ffffff;
+    padding: 1rem;
+    border-left: 4px solid #3f51b5;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.06);
+}
+
+    .insight-box .alert-yellow {
+        color: #c66900;
+        font-weight: bold;
+        display: inline-block;
+    }
+
+    .insight-box .alert-red {
+        color: #b71c1c;
+        font-weight: bold;
+        display: inline-block;
+    }
+
+    .insight-box .ai-label {
+        font-size: 0.75rem;
+        background: #d0e3ff;
+        padding: 2px 6px;
+        margin-top: 0.5rem;
+        display: inline-block;
+        border-radius: 4px;
+        color: #3a2e25;
+    }
+
+/* === Risk Heatmap Table === */
+.risk-heatmap {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+    .risk-heatmap th,
+    .risk-heatmap td {
+        padding: 0.75rem;
+        text-align: center;
+    }
+
+    .risk-heatmap th {
+        background: #f1f5f9;
+        color: #3a2e25;
+    }
+
+.risk-low {
+    background: #a7f3d0;
+    color: #006644;
+    font-weight: 600;
+}
+
+.risk-medium {
+    background: #fde68a;
+    color: #a86a00;
+    font-weight: 600;
+}
+
+.risk-high {
+    background: #fca5a5;
+    color: #9b1c1c;
+    font-weight: 600;
+}
+
+/* === Alerts and Notifications === */
+.alert-card {
+    background: #fff8e1;
+    border-left: 4px solid #ff9800;
+    padding: 0.75rem 1rem;
+    margin-bottom: 0.5rem;
+    border-radius: 6px;
+    font-size: 0.88rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+}
+
+    .alert-card .icon {
+        color: #ff9800;
+        font-size: 1.3rem;
+        margin-top: 2px;
+    }
+
+.alert-title {
+    font-weight: bold;
+    color: #333;
+}
+
+.alert-meta {
+    font-size: 0.75rem;
+    color: #777;
+}
+
+/* === Section Collapsibility Toggle === */
+.section-toggle {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #444;
+    margin-left: auto;
+    cursor: pointer;
+}
+.section-header {
+    padding: 20px 20px 10px;
+    background-color: #ebe4df;
+    border-bottom: 1px solid #ddd;
+}
+
+    .section-header h2 {
+        font-size: 1.5rem;
+        color: #000000; /* Warm brown aligned with MOEI branding */
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        margin-bottom: 6px;
+    }
+
+    .section-header p {
+        font-size: 0.95rem;
+        color: #4d4d4d;
+        margin-top: 0;
+        line-height: 1.5;
+    }
+
+.fal-chart-container {
+    background: #fff;
+    padding: 24px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    margin: 20px;
+}
+/* === Colored KPI Cards === */
+.kpi-card-1 {
+    background-color: #2c7c9f;
+    color: #ffffff;
+    border-left: 5px solid #2c7c9f;
+}
+
+.kpi-card-2 {
+    background-color: #f5b642;
+    color: #ffffff;
+    border-left: 5px solid #f5b642;
+}
+
+.kpi-card-3 {
+    background-color: #cf4b5f;
+    color: #ffffff;
+    border-left: 5px solid #cf4b5f;
+}
+
+.kpi-card-4 {
+    background-color: #2e8b57;
+    color: #ffffff;
+    border-left: 5px solid #2e8b57;
+}
+
+.kpi-card-5 {
+    background-color: #3f86f6;
+    color: #ffffff;
+    border-left: 5px solid #3f86f6;
+}
+
+.kpi-card-6 {
+    background-color: #7e57c2;
+    color: #ffffff;
+    border-left: 5px solid #7e57c2;
+}
+
+.kpi-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: all 0.2s ease-in-out;
+}
+
+.dashboard-top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem 0;
+    background: #f5f7fb;
+    border-bottom: 1px solid #dcdcdc;
+}
+
+.ai-actions {
+    display: flex;
+    gap: 0.75rem;
+}
+
+.ai-button {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    background-color: #0061b0;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+    .ai-button:hover {
+        background-color: #004a87;
+    }
+.dashboard-top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    gap: 1rem;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 0.5rem;
+}
+
+.section-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.nav-pill {
+    background-color: #f4f4f4;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-weight: 500;
+    color: #333;
+    text-decoration: none;
+    font-size: 0.9rem;
+    border: 1px solid #ccc;
+    transition: all 0.2s ease-in-out;
+}
+
+    .nav-pill:hover {
+        background-color: #dbeeff;
+        color: #004a87;
+        border-color: #91c7f1;
+    }
+
+.ai-actions {
+    display: flex;
+    gap: 0.75rem;
+}
+
+/* Base button styling */
+.ai-button {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.85rem;
+    padding: 0.45rem 1rem;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    transition: all 0.2s ease-in-out;
+}
+
+    /* Green primary button */
+    .ai-button.green {
+        background-color: #1f6f45;
+        color: #fff;
+        box-shadow: 0 2px 6px rgba(31, 111, 69, 0.25);
+    }
+
+        .ai-button.green:hover {
+            background-color: #155c3b;
+            box-shadow: 0 3px 8px rgba(31, 111, 69, 0.4);
+        }
+
+    /* Violet outline button */
+    .ai-button.violet-outline {
+        background-color: #fff;
+        color: #6b1e8a;
+        border: 1.5px solid #6b1e8a;
+    }
+
+        .ai-button.violet-outline:hover {
+            background-color: #f7f0fa;
+            color: #4e1365;
+            border-color: #4e1365;
+        }

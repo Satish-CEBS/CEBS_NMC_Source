@@ -1,0 +1,151 @@
+.top-trends {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 30px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+}
+
+    .top-trends h3 {
+        font-size: 20px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        color: #003366;
+        margin-bottom: 5px;
+    }
+
+.section-desc {
+    font-size: 13px;
+    color: #666;
+    margin-bottom: 16px;
+}
+
+.trend-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.trend-card {
+    flex: 1;
+    min-width: 250px;
+    background: #f7f9fc;
+    padding: 15px;
+    border-radius: 6px;
+    border: 1px solid #dbe2ea;
+}
+
+    .trend-card h4 {
+        font-size: 16px;
+        color: #1a1a1a;
+        margin-bottom: 10px;
+    }
+
+    .trend-card ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .trend-card li {
+        font-size: 14px;
+        margin: 6px 0;
+    }
+
+.trend.up {
+    color: green;
+    font-weight: bold;
+}
+
+.trend.down {
+    color: red;
+    font-weight: bold;
+}
+.top-trends-section {
+    padding: 1.5rem;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+}
+
+.top-trends-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #0f172a;
+}
+
+.ai-highlight {
+    color: #b91c1c;
+}
+
+.trend-filters {
+    display: flex;
+    gap: 10px;
+}
+
+.trend-filter-btn {
+    background: #f1f1f1;
+    border: none;
+    padding: 6px 14px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+    .trend-filter-btn.active {
+        background: #111;
+        color: #fff;
+    }
+
+.trend-card-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.trend-card {
+    flex: 1 1 220px;
+    background: #fff;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.07);
+    border-left: 5px solid #d1d5db;
+}
+
+.trend-title {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 400;
+    font-size: 1.05rem;
+}
+
+.trend-stats {
+    margin-top: 0.5rem;
+    font-size: 0.95rem;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.trend-up {
+    color: green;
+}
+
+.trend-down {
+    color: red;
+}
+
+.trend-insight {
+    font-size: 0.85rem;
+    margin-top: 0.5rem;
+    color: #374151;
+}
