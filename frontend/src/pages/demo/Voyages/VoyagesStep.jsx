@@ -1,51 +1,18 @@
-﻿// src/pages/demo/Voyages/VoyagesStep.jsx
-
-import React, { useState, useEffect } from 'react';
+﻿import React, { useState, useEffect } from 'react';
 import vesselsList from '../../../mockData/vessels.json';
 import locationsList from '../../../mockData/locations.json';
-//import flagMap from '../../../assets/images/flags/flagMap'; // Assuming you have this
 import './VoyagesStep.css';
 
 const country3to2 = {
-    ARE: 'ae',
-    BHS: 'bs',
-    PAN: 'pa',
-    DNK: 'dk',
-    LBR: 'lr',
-    USA: 'us',
-    GBR: 'gb',
-    ITA: 'it',
-    SGP: 'sg',
-    KOR: 'kr',
-    CHN: 'cn',
-    BRA: 'br',
-    MNE: 'me',
-    FRA: 'fr',
-    HKG: 'hk',
-    IND: 'in',
-    JPN: 'jp',
-    SAU: 'sa',
-    NLD: 'nl',
-    DEU: 'de',
-    ESP: 'es',
-    PRT: 'pt',
-    TUR: 'tr',
-    GRC: 'gr',
-    POL: 'pl',
-    UKR: 'ua',
-    RUS: 'ru',
-    ZAF: 'za',
-    OMN: 'om',
-    QAT: 'qa',
-    BHR: 'bh',
-    KWT: 'kw',
-    IRN: 'ir',
-    IRQ: 'iq',
-    YEM: 'ye',
-    // Add more as needed
+    ARE: 'ae', BHS: 'bs', PAN: 'pa', DNK: 'dk', LBR: 'lr',
+    USA: 'us', GBR: 'gb', ITA: 'it', SGP: 'sg', KOR: 'kr',
+    CHN: 'cn', BRA: 'br', MNE: 'me', FRA: 'fr', HKG: 'hk',
+    IND: 'in', JPN: 'jp', SAU: 'sa', NLD: 'nl', DEU: 'de',
+    ESP: 'es', PRT: 'pt', TUR: 'tr', GRC: 'gr', POL: 'pl',
+    UKR: 'ua', RUS: 'ru', ZAF: 'za', OMN: 'om', QAT: 'qa',
+    BHR: 'bh', KWT: 'kw', IRN: 'ir', IRQ: 'iq', YEM: 'ye',
 };
 
-// Statically preload all flag images
 const importAllFlags = (r) => {
     let flags = {};
     r.keys().forEach((key) => {
@@ -56,7 +23,7 @@ const importAllFlags = (r) => {
 };
 const flagMap = importAllFlags(require.context('../../../assets/images/flags', false, /\.png$/));
 
-const VoyagesStep = ({ formData, setFormData, goToStep }) => {
+const VoyagesStep = ({ formData = {}, updateBasicInfo, goToStep }) => {
     const [vesselQuery, setVesselQuery] = useState('');
     const [vesselResults, setVesselResults] = useState([]);
     const [callPortQuery, setCallPortQuery] = useState('');
@@ -67,6 +34,48 @@ const VoyagesStep = ({ formData, setFormData, goToStep }) => {
     const [nextPortResults, setNextPortResults] = useState([]);
     const [errors, setErrors] = useState([]);
     const [successMessage, setSuccessMessage] = useState('');
+
+    // Initialize form local state from formData prop
+    const [localFormData, setLocalFormData] = useState({
+        vessel_id: formData.vessel_id || '',
+        name: formData.name || '',
+        imo_no: formData.imo_no || '',
+        mmsi_no: formData.mmsi_no || '',
+        call_sign: formData.call_sign || '',
+        gross_tonnage: formData.gross_tonnage || '',
+        deadweight_tonnage: formData.deadweight_tonnage || '',
+        draught: formData.draught || '',
+        voyage_number: formData.voyage_number || '',
+        call_port: formData.call_port || null,
+        eta: formData.eta || '',
+        etd: formData.etd || '',
+        last_port: formData.last_port || null,
+        last_port_etd: formData.last_port_etd || '',
+        next_port: formData.next_port || null,
+        next_port_eta: formData.next_port_eta || '',
+    });
+
+    // Sync local form state when formData prop changes
+    useEffect(() => {
+        setLocalFormData({
+            vessel_id: formData.vessel_id || '',
+            name: formData.name || '',
+            imo_no: formData.imo_no || '',
+            mmsi_no: formData.mmsi_no || '',
+            call_sign: formData.call_sign || '',
+            gross_tonnage: formData.gross_tonnage || '',
+            deadweight_tonnage: formData.deadweight_tonnage || '',
+            draught: formData.draught || '',
+            voyage_number: formData.voyage_number || '',
+            call_port: formData.call_port || null,
+            eta: formData.eta || '',
+            etd: formData.etd || '',
+            last_port: formData.last_port || null,
+            last_port_etd: formData.last_port_etd || '',
+            next_port: formData.next_port || null,
+            next_port_eta: formData.next_port_eta || '',
+        });
+    }, [formData]);
 
     useEffect(() => {
         if (!vesselQuery.trim()) return setVesselResults([]);
@@ -100,16 +109,35 @@ const VoyagesStep = ({ formData, setFormData, goToStep }) => {
     useEffect(() => setLastPortResults(searchLocations(lastPortQuery)), [lastPortQuery]);
     useEffect(() => setNextPortResults(searchLocations(nextPortQuery)), [nextPortQuery]);
 
+    const getFlagImage = (countryCode3) => {
+        const code = country3to2[countryCode3] || countryCode3.toLowerCase();
+        return flagMap[code] || null;
+    };
+
+    // Handler for selecting vessel from search dropdown
     const selectVessel = (v) => {
-        setFormData({ ...formData, ...v, vessel_id: v.vessel_id });
+        const updatedForm = {
+            ...localFormData,
+            ...v,
+            vessel_id: v.vessel_id,
+        };
+        setLocalFormData(updatedForm);
+        updateBasicInfo(updatedForm);
         setVesselQuery(`${v.name} (${v.imo_no})`);
         setVesselResults([]);
         setErrors([]);
         setSuccessMessage('');
+        console.log('Selected vessel saved:', updatedForm);
     };
 
+    // Handler for selecting location (port)
     const selectLocation = (loc, fieldName) => {
-        setFormData({ ...formData, [fieldName]: loc });
+        const updatedForm = {
+            ...localFormData,
+            [fieldName]: loc,
+        };
+        setLocalFormData(updatedForm);
+        updateBasicInfo(updatedForm);
         if (fieldName === 'call_port') setCallPortQuery(loc.name);
         else if (fieldName === 'last_port') setLastPortQuery(loc.name);
         else if (fieldName === 'next_port') setNextPortQuery(loc.name);
@@ -119,35 +147,38 @@ const VoyagesStep = ({ formData, setFormData, goToStep }) => {
         if (fieldName === 'next_port') setNextPortResults([]);
         setErrors([]);
         setSuccessMessage('');
+        console.log(`Selected location (${fieldName}) saved:`, updatedForm);
     };
 
+    // Generic input change handler
     const onInputChange = (e) => {
         const { name, value } = e.target;
-        setFormData({ ...formData, [name]: value });
+        const updatedForm = {
+            ...localFormData,
+            [name]: value,
+        };
+        setLocalFormData(updatedForm);
+        updateBasicInfo(updatedForm);
         setErrors([]);
         setSuccessMessage('');
+        console.log(`Input changed (${name}):`, updatedForm);
     };
 
-    const getFlagImage = (countryCode3) => {
-        const code = country3to2[countryCode3] || countryCode3.toLowerCase();
-        return flagMap[code] || null;
-    };
-
+    // Validation before proceeding
     const validate = () => {
         const errs = [];
-        if (!formData.vessel_id) errs.push('Ship selection is required.');
-        if (!formData.voyage_number) errs.push('Voyage Number is required.');
-        if (!formData.call_port) errs.push('Port of Call is required.');
-        if (!formData.eta) errs.push('ETA is required.');
-        if (!formData.etd) errs.push('ETD is required.');
-        if (!formData.last_port) errs.push('Previous Port of Call is required.');
-        if (!formData.last_port_etd) errs.push('Previous Port ETD is required.');
-        if (!formData.next_port) errs.push('Next Port of Call is required.');
-        if (!formData.next_port_eta) errs.push('Next Port ETA is required.');
+        if (!localFormData.vessel_id) errs.push('Ship selection is required.');
+        if (!localFormData.voyage_number) errs.push('Voyage Number is required.');
+        if (!localFormData.call_port) errs.push('Port of Call is required.');
+        if (!localFormData.eta) errs.push('ETA is required.');
+        if (!localFormData.etd) errs.push('ETD is required.');
+        if (!localFormData.last_port) errs.push('Previous Port of Call is required.');
+        if (!localFormData.last_port_etd) errs.push('Previous Port ETD is required.');
+        if (!localFormData.next_port) errs.push('Next Port of Call is required.');
+        if (!localFormData.next_port_eta) errs.push('Next Port ETA is required.');
         setErrors(errs);
         return errs.length === 0;
     };
-
 
     const onSubmit = () => {
         if (!validate()) return;
@@ -160,7 +191,6 @@ const VoyagesStep = ({ formData, setFormData, goToStep }) => {
 
     return (
         <div className="voyage-port-call-container">
-            {/* Ship selection */}
             <section className="section">
                 <h3>Select Ship</h3>
                 <p>Search using ship name, call sign, IMO number or MMSI number</p>
@@ -170,9 +200,9 @@ const VoyagesStep = ({ formData, setFormData, goToStep }) => {
                     onChange={(e) => setVesselQuery(e.target.value)}
                     placeholder="Enter search here..."
                     className="search-input"
-                    disabled={!!formData.vessel_id}
+                    disabled={!!localFormData.vessel_id}
                 />
-                {vesselResults.length > 0 && !formData.vessel_id && (
+                {vesselResults.length > 0 && !localFormData.vessel_id && (
                     <ul className="dropdown-results">
                         {vesselResults.map((v) => {
                             const flagSrc = getFlagImage(v.ship_flag_code_id);
@@ -193,19 +223,18 @@ const VoyagesStep = ({ formData, setFormData, goToStep }) => {
                 )}
             </section>
 
-            {/* Ship details and voyage number */}
-            {formData.vessel_id && (
+            {localFormData.vessel_id && (
                 <>
                     <section className="section ship-details">
                         <h3>Selected Ship Details</h3>
                         <div className="details-grid">
-                            <div><strong>Name:</strong> {formData.name}</div>
-                            <div><strong>IMO:</strong> {formData.imo_no}</div>
-                            <div><strong>MMSI:</strong> {formData.mmsi_no}</div>
-                            <div><strong>Call Sign:</strong> {formData.call_sign}</div>
-                            <div><strong>Gross Tonnage:</strong> {formData.gross_tonnage}</div>
-                            <div><strong>Deadweight (MT):</strong> {formData.deadweight_tonnage}</div>
-                            <div><strong>Draught (m):</strong> {formData.draught}</div>
+                            <div><strong>Name:</strong> {localFormData.name}</div>
+                            <div><strong>IMO:</strong> {localFormData.imo_no}</div>
+                            <div><strong>MMSI:</strong> {localFormData.mmsi_no}</div>
+                            <div><strong>Call Sign:</strong> {localFormData.call_sign}</div>
+                            <div><strong>Gross Tonnage:</strong> {localFormData.gross_tonnage}</div>
+                            <div><strong>Deadweight (MT):</strong> {localFormData.deadweight_tonnage}</div>
+                            <div><strong>Draught (m):</strong> {localFormData.draught}</div>
                         </div>
                     </section>
 
@@ -215,14 +244,13 @@ const VoyagesStep = ({ formData, setFormData, goToStep }) => {
                             <input
                                 type="text"
                                 name="voyage_number"
-                                value={formData.voyage_number || ''}
+                                value={localFormData.voyage_number || ''}
                                 onChange={onInputChange}
                                 placeholder="Enter voyage number"
                             />
                         </label>
                     </section>
 
-                    {/* Port of Call selection */}
                     <section className="section">
                         <h3>Select Port of Call</h3>
                         <p>Search using location name or UN/LOCODE code</p>
@@ -250,7 +278,6 @@ const VoyagesStep = ({ formData, setFormData, goToStep }) => {
                                                 {`${loc.name} (${loc.country}) `}
                                                 {loc.flag_code && String.fromCodePoint(...[...loc.flag_code.toUpperCase()].map(c => 127397 + c.charCodeAt()))}
                                             </span>
-
                                         </li>
                                     );
                                 })}
@@ -262,20 +289,19 @@ const VoyagesStep = ({ formData, setFormData, goToStep }) => {
                             <input
                                 type="datetime-local"
                                 name="eta"
-                                value={formData.eta || ''}
+                                value={localFormData.eta || ''}
                                 onChange={onInputChange}
                             />
                             <label>ETD</label>
                             <input
                                 type="datetime-local"
                                 name="etd"
-                                value={formData.etd || ''}
+                                value={localFormData.etd || ''}
                                 onChange={onInputChange}
                             />
                         </div>
                     </section>
 
-                    {/* Previous Port of Call */}
                     <section className="section">
                         <h3>Previous Port of Call</h3>
                         <p>Search using location name or UN/LOCODE code</p>
@@ -303,7 +329,6 @@ const VoyagesStep = ({ formData, setFormData, goToStep }) => {
                                                 {`${loc.name} (${loc.country}) `}
                                                 {loc.flag_code && String.fromCodePoint(...[...loc.flag_code.toUpperCase()].map(c => 127397 + c.charCodeAt()))}
                                             </span>
-
                                         </li>
                                     );
                                 })}
@@ -315,13 +340,12 @@ const VoyagesStep = ({ formData, setFormData, goToStep }) => {
                             <input
                                 type="datetime-local"
                                 name="last_port_etd"
-                                value={formData.last_port_etd || ''}
+                                value={localFormData.last_port_etd || ''}
                                 onChange={onInputChange}
                             />
                         </label>
                     </section>
 
-                    {/* Next Port of Call */}
                     <section className="section">
                         <h3>Next Port of Call</h3>
                         <p>Search using location name or UN/LOCODE code</p>
@@ -349,7 +373,6 @@ const VoyagesStep = ({ formData, setFormData, goToStep }) => {
                                                 {`${loc.name} (${loc.country}) `}
                                                 {loc.flag_code && String.fromCodePoint(...[...loc.flag_code.toUpperCase()].map(c => 127397 + c.charCodeAt()))}
                                             </span>
-
                                         </li>
                                     );
                                 })}
@@ -361,13 +384,12 @@ const VoyagesStep = ({ formData, setFormData, goToStep }) => {
                             <input
                                 type="datetime-local"
                                 name="next_port_eta"
-                                value={formData.next_port_eta || ''}
+                                value={localFormData.next_port_eta || ''}
                                 onChange={onInputChange}
                             />
                         </label>
                     </section>
 
-                    {/* Display errors */}
                     {errors.length > 0 && (
                         <div className="error-box">
                             {errors.map((e, i) => (
@@ -376,14 +398,12 @@ const VoyagesStep = ({ formData, setFormData, goToStep }) => {
                         </div>
                     )}
 
-                    {/* Display success */}
                     {successMessage && (
                         <div className="success-box">
                             {successMessage}
                         </div>
                     )}
 
-                    {/* Submit button */}
                     <button className="submit-button" onClick={onSubmit}>Save Voyages & Continue</button>
                 </>
             )}

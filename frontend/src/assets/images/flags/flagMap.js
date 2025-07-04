@@ -1,40 +1,22 @@
-// src/assets/images/flags/flagMap.js
+// flagMap.js
 
-import ae from './ae.png';
-import us from './us.png';
-import bs from './bs.png';
-import pa from './pa.png';
-import dk from './dk.png';
-import lr from './lr.png';
-import gb from './gb.png';
-import it from './it.png';
-import sg from './sg.png';
-import kr from './kr.png';
-import cn from './cn.png';
-import br from './br.png';
-import me from './me.png';
-import fr from './fr.png';
-import hk from './hk.png';
-
-// Add other flags as needed
-/*
 const flagMap = {
-    ae,
-    us,
-    bs,
-    pa,
-    dk,
-    lr,
-    gb,
-    it,
-    sg,
-    kr,
-    cn,
-    br,
-    me,
-    fr,
-    hk
+    ae: require('./ae.png'),
+    bs: require('./bs.png'),
+    pa: require('./pa.png'),
+    dk: require('./dk.png'),
+    lr: require('./lr.png'),
+    us: require('./us.png'),
+    gb: require('./gb.png'),
+    it: require('./it.png'),
+    sg: require('./sg.png'),
+    kr: require('./kr.png'),
+    cn: require('./cn.png'),
+    br: require('./br.png'),
+    me: require('./me.png'),
+    fr: require('./fr.png'),
+    hk: require('./hk.png'),
+    // add other flags as needed
 };
 
 export default flagMap;
-*/

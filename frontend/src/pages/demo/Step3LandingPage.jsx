@@ -1,5 +1,6 @@
 ﻿import React, { useState, useEffect } from 'react';
 import './Step3LandingPage.css';
+import Step3Sidebar from './Step3Sidebar';
 
 import DPGForm from './forms/DPGForm';
 import CargoForm from './forms/CargoForm';
@@ -14,6 +15,9 @@ import StoreIcon from '@mui/icons-material/Store';
 import GroupIcon from '@mui/icons-material/Group';
 import AirlineSeatReclineNormalIcon from '@mui/icons-material/AirlineSeatReclineNormal';
 import SecurityIcon from '@mui/icons-material/Security';
+
+const STORAGE_KEY = 'NMC_DRAFT_DATA';
+
 
 const PORT_CALL_PURPOSES = [
     "Bunkering", "Loading", "Discharging", "Repairs", "Cruising",
@@ -42,104 +46,156 @@ const REPORTING_ICONS = {
     security: <SecurityIcon className="icon-security" />,
 };
 
-const Step3LandingPage = ({ formData, setFormData, goToStep }) => {
-    // Basic port call info persisted locally in component state
-    const [crewCount, setCrewCount] = useState(formData.crew_count || '');
-    const [passengerCount, setPassengerCount] = useState(formData.passenger_count || '');
-    const [actualDraught, setActualDraught] = useState(formData.actual_draught || '');
-    const [airDraught, setAirDraught] = useState(formData.air_draught || '');
-    const [cargoBrief, setCargoBrief] = useState(formData.cargo_brief || '');
-    const [portCallPurpose, setPortCallPurpose] = useState(formData.port_call_purpose || '');
+const Step3LandingPage = ({ data, onDataChange, goToPrev }) => {
+    // Destructure with default empty objects to avoid undefined errors
+    const {
+        basicInfo = {},
+        selectedReports = {},
+        formsData = {},
+        formStatus = {},
+        isActivated = false,
+    } = data || {};
 
-    // Reporting selections and form data persisted locally here
-    const [selectedReports, setSelectedReports] = useState({});
-    const [formStatus, setFormStatus] = useState({
-        dpg: 'pending',
-        cargo: 'pending',
-        shipStores: 'pending',
-        crew: 'pending',
-        pax: 'pending',
-        security: 'pending',
-    });
+    // Local state mirrors data to allow form interaction
+    const [crewCount, setCrewCount] = useState(basicInfo.crew_count || '');
+    const [passengerCount, setPassengerCount] = useState(basicInfo.passenger_count || '');
+    const [actualDraught, setActualDraught] = useState(basicInfo.actual_draught || '');
+    const [airDraught, setAirDraught] = useState(basicInfo.air_draught || '');
+    const [cargoBrief, setCargoBrief] = useState(basicInfo.cargo_brief || '');
+    const [portCallPurpose, setPortCallPurpose] = useState(basicInfo.port_call_purpose || '');
 
-    // Form data storage per reporting category (simulate local persistence)
-    const [formsData, setFormsData] = useState({
-        dpg: null,
-        cargo: null,
-        shipStores: null,
-        crew: null,
-        pax: null,
-        security: null,
-    });
+    const [localSelectedReports, setLocalSelectedReports] = useState(selectedReports);
+    const [localFormsData, setLocalFormsData] = useState(formsData);
+    const [localFormStatus, setLocalFormStatus] = useState(formStatus);
 
-    // Success messages for basics and each form
+    // Feedback messages
     const [basicSaveMessage, setBasicSaveMessage] = useState('');
     const [formSaveMessages, setFormSaveMessages] = useState({});
+   // console.log('Step3LandingPage basicInfo:', basicInfo);
+  //  console.log('Step3LandingPage formStatus:', formStatus);
+    // Sync local states with incoming data props
+    useEffect(() => {
+        setCrewCount(basicInfo.crew_count || '');
+        setPassengerCount(basicInfo.passenger_count || '');
+        setActualDraught(basicInfo.actual_draught || '');
+        setAirDraught(basicInfo.air_draught || '');
+        setCargoBrief(basicInfo.cargo_brief || '');
+        setPortCallPurpose(basicInfo.port_call_purpose || '');
 
-    // Save basics: update parent and show message
+        setLocalSelectedReports(selectedReports);
+        setLocalFormsData(formsData);
+        setLocalFormStatus(formStatus);
+    }, [basicInfo, selectedReports, formsData, formStatus]);
+
+    // Save all data to localStorage + propagate to parent
+    const saveAllData = (overrides = {}) => {
+        const updatedData = {
+            basicInfo: {
+                crew_count: crewCount,
+                passenger_count: passengerCount,
+                actual_draught: actualDraught,
+                air_draught: airDraught,
+                cargo_brief: cargoBrief,
+                port_call_purpose: portCallPurpose,
+                ...overrides.basicInfo,
+            },
+            selectedReports: { ...localSelectedReports, ...overrides.selectedReports },
+            formsData: { ...localFormsData, ...overrides.formsData },
+            formStatus: { ...localFormStatus, ...overrides.formStatus },
+            isActivated: overrides.isActivated !== undefined ? overrides.isActivated : isActivated,
+        };
+
+        // Save to localStorage
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(updatedData));
+
+        // Propagate to parent component (wizard)
+        if (onDataChange) onDataChange(updatedData);
+
+        return updatedData;
+    };
+
+    // Save basics handler
     const onSaveBasics = () => {
-        setFormData({
-            ...formData,
-            crew_count: crewCount,
-            passenger_count: passengerCount,
-            actual_draught: actualDraught,
-            air_draught: airDraught,
-            cargo_brief: cargoBrief,
-            port_call_purpose: portCallPurpose,
-        });
+        saveAllData();
         setBasicSaveMessage('Basic port call info saved locally.');
         setTimeout(() => setBasicSaveMessage(''), 3000);
     };
 
     // Toggle reporting checkbox
     const toggleReport = (id) => {
-        setSelectedReports((prev) => {
-            const newVal = { ...prev, [id]: !prev[id] };
-            return newVal;
-        });
+        const newSelected = { ...localSelectedReports, [id]: !localSelectedReports[id] };
+        setLocalSelectedReports(newSelected);
+        saveAllData({ selectedReports: newSelected });
     };
 
-    // Save individual form data locally
-    const onSaveForm = (id, data) => {
-        setFormsData((prev) => ({ ...prev, [id]: data }));
-        setFormStatus((prev) => ({ ...prev, [id]: 'completed' }));
+    // Save individual form data
+    const onSaveForm = (id, formData) => {
+        const newFormsData = { ...localFormsData, [id]: formData };
+        const newFormStatus = { ...localFormStatus, [id]: 'completed' };
+        setLocalFormsData(newFormsData);
+        setLocalFormStatus(newFormStatus);
+        saveAllData({ formsData: newFormsData, formStatus: newFormStatus });
         setFormSaveMessages((prev) => ({ ...prev, [id]: `${id.toUpperCase()} form saved locally.` }));
         setTimeout(() => {
             setFormSaveMessages((prev) => ({ ...prev, [id]: '' }));
         }, 3000);
     };
 
-    // Map ids to components, passing saved data and onSave callback
-    const renderForm = (id) => {
-        const commonProps = {
-            savedData: formsData[id],
-            onSave: (data) => onSaveForm(id, data),
-        };
-        switch (id) {
-            case 'dpg': return <DPGForm {...commonProps} />;
-            case 'cargo': return <CargoForm {...commonProps} />;
-            case 'shipStores': return <ShipStoresForm {...commonProps} />;
-            case 'crew': return <CrewForm {...commonProps} />;
-            case 'pax': return <PaxForm {...commonProps} />;
-            case 'security': return <SecurityForm {...commonProps} />;
-            default: return null;
+    // Reset all step 3 data locally and in localStorage
+    const resetStep3Data = () => {
+        if (window.confirm('Reset all Step 3 data? This cannot be undone.')) {
+            const resetData = {
+                basicInfo: {},
+                selectedReports: {},
+                formsData: {},
+                formStatus: {},
+                isActivated: false,
+            };
+            localStorage.removeItem(STORAGE_KEY);
+            setCrewCount('');
+            setPassengerCount('');
+            setActualDraught('');
+            setAirDraught('');
+            setCargoBrief('');
+            setPortCallPurpose('');
+            setLocalSelectedReports({});
+            setLocalFormsData({});
+            setLocalFormStatus({});
+            setBasicSaveMessage('');
+            setFormSaveMessages({});
+            if (onDataChange) onDataChange(resetData);
         }
     };
 
-    // Sidebar summary
-    const summaryItems = [
-        { label: 'Ship Name', value: formData.name || 'N/A' },
-        { label: 'IMO Number', value: formData.imo_no || 'N/A' },
-        { label: 'MMSI Number', value: formData.mmsi_no || 'N/A' },
-        { label: 'Voyage Number', value: formData.voyage_number || 'N/A' },
-        { label: 'Port of Call', value: formData.call_port?.name || 'N/A' },
-        { label: 'ETA', value: formData.eta || 'N/A' },
-        { label: 'ETD', value: formData.etd || 'N/A' },
-    ];
+    // Mark draft as activated and saved permanently locally
+    const activateAndSubmit = () => {
+        saveAllData({ isActivated: true });
+        alert('Port Call Activated & Submitted (saved locally).');
+    };
 
-    const onBack = () => goToStep(2);
-    const onConfirm = () => alert('Confirm & Activate functionality to be implemented');
-
+    // Render forms dynamically
+    const renderForm = (id) => {
+        const props = {
+            savedData: localFormsData[id],
+            onSave: (data) => onSaveForm(id, data),
+        };
+        switch (id) {
+            case 'dpg':
+                return <DPGForm {...props} />;
+            case 'cargo':
+                return <CargoForm {...props} />;
+            case 'shipStores':
+                return <ShipStoresForm {...props} />;
+            case 'crew':
+                return <CrewForm {...props} />;
+            case 'pax':
+                return <PaxForm {...props} />;
+            case 'security':
+                return <SecurityForm {...props} />;
+            default:
+                return null;
+        }
+    };
     return (
         <div className="step3-container">
             <header className="step3-header">
@@ -212,22 +268,22 @@ const Step3LandingPage = ({ formData, setFormData, goToStep }) => {
                             value={portCallPurpose}
                             onChange={(e) => {
                                 setPortCallPurpose(e.target.value);
-                                setFormData({ ...formData, port_call_purpose: e.target.value });
+                                onDataChange({ ...data, basicInfo: { ...basicInfo, port_call_purpose: e.target.value } });
                             }}
                         >
                             <option value="">Select purpose</option>
                             {PORT_CALL_PURPOSES.map((purpose) => (
-                                <option key={purpose} value={purpose}>{purpose}</option>
+                                <option key={purpose} value={purpose}>
+                                    {purpose}
+                                </option>
                             ))}
                         </select>
                     </section>
 
-                    {basicSaveMessage && (
-                        <div className="save-message">{basicSaveMessage}</div>
-                    )}
+                    {basicSaveMessage && <div className="save-message">{basicSaveMessage}</div>}
 
                     <button className="btn save-basics-btn" onClick={onSaveBasics}>
-                        Save Port Call Basic Info
+                        Save Basic Info
                     </button>
 
                     <section className="card reporting-checkboxes-card">
@@ -237,64 +293,56 @@ const Step3LandingPage = ({ formData, setFormData, goToStep }) => {
                                 <label key={id} className="reporting-label">
                                     <input
                                         type="checkbox"
-                                        checked={!!selectedReports[id]}
+                                        checked={!!localSelectedReports[id]}
                                         onChange={() => toggleReport(id)}
                                         className="reporting-checkbox"
                                     />
                                     {REPORTING_ICONS[id]}
                                     <span>{label}</span>
-                                    <span className={`status-indicator ${formStatus[id]}`}>
-                                        {formStatus[id]}
-                                    </span>
+                                    <span className={`status-indicator ${localFormStatus[id]}`}>{localFormStatus[id]}</span>
                                 </label>
                             ))}
                         </div>
                     </section>
 
-                    {Object.entries(selectedReports).map(
+                    {Object.entries(localSelectedReports).map(
                         ([id, selected]) =>
                             selected && (
                                 <section key={id} className="card form-wrapper">
                                     {renderForm(id)}
-                                    {formSaveMessages[id] && (
-                                        <div className="save-message">{formSaveMessages[id]}</div>
-                                    )}
+                                    {formSaveMessages[id] && <div className="save-message">{formSaveMessages[id]}</div>}
                                 </section>
                             )
                     )}
 
                     <div className="step3-navigation">
-                        <button className="btn btn-back" onClick={onBack}>
+                        <button className="btn btn-back" onClick={goToPrev}>
                             ← Back
                         </button>
-                        <button className="btn btn-confirm" onClick={onConfirm}>
-                            Confirm & Activate Port Call
+                        <button className="btn btn-confirm" onClick={activateAndSubmit} disabled={isActivated}>
+                            {isActivated ? 'Activated' : 'Activate & Submit'}
+                        </button>
+                    </div>
+
+                    <div style={{ marginTop: '1rem' }}>
+                        <button
+                            className="btn btn-reset"
+                            onClick={() => {
+                                if (window.confirm('Reset all Step 3 data? This cannot be undone.')) {
+                                    localStorage.removeItem(STORAGE_KEY);
+                                    window.location.reload();
+                                }
+                            }}
+                        >
+                            Reset Step 3 Data
                         </button>
                     </div>
                 </main>
 
-                <aside className="step3-sidebar">
-                    <h3>Port Call Summary</h3>
-                    <ul className="summary-list">
-                        {summaryItems.map(({ label, value }) => (
-                            <li key={label}>
-                                <strong>{label}:</strong> {value}
-                            </li>
-                        ))}
-                    </ul>
+                <Step3Sidebar formData={basicInfo} formStatus={formStatus} />
 
-                    <h4>Form Status</h4>
-                    <ul className="status-list">
-                        {REPORTING_CATEGORIES.map(({ id, label }) => (
-                            <li key={id}>
-                                {label}:{" "}
-                                <span className={`status-indicator ${formStatus[id]}`}>
-                                    {formStatus[id]}
-                                </span>
-                            </li>
-                        ))}
-                    </ul>
-                </aside>
+                
+
             </div>
         </div>
     );
