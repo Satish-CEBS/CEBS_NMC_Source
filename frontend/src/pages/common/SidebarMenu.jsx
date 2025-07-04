@@ -30,19 +30,6 @@ const menuData = [
         ],
     },
     {
-        label: 'FAL Form Submissions',
-        icon: <MdAssignment />,
-        items: [
-            { label: 'FAL Form 1 - General Declaration', path: '/fal1' },
-            { label: 'FAL Form 2 - Cargo Declaration', path: '/fal2' },
-            { label: 'FAL Form 3 - Ship\'s Stores Declaration', path: '/fal3' },
-            { label: 'FAL Form 4 - Crew\'s Effects Declaration', path: '/fal4' },
-            { label: 'FAL Form 5 - Crew List', path: '/fal5' },
-            { label: 'FAL Form 6 - Passenger List', path: '/fal6' },
-            { label: 'FAL Form 7 - Dangerous Goods Manifest', path: '/fal7' },
-        ],
-    },
-    {
         label: 'Crew & Passenger Management',
         icon: <MdPeople />,
         items: [
@@ -101,9 +88,22 @@ const menuData = [
         label: 'System Access',
         icon: <MdSettings />,
         items: [
-            { label: 'Login', path: '/' },
-            { label: 'Register', path: '/register' },
+            //{ label: 'Login', path: '/' },
+            //{ label: 'Register', path: '/register' },
             { label: 'Admin Panel', path: '/admin' },
+        ],
+    },
+    {
+        label: 'References FAL Form Submissions',
+        icon: <MdAssignment />,
+        items: [
+            { label: 'FAL Form 1 - General Declaration', path: '/fal1' },
+            { label: 'FAL Form 2 - Cargo Declaration', path: '/fal2' },
+            { label: 'FAL Form 3 - Ship\'s Stores Declaration', path: '/fal3' },
+            { label: 'FAL Form 4 - Crew\'s Effects Declaration', path: '/fal4' },
+            { label: 'FAL Form 5 - Crew List', path: '/fal5' },
+            { label: 'FAL Form 6 - Passenger List', path: '/fal6' },
+            { label: 'FAL Form 7 - Dangerous Goods Manifest', path: '/fal7' },
         ],
     },
 ];

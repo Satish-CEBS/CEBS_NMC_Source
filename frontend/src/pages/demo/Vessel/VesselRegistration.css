@@ -1,0 +1,131 @@
+/* === Layout fix === */
+.vessel-registration-layout {
+    display: flex;
+    height: 100vh;
+    background-color: #f5f8fc;
+}
+
+    /* Sidebar should have fixed width */
+    .vessel-registration-layout .sidebar {
+        width: 250px;
+        flex-shrink: 0;
+        background-color: #e6ddcf;
+        height: 100vh;
+        overflow-y: auto;
+    }
+
+    /* Main section should grow to fill */
+    .vessel-registration-layout .main-content {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        padding: 16px 24px;
+        box-sizing: border-box;
+        overflow-y: auto;
+    }
+
+/* === Tabs === */
+.tab-navigation {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 16px 0;
+    gap: 10px;
+}
+
+.tab-item {
+    padding: 10px 16px;
+    background: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    border: 1px solid #ddd;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+    .tab-item.active {
+        background: #16375c;
+        color: #fff;
+        border-color: #16375c;
+    }
+
+.tab-content {
+    background: #fff;
+    padding: 24px;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+}
+
+.tab-buttons {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 24px;
+    gap: 12px;
+}
+
+/* === Buttons === */
+.btn-primary {
+    background-color: #16375c;
+    color: white;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn-secondary {
+    background-color: #e0e0e0;
+    color: #333;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* Responsive Fixes */
+@media (max-width: 768px) {
+    .tab-item {
+        flex: 1 1 100%;
+        text-align: center;
+    }
+
+    .tab-buttons {
+        flex-direction: column;
+        align-items: stretch;
+    }
+}
+.review-section {
+    margin-bottom: 32px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #ccc;
+}
+
+    .review-section h3 {
+        font-size: 20px;
+        color: #16375c;
+        margin-bottom: 12px;
+        border-left: 4px solid #16375c;
+        padding-left: 12px;
+    }
+
+.review-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 12px 24px;
+}
+
+.review-field {
+    font-size: 14px;
+}
+
+.review-label {
+    font-weight: 600;
+    color: #333;
+}
+
+.review-value {
+    color: #555;
+}

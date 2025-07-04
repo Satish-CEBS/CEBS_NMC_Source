@@ -109,10 +109,25 @@ const VoyagesStep = ({ formData = {}, updateBasicInfo, goToStep }) => {
     useEffect(() => setLastPortResults(searchLocations(lastPortQuery)), [lastPortQuery]);
     useEffect(() => setNextPortResults(searchLocations(nextPortQuery)), [nextPortQuery]);
 
+
+    /*const getFlagImage = (countryCode3) => {
+        const code = country3to2[countryCode3] || countryCode3.toLowerCase();
+        //return flagMap[code] || null;
+   };*/
     const getFlagImage = (countryCode3) => {
+        if (!countryCode3) return flagMap['default']; // fallback default flag image
+        const code = country3to2[countryCode3] || countryCode3.toLowerCase();
+        console.log('Looking up flag for code:', code);
+        console.log('Available flag keys:', Object.keys(flagMap));
+        return flagMap[code] || flagMap['default'];
+    };
+
+    /*const getFlagImage = (countryCode3) => {
+        if (!countryCode3) return null; // early return if undefined or null
         const code = country3to2[countryCode3] || countryCode3.toLowerCase();
         return flagMap[code] || null;
-    };
+    };*/
+
 
     // Handler for selecting vessel from search dropdown
     const selectVessel = (v) => {
