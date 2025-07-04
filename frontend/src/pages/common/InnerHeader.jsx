@@ -1,60 +1,58 @@
-/**
- * @component   InnerHeader.jsx
- * @author      CEBS
- * @license     STRICTLY CONFIDENTIAL
- */
+// src/components/common/InnerHeader.jsx
 
 import React from 'react';
-import '../../pages/common/InnerHeader.css';
-import moeiLogo from '../../assets/moei-logo.png';
-import SearchIcon from '@mui/icons-material/Search';
-import LanguageIcon from '@mui/icons-material/Language';
-import HelpOutlineIcon from '@mui/icons-material/HelpOutline';
-import LogoutIcon from '@mui/icons-material/Logout';
-import HomeIcon from '@mui/icons-material/Home';
+import './InnerHeader.css';
 import { useNavigate } from 'react-router-dom';
-import { useTranslation } from 'react-i18next';
+import logo from '../../assets/moei-logo.png';
+import { FaHome, FaGlobe, FaQuestionCircle, FaSignOutAlt, FaSearch } from 'react-icons/fa';
 
 const InnerHeader = () => {
     const navigate = useNavigate();
-    const { i18n } = useTranslation();
 
+    const handleHomeClick = () => navigate('/dashboard');
     const handleLogout = () => {
         localStorage.clear();
-        sessionStorage.clear();
-        navigate('/');
+        navigate('/login');
     };
 
-    const toggleLanguage = () => {
-        const newLang = i18n.language === 'en' ? 'ar' : 'en';
-        i18n.changeLanguage(newLang);
-        document.body.dir = newLang === 'ar' ? 'rtl' : 'ltr';
-    };
+    // Extract user from localStorage
+    let userName = '';
+    let roleName = '';
+
+    try {
+        const rawUser = localStorage.getItem('user');
+        const user = rawUser ? JSON.parse(rawUser) : null;
+
+        if (user) {
+            userName = `${user.given_name || ''} ${user.surname || ''}`.trim();
+            roleName = (user.normalized_role || user.role_name || '').replace(/_/g, ' ').toUpperCase();
+        }
+    } catch (err) {
+        console.warn('Could not parse user:', err);
+    }
 
     return (
-        <div className="inner-header-wrapper">
-            <div className="inner-header-container">
-                <img
-                    src={moeiLogo}
-                    alt="MOEI Logo"
-                    className="inner-header-logo"
-                    onClick={() => navigate('/dashboard')}
-                    style={{ cursor: 'pointer' }}
-                />
-
-                <div className="inner-header-title">National Maritime Center</div>
-
-                <div className="inner-header-actions">
-                    <button className="header-btn" onClick={() => navigate('/dashboard')}>
-                        <HomeIcon fontSize="small" />
-                    </button>
-                    <button className="header-btn"><SearchIcon fontSize="small" /></button>
-                    <button className="header-btn" onClick={toggleLanguage}><LanguageIcon fontSize="small" /></button>
-                    <button className="header-btn"><HelpOutlineIcon fontSize="small" /></button>
-                    <button className="header-btn" onClick={handleLogout}><LogoutIcon fontSize="small" /></button>
+        <header className="inner-header">
+            <div className="left-section" onClick={handleHomeClick}>
+                <img src={logo} alt="MOEI Logo" className="moei-logo" />
+                <div className="title-container">
+                    <div className="main-title">National Maritime Center</div>
                 </div>
             </div>
-        </div>
+
+            <div className="right-section">
+                {userName && (
+                    <span className="user-info">
+                        {userName} ({roleName})
+                    </span>
+                )}
+                <FaHome title="Home" className="header-icon" onClick={handleHomeClick} />
+                <FaSearch title="Search" className="header-icon" />
+                <FaGlobe title="Language" className="header-icon" />
+                <FaQuestionCircle title="Help" className="header-icon" />
+                <FaSignOutAlt title="Logout" className="header-icon" onClick={handleLogout} />
+            </div>
+        </header>
     );
 };
 

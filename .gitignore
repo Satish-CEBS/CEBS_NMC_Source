@@ -7,3 +7,8 @@ logs/
 .vscode/ 
 *.log 
 .vs/ 
+*.sql
+DBScripts/*.sql
+*.json
+/frontend/src/pages/dashboard/*.json
+/backend/data/*.json

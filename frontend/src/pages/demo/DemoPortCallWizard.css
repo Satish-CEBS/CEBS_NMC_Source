@@ -1,0 +1,46 @@
+.wizard-container {
+    padding: 32px;
+    background: #f4f6f9;
+    min-height: 100vh;
+}
+
+.wizard-title {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 24px;
+    text-align: center;
+    color: #003366;
+}
+
+.wizard-step {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.form-card {
+    padding: 24px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.json-preview {
+    background: #eef3f8;
+    border: 1px solid #cfdbe6;
+    border-radius: 8px;
+    padding: 16px;
+    font-family: monospace;
+    font-size: 14px;
+    margin-top: 16px;
+    white-space: pre-wrap;
+}
+
+.back-button {
+    margin-top: 16px;
+    background: #c5d1e3;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+}

@@ -1,0 +1,74 @@
+.pax-form-container {
+	background: #e3f0f7;
+	border: 1px solid #577481;
+	border-radius: 6px;
+	padding: 1rem;
+}
+
+.pax-new-entry {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 8px;
+	margin-bottom: 1rem;
+}
+
+	.pax-new-entry input[type="text"],
+	.pax-new-entry input[type="date"],
+	.pax-new-entry select {
+		flex: 1 1 140px;
+		padding: 6px;
+		border-radius: 5px;
+		border: 1px solid #ccc;
+	}
+
+	.pax-new-entry button {
+		padding: 8px 12px;
+		background: #0061b0;
+		color: white;
+		border: none;
+		border-radius: 5px;
+		cursor: pointer;
+		flex: 1 1 120px;
+	}
+
+.pax-table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+	.pax-table th,
+	.pax-table td {
+		border: 1px solid #577481;
+		padding: 8px;
+		text-align: left;
+	}
+
+	.pax-table th {
+		background-color: #577481;
+		color: white;
+	}
+
+.pax-actions {
+	margin-top: 1rem;
+	display: flex;
+	justify-content: flex-end;
+	gap: 12px;
+}
+
+	.pax-actions button {
+		padding: 8px 16px;
+		border-radius: 5px;
+		border: none;
+		cursor: pointer;
+		font-weight: 600;
+	}
+
+		.pax-actions button.danger {
+			background-color: #dc3545;
+			color: white;
+		}
+
+		.pax-actions button:not(.danger) {
+			background-color: #0061b0;
+			color: white;
+		}

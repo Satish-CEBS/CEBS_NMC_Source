@@ -1,0 +1,73 @@
+.cargo-form-container {
+    background: #e3f0f7;
+    border: 1px solid #577481;
+    border-radius: 6px;
+    padding: 1rem;
+}
+
+.cargo-new-entry {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 1rem;
+}
+
+    .cargo-new-entry input[type="text"],
+    .cargo-new-entry input[type="number"] {
+        flex: 1 1 130px;
+        padding: 6px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+    }
+
+    .cargo-new-entry button {
+        padding: 8px 12px;
+        background: #0061b0;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        flex: 1 1 120px;
+    }
+
+.cargo-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+    .cargo-table th,
+    .cargo-table td {
+        border: 1px solid #577481;
+        padding: 8px;
+        text-align: left;
+    }
+
+    .cargo-table th {
+        background-color: #577481;
+        color: white;
+    }
+
+.cargo-actions {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+}
+
+    .cargo-actions button {
+        padding: 8px 16px;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+        font-weight: 600;
+    }
+
+        .cargo-actions button.danger {
+            background-color: #dc3545;
+            color: white;
+        }
+
+        .cargo-actions button:not(.danger) {
+            background-color: #0061b0;
+            color: white;
+        }

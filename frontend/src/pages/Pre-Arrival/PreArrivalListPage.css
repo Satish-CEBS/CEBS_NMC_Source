@@ -1,0 +1,26 @@
+.table-list {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+    .table-list th, .table-list td {
+        padding: 12px;
+        border: 1px solid #e2e2e2;
+        text-align: left;
+    }
+
+    .table-list th {
+        background-color: #f0f6ff;
+        color: #333;
+    }
+
+.status-draft {
+    color: orange;
+    font-weight: bold;
+}
+
+.status-submitted {
+    color: green;
+    font-weight: bold;
+}

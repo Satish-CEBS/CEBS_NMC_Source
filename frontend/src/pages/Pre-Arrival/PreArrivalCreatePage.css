@@ -1,0 +1,39 @@
+/* PreArrivalCreatePage.css */
+
+.prearrival-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.prearrival-content-area {
+    display: flex;
+    flex: 1;
+    background-color: #f5f8fc;
+}
+
+.prearrival-form-container {
+    flex: 1;
+    padding: 10px;
+    background-color: #ffffff;
+    margin: 5px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.prearrival-step-indicator {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    color: #284fcf;
+}
+
+.input-error {
+    border: 1px solid red !important;
+    background-color: #fff0f0;
+}
+
+.react-select-error .react-select__control {
+    border: 1px solid red !important;
+    background-color: #fff0f0;
+}

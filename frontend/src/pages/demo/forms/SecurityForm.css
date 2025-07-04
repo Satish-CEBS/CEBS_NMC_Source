@@ -1,0 +1,46 @@
+.security-form-container {
+    background: #e3f0f7;
+    border: 1px solid #577481;
+    border-radius: 6px;
+    padding: 1rem;
+}
+
+    .security-form-container label {
+        display: block;
+        margin-bottom: 1rem;
+        font-weight: 600;
+        color: #2c3e50;
+    }
+
+    .security-form-container input[type="text"],
+    .security-form-container input[type="date"],
+    .security-form-container select,
+    .security-form-container textarea {
+        width: 100%;
+        padding: 8px;
+        margin-top: 0.25rem;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        resize: vertical;
+        font-size: 1rem;
+    }
+
+    .security-form-container input[type="checkbox"] {
+        margin-right: 8px;
+    }
+
+    .security-form-container button {
+        margin-top: 1rem;
+        padding: 12px 24px;
+        background-color: #0061b0;
+        color: white;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        font-weight: 700;
+        transition: background-color 0.3s ease;
+    }
+
+        .security-form-container button:hover {
+            background-color: #004880;
+        }

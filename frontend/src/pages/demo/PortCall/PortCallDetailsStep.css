@@ -1,0 +1,47 @@
+.port-call-details-container {
+    padding: 2rem;
+    background: #f8f9fa;
+    border-radius: 6px;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 1rem;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: #222;
+}
+
+input, select {
+    margin-top: 4px;
+    padding: 8px;
+    font-size: 0.9rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.wizard-buttons {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+    .wizard-buttons button {
+        background-color: #004080;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        font-weight: bold;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+        .wizard-buttons button:hover {
+            background-color: #0066cc;
+        }

@@ -14,13 +14,16 @@ exports.login = async (req, res) => {
 
     try {
         const userRes = await db.query(
-            `SELECT u.*, p.hash, r.name AS role_name
+            `SELECT u.*, p.hash, r.name AS role_name, r.normalized_name, 
+          per.given_name, per.surname
    FROM "user" u
    JOIN password p ON u.password_id = p.password_id
    JOIN role r ON u.role_id = r.role_id
-   WHERE normalized_email = $1`,
+   LEFT JOIN person per ON u.person_id = per.person_id
+   WHERE u.normalized_email = $1`,
             [email.toUpperCase()]
         );
+
 
     if (userRes.rows.length === 0) {
       return res.status(401).json({ message: 'Invalid credentials' });
@@ -30,13 +33,26 @@ exports.login = async (req, res) => {
     const isMatch = await bcrypt.compare(password, user.hash);
     if (!isMatch) return res.status(401).json({ message: 'Invalid credentials' });
 
-    const token = jwt.sign(
-      { userId: user.user_id, role: user.role_name },
-      process.env.JWT_SECRET,
-      { expiresIn: '2h' }
-    );
+        const token = jwt.sign(
+            { userId: user.user_id, role: user.role_name },
+            process.env.JWT_SECRET,
+            { expiresIn: '2h' }
+        );
 
-    res.json({ token, role: user.role_name, email: user.email });
+        res.json({
+            token,
+            user: {
+                email: user.email,
+                role_id: user.role_id,
+                role_name: user.role_name,
+                normalized_role: user.normalized_name,
+                person_id: user.person_id,
+                given_name: user.given_name,
+                surname: user.surname
+            }
+        });
+
+
   } catch (err) {
     console.error(err);
     res.status(500).json({ message: 'Login failed' });

@@ -27,21 +27,27 @@ const Login = () => {
     };
 
     const handleLogin = async (e) => {
-        e.preventDefault(); // ✅ Prevent page reload
+        e.preventDefault();
 
         try {
             const response = await axios.post(`${process.env.REACT_APP_API_BASE_URL}/auth/login`, formData);
 
+            const { token, user } = response.data;
 
-            // Store token and redirect
-            const { token } = response.data;
+            if (user) {
+                localStorage.setItem('user', JSON.stringify(user)); // ✅ Valid JSON string
+            }
+
             localStorage.setItem('token', token);
+
             navigate('/dashboard');
         } catch (err) {
             console.error('Login failed:', err);
             alert('Invalid credentials. Please try again.');
         }
     };
+
+
 
     return (
         <>

@@ -1,0 +1,81 @@
+.crew-form-container {
+    background: #e3f0f7;
+    border: 1px solid #577481;
+    border-radius: 6px;
+    padding: 1rem;
+}
+
+.crew-new-member {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 1rem;
+}
+
+    .crew-new-member input[type="text"],
+    .crew-new-member input[type="date"],
+    .crew-new-member select {
+        flex: 1 1 140px;
+        padding: 6px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+    }
+
+    .crew-new-member label {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        font-weight: 600;
+    }
+
+    .crew-new-member button {
+        padding: 8px 12px;
+        background: #0061b0;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        flex: 1 1 130px;
+    }
+
+.crew-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+    .crew-table th,
+    .crew-table td {
+        border: 1px solid #577481;
+        padding: 8px;
+        text-align: left;
+    }
+
+    .crew-table th {
+        background-color: #577481;
+        color: white;
+    }
+
+.crew-actions {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+}
+
+    .crew-actions button {
+        padding: 8px 16px;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+        font-weight: 600;
+    }
+
+        .crew-actions button.danger {
+            background-color: #dc3545;
+            color: white;
+        }
+
+        .crew-actions button:not(.danger) {
+            background-color: #0061b0;
+            color: white;
+        }

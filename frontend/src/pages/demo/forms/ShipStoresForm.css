@@ -1,0 +1,73 @@
+.shipstores-form-container {
+    background: #e3f0f7;
+    border: 1px solid #577481;
+    border-radius: 6px;
+    padding: 1rem;
+}
+
+.shipstores-new-entry {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 1rem;
+}
+
+    .shipstores-new-entry input[type="text"],
+    .shipstores-new-entry input[type="number"] {
+        flex: 1 1 130px;
+        padding: 6px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+    }
+
+    .shipstores-new-entry button {
+        padding: 8px 12px;
+        background: #0061b0;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        flex: 1 1 120px;
+    }
+
+.shipstores-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+    .shipstores-table th,
+    .shipstores-table td {
+        border: 1px solid #577481;
+        padding: 8px;
+        text-align: left;
+    }
+
+    .shipstores-table th {
+        background-color: #577481;
+        color: white;
+    }
+
+.shipstores-actions {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+}
+
+    .shipstores-actions button {
+        padding: 8px 16px;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+        font-weight: 600;
+    }
+
+        .shipstores-actions button.danger {
+            background-color: #dc3545;
+            color: white;
+        }
+
+        .shipstores-actions button:not(.danger) {
+            background-color: #0061b0;
+            color: white;
+        }

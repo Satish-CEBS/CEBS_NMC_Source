@@ -1,43 +1,53 @@
-/**
- * @component   InnerSubHeader.jsx
- * @author      CEBS
- * @license     STRICTLY CONFIDENTIAL
- */
+﻿// src/components/common/InnerSubHeader.jsx
 
 import React from 'react';
-import { Link } from 'react-router-dom';
 import './InnerSubHeader.css';
-import AddCircleOutlineIcon from '@mui/icons-material/AddCircleOutline';
+import { FaPlusCircle } from 'react-icons/fa';
+import { useNavigate, useLocation } from 'react-router-dom';
 
 const InnerSubHeader = () => {
-    const user = JSON.parse(localStorage.getItem('user') || '{}');
-    const roleId = user?.role_id || '';
+    const navigate = useNavigate();
+    const location = useLocation();
 
-    // Roles allowed: superadmin, admin, port
-    const allowedRoles = [
-        '8712cc4b-b8a6-45cc-9b2b-2feced5896a3', // Superadmin
-        'b22d4284-38b1-43b8-9270-d2c130285aaf', // Admin
-        'f4183b29-cd17-4511-aa3b-f240987d2e99'  // Port
-    ];
+    const rawUser = localStorage.getItem('user');
+    let user = {};
+    try {
+        user = rawUser ? JSON.parse(rawUser) : {};
+    } catch (err) {
+        console.warn('Could not parse user from localStorage:', err);
+    }
 
-    const canCreatePreArrival = allowedRoles.includes(roleId);
+    const role = (user.normalized_role || user.role || '').toUpperCase();
+
+    const isPrivileged = ['SUPER_ADMIN', 'ADMIN', 'PORT'].includes(role);
+
+    const showButton = isPrivileged && !location.pathname.includes('/prearrival/create');
+
+    const handleCreateNew = () => {
+        navigate('/portcall-wizard');
+    };
 
     return (
-        <div className="inner-sub-header">
-            <div className="inner-sub-header-left">
-                <span className="inner-tagline">
-                    From Port Call to Clearance - <strong>One Window. One Nation. AI-Powered.</strong>
-                </span>
-            </div>
-
-            {canCreatePreArrival && (
-                <div className="inner-sub-header-right">
-                    <Link to="/prearrival/create" className="inner-sub-header-btn">
-                        <AddCircleOutlineIcon fontSize="small" style={{ marginRight: '6px' }} />
-                        Create New Pre-arrival Notification
-                    </Link>
-                </div>
+        <div className="inner-subheader">
+            {showButton && (
+                /*<button
+                    className="create-prearrival-btn"
+                    onClick={() => navigate('/prearrival/create')}
+                >
+                    <FaPlusCircle className="btn-icon" /> Create New Pre-arrival Notification
+                </button>*/
+                <button
+                    variant="contained"
+                    color="primary"
+                    startIcon={<FaPlusCircle />}
+                    onClick={handleCreateNew}
+                >
+                    Create New Pre-arrival Notification
+                </button>
             )}
+            <div className="nmc-tagline">
+                From Port Call to Clearance – <strong>One Window. One Nation. AI-Powered.</strong>
+            </div>
         </div>
     );
 };
