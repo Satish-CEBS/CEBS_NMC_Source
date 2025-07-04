@@ -21,6 +21,8 @@ import PreArrivalListPage from './pages/demo/PortCall/PreArrivalListPage';
 import PreArrivalViewPage from './pages/demo/PortCall/PreArrivalViewPage';
 
 import VesselRegistration from './pages/demo/Vessel/VesselRegistration';
+import VesselListPage from './pages/demo/Vessel/VesselListPage';
+import VesselViewPage from './pages/demo/Vessel/VesselViewPage';
 
 
 const App = () => (
@@ -39,6 +41,8 @@ const App = () => (
             <Route path="/prearrival-view/:id" element={<PreArrivalViewPage />} />
 
             <Route path="/vessel-registration" element={<VesselRegistration />} />
+            <Route path="/vessel-dashboard" element={<VesselListPage />} />
+            <Route path="/vessel/view/:id" element={<VesselViewPage />} />
 
 
         </Routes>

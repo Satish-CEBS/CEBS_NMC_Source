@@ -19,14 +19,21 @@ import { NavLink } from 'react-router-dom';
 
 const menuData = [
     {
-        label: 'Vessel & Port Call Management',
+        label: 'Vessel Management',
         icon: <MdDirectionsBoat />,
         items: [
             { label: 'Vessel Registration', path: '/vessel-registration' },
-            { label: 'Port Call Request', path: '/portcall-wizard' },
-            { label: 'Port Call Status Dashboard', path: '/portcall-dashboard' },
+            { label: 'Vessel Dashboard', path: '/vessel-dashboard' },
             { label: 'Vessel Arrival Notification', path: '/vessel-arrival' },
             { label: 'Vessel Departure Notification', path: '/vessel-departure' },
+        ],
+    },
+    {
+        label: 'Port Call Management',
+        icon: <MdDirectionsBoat />,
+        items: [
+            { label: 'Port Call Request', path: '/portcall-wizard' },
+            { label: 'Port Call Status Dashboard', path: '/portcall-dashboard' },
         ],
     },
     {

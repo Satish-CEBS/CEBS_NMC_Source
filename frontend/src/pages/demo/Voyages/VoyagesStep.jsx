@@ -4,14 +4,44 @@ import locationsList from '../../../mockData/locations.json';
 import './VoyagesStep.css';
 
 const country3to2 = {
-    ARE: 'ae', BHS: 'bs', PAN: 'pa', DNK: 'dk', LBR: 'lr',
-    USA: 'us', GBR: 'gb', ITA: 'it', SGP: 'sg', KOR: 'kr',
-    CHN: 'cn', BRA: 'br', MNE: 'me', FRA: 'fr', HKG: 'hk',
-    IND: 'in', JPN: 'jp', SAU: 'sa', NLD: 'nl', DEU: 'de',
-    ESP: 'es', PRT: 'pt', TUR: 'tr', GRC: 'gr', POL: 'pl',
-    UKR: 'ua', RUS: 'ru', ZAF: 'za', OMN: 'om', QAT: 'qa',
-    BHR: 'bh', KWT: 'kw', IRN: 'ir', IRQ: 'iq', YEM: 'ye',
+    ARE: 'ae',  // United Arab Emirates
+    BHS: 'bs',  // Bahamas
+    PAN: 'pa',  // Panama
+    DNK: 'dk',  // Denmark
+    LBR: 'lr',  // Liberia
+    USA: 'us',  // United States
+    GBR: 'gb',  // United Kingdom
+    ITA: 'it',  // Italy
+    SGP: 'sg',  // Singapore
+    KOR: 'kr',  // South Korea
+    CHN: 'cn',  // China
+    BRA: 'br',  // Brazil
+    MNE: 'me',  // Montenegro
+    FRA: 'fr',  // France
+    HKG: 'hk',  // Hong Kong
+    IND: 'in',  // India
+    JPN: 'jp',  // Japan
+    SAU: 'sa',  // Saudi Arabia
+    NLD: 'nl',  // Netherlands
+    DEU: 'de',  // Germany
+    ESP: 'es',  // Spain
+    PRT: 'pt',  // Portugal
+    TUR: 'tr',  // Turkey
+    GRC: 'gr',  // Greece
+    POL: 'pl',  // Poland
+    UKR: 'ua',  // Ukraine
+    RUS: 'ru',  // Russia
+    ZAF: 'za',  // South Africa
+    OMN: 'om',  // Oman
+    QAT: 'qa',  // Qatar
+    BHR: 'bh',  // Bahrain
+    KWT: 'kw',  // Kuwait
+    IRN: 'ir',  // Iran
+    IRQ: 'iq',  // Iraq
+    YEM: 'ye',  // Yemen
+    PAK: 'pk',  // Pakistan
 };
+
 
 const importAllFlags = (r) => {
     let flags = {};

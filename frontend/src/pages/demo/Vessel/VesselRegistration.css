@@ -129,3 +129,146 @@
 .review-value {
     color: #555;
 }
+.main-layout {
+    display: flex;
+    flex-direction: row;
+    min-height: 100vh;
+}
+
+.main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: #f4f7fa;
+    padding: 20px;
+    overflow-x: hidden;
+}
+
+.content-card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.filter-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+    .filter-row input,
+    .filter-row select {
+        padding: 8px 12px;
+        min-width: 180px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+.vessel-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+    .vessel-table th,
+    .vessel-table td {
+        padding: 10px;
+        border: 1px solid #ccc;
+        text-align: left;
+        font-size: 14px;
+    }
+
+    .vessel-table th {
+        background-color: #f0f0f0;
+        font-weight: 600;
+    }
+
+.pagination-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    margin-top: 20px;
+}
+.vessel-list-page {
+    padding: 1rem 2rem;
+    background-color: #f9f9f9;
+}
+
+.filter-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+    .filter-grid input,
+    .filter-grid select {
+        padding: 8px;
+        min-width: 180px;
+        font-size: 14px;
+    }
+
+.vessel-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+}
+
+    .vessel-table th, .vessel-table td {
+        border: 1px solid #ddd;
+        padding: 10px;
+        font-size: 14px;
+        text-align: left;
+    }
+
+    .vessel-table th {
+        background-color: #f0f0f0;
+        font-weight: bold;
+    }
+
+    .vessel-table tbody tr:hover {
+        background-color: #f5f5f5;
+    }
+.vessel-list-layout {
+    display: flex;
+    min-height: 100vh;
+}
+
+.vessel-list-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.inner-content {
+    padding: 1rem 2rem;
+    flex-grow: 1;
+    background-color: #f9f9f9;
+}
+
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.create-button {
+    padding: 6px 12px;
+    font-size: 13px;
+}
+
+.view-btn {
+    padding: 4px 8px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+    .view-btn:hover {
+        background-color: #0056b3;
+    }
