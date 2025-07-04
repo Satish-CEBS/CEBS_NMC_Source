@@ -23,8 +23,8 @@ const menuData = [
         icon: <MdDirectionsBoat />,
         items: [
             { label: 'Vessel Registration', path: '/vessel-registration' },
-            { label: 'Port Call Request', path: '/port-call-request' },
-            { label: 'Port Call Status Dashboard', path: '/port-call-status' },
+            { label: 'Port Call Request', path: '/portcall-wizard' },
+            { label: 'Port Call Status Dashboard', path: '/portcall-dashboard' },
             { label: 'Vessel Arrival Notification', path: '/vessel-arrival' },
             { label: 'Vessel Departure Notification', path: '/vessel-departure' },
         ],

@@ -9,7 +9,7 @@ import InnerHeader from '../common/InnerHeader';
 import InnerSubHeader from '../common/InnerSubHeader';
 import SidebarMenu from '../common/SidebarMenu';
 import Footer from '../common/Footer';
-import './PreArrivalListPage.css';
+import './PreArrivalCreatePage.css';
 
 const PreArrivalListPage = () => {
     const [records, setRecords] = useState([]);

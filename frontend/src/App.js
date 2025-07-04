@@ -16,6 +16,8 @@ import ViewPreArrival from './pages/Pre-Arrival/ViewPreArrival';
 import PreArrivalCreatePage from './pages/Pre-Arrival/PreArrivalCreatePage';
 import axios from 'axios';
 import DemoPortCallWizard from './pages/demo/DemoPortCallWizard';
+import PreArrivalListPage from './pages/demo/PortCall/PreArrivalListPage';
+import PreArrivalViewPage from './pages/demo/PortCall/PreArrivalViewPage';
 
 const App = () => (
 
@@ -28,6 +30,8 @@ const App = () => (
             <Route path="/prearrival/view/:id" element={<ViewPreArrival />} />
             <Route path="/prearrival/create" element={<PreArrivalCreatePage />} />
             <Route path="/portcall-wizard" element={<DemoPortCallWizard />} />
+            <Route path="/portcall-dashboard" element={<PreArrivalListPage />} />
+            <Route path="/prearrival-view/:id" element={<PreArrivalViewPage />} />
 
         </Routes>
     </Router>
