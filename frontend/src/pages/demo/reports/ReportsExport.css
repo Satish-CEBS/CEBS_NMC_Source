@@ -1,0 +1,119 @@
+/* ------------------------------------------------------------------------
+ * @author      CEBS Worldwide
+ * @copyright   © 2025 CEBS Worldwide. All rights reserved.
+ * @license     STRICTLY CONFIDENTIAL
+ * ------------------------------------------------------------------------
+ * Styling for ReportsExportPage.jsx
+ */
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f9fc;
+}
+
+.dashboard-body {
+  display: flex;
+  flex: 1;
+}
+
+.dashboard-content {
+  flex-grow: 1;
+  padding: 20px 30px;
+  background-color: #fff;
+}
+
+.reports-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.reports-header select,
+.reports-header input[type="date"],
+.reports-header button {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.reports-header button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.reports-header button:hover {
+  background-color: #0056b3;
+}
+
+.reports-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #ffffff;
+  margin-top: 10px;
+  border-radius: 6px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
+}
+
+.reports-table thead {
+  background-color: #f1f3f5;
+  font-weight: bold;
+}
+
+.reports-table th,
+.reports-table td {
+  padding: 12px 14px;
+  border: 1px solid #dee2e6;
+  font-size: 14px;
+  text-align: left;
+}
+
+.reports-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.reports-table tbody tr:hover {
+  background-color: #f0f4fa;
+  transition: 0.3s;
+}
+
+.no-data {
+  padding: 30px;
+  text-align: center;
+  font-size: 16px;
+  color: #888;
+  background: #fff;
+  border-radius: 6px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .reports-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .reports-header select,
+  .reports-header input,
+  .reports-header button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .dashboard-content {
+    padding: 15px;
+  }
+
+  .reports-table {
+    font-size: 13px;
+  }
+}

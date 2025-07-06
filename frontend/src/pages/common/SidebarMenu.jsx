@@ -19,6 +19,29 @@ import { NavLink } from 'react-router-dom';
 
 const menuData = [
     {
+        label: 'Pre-Arrival Notification',
+        icon: <MdDirectionsBoat />,
+        items: [
+            { label: 'Pre-Arrival Dashboard', path:'/prearrival-dashboard' },
+            { label: 'Pre-Arrival List', path: '/prearrival-list' },
+            { label: 'New Pre-Arrival Notification', path: '/prearrival-wizard' },            
+        ],
+    },
+    {
+        label: 'Port Call Management',
+        icon: <MdDirectionsBoat />,
+        items: [
+            { label: 'Port Call Management Dashboard', path: '/portcall-dashboard' },
+            { label: 'New Port Call Notification', path: '/portcall-wizard' },
+            { label: 'Arrival at anchorage', path: '' },
+            { label: 'Pilot boarding', path: '' },
+            { label: 'Berthing', path: '' },
+            { label: 'Cargo operations', path: '' },
+            { label: 'Departure and clearance', path: '' },
+
+        ],
+    },
+    {
         label: 'Vessel Management',
         icon: <MdDirectionsBoat />,
         items: [
@@ -26,51 +49,6 @@ const menuData = [
             { label: 'Vessel Dashboard', path: '/vessel-dashboard' },
             { label: 'Vessel Arrival Notification', path: '/vessel-arrival' },
             { label: 'Vessel Departure Notification', path: '/vessel-departure' },
-        ],
-    },
-    {
-        label: 'Port Call Management',
-        icon: <MdDirectionsBoat />,
-        items: [
-            { label: 'Port Call Request', path: '/portcall-wizard' },
-            { label: 'Port Call Status Dashboard', path: '/portcall-dashboard' },
-        ],
-    },
-    {
-        label: 'Crew & Passenger Management',
-        icon: <MdPeople />,
-        items: [
-            { label: 'Crew Manifest', path: '/crew-manifest' },
-            { label: 'Passenger Manifest', path: '/passenger-manifest' },
-            { label: 'Certificate Upload', path: '/certificate-upload' },
-        ],
-    },
-    {
-        label: 'Cargo & Dangerous Goods',
-        icon: <MdLocalShipping />,
-        items: [
-            { label: 'Cargo Manifest', path: '/cargo-manifest' },
-            { label: 'Dangerous Goods Declaration', path: '/dg-declaration' },
-            { label: 'Container Information', path: '/container-info' },
-        ],
-    },
-    {
-        label: 'Certificates & Documentation',
-        icon: <MdDescription />,
-        items: [
-            { label: 'Ship Certificates Upload', path: '/ship-certificates' },
-            { label: 'Company Registration', path: '/company-registration' },
-            { label: 'Flag State Documents', path: '/flag-documents' },
-        ],
-    },
-    {
-        label: 'Agency Dashboards',
-        icon: <MdDashboard />,
-        items: [
-            { label: 'Customs Clearance', path: '/customs' },
-            { label: 'Immigration Clearance', path: '/immigration' },
-            { label: 'Port Authority Dashboard', path: '/port-authority' },
-            { label: 'Maritime Health Authority', path: '/maritime-health' },
         ],
     },
     {
@@ -114,7 +92,6 @@ const menuData = [
         ],
     },
 ];
-
 const SidebarMenu = () => {
     const [expandedIndex, setExpandedIndex] = useState(null);
 

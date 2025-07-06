@@ -1,12 +1,14 @@
 ﻿import React, { useState, useEffect } from 'react';
-import InnerHeader from '../common/InnerHeader';
-import InnerSubHeader from '../common/InnerSubHeader';
-import SidebarMenu from '../common/SidebarMenu';
-import Footer from '../common/Footer';
+import InnerHeader from '../../common/InnerHeader';
+import InnerSubHeader from '../../common/InnerSubHeader';
+import SidebarMenu from '../../common/SidebarMenu';
+import Footer from '../../common/Footer';
 
-import VoyagesStep from './Voyages/VoyagesStep';
-import PortCallDetailsStep from './PortCall/PortCallDetailsStep';
+import VoyagesStep from '../Voyages/VoyagesStep';
+import PortCallDetailsStep from './PortCallDetailsStep';
 import Step3LandingPage from './Step3LandingPage';
+import Step4ClearanceBilling from './Step4ClearanceBilling';
+import Step5ReviewSubmit from './Step5ReviewSubmit';
 
 import './DemoPortCallWizard.css';
 
@@ -15,7 +17,6 @@ const STORAGE_KEY = 'NMC_FORM_DATA';
 const DemoPortCallWizard = () => {
     const [currentStep, setCurrentStep] = useState(1);
 
-    // Centralized form data with nested basicInfo, selectedReports, formsData, formStatus
     const [formData, setFormData] = useState(() => {
         const saved = localStorage.getItem(STORAGE_KEY);
         if (saved) {
@@ -26,17 +27,16 @@ const DemoPortCallWizard = () => {
             selectedReports: {},
             formsData: {},
             formStatus: {},
+            clearance: {},
             isActivated: false,
         };
     });
 
-    // Persist formData to localStorage on change
     useEffect(() => {
         localStorage.setItem(STORAGE_KEY, JSON.stringify(formData));
         console.log('Saved formData to localStorage:', formData);
     }, [formData]);
 
-    // Update entire formData object
     const updateFormData = (updatedData) => {
         setFormData((prev) => {
             const newData = { ...prev, ...updatedData };
@@ -45,7 +45,6 @@ const DemoPortCallWizard = () => {
         });
     };
 
-    // Specifically update basicInfo inside formData
     const updateBasicInfo = (basicInfo) => {
         setFormData((prev) => {
             const newData = { ...prev, basicInfo };
@@ -54,14 +53,27 @@ const DemoPortCallWizard = () => {
         });
     };
 
-    // Save Draft
+    const updateClearance = (clearance) => {
+        setFormData((prev) => {
+            const newData = { ...prev, clearance };
+            console.log('Updated clearance info:', clearance);
+            return newData;
+        });
+    };
+
+    const activateAndSubmit = () => {
+        const finalData = { ...formData, isActivated: true };
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(finalData));
+        setFormData(finalData);
+        console.log('Port Call Final Submission:', finalData);
+        window.location.href = '/dashboard';
+    };
+
     const saveDraft = () => {
         localStorage.setItem(STORAGE_KEY, JSON.stringify(formData));
-        alert('Draft saved locally.');
         console.log('Draft saved:', formData);
     };
 
-    // Reset Draft
     const resetDraft = () => {
         if (window.confirm('Are you sure you want to reset the entire draft? This will erase all your data.')) {
             localStorage.removeItem(STORAGE_KEY);
@@ -70,18 +82,12 @@ const DemoPortCallWizard = () => {
                 selectedReports: {},
                 formsData: {},
                 formStatus: {},
+                clearance: {},
                 isActivated: false,
             });
             setCurrentStep(1);
             console.log('Draft reset and localStorage cleared');
         }
-    };
-
-    // Activate & Submit
-    const activateAndSubmit = () => {
-        alert('Port Call Activated & Submitted (saved locally).');
-        setFormData((prev) => ({ ...prev, isActivated: true }));
-        console.log('Port Call Activated:', formData);
     };
 
     const goToStep = (stepNum) => {
@@ -98,15 +104,9 @@ const DemoPortCallWizard = () => {
                 <SidebarMenu />
 
                 <main className="dashboard-content">
-                    <div
-                        className="wizard-controls"
-                        style={{ display: 'flex', justifyContent: 'flex-end', gap: '1rem', marginBottom: '1rem' }}
-                    >
+                    <div className="wizard-controls" style={{ display: 'flex', justifyContent: 'flex-end', gap: '1rem', marginBottom: '1rem' }}>
                         <button onClick={saveDraft}>Save Draft</button>
                         <button onClick={resetDraft}>Reset Draft</button>
-                        <button onClick={activateAndSubmit} disabled={formData.isActivated}>
-                            {formData.isActivated ? 'Activated' : 'Activate & Submit'}
-                        </button>
                     </div>
 
                     {currentStep === 1 && (
@@ -130,6 +130,22 @@ const DemoPortCallWizard = () => {
                             data={formData}
                             onDataChange={updateFormData}
                             goToStep={goToStep}
+                        />
+                    )}
+
+                    {currentStep === 4 && (
+                        <Step4ClearanceBilling
+                            data={formData.clearance || {}}
+                            updateClearance={updateClearance}
+                            goToStep={goToStep}
+                        />
+                    )}
+
+                    {currentStep === 5 && (
+                        <Step5ReviewSubmit
+                            data={formData}
+                            goToStep={goToStep}
+                            onFinalSubmit={activateAndSubmit}
                         />
                     )}
                 </main>

@@ -152,7 +152,7 @@ const VesselViewPage = () => {
                     )}
 
                     <div style={{ marginTop: '2rem' }}>
-                        <button onClick={() => navigate('/vessel-list')}>⬅ Back to Vessel List</button>
+                        <button onClick={() => navigate('/vessel-dashboard')}>⬅ Back to Vessel List</button>
                     </div>
                 </div>
                 <Footer />

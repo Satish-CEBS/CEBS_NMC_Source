@@ -1,0 +1,94 @@
+/* ------------------------------------------------------------------------
+ * @author      CEBS Worldwide
+ * @copyright   © 2025 CEBS Worldwide. All rights reserved.
+ * @license     STRICTLY CONFIDENTIAL
+ * ------------------------------------------------------------------------ */
+
+.audit-logs-container {
+  padding: 1.5rem;
+  background-color: #f4f7fc;
+  min-height: 100vh;
+  flex-grow: 1;
+}
+
+.audit-header {
+  margin-bottom: 1.5rem;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #222;
+}
+
+.audit-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.audit-table th,
+.audit-table td {
+  padding: 0.75rem 1rem;
+  text-align: left;
+  font-size: 0.95rem;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.audit-table th {
+  background-color: #0066cc;
+  color: white;
+  font-weight: 600;
+}
+
+.audit-table tbody tr:hover {
+  background-color: #f0f5ff;
+}
+
+.audit-table td.time {
+  color: #555;
+  font-family: monospace;
+}
+
+.audit-badge {
+  display: inline-block;
+  padding: 0.25rem 0.6rem;
+  font-size: 0.8rem;
+  border-radius: 12px;
+  background-color: #ddeaff;
+  color: #004b99;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 768px) {
+  .audit-table thead {
+    display: none;
+  }
+
+  .audit-table, .audit-table tbody, .audit-table tr, .audit-table td {
+    display: block;
+    width: 100%;
+  }
+
+  .audit-table tr {
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 0.5rem;
+  }
+
+  .audit-table td {
+    padding: 0.5rem 0.8rem;
+    text-align: right;
+    position: relative;
+  }
+
+  .audit-table td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 0.8rem;
+    text-align: left;
+    font-weight: bold;
+    color: #333;
+  }
+}

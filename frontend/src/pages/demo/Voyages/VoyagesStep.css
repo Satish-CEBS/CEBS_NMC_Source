@@ -1,6 +1,6 @@
 .voyage-port-call-container {
     max-width: 900px;
-    padding: 1.5rem;
+    padding: 0.5rem;
     background: white;
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
@@ -11,8 +11,8 @@
     margin-bottom: 2rem;
     border: 1px solid #577481;
     border-radius: 6px;
-    padding: 1rem;
-    background: #e3f0f7;
+    padding: 2rem;
+    background: #fff;
 }
 
     .section h3 {

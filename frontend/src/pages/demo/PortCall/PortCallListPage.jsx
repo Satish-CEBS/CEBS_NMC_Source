@@ -1,10 +1,10 @@
 ﻿import React, { useState } from 'react';
-import data from '../../../mockData/prearrival_data.json';
+import data from '../../../mockData/portcall_data.json';
 import InnerHeader from '../../common/InnerHeader';
 import InnerSubHeader from '../../common/InnerSubHeader';
 import SidebarMenu from '../../common/SidebarMenu';
 import Footer from '../../common/Footer';
-import './PreArrivalListPage.css'; // Optional: for custom styling
+import './PortCallListPage.css'; // Optional: for custom styling
 import { useNavigate } from 'react-router-dom';
 
 const PreArrivalListPage = () => {
@@ -98,7 +98,7 @@ const PreArrivalListPage = () => {
                                         <button
                                             onClick={() => {
                                                 if (item.port_call_id) {
-                                                    navigate(`/prearrival-view/${item.port_call_id}`);
+                                                    navigate(`/portcall-view/${item.port_call_id}`);
                                                 } else {
                                                     alert("⚠️ Port Call ID is missing for this record.");
                                                 }

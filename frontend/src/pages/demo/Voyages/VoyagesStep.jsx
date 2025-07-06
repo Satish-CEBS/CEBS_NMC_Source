@@ -279,7 +279,6 @@ const VoyagesStep = ({ formData = {}, updateBasicInfo, goToStep }) => {
                             <div><strong>Call Sign:</strong> {localFormData.call_sign}</div>
                             <div><strong>Gross Tonnage:</strong> {localFormData.gross_tonnage}</div>
                             <div><strong>Deadweight (MT):</strong> {localFormData.deadweight_tonnage}</div>
-                            <div><strong>Draught (m):</strong> {localFormData.draught}</div>
                         </div>
                     </section>
 

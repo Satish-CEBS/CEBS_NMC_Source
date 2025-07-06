@@ -41,10 +41,10 @@ const Dashboard = () => {
         kpi: true,
         aiInsights: false,
         falAnalytics: false,
-        RiskTargetingHeatmap: true,
-        workflows: true,
+        RiskTargetingHeatmap: false,
+        workflows: false,
         topTrends: false,
-        alerts: true
+        alerts: false
     });
 
     const [showAI, setShowAI] = useState(false);

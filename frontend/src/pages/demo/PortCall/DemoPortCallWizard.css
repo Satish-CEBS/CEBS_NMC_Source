@@ -44,3 +44,41 @@
     font-weight: bold;
     cursor: pointer;
 }
+.dashboard {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.dashboard-body {
+    display: flex;
+    flex: 1;
+}
+
+.dashboard-content {
+    flex: 1;
+    padding: 2rem;
+    background-color: #f9fafb;
+}
+
+.wizard-controls {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+button {
+    padding: 8px 16px;
+    border: none;
+    background-color: #000000;
+    color: white;
+    font-weight: 600;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+    button:disabled {
+        background-color: #b0b0b0;
+        cursor: not-allowed;
+    }

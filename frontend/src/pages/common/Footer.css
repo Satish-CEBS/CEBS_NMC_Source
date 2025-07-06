@@ -24,3 +24,18 @@
     color: #7f1d1d;
     font-weight: 500;
 }
+/* src/pages/common/Footer.css */
+
+.footer {
+    text-align: center;
+    padding: 12px;
+    background-color: #dfd2c5;
+    font-size: 0.875rem;
+    color: #333;
+    position: relative;
+    z-index: 1;
+}
+
+#docsbotai-root {
+    z-index: 9999 !important;
+}

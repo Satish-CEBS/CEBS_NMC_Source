@@ -1,0 +1,81 @@
+/* ------------------------------------------------------------------------
+ * @author      CEBS Worldwide
+ * @copyright   © 2025 CEBS Worldwide. All rights reserved.
+ * @license     STRICTLY CONFIDENTIAL
+ * ------------------------------------------------------------------------ */
+
+.emirates-dashboard-container {
+  padding: 1.5rem;
+  background-color: #f8f9fc;
+  flex-grow: 1;
+  min-height: 100vh;
+}
+
+.filter-bar {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.filter-bar select,
+.filter-bar button {
+  padding: 0.5rem 1rem;
+  font-size: 0.95rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.filter-bar button {
+  background-color: #0066cc;
+  color: white;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.filter-bar button:hover {
+  background-color: #004d99;
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 1.5rem;
+}
+
+.chart-card {
+  background-color: white;
+  border-radius: 12px;
+  padding: 1rem 1.5rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.chart-card h4 {
+  margin-bottom: 0.8rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.chart-description {
+  font-size: 0.85rem;
+  margin-top: 0.75rem;
+  color: #555;
+  text-align: center;
+}
+
+/* Responsive Fix */
+@media screen and (max-width: 768px) {
+  .filter-bar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .cards-container {
+    grid-template-columns: 1fr;
+  }
+}

@@ -30,19 +30,13 @@ const InnerSubHeader = () => {
     return (
         <div className="inner-subheader">
             {showButton && (
-                /*<button
-                    className="create-prearrival-btn"
-                    onClick={() => navigate('/prearrival/create')}
-                >
-                    <FaPlusCircle className="btn-icon" /> Create New Pre-arrival Notification
-                </button>*/
                 <button
                     variant="contained"
                     color="primary"
                     startIcon={<FaPlusCircle />}
                     onClick={handleCreateNew}
                 >
-                    Create New Pre-arrival Notification
+                    Create New Port Call Notification
                 </button>
             )}
             <div className="nmc-tagline">

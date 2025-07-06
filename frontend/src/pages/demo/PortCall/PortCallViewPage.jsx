@@ -26,7 +26,7 @@ const PreArrivalViewPage = () => {
             <SidebarMenu />
             <div style={{ flex: 1, display: 'flex', flexDirection: 'column' }}>
                 <InnerHeader />
-                <InnerSubHeader title="Pre-Arrival Notification – View Submitted Details" />
+                <InnerSubHeader title="Port Call Notification – View Submitted Details" />
 
                 <div className="main-container" style={{ padding: '24px' }}>
                     <button onClick={() => navigate('/portcall-dashboard')} className="back-button">

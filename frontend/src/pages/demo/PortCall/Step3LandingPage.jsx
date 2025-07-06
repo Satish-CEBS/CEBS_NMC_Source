@@ -2,12 +2,12 @@
 import './Step3LandingPage.css';
 import Step3Sidebar from './Step3Sidebar';
 
-import DPGForm from './forms/DPGForm';
-import CargoForm from './forms/CargoForm';
-import ShipStoresForm from './forms/ShipStoresForm';
-import CrewForm from './forms/CrewForm';
-import PaxForm from './forms/PaxForm';
-import SecurityForm from './forms/SecurityForm';
+import DPGForm from '../forms/DPGForm';
+import CargoForm from '../forms/CargoForm';
+import ShipStoresForm from '../forms/ShipStoresForm';
+import CrewForm from '../forms/CrewForm';
+import PaxForm from '../forms/PaxForm';
+import SecurityForm from '../forms/SecurityForm';
 
 import ReportProblemIcon from '@mui/icons-material/ReportProblem';
 import Inventory2Icon from '@mui/icons-material/Inventory2';
@@ -15,6 +15,8 @@ import StoreIcon from '@mui/icons-material/Store';
 import GroupIcon from '@mui/icons-material/Group';
 import AirlineSeatReclineNormalIcon from '@mui/icons-material/AirlineSeatReclineNormal';
 import SecurityIcon from '@mui/icons-material/Security';
+
+import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 
 const STORAGE_KEY = 'NMC_DRAFT_DATA';
 
@@ -46,7 +48,7 @@ const REPORTING_ICONS = {
     security: <SecurityIcon className="icon-security" />,
 };
 
-const Step3LandingPage = ({ data, onDataChange, goToPrev }) => {
+    const Step3LandingPage = ({ data, onDataChange, goToPrev, goToStep }) => {
     // Destructure with default empty objects to avoid undefined errors
     const {
         basicInfo = {},
@@ -319,10 +321,20 @@ const Step3LandingPage = ({ data, onDataChange, goToPrev }) => {
                         <button className="btn btn-back" onClick={goToPrev}>
                             ← Back
                         </button>
-                        <button className="btn btn-confirm" onClick={activateAndSubmit} disabled={isActivated}>
-                            {isActivated ? 'Activated' : 'Activate & Submit'}
+                    </div>
+
+                    <div className="step3-actions" style={{ display: 'flex', justifyContent: 'flex-end', marginTop: '2rem' }}>
+                        <button className="btn btn-confirm"
+                            variant="contained"
+                            color="primary"
+                            endIcon={<ArrowForwardIcon />}
+                            onClick={() => goToStep(4)}
+                            disabled={isActivated}
+                        >
+                            Continue
                         </button>
                     </div>
+
 
                     <div style={{ marginTop: '1rem' }}>
                         <button
@@ -334,15 +346,12 @@ const Step3LandingPage = ({ data, onDataChange, goToPrev }) => {
                                 }
                             }}
                         >
-                            Reset Step 3 Data
+                            Reset Data
                         </button>
                     </div>
                 </main>
 
                 <Step3Sidebar formData={basicInfo} formStatus={formStatus} />
-
-                
-
             </div>
         </div>
     );
