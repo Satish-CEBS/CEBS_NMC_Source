@@ -60,10 +60,10 @@ const EmiratesDashboardPage = () => {
 
     return (
         <div className="emirates-dashboard-wrapper">
+            <SidebarMenu />
             <div className="emirates-dashboard-content">
                 <InnerHeader />
                 <InnerSubHeader title="Emirates-wise Dashboard" />
-                <SidebarMenu />
 
                 <div className="filter-bar">
                     <select value={selectedEmirate} onChange={(e) => setSelectedEmirate(e.target.value)}>

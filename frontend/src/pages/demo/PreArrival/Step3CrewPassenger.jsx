@@ -1,76 +1,126 @@
-﻿// src/pages/demo/PreArrival/Step3CrewPassenger.jsx
-
-import React, { useState, useEffect } from 'react';
-import '../Voyages/VoyagesStep.css';
-
-const crewDocs = [
-    { key: 'fal_form_4', label: 'FAL Form 4 – Crew Effects Declaration', required: false },
-    { key: 'fal_form_5', label: 'FAL Form 5 – Crew List', required: true },
-    { key: 'fal_form_6', label: 'FAL Form 6 – Passenger List', required: false },
-    { key: 'fal_form_7', label: 'FAL Form 7 – Dangerous Goods Manifest', required: false }
-];
+﻿import React, { useState } from 'react';
+import './Step3CrewPassenger.css';
+import CrewList from './FAL/CrewList';
+import PassengerList from './FAL/PassengerList';
+import CrewEffects from './FAL/CrewEffects';
+import DangerousGoods from './FAL/DangerousGoods';
 
 const Step3CrewPassenger = ({ data = {}, update, goToStep }) => {
-    const [localData, setLocalData] = useState({ ...data });
-    const [errors, setErrors] = useState([]);
-
-    useEffect(() => {
-        setLocalData({ ...data });
-    }, [data]);
+    const [activeModal, setActiveModal] = useState(null);
 
     const handleFileChange = (e, key) => {
         const file = e.target.files[0];
-        const updated = { ...localData, [key]: file };
-        setLocalData(updated);
-        update(updated);
+        update({
+            ...data,
+            [key]: {
+                ...data[key],
+                file,
+                filename: file.name,
+            },
+        });
     };
 
-    const handleNext = () => {
-        const missing = crewDocs.filter(doc => doc.required && !localData[doc.key]);
-        if (missing.length > 0) {
-            setErrors(missing.map(doc => `Please upload ${doc.label}`));
-            return;
-        }
-
-        goToStep(4);
+    const handleFormSubmit = (key, formEntries) => {
+        update({
+            ...data,
+            [key]: {
+                ...data[key],
+                data: formEntries,
+            },
+        });
+        setActiveModal(null);
     };
 
-    const handleBack = () => {
-        goToStep(2);
-    };
+    const forms = [
+        {
+            key: 'crewEffectsForm',
+            label: 'FAL Form 4 – Crew Effects Declaration',
+            component: CrewEffects,
+        },
+        {
+            key: 'crewListForm',
+            label: 'FAL Form 5 – Crew List',
+            component: CrewList,
+        },
+        {
+            key: 'passengerListForm',
+            label: 'FAL Form 6 – Passenger List',
+            component: PassengerList,
+        },
+        {
+            key: 'dangerousGoodsForm',
+            label: 'FAL Form 7 – Dangerous Goods Manifest',
+            component: DangerousGoods,
+        },
+    ];
 
     return (
-        <div className="step-panel">
-            <h2>Step 3: Upload Crew & Passenger Documentation</h2>
+        <div className="step3crew-layout">
+            <div className="step3crew-main-content">
+                <h2>Step 3: Crew & Passenger Documentation</h2>
+                <p>Upload the official IMO FAL Forms or fill them digitally below.</p>
 
-            {crewDocs.map((doc) => (
-                <div key={doc.key} className="section">
-                    <label>{doc.label} {doc.required && <span style={{ color: 'red' }}>*</span>}</label>
-                    <p>Upload {doc.required ? 'required' : 'optional'} document as PDF or image.</p>
-                    <input
-                        type="file"
-                        accept=".pdf,.jpg,.jpeg,.png"
-                        onChange={(e) => handleFileChange(e, doc.key)}
-                    />
-                    {localData[doc.key] && (
-                        <p style={{ marginTop: '0.3rem', fontSize: '0.85rem' }}>
-                            ✅ File selected: <strong>{localData[doc.key].name}</strong>
-                        </p>
-                    )}
+                {forms.map(({ key, label, component: Component }) => (
+                    <div className="form-card" key={key}>
+                        <div className="form-card-header">
+                            <h3>{label}</h3>
+                            <div className="form-card-actions">
+                                <input
+                                    type="file"
+                                    className="form-file-input"
+                                    onChange={(e) => handleFileChange(e, key)}
+                                />
+                                <button className="btn-fill" onClick={() => setActiveModal(key)}>
+                                    Fill Form Digitally
+                                </button>
+                            </div>
+                            <div className="form-filename">
+                                {data?.[key]?.filename || 'No file uploaded'}
+                            </div>
+                        </div>
+
+                        {data?.[key]?.data?.length > 0 && (
+                            <div className="summary-table">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            {Object.keys(data[key].data[0]).map((col, idx) => (
+                                                <th key={idx}>{col}</th>
+                                            ))}
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        {data[key].data.map((row, idx) => (
+                                            <tr key={idx}>
+                                                {Object.values(row).map((val, idy) => (
+                                                    <td key={idy}>{val}</td>
+                                                ))}
+                                            </tr>
+                                        ))}
+                                    </tbody>
+                                </table>
+                            </div>
+                        )}
+
+                        {activeModal === key && (
+                            <Component
+                                open={true}
+                                initialData={data?.[key]?.data || []}
+                                onClose={() => setActiveModal(null)}
+                                onSave={(entries) => handleFormSubmit(key, entries)}
+                            />
+                        )}
+                    </div>
+                ))}
+
+                <div className="step-navigation">
+                    <button className="nav-button back" onClick={() => goToStep(2)}>
+                        ← Back to Step 2
+                    </button>
+                    <button className="nav-button next" onClick={() => goToStep(4)}>
+                        Continue to Step 4 →
+                    </button>
                 </div>
-            ))}
-
-            {errors.length > 0 && (
-                <div className="error-box">
-                    {errors.map((err, idx) => (
-                        <p className="error-text" key={idx}>{err}</p>
-                    ))}
-                </div>
-            )}
-
-            <div className="wizard-header-buttons">
-                <button className="reset-button" onClick={handleBack}>← Back</button>
-                <button className="submit-button" onClick={handleNext}>Continue to Step 4 →</button>
             </div>
         </div>
     );

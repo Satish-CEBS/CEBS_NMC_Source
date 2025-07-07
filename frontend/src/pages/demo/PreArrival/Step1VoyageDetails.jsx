@@ -139,7 +139,7 @@ const Step1VoyageDetails = ({ formData = {}, updateBasicInfo, goToStep }) => {
         <div className="voyage-port-call-container">
             <div className="form-main">
                 <section className="section">
-                    <label><strong>Select Vessel</strong> <InfoIcon titleAccess="Search by name, IMO, MMSI, or Call Sign" fontSize="small" /></label>
+                    <label><strong>Select Vessel</strong> <InfoIcon fontSize="small" /></label>
                     <input
                         className="search-input"
                         placeholder="Search vessels..."
@@ -160,13 +160,13 @@ const Step1VoyageDetails = ({ formData = {}, updateBasicInfo, goToStep }) => {
                 </section>
 
                 <section className="section">
-                    <label>Voyage Number <InfoIcon titleAccess="Unique identifier for this voyage" fontSize="small" /></label>
-                    <input type="text" name="voyage_number" value={localData.voyage_number || ''} onChange={handleChange} />
+                    <label>Voyage Number</label>
+                    <input type="text" name="voyage_number" value={localData.voyage_number} onChange={handleChange} />
                 </section>
 
                 <section className="section">
-                    <label>Last Port of Call <InfoIcon titleAccess="Most recent port vessel visited" fontSize="small" /></label>
-                    <input className="search-input" placeholder="Type to search..." value={lastPortQuery} onChange={(e) => setLastPortQuery(e.target.value)} />
+                    <label>Last Port of Call</label>
+                    <input className="search-input" value={lastPortQuery} onChange={(e) => setLastPortQuery(e.target.value)} placeholder="Type to search..." />
                     {lastPortResults.length > 0 && (
                         <ul className="dropdown-results">
                             {lastPortResults.map((p) => (
@@ -179,8 +179,8 @@ const Step1VoyageDetails = ({ formData = {}, updateBasicInfo, goToStep }) => {
                 </section>
 
                 <section className="section">
-                    <label>Next Port of Call <InfoIcon titleAccess="Port intended to visit next" fontSize="small" /></label>
-                    <input className="search-input" placeholder="Type to search..." value={nextPortQuery} onChange={(e) => setNextPortQuery(e.target.value)} />
+                    <label>Next Port of Call</label>
+                    <input className="search-input" value={nextPortQuery} onChange={(e) => setNextPortQuery(e.target.value)} placeholder="Type to search..." />
                     {nextPortResults.length > 0 && (
                         <ul className="dropdown-results">
                             {nextPortResults.map((p) => (
@@ -193,12 +193,12 @@ const Step1VoyageDetails = ({ formData = {}, updateBasicInfo, goToStep }) => {
                 </section>
 
                 <section className="section">
-                    <label>ETA <InfoIcon titleAccess="Estimated Time of Arrival" fontSize="small" /></label>
-                    <input type="datetime-local" name="eta" value={localData.eta || ''} onChange={handleChange} />
+                    <label>ETA</label>
+                    <input type="datetime-local" name="eta" value={localData.eta} onChange={handleChange} />
                 </section>
 
                 <section className="section">
-                    <label>Purpose of Call (select one or more) <InfoIcon titleAccess="Reason for vessel entering port" fontSize="small" /></label>
+                    <label>Purpose of Call</label>
                     <div className="checkbox-group">
                         {purposesList.map((purpose) => (
                             <label key={purpose} className="checkbox-item">
@@ -216,9 +216,8 @@ const Step1VoyageDetails = ({ formData = {}, updateBasicInfo, goToStep }) => {
                             className="text-input"
                             name="purpose_other_note"
                             placeholder="Please specify other purpose"
-                            value={localData.purpose_other_note || ''}
+                            value={localData.purpose_other_note}
                             onChange={handleChange}
-                            required
                         />
                     )}
                 </section>
@@ -235,19 +234,17 @@ const Step1VoyageDetails = ({ formData = {}, updateBasicInfo, goToStep }) => {
             {localData.vessel_id && (
                 <aside className="vessel-sidebar card">
                     <h4>Selected Vessel Details</h4>
-                    <div className="vessel-group">
-                        <strong>{localData.name}</strong>
-                        <p>IMO: {localData.imo_no}</p>
-                        <p>MMSI: {localData.mmsi_no}</p>
-                        <p>Call Sign: {localData.call_sign}</p>
-                        <p>Type: {localData.ship_type_detailed}</p>
-                        <p>Status: {localData.service_status}</p>
-                        <p>Built: {localData.year_built} by {localData.builder}</p>
-                        <p>Gross Tonnage: {localData.gross_tonnage}</p>
-                        <p>Draft: {localData.draft_m} m</p>
-                        <p>Speed: {localData.max_speed_knots} knots</p>
-                        <p>Insurance: {localData.insurance_pandi_club}</p>
-                    </div>
+                    <p><strong>{localData.name}</strong></p>
+                    <p>IMO: {localData.imo_no}</p>
+                    <p>MMSI: {localData.mmsi_no}</p>
+                    <p>Call Sign: {localData.call_sign}</p>
+                    <p>Type: {localData.ship_type_detailed}</p>
+                    <p>Status: {localData.service_status}</p>
+                    <p>Built: {localData.year_built} by {localData.builder}</p>
+                    <p>Gross Tonnage: {localData.gross_tonnage}</p>
+                    <p>Draft: {localData.draft_m} m</p>
+                    <p>Speed: {localData.max_speed_knots} knots</p>
+                    <p>Insurance: {localData.insurance_pandi_club}</p>
                 </aside>
             )}
         </div>

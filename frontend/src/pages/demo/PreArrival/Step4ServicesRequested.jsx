@@ -1,11 +1,8 @@
-﻿// src/pages/demo/PreArrival/Step4ServicesRequested.jsx
-
-import React, { useState, useEffect } from 'react';
-import '../Voyages/VoyagesStep.css';
+﻿import React, { useState } from 'react';
+import './Step4ServicesRequested.css';
 import {
     Checkbox,
     FormControlLabel,
-    FormGroup,
     TextField
 } from '@mui/material';
 
@@ -27,28 +24,18 @@ const portServicesList = [
     'Other'
 ];
 
-const Step4ServicesRequested = ({ selected = [], update, goToStep }) => {
-    const [selectedServices, setSelectedServices] = useState(selected || []);
+const Step4ServicesRequested = ({ data = [], update, goToStep }) => {
+    const [selectedServices, setSelectedServices] = useState(data || []);
     const [otherNote, setOtherNote] = useState('');
     const [errors, setErrors] = useState([]);
 
-    useEffect(() => {
-        setSelectedServices(selected || []);
-    }, [selected]);
-
     const toggleService = (service) => {
-        const isSelected = selectedServices.includes(service);
-        const updated = isSelected
-            ? selectedServices.filter((s) => s !== service)
+        const updated = selectedServices.includes(service)
+            ? selectedServices.filter(s => s !== service)
             : [...selectedServices, service];
 
         setSelectedServices(updated);
-        update(updated);
-
-        // Reset Other note if deselected
-        if (service === 'Other' && isSelected) {
-            setOtherNote('');
-        }
+        setErrors([]);
     };
 
     const handleNext = () => {
@@ -65,8 +52,7 @@ const Step4ServicesRequested = ({ selected = [], update, goToStep }) => {
             return;
         }
 
-        // Save "Other" note
-        const updatedWithNote = [...selectedServices];
+        const updatedWithNote = selectedServices.filter(s => s !== 'Other');
         if (selectedServices.includes('Other')) {
             updatedWithNote.push(`Other: ${otherNote.trim()}`);
         }
@@ -75,51 +61,50 @@ const Step4ServicesRequested = ({ selected = [], update, goToStep }) => {
         goToStep(5);
     };
 
-    const handleBack = () => {
-        goToStep(3);
-    };
-
     return (
-        <div className="step-panel">
-            <h2>Step 4: Services Requested at Port</h2>
+        <div className="step4-container">
+            <h2 className="step4-title">Step 4: Services Requested at Port</h2>
+            <p className="step4-subtitle">Select all port services required for this vessel's call:</p>
 
-            <p>Select all port services required for this vessel's call:</p>
-            <FormGroup className="checkbox-group">
+            <div className="services-grid">
                 {portServicesList.map((service) => (
-                    <FormControlLabel
-                        key={service}
-                        control={
-                            <Checkbox
-                                checked={selectedServices.includes(service)}
-                                onChange={() => toggleService(service)}
-                            />
-                        }
-                        label={service}
-                    />
+                    <div key={service} className="service-option">
+                        <FormControlLabel
+                            control={
+                                <Checkbox
+                                    checked={selectedServices.includes(service)}
+                                    onChange={() => toggleService(service)}
+                                />
+                            }
+                            label={service}
+                        />
+                    </div>
                 ))}
-            </FormGroup>
+            </div>
 
             {selectedServices.includes('Other') && (
-                <TextField
-                    label="Specify Other Service"
-                    fullWidth
-                    value={otherNote}
-                    onChange={(e) => setOtherNote(e.target.value)}
-                    margin="normal"
-                />
+                <div className="other-service-box">
+                    <TextField
+                        label="Specify Other Service"
+                        fullWidth
+                        value={otherNote}
+                        onChange={(e) => setOtherNote(e.target.value)}
+                        margin="normal"
+                    />
+                </div>
             )}
 
             {errors.length > 0 && (
                 <div className="error-box">
                     {errors.map((err, idx) => (
-                        <p className="error-text" key={idx}>{err}</p>
+                        <p key={idx} className="error-text">❌ {err}</p>
                     ))}
                 </div>
             )}
 
-            <div className="wizard-header-buttons">
-                <button className="reset-button" onClick={handleBack}>← Back</button>
-                <button className="submit-button" onClick={handleNext}>Continue to Step 5 →</button>
+            <div className="wizard-nav">
+                <button className="back-button" onClick={() => goToStep(3)}>← Back</button>
+                <button className="next-button" onClick={handleNext}>Continue to Step 5 →</button>
             </div>
         </div>
     );

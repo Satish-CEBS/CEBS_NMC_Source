@@ -12,6 +12,8 @@ import Register from './pages/auth/Register';
 import Dashboard from './pages/dashboard/Dashboard';
 import './i18n';
 import './App.css';
+import { LocalizationProvider } from '@mui/x-date-pickers';
+import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
 //import ViewPreArrival from './pages/Pre-Arrival/ViewPreArrival';
 //import PreArrivalCreatePage from './pages/Pre-Arrival/PreArrivalCreatePage';
 //import axios from 'axios';
@@ -35,7 +37,7 @@ import EmiratesDashboard from './pages/demo/emirates/EmiratesDashboard';
 import AuditLogs from './pages/demo/audit/AuditLogs';
 
 const App = () => (
-
+    <LocalizationProvider dateAdapter={AdapterDayjs}>
     <Router>
         <Routes>
             <Route path="/" element={<Login />} />
@@ -64,7 +66,8 @@ const App = () => (
 
 
         </Routes>
-    </Router>
+        </Router>
+    </LocalizationProvider>
 );
 
 export default App;

@@ -1,6 +1,4 @@
-﻿// src/pages/demo/PreArrival/PreArrivalWizard.jsx
-
-import React, { useState, useEffect } from 'react';
+﻿import React, { useState, useEffect } from 'react';
 import InnerHeader from '../../common/InnerHeader';
 import InnerSubHeader from '../../common/InnerSubHeader';
 import SidebarMenu from '../../common/SidebarMenu';
@@ -10,7 +8,11 @@ import Step1VoyageDetails from './Step1VoyageDetails';
 import Step2VesselDocuments from './Step2VesselDocuments';
 import Step3CrewPassenger from './Step3CrewPassenger';
 import Step4ServicesRequested from './Step4ServicesRequested';
-import Step5FinalReview from './Step5FinalReview';
+import Step5SecurityClearance from './Step5SecurityClearance';
+import Step6FinalReview from './Step6FinalReview';
+
+import SaveIcon from '@mui/icons-material/Save';
+import RestartAltIcon from '@mui/icons-material/RestartAlt';
 
 import './PreArrivalWizard.css';
 
@@ -18,16 +20,16 @@ const STORAGE_KEY = 'PRE_ARRIVAL_DRAFT';
 
 const PreArrivalWizard = () => {
     const [currentStep, setCurrentStep] = useState(1);
-
     const [formData, setFormData] = useState(() => {
         const saved = localStorage.getItem(STORAGE_KEY);
         return saved
             ? JSON.parse(saved)
             : {
-                basicInfo: {},
+                voyageDetails: {},
                 vesselDocuments: {},
                 crewPassengerDocs: {},
                 servicesRequested: [],
+                securityClearance: {},
                 isSubmitted: false
             };
     });
@@ -59,10 +61,11 @@ const PreArrivalWizard = () => {
         if (window.confirm('Are you sure you want to clear all entered data?')) {
             localStorage.removeItem(STORAGE_KEY);
             setFormData({
-                basicInfo: {},
+                voyageDetails: {},
                 vesselDocuments: {},
                 crewPassengerDocs: {},
                 servicesRequested: [],
+                securityClearance: {},
                 isSubmitted: false
             });
             setCurrentStep(1);
@@ -77,32 +80,30 @@ const PreArrivalWizard = () => {
         const updatedData = { ...formData, isSubmitted: true };
         localStorage.setItem(STORAGE_KEY, JSON.stringify(updatedData));
         setFormData(updatedData);
-        alert('Pre-Arrival Notification Submitted!');
+        alert('✅ Pre-Arrival Notification Submitted!');
         window.location.href = '/dashboard';
-    };
-
-    const updateBasicInfo = (basicInfo) => {
-        setFormData((prev) => {
-            const updated = { ...prev, basicInfo };
-            localStorage.setItem(STORAGE_KEY, JSON.stringify(updated));
-            console.log('[Pre-Arrival] Updated basicInfo:', basicInfo);
-            return updated;
-        });
     };
 
     return (
         <div className="dashboard">
             <InnerHeader />
-            <InnerSubHeader />
+            <InnerSubHeader title="Pre-Arrival Notification Wizard" />
             <div className="dashboard-body">
                 <SidebarMenu />
                 <main className="dashboard-content">
                     <div className="wizard-header">
-                        <h2>Pre-Arrival Notification Wizard</h2>
+                        <h2>🧭 Pre-Arrival Wizard – Step {currentStep}</h2>
                         <div className="wizard-controls">
-                            <button className="draft-btn" onClick={saveDraft}>Save Draft</button>
-                            <button className="draft-btn" onClick={resetDraft}>Reset Draft</button>
+                            <button className="draft-btn" onClick={saveDraft}>
+                                <SaveIcon style={{ fontSize: 18, marginRight: 6 }} />
+                                Save Draft
+                            </button>
+                            <button className="draft-btn" onClick={resetDraft}>
+                                <RestartAltIcon style={{ fontSize: 18, marginRight: 6 }} />
+                                Reset Draft
+                            </button>
                         </div>
+
                     </div>
 
                     {currentStep === 1 && (
@@ -138,7 +139,15 @@ const PreArrivalWizard = () => {
                     )}
 
                     {currentStep === 5 && (
-                        <Step5FinalReview
+                        <Step5SecurityClearance
+                            data={formData.securityClearance}
+                            update={(data) => updateSection('securityClearance', data)}
+                            goToStep={goToStep}
+                        />
+                    )}
+
+                    {currentStep === 6 && (
+                        <Step6FinalReview
                             formData={formData}
                             goToStep={goToStep}
                             onSubmit={handleFinalSubmit}
