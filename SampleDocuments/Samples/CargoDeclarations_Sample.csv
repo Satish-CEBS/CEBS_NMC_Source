@@ -1,0 +1,21 @@
+B/L No.,Description,HS Code,Weight (kg),Volume (m³)
+AE001,Electronics (Mobile Phones),85171200,1500,12.5
+AE002,Aluminium Sheets,76061190,3200,24.0
+AE003,Crude Oil,27090000,25000,45.0
+AE004,Plastic Granules,39021000,4200,19.2
+AE005,Steel Rods,72149910,6700,33.0
+AE006,Cement Bags,25232900,5400,27.5
+AE007,Perfume & Cosmetics,33030010,850,3.2
+AE008,Medical Equipment,90189090,2100,9.7
+AE009,Frozen Chicken,02071200,3100,14.1
+AE010,Textiles (Cotton Rolls),52081900,1200,6.8
+BL1001,Electronic Components,854239,1500,12
+BL1002,Construction Steel Rods,721420,8000,55
+BL1003,Cosmetic Products,330499,500,4
+BL1004,Textile Fabrics,551219,1200,10
+BL1005,Vehicle Tires,401110,900,7.5
+BL1006,Glass Bottles,701090,1100,8
+BL1007,Air Conditioners,841510,1400,9.8
+BL1008,Plastic Containers,392330,700,5
+BL1009,Lighting Equipment,940540,950,6.5
+BL1010,Petroleum Lubricants,271019,2000,15

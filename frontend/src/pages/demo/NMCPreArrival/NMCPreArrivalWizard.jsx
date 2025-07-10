@@ -110,7 +110,7 @@ const NMCPreArrivalWizard = () => {
     <PageWrapper title="Create New Port Call Notification">
       <div className="wizard-header">
         <h1>NMC Pre-Arrival Notification</h1>
-        <p>Step {currentStep} of 12</p>
+        <p>Step {currentStep} of 13</p>
       </div>
 
       <div className="compliance-bar">

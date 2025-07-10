@@ -1,139 +1,198 @@
-﻿// File: Step4CargoStores.jsx
-import React, { useState } from 'react';
+﻿// Step4CargoStores.jsx
+import React, { useState, useEffect } from 'react';
 import CargoDeclarationForm from './forms/CargoDeclarationForm';
 import ShipStoreForm from './forms/ShipStoreForm';
 import './Step4CargoStores.css';
-import parsePDFCargo from './utils/parsePDFCargo';
-import parsePDFStores from './utils/parsePDFStores';
+import * as XLSX from 'xlsx';
 
-const Step4CargoStores = ({ data = {}, updateData, goToNextStep, goToPreviousStep, resetStep }) => {
+const Step4CargoStores = () => {
   const [activeTab, setActiveTab] = useState('cargo');
+  const [cargoList, setCargoList] = useState([]);
+  const [storeList, setStoreList] = useState([]);
   const [showCargoModal, setShowCargoModal] = useState(false);
   const [showStoreModal, setShowStoreModal] = useState(false);
-  const [editIndex, setEditIndex] = useState(null);
+  const [editCargoIndex, setEditCargoIndex] = useState(null);
+  const [editStoreIndex, setEditStoreIndex] = useState(null);
 
-  const cargoList = data.cargoList || [];
-  const storesList = data.storesList || [];
+  useEffect(() => {
+    const savedCargo = JSON.parse(localStorage.getItem('cargoList')) || [];
+    const savedStore = JSON.parse(localStorage.getItem('storeList')) || [];
+    setCargoList(savedCargo);
+    setStoreList(savedStore);
+  }, []);
 
-  const handlePDFUpload = async (e, type) => {
+  useEffect(() => {
+    localStorage.setItem('cargoList', JSON.stringify(cargoList));
+  }, [cargoList]);
+
+  useEffect(() => {
+    localStorage.setItem('storeList', JSON.stringify(storeList));
+  }, [storeList]);
+
+  const handleCargoFile = (e) => {
     const file = e.target.files[0];
     if (!file) return;
-
-    const text = await file.text();
-    const newData = type === 'cargo'
-      ? await parsePDFCargo(text)
-      : await parsePDFStores(text);
-
-    const updated = {
-      ...data,
-      [type === 'cargo' ? 'cargoList' : 'storesList']: [
-        ...(type === 'cargo' ? cargoList : storesList),
-        ...newData
-      ]
+    const reader = new FileReader();
+    reader.onload = (evt) => {
+      const data = new Uint8Array(evt.target.result);
+      const workbook = XLSX.read(data, { type: 'array' });
+      const sheet = workbook.Sheets[workbook.SheetNames[0]];
+      const parsed = XLSX.utils.sheet_to_json(sheet);
+      setCargoList((prev) => [...prev, ...parsed]);
     };
-
-    updateData(updated);
+    reader.readAsArrayBuffer(file);
   };
 
-  const handleManualSave = (entry) => {
-    const targetKey = activeTab === 'cargo' ? 'cargoList' : 'storesList';
-    const existingList = data[targetKey] || [];
-
-    const updatedList = editIndex !== null
-      ? existingList.map((item, i) => (i === editIndex ? entry : item))
-      : [...existingList, entry];
-
-    updateData({
-      ...data,
-      [targetKey]: updatedList
-    });
-
-    if (activeTab === 'cargo') setShowCargoModal(false);
-    else setShowStoreModal(false);
-    setEditIndex(null);
+  const handleStoreFile = (e) => {
+    const file = e.target.files[0];
+    if (!file) return;
+    const reader = new FileReader();
+    reader.onload = (evt) => {
+      const data = new Uint8Array(evt.target.result);
+      const workbook = XLSX.read(data, { type: 'array' });
+      const sheet = workbook.Sheets[workbook.SheetNames[0]];
+      const parsed = XLSX.utils.sheet_to_json(sheet);
+      setStoreList((prev) => [...prev, ...parsed]);
+    };
+    reader.readAsArrayBuffer(file);
   };
 
-  const handleEdit = (index) => {
-    setEditIndex(index);
-    if (activeTab === 'cargo') setShowCargoModal(true);
-    else setShowStoreModal(true);
+  const deleteRow = (type, index) => {
+    if (type === 'cargo') {
+      const copy = [...cargoList];
+      copy.splice(index, 1);
+      setCargoList(copy);
+    } else {
+      const copy = [...storeList];
+      copy.splice(index, 1);
+      setStoreList(copy);
+    }
   };
 
-  const handleRemove = (index) => {
-    const targetKey = activeTab === 'cargo' ? 'cargoList' : 'storesList';
-    const updated = [...(data[targetKey] || [])];
-    updated.splice(index, 1);
-    updateData({ ...data, [targetKey]: updated });
-  };
+  const renderTable = (type) => {
+    const list = type === 'cargo' ? cargoList : storeList;
+    const columns =
+      type === 'cargo'
+        ? ['B/L No.', 'Description', 'HS Code', 'Weight (kg)', 'Volume (m³)']
+        : ['Item', 'Quantity', 'Location'];
 
-  const renderTable = (list) => (
-    <table className="data-table">
-      <thead>
-        <tr>
-          {activeTab === 'cargo' ? (
-            <>
-              <th>B/L No.</th><th>Marks</th><th>Description</th><th>HS Code</th><th>Weight</th><th>Volume</th><th>Actions</th>
-            </>
-          ) : (
-            <>
-              <th>Item</th><th>Quantity</th><th>Location</th><th>Actions</th>
-            </>
-          )}
-        </tr>
-      </thead>
-      <tbody>
-        {list.map((entry, index) => (
-          <tr key={index}>
-            {activeTab === 'cargo' ? (
-              <>
-                <td>{entry.blNumber}</td><td>{entry.marks}</td><td>{entry.description}</td>
-                <td>{entry.hsCode}</td><td>{entry.weight}</td><td>{entry.volume}</td>
-              </>
-            ) : (
-              <>
-                <td>{entry.item}</td><td>{entry.quantity}</td><td>{entry.location}</td>
-              </>
-            )}
-            <td>
-              <button className="edit-btn" onClick={() => handleEdit(index)}>Edit</button>
-              <button className="remove-btn" onClick={() => handleRemove(index)}>Remove</button>
-            </td>
+    return (
+      <table className="data-table">
+        <thead>
+          <tr>
+            {columns.map((col, idx) => (
+              <th key={idx}>{col}</th>
+            ))}
+            <th>Actions</th>
           </tr>
-        ))}
-      </tbody>
-    </table>
-  );
+        </thead>
+        <tbody>
+          {list.map((entry, idx) => (
+            <tr key={idx}>
+              {columns.map((col) => {
+                const key = Object.keys(entry).find((k) =>
+                  col.toLowerCase().includes(k.toLowerCase())
+                );
+                return <td key={col}>{entry[key]}</td>;
+              })}
+              <td>
+                <button onClick={() => {
+                  if (type === 'cargo') {
+                    setEditCargoIndex(idx);
+                    setShowCargoModal(true);
+                  } else {
+                    setEditStoreIndex(idx);
+                    setShowStoreModal(true);
+                  }
+                }}>Edit</button>
+                <button onClick={() => deleteRow(type, idx)}>Delete</button>
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    );
+  };
 
   return (
-    <div className="nmc-step">
-      <h2>Step 4: Cargo & Ship’s Stores</h2>
-      <div className="tab-buttons">
-        <button className={activeTab === 'cargo' ? 'active' : ''} onClick={() => setActiveTab('cargo')}>Cargo Declaration</button>
-        <button className={activeTab === 'stores' ? 'active' : ''} onClick={() => setActiveTab('stores')}>Ship’s Stores</button>
-      </div>
-
-      <div className="upload-section">
-        <input type="file" accept="application/pdf" onChange={(e) => handlePDFUpload(e, activeTab)} />
-        <button className="fill-btn" onClick={() => activeTab === 'cargo' ? setShowCargoModal(true) : setShowStoreModal(true)}>
-          Fill Manually
+    <div>
+      <div className="tab-header">
+        <button
+          className={activeTab === 'cargo' ? 'active' : ''}
+          onClick={() => setActiveTab('cargo')}
+        >
+          Cargo Declaration
+        </button>
+        <button
+          className={activeTab === 'store' ? 'active' : ''}
+          onClick={() => setActiveTab('store')}
+        >
+          Ship’s Stores
         </button>
       </div>
 
-      {activeTab === 'cargo' ? renderTable(cargoList) : renderTable(storesList)}
+      <div className="tab-content">
+        {activeTab === 'cargo' && (
+          <>
+            <p>Submit a file or fill data manually.</p>
+            <input type="file" accept=".csv,.xlsx" onChange={handleCargoFile} />
+            <button onClick={() => {
+              setEditCargoIndex(null);
+              setShowCargoModal(true);
+            }}>Fill Manually</button>
+            {renderTable('cargo')}
+          </>
+        )}
+        {activeTab === 'store' && (
+          <>
+            <p>Submit a file or fill data manually.</p>
+            <input type="file" accept=".csv,.xlsx" onChange={handleStoreFile} />
+            <button onClick={() => {
+              setEditStoreIndex(null);
+              setShowStoreModal(true);
+            }}>Fill Manually</button>
+            {renderTable('store')}
+          </>
+        )}
+      </div>
 
       {showCargoModal && (
         <CargoDeclarationForm
-          onSave={handleManualSave}
-          onCancel={() => setShowCargoModal(false)}
-          initialData={editIndex !== null ? cargoList[editIndex] : null}
+          initialData={editCargoIndex != null ? cargoList[editCargoIndex] : null}
+          onClose={() => {
+            setShowCargoModal(false);
+            setEditCargoIndex(null);
+          }}
+          onSave={(data) => {
+            const updated = [...cargoList];
+            if (editCargoIndex != null) {
+              updated[editCargoIndex] = data;
+            } else {
+              updated.push(data);
+            }
+            setCargoList(updated);
+            setShowCargoModal(false);
+          }}
         />
       )}
 
       {showStoreModal && (
         <ShipStoreForm
-          onSave={handleManualSave}
-          onCancel={() => setShowStoreModal(false)}
-          initialData={editIndex !== null ? storesList[editIndex] : null}
+          initialData={editStoreIndex != null ? storeList[editStoreIndex] : null}
+          onClose={() => {
+            setShowStoreModal(false);
+            setEditStoreIndex(null);
+          }}
+          onSave={(data) => {
+            const updated = [...storeList];
+            if (editStoreIndex != null) {
+              updated[editStoreIndex] = data;
+            } else {
+              updated.push(data);
+            }
+            setStoreList(updated);
+            setShowStoreModal(false);
+          }}
         />
       )}
     </div>

@@ -1,39 +1,39 @@
-// File: parsePDFCargo.jsx
-const parsePDFCargo = async (text) => {
-  const lines = text.split('\n').map(line => line.trim()).filter(Boolean);
-  const cargoEntries = [];
+import * as pdfjsLib from 'pdfjs-dist';
+import pdfjsWorker from 'pdfjs-dist/build/pdf.worker.entry';
+pdfjsLib.GlobalWorkerOptions.workerSrc = pdfjsWorker;
 
-  let current = {};
-  let inTable = false;
-
-  for (let line of lines) {
-    if (line.toLowerCase().includes("b/l no") || line.toLowerCase().includes("bill of lading")) {
-      inTable = true;
-      continue;
-    }
-
-    if (inTable) {
-      // Expect line in format: B/L, Marks, Description, HS Code, Weight, Volume
-      const parts = line.split(/\s{2,}|\t+/); // Split by multiple spaces or tabs
-      if (parts.length >= 4) {
-        const [blNumber, marks, descriptionRaw, weight, volume] = parts;
-
-        let hsCodeMatch = descriptionRaw.match(/\b\d{6,10}\b/); // HS code embedded
-        let hsCode = hsCodeMatch ? hsCodeMatch[0] : '';
-
-        cargoEntries.push({
-          blNumber: blNumber || '',
-          marks: marks || '',
-          description: descriptionRaw.replace(hsCode, '').trim(),
-          hsCode,
-          weight: weight || '',
-          volume: volume || ''
-        });
+export default function parsePDFCargo(file, onProgress) {
+  return new Promise((resolve, reject) => {
+    const reader = new FileReader();
+    reader.onload = async () => {
+      try {
+        const arrayBuffer = reader.result;
+        const pdf = await pdfjsLib.getDocument({ data: arrayBuffer }).promise;
+        const results = [];
+        for (let i = 1; i <= pdf.numPages; i++) {
+          const page = await pdf.getPage(i);
+          const text = await page.getTextContent();
+          const content = text.items.map(item => item.str).join(' ');
+          const regex = /B\/L No\.\:\s*([\w\d\-']+)\s*\|\s*Marks\:\s*([\w\-']+)\s*\|\s*Goods\:\s*(.*?)\(HS:\s*(\d+)\)\s*\|\s*Weight\:\s*([\d\.]+)\s*kg\s*\|\s*Volume\:\s*([\d\.]+)\s*m³/gi;
+          const matches = [...content.matchAll(regex)];
+          matches.forEach(match => {
+            results.push({
+              blNumber: match[1],
+              marks: match[2],
+              goods: match[3].trim(),
+              hsCode: match[4],
+              weight: match[5],
+              volume: match[6]
+            });
+          });
+          if (onProgress) onProgress(Math.round((i / pdf.numPages) * 100));
+        }
+        resolve(results);
+      } catch (err) {
+        reject(err);
       }
-    }
-  }
-
-  return cargoEntries;
-};
-
-export default parsePDFCargo;
+    };
+    reader.onerror = reject;
+    reader.readAsArrayBuffer(file);
+  });
+}

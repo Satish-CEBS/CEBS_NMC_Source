@@ -1,86 +1,56 @@
-﻿// File: SubmissionSuccess.jsx
+﻿// File: src/pages/demo/NMCPreArrival/steps/SubmissionSuccess.jsx
 import React, { useState } from 'react';
-import { Button, Checkbox, FormControlLabel, FormGroup } from '@mui/material';
-import NotificationsActiveIcon from '@mui/icons-material/NotificationsActive';
-import DashboardIcon from '@mui/icons-material/Dashboard';
-import RestartAltIcon from '@mui/icons-material/RestartAlt';
-import '../../styles/NMCStep.css';
 import { useNavigate } from 'react-router-dom';
+import '../../styles/NMCStep.css';
 
-const SubmissionSuccess = ({ submissionID, timestamp }) => {
-  const [showAlertOptions, setShowAlertOptions] = useState(false);
-  const [selectedDepts, setSelectedDepts] = useState([]);
+const SubmissionSuccess = ({ submissionId, submittedAt }) => {
   const navigate = useNavigate();
-
-  const toggleDept = (dept) => {
-    setSelectedDepts((prev) =>
-      prev.includes(dept) ? prev.filter((d) => d !== dept) : [...prev, dept]
-    );
-  };
+  const [showAlertOptions, setShowAlertOptions] = useState(false);
+  const [departments, setDepartments] = useState({
+    immigration: false,
+    customs: false,
+    health: false,
+    maritime: false,
+  });
 
   const handleSendAlerts = () => {
-    alert(`Notification sent to: ${selectedDepts.join(', ')}`);
+    alert(`Alerts sent to: ${Object.keys(departments)
+      .filter((key) => departments[key])
+      .join(', ')}`);
     setShowAlertOptions(false);
   };
 
   return (
-    <div className="step-container success-container">
-      <h2>Submission Complete</h2>
-      <div className="success-card">
-        <p>Your Pre-Arrival Notification has been submitted successfully.</p>
-        <p><strong>Submission ID:</strong> {submissionID}</p>
-        <p><strong>Timestamp:</strong> {timestamp}</p>
-        <p>A digital receipt has been saved.</p>
+    <div className="nmc-step success-page">
+      <h2>Submission Successful</h2>
+      <p>Your Pre-Arrival Notification has been successfully submitted.</p>
+
+      <div className="submission-details">
+        <p><strong>Submission ID:</strong> {submissionId || 'N/A'}</p>
+        <p><strong>Submitted At:</strong> {submittedAt || 'N/A'}</p>
       </div>
 
       <div className="success-actions">
-        <Button
-          variant="contained"
-          color="info"
-          startIcon={<NotificationsActiveIcon />}
-          onClick={() => setShowAlertOptions(!showAlertOptions)}
-        >
-          Alert Agencies / Departments
-        </Button>
-
-        {showAlertOptions && (
-          <div className="alert-options">
-            <FormGroup row>
-              {['Immigration', 'Customs', 'Health Department', 'Maritime Authorities'].map((dept) => (
-                <FormControlLabel
-                  key={dept}
-                  control={
-                    <Checkbox
-                      checked={selectedDepts.includes(dept)}
-                      onChange={() => toggleDept(dept)}
-                    />
-                  }
-                  label={dept}
-                />
-              ))}
-            </FormGroup>
-            <Button variant="outlined" onClick={handleSendAlerts}>Send Alert</Button>
-          </div>
-        )}
-
-        <Button
-          variant="contained"
-          color="success"
-          startIcon={<RestartAltIcon />}
-          onClick={() => navigate('/nmc-prearrival-wizard')}
-        >
-          Start New Submission
-        </Button>
-
-        <Button
-          variant="contained"
-          color="primary"
-          startIcon={<DashboardIcon />}
-          onClick={() => navigate('/prearrival-dashboard')}
-        >
-          Return to Pre-Arrival Dashboard
-        </Button>
+        <button onClick={() => setShowAlertOptions(!showAlertOptions)}>
+          <span className="material-icons">notifications</span> Alert Agencies / Departments
+        </button>
+        <button onClick={() => navigate('/nmc-prearrival-wizard')}>
+          <span className="material-icons">restart_alt</span> Start New Submission
+        </button>
+        <button onClick={() => navigate('/prearrival-dashboard')}>
+          <span className="material-icons">dashboard</span> Return to Pre-Arrival Dashboard
+        </button>
       </div>
+
+      {showAlertOptions && (
+        <div className="alert-options">
+          <label><input type="checkbox" checked={departments.immigration} onChange={(e) => setDepartments({ ...departments, immigration: e.target.checked })} /> Immigration</label>
+          <label><input type="checkbox" checked={departments.customs} onChange={(e) => setDepartments({ ...departments, customs: e.target.checked })} /> Customs</label>
+          <label><input type="checkbox" checked={departments.health} onChange={(e) => setDepartments({ ...departments, health: e.target.checked })} /> Health Department</label>
+          <label><input type="checkbox" checked={departments.maritime} onChange={(e) => setDepartments({ ...departments, maritime: e.target.checked })} /> Maritime Authority</label>
+          <button onClick={handleSendAlerts}><span className="material-icons">send</span> Send Alerts</button>
+        </div>
+      )}
     </div>
   );
 };
