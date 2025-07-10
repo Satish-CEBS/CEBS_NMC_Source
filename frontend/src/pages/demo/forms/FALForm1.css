@@ -1,0 +1,19 @@
+/* FALForm1.css */
+.fal-form1 {
+    padding: 2rem;
+    max-width: 600px;
+    margin: auto;
+    background: #fff0f0;
+    border-radius: 8px;
+}
+
+    .fal-form1 label {
+        display: block;
+        margin-top: 1rem;
+    }
+
+    .fal-form1 input {
+        width: 100%;
+        padding: 8px;
+        margin-top: 4px;
+    }

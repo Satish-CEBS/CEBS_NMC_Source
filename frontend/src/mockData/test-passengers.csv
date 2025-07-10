@@ -1,0 +1,3 @@
+FamilyName,GivenName,Nationality,DateOfBirth,Gender,TravelDocType,TravelDocNo,EmbarkPort,DisembarkPort
+Brown,Alice,USA,1990-07-01,Female,Passport,A1234567,Dubai,Doha
+Kim,Min,KR,1992-08-25,Male,Passport,K9876543,Fujairah,Muscat

@@ -1,4 +1,4 @@
-// E:\CEBS_NMC\frontend\src\pages\common\SidebarMenu.jsx
+﻿// E:\CEBS_NMC\frontend\src\pages\common\SidebarMenu.jsx
 import React, { useState } from 'react';
 import './SidebarMenu.css';
 import {
@@ -24,7 +24,8 @@ const menuData = [
         items: [
             { label: 'Pre-Arrival Dashboard', path:'/prearrival-dashboard' },
             { label: 'Pre-Arrival List', path: '/prearrival-list' },
-            { label: 'New Pre-Arrival Notification', path: '/prearrival-wizard' },            
+            { label: 'New Pre-Arrival Notification', path: '/prearrival-wizard' }, 
+            { label: '🆕 NMC Pre-Arrival Wizard', path: '/nmc-prearrival-wizard' }
         ],
     },
     {
@@ -33,6 +34,7 @@ const menuData = [
         items: [
             { label: 'Port Call Management Dashboard', path: '/portcall-dashboard' },
             { label: 'New Port Call Notification', path: '/portcall-wizard' },
+            { label: 'Berth Dashboard', path: '/berth-dashboard' },
             { label: 'Arrival at anchorage', path: '' },
             { label: 'Pilot boarding', path: '' },
             { label: 'Berthing', path: '' },
@@ -49,6 +51,32 @@ const menuData = [
             { label: 'Vessel Dashboard', path: '/vessel-dashboard' },
             { label: 'Vessel Arrival Notification', path: '/vessel-arrival' },
             { label: 'Vessel Departure Notification', path: '/vessel-departure' },
+        ],
+    },
+    {
+        label: 'Departure Management',
+        icon: <MdDirectionsBoat />,
+        items: [
+            { label: 'Departure Notification Wizard', path: '/departure-wizard' },
+        ],
+    },
+    {
+        label: 'Stowage & Cargo Handling',
+        icon: <MdLocalShipping />,
+        items: [
+            { label: 'Stowage Plan Dashboard', path: '/stowage-dashboard' },
+            { label: 'Add Stowage Plan', path: '/stowage/add' },
+            { label: 'Upload Stowage File', path: '/stowage/upload' },
+            { label: 'Review Stowage Details', path: '/stowage/review' }
+        ],
+    },
+
+    {
+        label: 'Crew & Passenger Management',
+        icon: <MdPeople />,
+        items: [
+            { label: 'Crew Manifest Upload', path: '/crew-manifest' },
+            { label: 'Passenger Manifest Upload', path: '/passenger-manifest' }
         ],
     },
     {

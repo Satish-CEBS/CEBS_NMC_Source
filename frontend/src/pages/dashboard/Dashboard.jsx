@@ -111,9 +111,9 @@ const Dashboard = () => {
                         </div>
 
                         <div className="ai-actions">
-                            <button className="ai-button green" onClick={() => setShowAI(!showAI)}>
+                            {/*<button className="ai-button green" onClick={() => setShowAI(!showAI)}>
                                 <PsychologyAltIcon fontSize="small" /> AI Assistant
-                            </button>
+                            </button>*/}
                             <button className="ai-button violet-outline" onClick={() => setChatOpen(true)}>
                                 <ChatBubbleOutlineIcon fontSize="small" /> Ask AI
                             </button>

@@ -1,0 +1,19 @@
+/* StowageInstruction.css */
+.stowage-instruction {
+    padding: 2rem;
+    max-width: 600px;
+    margin: auto;
+    background: #f9f9f9;
+    border-radius: 8px;
+}
+
+    .stowage-instruction textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 1rem;
+    }
+
+.button-group button {
+    margin-right: 10px;
+    padding: 8px 16px;
+}

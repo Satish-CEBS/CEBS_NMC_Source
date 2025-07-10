@@ -98,6 +98,7 @@
     cursor: pointer;
     font-weight: 500;
     transition: 0.3s;
+    color:#000000;
 }
 
     .trend-filter-btn.active {

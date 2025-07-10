@@ -1,0 +1,22 @@
+/* PassengerManifest.css */
+.passenger-manifest {
+    padding: 2rem;
+    background: #e8fff3;
+    max-width: 600px;
+    margin: auto;
+    border-radius: 8px;
+    text-align: center;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #004aad;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+    button:hover {
+        background-color: #003b91;
+    }

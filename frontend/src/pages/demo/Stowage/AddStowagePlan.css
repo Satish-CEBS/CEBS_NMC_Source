@@ -1,0 +1,155 @@
+.stowage-plan-form {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+    background: #fff;
+    border-radius: 6px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+}
+
+    .stowage-plan-form h2 {
+        font-size: 22px;
+        margin-bottom: 20px;
+        border-left: 4px solid #007bff;
+        padding-left: 10px;
+    }
+
+.stowage-plan-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+    .stowage-plan-row label {
+        display: block;
+        margin-bottom: 6px;
+        font-weight: 600;
+        font-size: 14px;
+    }
+
+.stowage-plan-input {
+    flex: 1;
+    min-width: 220px;
+}
+
+    .stowage-plan-input input,
+    .stowage-plan-input .react-select__control {
+        width: 100%;
+        padding: 8px;
+        font-size: 14px;
+        border-radius: 4px;
+        border: 1px solid #ccc;
+    }
+
+.container-table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+    .container-table th,
+    .container-table td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+        font-size: 14px;
+    }
+
+    .container-table th {
+        background-color: #f4f4f4;
+    }
+
+.flag-option {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+    .flag-option img {
+        width: 20px;
+        height: 14px;
+        object-fit: contain;
+    }
+
+.btn-add-row,
+.btn-save-plan {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    margin-top: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+    .btn-add-row:hover,
+    .btn-save-plan:hover {
+        background-color: #0056b3;
+    }
+
+.container-actions {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .stowage-plan-row {
+        flex-direction: column;
+    }
+
+    .stowage-plan-input {
+        width: 100%;
+    }
+}
+.container-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+    .container-table th,
+    .container-table td {
+        padding: 8px;
+        border: 1px solid #ddd;
+        text-align: left;
+    }
+
+    .container-table th {
+        background-color: #f2f2f2;
+    }
+
+    .container-table tr:nth-child(even) {
+        background-color: #fafafa;
+    }
+/* modal styles */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.modal {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    width: 600px;
+}
+
+.modal-actions {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+}

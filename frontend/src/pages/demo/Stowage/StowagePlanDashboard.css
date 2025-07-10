@@ -1,0 +1,47 @@
+.stowage-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+    .stowage-table th, .stowage-table td {
+        border: 1px solid #ddd;
+        padding: 10px;
+        font-size: 14px;
+        text-align: left;
+    }
+
+    .stowage-table th {
+        background-color: #f0f4f8;
+        font-weight: 600;
+    }
+
+@media screen and (max-width: 768px) {
+    .stowage-table, .stowage-table thead, .stowage-table tbody, .stowage-table th, .stowage-table td, .stowage-table tr {
+        display: block;
+    }
+
+        .stowage-table thead {
+            display: none;
+        }
+
+        .stowage-table tr {
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+        }
+
+        .stowage-table td {
+            padding: 6px 10px;
+            border: none;
+            position: relative;
+        }
+
+            .stowage-table td::before {
+                content: attr(data-label);
+                font-weight: bold;
+                display: block;
+                margin-bottom: 4px;
+            }
+}

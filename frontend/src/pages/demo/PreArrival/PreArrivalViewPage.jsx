@@ -71,6 +71,8 @@ const PreArrivalViewPage = () => {
 
     const handleBack = () => navigate('/prearrival-dashboard');
 
+    const hasStowagePlan = record?.has_stowage_plan === true;
+
     const handleDownloadPDF = async () => {
         const canvas = await html2canvas(viewRef.current);
         const imgData = canvas.toDataURL('image/png');
@@ -86,8 +88,6 @@ const PreArrivalViewPage = () => {
     const { vessel, voyage, crew, passengers, documents, status, submitted_by, submitted_date } = record;
     const flagIcon = getFlagIcon(vessel.flag_code);
 
-    const statusColor = status === 'Submitted' ? 'green' : 'goldenrod';
-
     return (
         <div className="page-container">
             <InnerHeader />
@@ -99,7 +99,7 @@ const PreArrivalViewPage = () => {
                     <div className="prearrival-view-container" ref={viewRef}>
                         <div className="top-actions">
                             <button onClick={handleBack} className="btn-secondary">← Back to List</button>
-                            
+
                             <button onClick={handleDownloadPDF} className="btn-primary">Download as PDF</button>
                         </div>
 
@@ -166,6 +166,36 @@ const PreArrivalViewPage = () => {
                                 </p>
                                 <p><strong>Submitted By:</strong> {submitted_by}</p>
                                 <p><strong>Date:</strong> {new Date(submitted_date).toLocaleString()}</p>
+                            </div>
+                            <div className="info-card">
+                                <h3>Requested Services</h3>
+                                <ul>
+                                    {(record.services || []).map((s, i) => (
+                                        <li key={i}>{s}</li>
+                                    ))}
+                                </ul>
+                            </div>
+                            <div className="info-card">
+                                <h3>Security & Certificates</h3>
+                                <p><strong>Security Certificate:</strong> {record.security_certificate ? '✅ Yes' : '❌ No'}</p>
+                                <p><strong>Pre-arrival Checklist:</strong> {record.prearrival_checklist ? '✅ Submitted' : '❌ Not Submitted'}</p>
+                            </div>
+                            <div className="stowage-actions">
+                                {hasStowagePlan ? (
+                                    <button
+                                        className="btn-view"
+                                        onClick={() => navigate(`/stowage/view?vcn=${record.voyage?.vcn}`)}
+                                    >
+                                        📄 View Stowage Plan
+                                    </button>
+                                ) : (
+                                    <button
+                                        className="btn-add"
+                                        onClick={() => navigate(`/stowage/add?vcn=${record.voyage?.vcn}`)}
+                                    >
+                                        📦 Add Stowage Plan
+                                    </button>
+                                )}
                             </div>
                         </div>
                     </div>

@@ -9,7 +9,7 @@
 .page-container {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  min-height: 10vh;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #f8f9fc;
 }
