@@ -12,3 +12,7 @@ DBScripts/*.sql
 *.json
 /frontend/src/pages/dashboard/*.json
 /backend/data/*.json
+*.zip
+*.rar
+*.tar.gz
+*.7z
