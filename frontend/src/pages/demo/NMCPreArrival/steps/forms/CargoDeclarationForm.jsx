@@ -1,6 +1,6 @@
 // File: forms/CargoDeclarationForm.jsx
 import React, { useState, useEffect } from 'react';
-import '../../../styles/ModalForm.css';
+import './ModalForm.css';
 
 const CargoDeclarationForm = ({ onSave, onCancel, initialData }) => {
   const [form, setForm] = useState({

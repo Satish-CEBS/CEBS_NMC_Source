@@ -1,6 +1,6 @@
 // File: forms/ShipStoreForm.jsx
 import React, { useState, useEffect } from 'react';
-import '../../../styles/ModalForm.css';
+import './ModalForm.css';
 
 const ShipStoreForm = ({ onSave, onCancel, initialData }) => {
   const [form, setForm] = useState({ item: '', quantity: '', location: '' });
