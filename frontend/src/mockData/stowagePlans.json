@@ -1,0 +1,87 @@
+[
+    {
+        "vcn": "INBOM110001212",
+        "terminal": "INBOM1",
+        "draftFwd": "12.3",
+        "draftAft": "13.5",
+        "planList": [
+            {
+                "Container No": "MSCU1234567",
+                "BL No": "BL2025-001",
+                "Call Sign": "3EYR7",
+                "IMO": "9703318",
+                "DG Class": "3",
+                "UN No": "1203",
+                "Flash Point": "23C",
+                "Discharge Port": "AEAUH1",
+                "Tonnage": 30,
+                "Stowage Instruction": "Keep upright. Avoid heat.",
+                "is_dg": true
+            }
+        ]
+    },
+    {
+        "vcn": "AEJEB220042812",
+        "terminal": "AEJEB1",
+        "draftFwd": "10.4",
+        "draftAft": "11.1",
+        "planList": [
+            {
+                "Container No": "MAEU7654321",
+                "BL No": "BL2025-002",
+                "Call Sign": "C6DF6",
+                "IMO": "9744001",
+                "DG Class": "",
+                "UN No": "",
+                "Flash Point": "",
+                "Discharge Port": "AEFJR1",
+                "Tonnage": 26,
+                "Stowage Instruction": "General cargo - handle with care.",
+                "is_dg": false
+            }
+        ]
+    },
+    {
+        "vcn": "TESTVCN123456",
+        "terminal": "AEAUH2",
+        "draftFwd": "9.8",
+        "draftAft": "10.2",
+        "planList": [
+            {
+                "Container No": "ONEU9988776",
+                "BL No": "BL2025-009",
+                "Call Sign": "9V5678",
+                "IMO": "9876543",
+                "DG Class": "2.1",
+                "UN No": "1965",
+                "Flash Point": "38C",
+                "Discharge Port": "AEMINA1",
+                "Tonnage": 28,
+                "Stowage Instruction": "Ventilated. No sparks nearby.",
+                "is_dg": true
+            }
+        ]
+    },
+    {
+        "vcn": "VCN001",
+        "terminal": "AEAUH2",
+        "draftFwd": "9.8",
+        "draftAft": "10.2",
+        "planList": [
+            {
+                "Container No": "ONEU9988776",
+                "BL No": "BL2025-009",
+                "Call Sign": "9V5678",
+                "IMO": "9876543",
+                "DG Class": "2.1",
+                "UN No": "1965",
+                "Flash Point": "38C",
+                "Discharge Port": "AEMINA1",
+                "Tonnage": 28,
+                "Stowage Instruction": "Ventilated. No sparks nearby.",
+                "is_dg": true
+            }
+        ]
+    }
+
+]

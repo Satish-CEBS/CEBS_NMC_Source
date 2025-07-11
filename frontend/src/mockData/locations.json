@@ -1,0 +1,1290 @@
+[
+  {
+    "location_id": 1,
+    "name": "Jebel Ali Port",
+    "location_code": "AEJEA",
+    "country_code": "ARE",
+    "country": "United Arab Emirates",
+    "flag_code": "ae"
+  },
+  {
+    "location_id": 2,
+    "name": "Khalifa Port",
+    "location_code": "AEKHL",
+    "country_code": "ARE",
+    "country": "United Arab Emirates",
+    "flag_code": "ae"
+  },
+  {
+    "location_id": 3,
+    "name": "Port of Fujairah",
+    "location_code": "AEFUJ",
+    "country_code": "ARE",
+    "country": "United Arab Emirates",
+    "flag_code": "ae"
+  },
+  {
+    "location_id": 4,
+    "name": "Port of Sharjah",
+    "location_code": "AESHJ",
+    "country_code": "ARE",
+    "country": "United Arab Emirates",
+    "flag_code": "ae"
+  },
+  {
+    "location_id": 5,
+    "name": "Jeddah Islamic Port",
+    "location_code": "SAJED",
+    "country_code": "SAU",
+    "country": "Saudi Arabia",
+    "flag_code": "sa"
+  },
+  {
+    "location_id": 6,
+    "name": "King Abdulaziz Port",
+    "location_code": "SADMM",
+    "country_code": "SAU",
+    "country": "Saudi Arabia",
+    "flag_code": "sa"
+  },
+  {
+    "location_id": 7,
+    "name": "King Abdullah Port",
+    "location_code": "SAKAP",
+    "country_code": "SAU",
+    "country": "Saudi Arabia",
+    "flag_code": "sa"
+  },
+  {
+    "location_id": 8,
+    "name": "Jubail Port",
+    "location_code": "SAJUB",
+    "country_code": "SAU",
+    "country": "Saudi Arabia",
+    "flag_code": "sa"
+  },
+  {
+    "location_id": 9,
+    "name": "Ras Tanura Port",
+    "location_code": "SARTA",
+    "country_code": "SAU",
+    "country": "Saudi Arabia",
+    "flag_code": "sa"
+  },
+  {
+    "location_id": 10,
+    "name": "Hamad Port",
+    "location_code": "QADOH",
+    "country_code": "QAT",
+    "country": "Qatar",
+    "flag_code": "qa"
+  },
+  {
+    "location_id": 11,
+    "name": "Port of Salalah",
+    "location_code": "OMSLL",
+    "country_code": "OMN",
+    "country": "Oman",
+    "flag_code": "om"
+  },
+  {
+    "location_id": 12,
+    "name": "Sohar Port",
+    "location_code": "OMSOH",
+    "country_code": "OMN",
+    "country": "Oman",
+    "flag_code": "om"
+  },
+  {
+    "location_id": 13,
+    "name": "Port of Duqm",
+    "location_code": "OMDUQ",
+    "country_code": "OMN",
+    "country": "Oman",
+    "flag_code": "om"
+  },
+  {
+    "location_id": 14,
+    "name": "Shuwaikh Port",
+    "location_code": "KWSWK",
+    "country_code": "KWT",
+    "country": "Kuwait",
+    "flag_code": "kw"
+  },
+  {
+    "location_id": 15,
+    "name": "Mina Salman",
+    "location_code": "BHMIN",
+    "country_code": "BHR",
+    "country": "Bahrain",
+    "flag_code": "bh"
+  },
+  {
+    "location_id": 16,
+    "name": "Grand Faw Port",
+    "location_code": "IQFAW",
+    "country_code": "IRQ",
+    "country": "Iraq",
+    "flag_code": "iq"
+  },
+  {
+    "location_id": 17,
+    "name": "Port of Latakia",
+    "location_code": "SYLTK",
+    "country_code": "SYR",
+    "country": "Syrian Arab Republic",
+    "flag_code": "sy"
+  },
+  {
+    "location_id": 18,
+    "name": "Port of Aqaba",
+    "location_code": "JOAQJ",
+    "country_code": "JOR",
+    "country": "Jordan",
+    "flag_code": "jo"
+  },
+  {
+    "location_id": 19,
+    "name": "Port of Aden",
+    "location_code": "YEADE",
+    "country_code": "YEM",
+    "country": "Yemen",
+    "flag_code": "ye"
+  },
+  {
+    "location_id": 20,
+    "name": "Port of Al Mukalla",
+    "location_code": "YEALM",
+    "country_code": "YEM",
+    "country": "Yemen",
+    "flag_code": "ye"
+  },
+  {
+    "location_id": 21,
+    "name": "Port of Haifa",
+    "location_code": "ILHFA",
+    "country_code": "ISR",
+    "country": "Israel",
+    "flag_code": "il"
+  },
+  {
+    "location_id": 22,
+    "name": "Port of Ashdod",
+    "location_code": "ILASH",
+    "country_code": "ISR",
+    "country": "Israel",
+    "flag_code": "il"
+  },
+  {
+    "location_id": 23,
+    "name": "Port of Eilat",
+    "location_code": "ILEIL",
+    "country_code": "ISR",
+    "country": "Israel",
+    "flag_code": "il"
+  },
+  {
+    "location_id": 101,
+    "name": "Port of Shanghai",
+    "location_code": "CNSGH",
+    "country_code": "CHN",
+    "country": "China",
+    "flag_code": "cn"
+  },
+  {
+    "location_id": 102,
+    "name": "Port of Shenzhen",
+    "location_code": "CNSZX",
+    "country_code": "CHN",
+    "country": "China",
+    "flag_code": "cn"
+  },
+  {
+    "location_id": 103,
+    "name": "Port of Ningbo-Zhoushan",
+    "location_code": "CNNGB",
+    "country_code": "CHN",
+    "country": "China",
+    "flag_code": "cn"
+  },
+  {
+    "location_id": 104,
+    "name": "Port of Qingdao",
+    "location_code": "CNQDG",
+    "country_code": "CHN",
+    "country": "China",
+    "flag_code": "cn"
+  },
+  {
+    "location_id": 105,
+    "name": "Port of Guangzhou",
+    "location_code": "CNCAN",
+    "country_code": "CHN",
+    "country": "China",
+    "flag_code": "cn"
+  },
+  {
+    "location_id": 106,
+    "name": "Port of Tianjin",
+    "location_code": "CNTNJ",
+    "country_code": "CHN",
+    "country": "China",
+    "flag_code": "cn"
+  },
+  {
+    "location_id": 107,
+    "name": "Port of Singapore",
+    "location_code": "SGSIN",
+    "country_code": "SGP",
+    "country": "Singapore",
+    "flag_code": "sg"
+  },
+  {
+    "location_id": 108,
+    "name": "Port of Busan",
+    "location_code": "KRPUS",
+    "country_code": "KOR",
+    "country": "Korea, Republic of",
+    "flag_code": "kr"
+  },
+  {
+    "location_id": 109,
+    "name": "Port of Incheon",
+    "location_code": "KRINC",
+    "country_code": "KOR",
+    "country": "Korea, Republic of",
+    "flag_code": "kr"
+  },
+  {
+    "location_id": 110,
+    "name": "Port of Tokyo",
+    "location_code": "JPTYO",
+    "country_code": "JPN",
+    "country": "Japan",
+    "flag_code": "jp"
+  },
+  {
+    "location_id": 111,
+    "name": "Port of Yokohama",
+    "location_code": "JPYOK",
+    "country_code": "JPN",
+    "country": "Japan",
+    "flag_code": "jp"
+  },
+  {
+    "location_id": 112,
+    "name": "Port of Kobe",
+    "location_code": "JPUKB",
+    "country_code": "JPN",
+    "country": "Japan",
+    "flag_code": "jp"
+  },
+  {
+    "location_id": 113,
+    "name": "Port of Nagoya",
+    "location_code": "JPNGO",
+    "country_code": "JPN",
+    "country": "Japan",
+    "flag_code": "jp"
+  },
+  {
+    "location_id": 114,
+    "name": "Jawaharlal Nehru Port (Nhava Sheva)",
+    "location_code": "INNSA",
+    "country_code": "IND",
+    "country": "India",
+    "flag_code": "in"
+  },
+  {
+    "location_id": 115,
+    "name": "Port of Mumbai",
+    "location_code": "INBOM",
+    "country_code": "IND",
+    "country": "India",
+    "flag_code": "in"
+  },
+  {
+    "location_id": 116,
+    "name": "Port of Chennai",
+    "location_code": "INMAA",
+    "country_code": "IND",
+    "country": "India",
+    "flag_code": "in"
+  },
+  {
+    "location_id": 117,
+    "name": "Port of Kochi",
+    "location_code": "INCOK",
+    "country_code": "IND",
+    "country": "India",
+    "flag_code": "in"
+  },
+  {
+    "location_id": 118,
+    "name": "Port of Visakhapatnam",
+    "location_code": "INVSK",
+    "country_code": "IND",
+    "country": "India",
+    "flag_code": "in"
+  },
+  {
+    "location_id": 119,
+    "name": "Port of Karachi",
+    "location_code": "PKKHI",
+    "country_code": "PAK",
+    "country": "Pakistan",
+    "flag_code": "pk"
+  },
+  {
+    "location_id": 120,
+    "name": "Port Qasim",
+    "location_code": "PKBQM",
+    "country_code": "PAK",
+    "country": "Pakistan",
+    "flag_code": "pk"
+  },
+  {
+    "location_id": 121,
+    "name": "Gwadar Port",
+    "location_code": "PKGWD",
+    "country_code": "PAK",
+    "country": "Pakistan",
+    "flag_code": "pk"
+  },
+  {
+    "location_id": 122,
+    "name": "Port of Colombo",
+    "location_code": "LKCMB",
+    "country_code": "LKA",
+    "country": "Sri Lanka",
+    "flag_code": "lk"
+  },
+  {
+    "location_id": 123,
+    "name": "Port of Hambantota",
+    "location_code": "LKHBA",
+    "country_code": "LKA",
+    "country": "Sri Lanka",
+    "flag_code": "lk"
+  },
+  {
+    "location_id": 124,
+    "name": "Port of Chittagong",
+    "location_code": "BDCGP",
+    "country_code": "BGD",
+    "country": "Bangladesh",
+    "flag_code": "bd"
+  },
+  {
+    "location_id": 125,
+    "name": "Port of Mongla",
+    "location_code": "BDMGL",
+    "country_code": "BGD",
+    "country": "Bangladesh",
+    "flag_code": "bd"
+  },
+  {
+    "location_id": 126,
+    "name": "Port of Tanjung Priok",
+    "location_code": "IDTPK",
+    "country_code": "IDN",
+    "country": "Indonesia",
+    "flag_code": "id"
+  },
+  {
+    "location_id": 127,
+    "name": "Port of Tanjung Perak",
+    "location_code": "IDSUB",
+    "country_code": "IDN",
+    "country": "Indonesia",
+    "flag_code": "id"
+  },
+  {
+    "location_id": 128,
+    "name": "Port Klang",
+    "location_code": "MYPKG",
+    "country_code": "MYS",
+    "country": "Malaysia",
+    "flag_code": "my"
+  },
+  {
+    "location_id": 129,
+    "name": "Port of Tanjung Pelepas",
+    "location_code": "MYTPP",
+    "country_code": "MYS",
+    "country": "Malaysia",
+    "flag_code": "my"
+  },
+  {
+    "location_id": 130,
+    "name": "Port of Laem Chabang",
+    "location_code": "THLCH",
+    "country_code": "THA",
+    "country": "Thailand",
+    "flag_code": "th"
+  },
+  {
+    "location_id": 131,
+    "name": "Port of Bangkok (Klong Toey)",
+    "location_code": "THBKK",
+    "country_code": "THA",
+    "country": "Thailand",
+    "flag_code": "th"
+  },
+  {
+    "location_id": 132,
+    "name": "Birgunj Inland Dry Port",
+    "location_code": "NPBRJ",
+    "country_code": "NPL",
+    "country": "Nepal",
+    "flag_code": "np"
+  },
+  {
+    "location_id": 133,
+    "name": "Thimphu Logistics Hub",
+    "location_code": "BTTIM",
+    "country_code": "BTN",
+    "country": "Bhutan",
+    "flag_code": "bt"
+  },
+  {
+    "location_id": 201,
+    "name": "Port of Los Angeles",
+    "location_code": "USLAX",
+    "country_code": "USA",
+    "country": "United States",
+    "flag_code": "us"
+  },
+  {
+    "location_id": 202,
+    "name": "Port of Long Beach",
+    "location_code": "USLGB",
+    "country_code": "USA",
+    "country": "United States",
+    "flag_code": "us"
+  },
+  {
+    "location_id": 203,
+    "name": "Port of New York and New Jersey",
+    "location_code": "USNYC",
+    "country_code": "USA",
+    "country": "United States",
+    "flag_code": "us"
+  },
+  {
+    "location_id": 204,
+    "name": "Port of Savannah",
+    "location_code": "USSAV",
+    "country_code": "USA",
+    "country": "United States",
+    "flag_code": "us"
+  },
+  {
+    "location_id": 205,
+    "name": "Port of Houston",
+    "location_code": "USHOU",
+    "country_code": "USA",
+    "country": "United States",
+    "flag_code": "us"
+  },
+  {
+    "location_id": 206,
+    "name": "Port of Seattle",
+    "location_code": "USSEA",
+    "country_code": "USA",
+    "country": "United States",
+    "flag_code": "us"
+  },
+  {
+    "location_id": 207,
+    "name": "Port of Oakland",
+    "location_code": "USOAK",
+    "country_code": "USA",
+    "country": "United States",
+    "flag_code": "us"
+  },
+  {
+    "location_id": 208,
+    "name": "Port of Miami",
+    "location_code": "USMIA",
+    "country_code": "USA",
+    "country": "United States",
+    "flag_code": "us"
+  },
+  {
+    "location_id": 209,
+    "name": "Port of Vancouver",
+    "location_code": "CAVAN",
+    "country_code": "CAN",
+    "country": "Canada",
+    "flag_code": "ca"
+  },
+  {
+    "location_id": 210,
+    "name": "Port of Montreal",
+    "location_code": "CAMTR",
+    "country_code": "CAN",
+    "country": "Canada",
+    "flag_code": "ca"
+  },
+  {
+    "location_id": 211,
+    "name": "Port of Halifax",
+    "location_code": "CAHAL",
+    "country_code": "CAN",
+    "country": "Canada",
+    "flag_code": "ca"
+  },
+  {
+    "location_id": 212,
+    "name": "Port of Prince Rupert",
+    "location_code": "CAPRR",
+    "country_code": "CAN",
+    "country": "Canada",
+    "flag_code": "ca"
+  },
+  {
+    "location_id": 213,
+    "name": "Port of Manzanillo",
+    "location_code": "MXZLO",
+    "country_code": "MEX",
+    "country": "Mexico",
+    "flag_code": "mx"
+  },
+  {
+    "location_id": 214,
+    "name": "Port of Veracruz",
+    "location_code": "MXVER",
+    "country_code": "MEX",
+    "country": "Mexico",
+    "flag_code": "mx"
+  },
+  {
+    "location_id": 215,
+    "name": "Port of L\u00e1zaro C\u00e1rdenas",
+    "location_code": "MXLZC",
+    "country_code": "MEX",
+    "country": "Mexico",
+    "flag_code": "mx"
+  },
+  {
+    "location_id": 301,
+    "name": "Port of Alexandria",
+    "location_code": "EGALY",
+    "country_code": "EGY",
+    "country": "Egypt",
+    "flag_code": "eg"
+  },
+  {
+    "location_id": 302,
+    "name": "Port of Port Said",
+    "location_code": "EGPSD",
+    "country_code": "EGY",
+    "country": "Egypt",
+    "flag_code": "eg"
+  },
+  {
+    "location_id": 303,
+    "name": "Port of Damietta",
+    "location_code": "EGDAM",
+    "country_code": "EGY",
+    "country": "Egypt",
+    "flag_code": "eg"
+  },
+  {
+    "location_id": 304,
+    "name": "Port of Sokhna",
+    "location_code": "EGSOK",
+    "country_code": "EGY",
+    "country": "Egypt",
+    "flag_code": "eg"
+  },
+  {
+    "location_id": 305,
+    "name": "Port of Durban",
+    "location_code": "ZADUR",
+    "country_code": "ZAF",
+    "country": "South Africa",
+    "flag_code": "za"
+  },
+  {
+    "location_id": 306,
+    "name": "Port of Cape Town",
+    "location_code": "ZACPT",
+    "country_code": "ZAF",
+    "country": "South Africa",
+    "flag_code": "za"
+  },
+  {
+    "location_id": 307,
+    "name": "Port of Port Elizabeth",
+    "location_code": "ZAPLZ",
+    "country_code": "ZAF",
+    "country": "South Africa",
+    "flag_code": "za"
+  },
+  {
+    "location_id": 308,
+    "name": "Port of Richards Bay",
+    "location_code": "ZARBZ",
+    "country_code": "ZAF",
+    "country": "South Africa",
+    "flag_code": "za"
+  },
+  {
+    "location_id": 309,
+    "name": "Port of Lagos (Apapa & Tin Can Island)",
+    "location_code": "NGLOS",
+    "country_code": "NGA",
+    "country": "Nigeria",
+    "flag_code": "ng"
+  },
+  {
+    "location_id": 310,
+    "name": "Port Harcourt Port",
+    "location_code": "NGPHC",
+    "country_code": "NGA",
+    "country": "Nigeria",
+    "flag_code": "ng"
+  },
+  {
+    "location_id": 311,
+    "name": "Calabar Port",
+    "location_code": "NGCBQ",
+    "country_code": "NGA",
+    "country": "Nigeria",
+    "flag_code": "ng"
+  },
+  {
+    "location_id": 312,
+    "name": "Port of Mombasa",
+    "location_code": "KEMBA",
+    "country_code": "KEN",
+    "country": "Kenya",
+    "flag_code": "ke"
+  },
+  {
+    "location_id": 313,
+    "name": "Port of Tema",
+    "location_code": "GHTEM",
+    "country_code": "GHA",
+    "country": "Ghana",
+    "flag_code": "gh"
+  },
+  {
+    "location_id": 314,
+    "name": "Port of Takoradi",
+    "location_code": "GHTKD",
+    "country_code": "GHA",
+    "country": "Ghana",
+    "flag_code": "gh"
+  },
+  {
+    "location_id": 315,
+    "name": "Port of Dar es Salaam",
+    "location_code": "TZDAR",
+    "country_code": "TZA",
+    "country": "Tanzania, United Republic of",
+    "flag_code": "tz"
+  },
+  {
+    "location_id": 316,
+    "name": "Port of Algiers",
+    "location_code": "DZALG",
+    "country_code": "DZA",
+    "country": "Algeria",
+    "flag_code": "dz"
+  },
+  {
+    "location_id": 317,
+    "name": "Port of Casablanca",
+    "location_code": "MACAS",
+    "country_code": "MAR",
+    "country": "Morocco",
+    "flag_code": "ma"
+  },
+  {
+    "location_id": 318,
+    "name": "Port of Tangier Med",
+    "location_code": "MATNG",
+    "country_code": "MAR",
+    "country": "Morocco",
+    "flag_code": "ma"
+  },
+  {
+    "location_id": 319,
+    "name": "Port of Luanda",
+    "location_code": "AOLAD",
+    "country_code": "AGO",
+    "country": "Angola",
+    "flag_code": "ao"
+  },
+  {
+    "location_id": 320,
+    "name": "Port of Abidjan",
+    "location_code": "CIABJ",
+    "country_code": "CIV",
+    "country": "C\u00f4te d'Ivoire",
+    "flag_code": "ci"
+  },
+  {
+    "location_id": 321,
+    "name": "Port of Douala",
+    "location_code": "CMDLA",
+    "country_code": "CMR",
+    "country": "Cameroon",
+    "flag_code": "cm"
+  },
+  {
+    "location_id": 322,
+    "name": "Port of Rades",
+    "location_code": "TNRAD",
+    "country_code": "TUN",
+    "country": "Tunisia",
+    "flag_code": "tn"
+  },
+  {
+    "location_id": 401,
+    "name": "Port of Felixstowe",
+    "location_code": "GBFXT",
+    "country_code": "GBR",
+    "country": "United Kingdom",
+    "flag_code": "gb"
+  },
+  {
+    "location_id": 402,
+    "name": "Port of Southampton",
+    "location_code": "GBSOU",
+    "country_code": "GBR",
+    "country": "United Kingdom",
+    "flag_code": "gb"
+  },
+  {
+    "location_id": 403,
+    "name": "Port of London (Tilbury)",
+    "location_code": "GBTIL",
+    "country_code": "GBR",
+    "country": "United Kingdom",
+    "flag_code": "gb"
+  },
+  {
+    "location_id": 404,
+    "name": "Port of Le Havre",
+    "location_code": "FRLEH",
+    "country_code": "FRA",
+    "country": "France",
+    "flag_code": "fr"
+  },
+  {
+    "location_id": 405,
+    "name": "Port of Marseille Fos",
+    "location_code": "FRMRS",
+    "country_code": "FRA",
+    "country": "France",
+    "flag_code": "fr"
+  },
+  {
+    "location_id": 406,
+    "name": "Port of Hamburg",
+    "location_code": "DEHAM",
+    "country_code": "DEU",
+    "country": "Germany",
+    "flag_code": "de"
+  },
+  {
+    "location_id": 407,
+    "name": "Port of Bremerhaven",
+    "location_code": "DEBRV",
+    "country_code": "DEU",
+    "country": "Germany",
+    "flag_code": "de"
+  },
+  {
+    "location_id": 408,
+    "name": "Port of Algeciras",
+    "location_code": "ESALG",
+    "country_code": "ESP",
+    "country": "Spain",
+    "flag_code": "es"
+  },
+  {
+    "location_id": 409,
+    "name": "Port of Valencia",
+    "location_code": "ESVLC",
+    "country_code": "ESP",
+    "country": "Spain",
+    "flag_code": "es"
+  },
+  {
+    "location_id": 410,
+    "name": "Port of Barcelona",
+    "location_code": "ESBCN",
+    "country_code": "ESP",
+    "country": "Spain",
+    "flag_code": "es"
+  },
+  {
+    "location_id": 411,
+    "name": "Port of Aarhus",
+    "location_code": "DKAAR",
+    "country_code": "DNK",
+    "country": "Denmark",
+    "flag_code": "dk"
+  },
+  {
+    "location_id": 412,
+    "name": "Port of Copenhagen",
+    "location_code": "DKCPH",
+    "country_code": "DNK",
+    "country": "Denmark",
+    "flag_code": "dk"
+  },
+  {
+    "location_id": 413,
+    "name": "Port of Helsinki",
+    "location_code": "FIHEL",
+    "country_code": "FIN",
+    "country": "Finland",
+    "flag_code": "fi"
+  },
+  {
+    "location_id": 414,
+    "name": "Port of Kotka",
+    "location_code": "FIKTK",
+    "country_code": "FIN",
+    "country": "Finland",
+    "flag_code": "fi"
+  },
+  {
+    "location_id": 415,
+    "name": "Port of Genoa",
+    "location_code": "ITGOA",
+    "country_code": "ITA",
+    "country": "Italy",
+    "flag_code": "it"
+  },
+  {
+    "location_id": 416,
+    "name": "Port of Trieste",
+    "location_code": "ITTRS",
+    "country_code": "ITA",
+    "country": "Italy",
+    "flag_code": "it"
+  },
+  {
+    "location_id": 417,
+    "name": "Port of Naples",
+    "location_code": "ITNAP",
+    "country_code": "ITA",
+    "country": "Italy",
+    "flag_code": "it"
+  },
+  {
+    "location_id": 418,
+    "name": "Port of Gdansk",
+    "location_code": "PLGDN",
+    "country_code": "POL",
+    "country": "Poland",
+    "flag_code": "pl"
+  },
+  {
+    "location_id": 419,
+    "name": "Port of Gdynia",
+    "location_code": "PLGDY",
+    "country_code": "POL",
+    "country": "Poland",
+    "flag_code": "pl"
+  },
+  {
+    "location_id": 501,
+    "name": "Port of Melbourne",
+    "location_code": "AUMEL",
+    "country_code": "AUS",
+    "country": "Australia",
+    "flag_code": "au"
+  },
+  {
+    "location_id": 502,
+    "name": "Port of Sydney (Botany Bay)",
+    "location_code": "AUSYD",
+    "country_code": "AUS",
+    "country": "Australia",
+    "flag_code": "au"
+  },
+  {
+    "location_id": 503,
+    "name": "Port of Brisbane",
+    "location_code": "AUBNE",
+    "country_code": "AUS",
+    "country": "Australia",
+    "flag_code": "au"
+  },
+  {
+    "location_id": 504,
+    "name": "Port of Fremantle",
+    "location_code": "AUFRE",
+    "country_code": "AUS",
+    "country": "Australia",
+    "flag_code": "au"
+  },
+  {
+    "location_id": 505,
+    "name": "Port of Auckland",
+    "location_code": "NZAKL",
+    "country_code": "NZL",
+    "country": "New Zealand",
+    "flag_code": "nz"
+  },
+  {
+    "location_id": 506,
+    "name": "Port of Tauranga",
+    "location_code": "NZTRG",
+    "country_code": "NZL",
+    "country": "New Zealand",
+    "flag_code": "nz"
+  },
+  {
+    "location_id": 507,
+    "name": "Port of Balboa",
+    "location_code": "PABLB",
+    "country_code": "PAN",
+    "country": "Panama",
+    "flag_code": "pa"
+  },
+  {
+    "location_id": 508,
+    "name": "Port of Col\u00f3n",
+    "location_code": "PACOL",
+    "country_code": "PAN",
+    "country": "Panama",
+    "flag_code": "pa"
+  },
+  {
+    "location_id": 509,
+    "name": "Port of Nassau",
+    "location_code": "BSNAS",
+    "country_code": "BHS",
+    "country": "Bahamas",
+    "flag_code": "bs"
+  },
+  {
+    "location_id": 510,
+    "name": "Freeport Container Port",
+    "location_code": "BSFPT",
+    "country_code": "BHS",
+    "country": "Bahamas",
+    "flag_code": "bs"
+  },
+  {
+    "location_id": 511,
+    "name": "Port of Gwangyang",
+    "location_code": "KRKAN",
+    "country_code": "KOR",
+    "country": "Korea, Republic of",
+    "flag_code": "kr"
+  },
+  {
+    "location_id": 512,
+    "name": "Port of Osaka",
+    "location_code": "JPOSA",
+    "country_code": "JPN",
+    "country": "Japan",
+    "flag_code": "jp"
+  },
+  {
+    "location_id": 513,
+    "name": "Port of Sriracha",
+    "location_code": "THSRC",
+    "country_code": "THA",
+    "country": "Thailand",
+    "flag_code": "th"
+  },
+  {
+    "location_id": 514,
+    "name": "Port of East London",
+    "location_code": "ZAELS",
+    "country_code": "ZAF",
+    "country": "South Africa",
+    "flag_code": "za"
+  },
+  {
+    "location_id": 515,
+    "name": "Port of Vladivostok",
+    "location_code": "RUVVO",
+    "country_code": "RUS",
+    "country": "Russian Federation",
+    "flag_code": "ru"
+  },
+  {
+    "location_id": 516,
+    "name": "Port of Novorossiysk",
+    "location_code": "RUNVS",
+    "country_code": "RUS",
+    "country": "Russian Federation",
+    "flag_code": "ru"
+  },
+  {
+    "location_id": 517,
+    "name": "Port of Saint Petersburg",
+    "location_code": "RULED",
+    "country_code": "RUS",
+    "country": "Russian Federation",
+    "flag_code": "ru"
+  },
+  {
+    "location_id": 518,
+    "name": "Port of Odessa",
+    "location_code": "UAODS",
+    "country_code": "UKR",
+    "country": "Ukraine",
+    "flag_code": "ua"
+  },
+  {
+    "location_id": 519,
+    "name": "Port of Chornomorsk",
+    "location_code": "UAILK",
+    "country_code": "UKR",
+    "country": "Ukraine",
+    "flag_code": "ua"
+  },
+  {
+    "location_id": 520,
+    "name": "Port of Mykolaiv",
+    "location_code": "UAMYK",
+    "country_code": "UKR",
+    "country": "Ukraine",
+    "flag_code": "ua"
+  },
+  {
+    "location_id": 601,
+    "name": "Port of Santos",
+    "location_code": "BRSSZ",
+    "country_code": "BRA",
+    "country": "Brazil",
+    "flag_code": "br"
+  },
+  {
+    "location_id": 602,
+    "name": "Port of Rio de Janeiro",
+    "location_code": "BRRIO",
+    "country_code": "BRA",
+    "country": "Brazil",
+    "flag_code": "br"
+  },
+  {
+    "location_id": 603,
+    "name": "Port of Paranagu\u00e1",
+    "location_code": "BRPNG",
+    "country_code": "BRA",
+    "country": "Brazil",
+    "flag_code": "br"
+  },
+  {
+    "location_id": 604,
+    "name": "Port of Buenos Aires",
+    "location_code": "ARBUE",
+    "country_code": "ARG",
+    "country": "Argentina",
+    "flag_code": "ar"
+  },
+  {
+    "location_id": 605,
+    "name": "Port of Valpara\u00edso",
+    "location_code": "CLVAP",
+    "country_code": "CHL",
+    "country": "Chile",
+    "flag_code": "cl"
+  },
+  {
+    "location_id": 606,
+    "name": "Port of San Antonio",
+    "location_code": "CLSCL",
+    "country_code": "CHL",
+    "country": "Chile",
+    "flag_code": "cl"
+  },
+  {
+    "location_id": 607,
+    "name": "Port of Cartagena",
+    "location_code": "COCTG",
+    "country_code": "COL",
+    "country": "Colombia",
+    "flag_code": "co"
+  },
+  {
+    "location_id": 608,
+    "name": "Port of Callao",
+    "location_code": "PECLL",
+    "country_code": "PER",
+    "country": "Peru",
+    "flag_code": "pe"
+  },
+  {
+    "location_id": 609,
+    "name": "Port of Montevideo",
+    "location_code": "UYMVD",
+    "country_code": "URY",
+    "country": "Uruguay",
+    "flag_code": "uy"
+  },
+  {
+    "location_id": 610,
+    "name": "Port of Caucedo",
+    "location_code": "DOCAU",
+    "country_code": "DOM",
+    "country": "Dominican Republic",
+    "flag_code": "do"
+  },
+  {
+    "location_id": 611,
+    "name": "Port of Lim\u00f3n",
+    "location_code": "CRLIO",
+    "country_code": "CRI",
+    "country": "Costa Rica",
+    "flag_code": "cr"
+  },
+  {
+    "location_id": 612,
+    "name": "Puerto Cort\u00e9s",
+    "location_code": "HNPCR",
+    "country_code": "HND",
+    "country": "Honduras",
+    "flag_code": "hn"
+  },
+  {
+    "location_id": 613,
+    "name": "Puerto Quetzal",
+    "location_code": "GTPRQ",
+    "country_code": "GTM",
+    "country": "Guatemala",
+    "flag_code": "gt"
+  },
+  {
+    "location_id": 614,
+    "name": "Port of Kingston",
+    "location_code": "JMKIN",
+    "country_code": "JAM",
+    "country": "Jamaica",
+    "flag_code": "jm"
+  },
+  {
+    "location_id": 615,
+    "name": "Port of Maputo",
+    "location_code": "MZMPM",
+    "country_code": "MOZ",
+    "country": "Mozambique",
+    "flag_code": "mz"
+  },
+  {
+    "location_id": 616,
+    "name": "Port of Walvis Bay",
+    "location_code": "NAWVB",
+    "country_code": "NAM",
+    "country": "Namibia",
+    "flag_code": "na"
+  },
+  {
+    "location_id": 617,
+    "name": "Port Sudan",
+    "location_code": "SDPZU",
+    "country_code": "SDN",
+    "country": "Sudan",
+    "flag_code": "sd"
+  },
+  {
+    "location_id": 618,
+    "name": "Port of Djibouti",
+    "location_code": "DJJIB",
+    "country_code": "DJI",
+    "country": "Djibouti",
+    "flag_code": "dj"
+  },
+  {
+    "location_id": 619,
+    "name": "Port of Tripoli",
+    "location_code": "LYTIP",
+    "country_code": "LBY",
+    "country": "Libya",
+    "flag_code": "ly"
+  },
+  {
+    "location_id": 620,
+    "name": "Port of Benghazi",
+    "location_code": "LYBEN",
+    "country_code": "LBY",
+    "country": "Libya",
+    "flag_code": "ly"
+  },
+  {
+    "location_id": 621,
+    "name": "Port of Dakar",
+    "location_code": "SNDKR",
+    "country_code": "SEN",
+    "country": "Senegal",
+    "flag_code": "sn"
+  },
+  {
+    "location_id": 622,
+    "name": "Port of Nouakchott",
+    "location_code": "MRNKC",
+    "country_code": "MRT",
+    "country": "Mauritania",
+    "flag_code": "mr"
+  },
+  {
+    "location_id": 623,
+    "name": "Port of Rotterdam",
+    "location_code": "NLRTM",
+    "country_code": "NLD",
+    "country": "Netherlands",
+    "flag_code": "nl"
+  },
+  {
+    "location_id": 624,
+    "name": "Port of Antwerp",
+    "location_code": "BEANR",
+    "country_code": "BEL",
+    "country": "Belgium",
+    "flag_code": "be"
+  },
+  {
+    "location_id": 625,
+    "name": "Port of Ambarli",
+    "location_code": "TRAMB",
+    "country_code": "TUR",
+    "country": "Turkey",
+    "flag_code": "tr"
+  },
+  {
+    "location_id": 626,
+    "name": "Port of Mersin",
+    "location_code": "TRMER",
+    "country_code": "TUR",
+    "country": "Turkey",
+    "flag_code": "tr"
+  },
+  {
+    "location_id": 627,
+    "name": "Port of Piraeus",
+    "location_code": "GRPIR",
+    "country_code": "GRC",
+    "country": "Greece",
+    "flag_code": "gr"
+  },
+  {
+    "location_id": 628,
+    "name": "Port of Lisbon",
+    "location_code": "PTLIS",
+    "country_code": "PRT",
+    "country": "Portugal",
+    "flag_code": "pt"
+  },
+  {
+    "location_id": 629,
+    "name": "Port of Leix\u00f5es",
+    "location_code": "PTLEI",
+    "country_code": "PRT",
+    "country": "Portugal",
+    "flag_code": "pt"
+  }
+]

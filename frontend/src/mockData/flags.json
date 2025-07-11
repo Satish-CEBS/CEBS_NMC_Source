@@ -1,0 +1,197 @@
+[
+    {
+        "name": "United Arab Emirates",
+        "code": "ae",
+        "image": "/assets/images/flags/ae.png"
+    },
+    {
+        "name": "Saudi Arabia",
+        "code": "sa",
+        "image": "/assets/images/flags/sa.png"
+    },
+    {
+        "name": "Qatar",
+        "code": "qa",
+        "image": "/assets/images/flags/qa.png"
+    },
+    {
+        "name": "Oman",
+        "code": "om",
+        "image": "/assets/images/flags/om.png"
+    },
+    {
+        "name": "Kuwait",
+        "code": "kw",
+        "image": "/assets/images/flags/kw.png"
+    },
+    {
+        "name": "Bahrain",
+        "code": "bh",
+        "image": "/assets/images/flags/bh.png"
+    },
+    {
+        "name": "Egypt",
+        "code": "eg",
+        "image": "/assets/images/flags/eg.png"
+    },
+    {
+        "name": "Jordan",
+        "code": "jo",
+        "image": "/assets/images/flags/jo.png"
+    },
+    {
+        "name": "Lebanon",
+        "code": "lb",
+        "image": "/assets/images/flags/lb.png"
+    },
+    {
+        "name": "Morocco",
+        "code": "ma",
+        "image": "/assets/images/flags/ma.png"
+    },
+    {
+        "name": "South Africa",
+        "code": "za",
+        "image": "/assets/images/flags/za.png"
+    },
+    {
+        "name": "Kenya",
+        "code": "ke",
+        "image": "/assets/images/flags/ke.png"
+    },
+    {
+        "name": "Nigeria",
+        "code": "ng",
+        "image": "/assets/images/flags/ng.png"
+    },
+    {
+        "name": "United States",
+        "code": "us",
+        "image": "/assets/images/flags/us.png"
+    },
+    {
+        "name": "Canada",
+        "code": "ca",
+        "image": "/assets/images/flags/ca.png"
+    },
+    {
+        "name": "Mexico",
+        "code": "mx",
+        "image": "/assets/images/flags/mx.png"
+    },
+    {
+        "name": "India",
+        "code": "in",
+        "image": "/assets/images/flags/in.png"
+    },
+    {
+        "name": "Pakistan",
+        "code": "pk",
+        "image": "/assets/images/flags/pk.png"
+    },
+    {
+        "name": "Sri Lanka",
+        "code": "lk",
+        "image": "/assets/images/flags/lk.png"
+    },
+    {
+        "name": "China",
+        "code": "cn",
+        "image": "/assets/images/flags/cn.png"
+    },
+    {
+        "name": "Japan",
+        "code": "jp",
+        "image": "/assets/images/flags/jp.png"
+    },
+    {
+        "name": "South Korea",
+        "code": "kr",
+        "image": "/assets/images/flags/kr.png"
+    },
+    {
+        "name": "Singapore",
+        "code": "sg",
+        "image": "/assets/images/flags/sg.png"
+    },
+    {
+        "name": "Malaysia",
+        "code": "my",
+        "image": "/assets/images/flags/my.png"
+    },
+    {
+        "name": "Indonesia",
+        "code": "id",
+        "image": "/assets/images/flags/id.png"
+    },
+    {
+        "name": "Thailand",
+        "code": "th",
+        "image": "/assets/images/flags/th.png"
+    },
+    {
+        "name": "Vietnam",
+        "code": "vn",
+        "image": "/assets/images/flags/vn.png"
+    },
+    {
+        "name": "Germany",
+        "code": "de",
+        "image": "/assets/images/flags/de.png"
+    },
+    {
+        "name": "France",
+        "code": "fr",
+        "image": "/assets/images/flags/fr.png"
+    },
+    {
+        "name": "Italy",
+        "code": "it",
+        "image": "/assets/images/flags/it.png"
+    },
+    {
+        "name": "Spain",
+        "code": "es",
+        "image": "/assets/images/flags/es.png"
+    },
+    {
+        "name": "Netherlands",
+        "code": "nl",
+        "image": "/assets/images/flags/nl.png"
+    },
+    {
+        "name": "Belgium",
+        "code": "be",
+        "image": "/assets/images/flags/be.png"
+    },
+    {
+        "name": "Sweden",
+        "code": "se",
+        "image": "/assets/images/flags/se.png"
+    },
+    {
+        "name": "Finland",
+        "code": "fi",
+        "image": "/assets/images/flags/fi.png"
+    },
+    {
+        "name": "Denmark",
+        "code": "dk",
+        "image": "/assets/images/flags/dk.png"
+    },
+    {
+        "name": "Poland",
+        "code": "pl",
+        "image": "/assets/images/flags/pl.png"
+    },
+    {
+        "name": "Portugal",
+        "code": "pt",
+        "image": "/assets/images/flags/pt.png"
+    },
+    {
+        "name": "Greece",
+        "code": "gr",
+        "image": "/assets/images/flags/gr.png"
+    }
+]

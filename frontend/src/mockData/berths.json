@@ -1,0 +1,302 @@
+[
+    {
+        "berth_id": "B001",
+        "name": "Berth Alpha",
+        "port_id": 1,
+        "status": "Available"
+    },
+    {
+        "berth_id": "B002",
+        "name": "Berth Bravo",
+        "port_id": 1,
+        "status": "Occupied"
+    },
+    {
+        "berth_id": "B003",
+        "name": "Berth Charlie",
+        "port_id": 1,
+        "status": "Reserved"
+    },
+    {
+        "berth_id": "B004",
+        "name": "Berth Delta",
+        "port_id": 2,
+        "status": "Available"
+    },
+    {
+        "berth_id": "B005",
+        "name": "Berth Echo",
+        "port_id": 2,
+        "status": "Occupied"
+    },
+    {
+        "berth_id": "B006",
+        "name": "Berth Foxtrot",
+        "port_id": 2,
+        "status": "Available"
+    },
+    {
+        "berth_id": "B007",
+        "name": "Berth Gulf",
+        "port_id": 3,
+        "status": "Available"
+    },
+    {
+        "berth_id": "B008",
+        "name": "Berth Hotel",
+        "port_id": 3,
+        "status": "Reserved"
+    },
+    {
+        "berth_id": "B009",
+        "name": "Berth India",
+        "port_id": 3,
+        "status": "Available"
+    },
+    {
+        "berth_id": "B010",
+        "name": "Berth Juliet",
+        "port_id": 3,
+        "status": "Occupied"
+    },
+    {
+        "berth_id": "B011",
+        "name": "Berth Kilo",
+        "port_id": 4,
+        "status": "Available"
+    },
+    {
+        "berth_id": "B012",
+        "name": "Berth Lima",
+        "port_id": 4,
+        "status": "Occupied"
+    },
+    {
+        "berth_id": "B013",
+        "name": "Berth Mike",
+        "port_id": 4,
+        "status": "Reserved"
+    },
+    {
+        "berth_id": "B014",
+        "name": "Berth November",
+        "port_id": 5,
+        "status": "Available"
+    },
+    {
+        "berth_id": "B015",
+        "name": "Berth Oscar",
+        "port_id": 5,
+        "status": "Occupied"
+    },
+    {
+        "berth_id": "B016",
+        "name": "Berth Papa",
+        "port_id": 5,
+        "status": "Available"
+    },
+    {
+        "berth_id": "B017",
+        "name": "Berth Quebec",
+        "port_id": 6,
+        "status": "Available"
+    },
+    {
+        "berth_id": "B018",
+        "name": "Berth Romeo",
+        "port_id": 6,
+        "status": "Reserved"
+    },
+    {
+        "berth_id": "B019",
+        "name": "Berth Sierra",
+        "port_id": 6,
+        "status": "Occupied"
+    },
+    {
+        "berth_id": "B020",
+        "name": "Berth Tango",
+        "port_id": 6,
+        "status": "Available"
+    },
+    {
+        "berth_id": "B021",
+        "name": "Berth Uniform",
+        "port_id": 7,
+        "status": "Available"
+    },
+    {
+        "berth_id": "B022",
+        "name": "Berth Victor",
+        "port_id": 7,
+        "status": "Occupied"
+    },
+    {
+        "berth_id": "B023",
+        "name": "Berth Whiskey",
+        "port_id": 7,
+        "status": "Available"
+    },
+    {
+        "berth_id": "B024",
+        "name": "Berth X-Ray",
+        "port_id": 8,
+        "status": "Reserved"
+    },
+    {
+        "berth_id": "B025",
+        "name": "Berth Yankee",
+        "port_id": 8,
+        "status": "Available"
+    },
+    {
+        "berth_id": "B026",
+        "name": "Berth Zulu",
+        "port_id": 8,
+        "status": "Occupied"
+    },
+    {
+        "berth_id": "B027",
+        "name": "Berth Echo 1",
+        "port_id": 9,
+        "status": "Available"
+    },
+    {
+        "berth_id": "B028",
+        "name": "Berth Echo 2",
+        "port_id": 9,
+        "status": "Available"
+    },
+    {
+        "berth_id": "B029",
+        "name": "Berth Alpha 2",
+        "port_id": 10,
+        "status": "Occupied"
+    },
+    {
+        "berth_id": "B030",
+        "name": "Berth Beta 1",
+        "port_id": 10,
+        "status": "Available"
+    },
+    {
+        "berth_id": "B031",
+        "name": "Berth Gamma",
+        "port_id": 10,
+        "status": "Reserved"
+    },
+    {
+        "berth_id": "B032",
+        "name": "Berth Delta 2",
+        "port_id": 11,
+        "status": "Available"
+    },
+    {
+        "berth_id": "B033",
+        "name": "Berth Echo 3",
+        "port_id": 11,
+        "status": "Occupied"
+    },
+    {
+        "berth_id": "B034",
+        "name": "Berth Foxtrot 2",
+        "port_id": 11,
+        "status": "Reserved"
+    },
+    {
+        "berth_id": "B035",
+        "name": "Berth Zulu 2",
+        "port_id": 12,
+        "status": "Available"
+    },
+    {
+        "berth_id": "B036",
+        "name": "Berth Bravo 2",
+        "port_id": 12,
+        "status": "Available"
+    },
+    {
+        "berth_id": "B037",
+        "name": "Berth Mike 2",
+        "port_id": 12,
+        "status": "Occupied"
+    },
+    {
+        "berth_id": "B038",
+        "name": "Berth Oscar 2",
+        "port_id": 13,
+        "status": "Reserved"
+    },
+    {
+        "berth_id": "B039",
+        "name": "Berth Sierra 2",
+        "port_id": 13,
+        "status": "Available"
+    },
+    {
+        "berth_id": "B040",
+        "name": "Berth Romeo 2",
+        "port_id": 13,
+        "status": "Occupied"
+    },
+    {
+        "berth_id": "B041",
+        "name": "Berth Tango 2",
+        "port_id": 14,
+        "status": "Available"
+    },
+    {
+        "berth_id": "B042",
+        "name": "Berth Uniform 2",
+        "port_id": 14,
+        "status": "Available"
+    },
+    {
+        "berth_id": "B043",
+        "name": "Berth Victor 2",
+        "port_id": 14,
+        "status": "Occupied"
+    },
+    {
+        "berth_id": "B044",
+        "name": "Berth X-Ray 2",
+        "port_id": 15,
+        "status": "Available"
+    },
+    {
+        "berth_id": "B045",
+        "name": "Berth Yankee 2",
+        "port_id": 15,
+        "status": "Available"
+    },
+    {
+        "berth_id": "B046",
+        "name": "Berth Zulu 3",
+        "port_id": 15,
+        "status": "Reserved"
+    },
+    {
+        "berth_id": "B047",
+        "name": "Berth Alpha 3",
+        "port_id": 16,
+        "status": "Available"
+    },
+    {
+        "berth_id": "B048",
+        "name": "Berth Bravo 3",
+        "port_id": 16,
+        "status": "Occupied"
+    },
+    {
+        "berth_id": "B049",
+        "name": "Berth Charlie 3",
+        "port_id": 16,
+        "status": "Reserved"
+    },
+    {
+        "berth_id": "B050",
+        "name": "Berth Delta 3",
+        "port_id": 16,
+        "status": "Available"
+    }
+]

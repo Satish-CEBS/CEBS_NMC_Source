@@ -1,0 +1,1931 @@
+[
+    {
+        "pre_arrival_id": "PA0001",
+        "vessel": {
+            "name": "Ever Ace",
+            "imo_no": "9876543",
+            "mmsi_no": "566789000",
+            "call_sign": "9V5678",
+            "flag": "Singapore",
+            "flag_code": "SGP",
+            "ship_type": "Container Ship",
+            "gross_tonnage": 235000,
+            "length_m": 399
+        },
+        "voyage": {
+            "voyage_number": "VOY001",
+            "vcn": "VCN001",
+            "last_port": {
+                "name": "Mumbai",
+                "location_code": "INBOM1"
+            },
+            "next_port": {
+                "name": "Abu Dhabi",
+                "location_code": "AEAUH1"
+            },
+            "eta": "2025-07-15T08:00:00Z",
+            "etd": "2025-07-17T17:30:00Z",
+            "purpose_of_call": [ "Cargo Discharge", "Crew Change" ]
+        },
+        "crew": {
+            "number_onboard": 24,
+            "nationalities": [ "India", "Philippines" ]
+        },
+        "passengers": {
+            "number_onboard": 0,
+            "special_needs": "None"
+        },
+        "services": [ "Pilotage", "Garbage Collection", "Water Supply" ],
+        "documents": {
+            "fal_form_1": "/docs/PA0001/fal1.pdf",
+            "security_certificate": "/docs/PA0001/security.pdf",
+            "health_certificate": "/docs/PA0001/health.pdf",
+            "prearrival_checklist": "/docs/PA0001/checklist.pdf"
+        },
+        "status": "Submitted",
+        "submitted_by": "cebs_admin",
+        "submitted_date": "2025-07-12T09:00:00Z",
+        "has_stowage_plan": true
+    },
+    {
+        "pre_arrival_id": "PA0002",
+        "vessel": {
+            "name": "MSC Oscar",
+            "imo_no": "9703318",
+            "mmsi_no": "372392000",
+            "call_sign": "3EYR7",
+            "flag": "Panama",
+            "flag_code": "PAN",
+            "ship_type": "Container Ship",
+            "gross_tonnage": 197362,
+            "length_m": 395
+        },
+        "voyage": {
+            "voyage_number": "VOY002",
+            "vcn": "VCN002",
+            "last_port": {
+                "name": "Singapore",
+                "location_code": "SGSIN1"
+            },
+            "next_port": {
+                "name": "Fujairah",
+                "location_code": "AEFJR1"
+            },
+            "eta": "2025-07-20T06:00:00Z",
+            "etd": "2025-07-21T17:00:00Z",
+            "purpose_of_call": [ "Fuel Bunkering" ]
+        },
+        "crew": {
+            "number_onboard": 30,
+            "nationalities": [ "India", "Egypt", "Ukraine" ]
+        },
+        "passengers": {
+            "number_onboard": 0,
+            "special_needs": "None"
+        },
+        "services": [ "Bunkering", "Towage" ],
+        "documents": {
+            "fal_form_1": "/docs/PA0002/fal1.pdf",
+            "security_certificate": "/docs/PA0002/security.pdf",
+            "health_certificate": "/docs/PA0002/health.pdf",
+            "prearrival_checklist": "/docs/PA0002/checklist.pdf"
+        },
+        "status": "Submitted",
+        "submitted_by": "agent_nour",
+        "submitted_date": "2025-07-13T10:15:00Z",
+        "has_stowage_plan": false
+    },
+    {
+        "pre_arrival_id": "PA0001",
+        "vessel": {
+            "name": "MSC Oscar",
+            "imo_no": "9703318",
+            "mmsi_no": "372392000",
+            "call_sign": "3EYR7",
+            "flag": "Panama",
+            "flag_code": "PAN",
+            "ship_type": "Container Ship",
+            "gross_tonnage": 197362,
+            "length_m": 395
+        },
+        "voyage": {
+            "voyage_number": "VOY001",
+            "vcn": "VCN001",
+            "last_port": {
+                "name": "Fujairah",
+                "location_code": "AEFJR1"
+            },
+            "next_port": {
+                "name": "Abu Dhabi",
+                "location_code": "AEAUH1"
+            },
+            "eta": "2025-07-08T14:22:41.271695Z",
+            "etd": "2025-07-09T14:22:41.271695Z",
+            "purpose_of_call": [
+                "Crew Change",
+                "Fuel Bunkering"
+            ]
+        },
+        "crew": {
+            "number_onboard": 74,
+            "nationalities": [
+                "India",
+                "Egypt",
+                "Philippines"
+            ]
+        },
+        "passengers": {
+            "number_onboard": 756,
+            "special_needs": "None"
+        },
+        "services": [
+            "Towage",
+            "Immigration Boarding",
+            "Pilotage",
+            "Medical Evacuation",
+            "Customs Boarding"
+        ],
+        "documents": {
+            "fal_form_1": "/docs/PA0001/fal1.pdf",
+            "security_certificate": "/docs/PA0001/security.pdf",
+            "health_certificate": "/docs/PA0001/health.pdf",
+            "prearrival_checklist": "/docs/PA0001/checklist.pdf"
+        },
+        "status": "Submitted",
+        "submitted_by": "agent_james",
+        "submitted_date": "2025-07-08T14:22:41.271695Z",
+        "has_stowage_plan": true
+    },
+    {
+        "pre_arrival_id": "PA0002",
+        "vessel": {
+            "name": "Symphony of the Seas",
+            "imo_no": "9744001",
+            "mmsi_no": "311000660",
+            "call_sign": "C6DF6",
+            "flag": "Bahamas",
+            "flag_code": "BHS",
+            "ship_type": "Passenger (Cruise) Ship",
+            "gross_tonnage": 228081,
+            "length_m": 361
+        },
+        "voyage": {
+            "voyage_number": "VOY002",
+            "vcn": "VCN002",
+            "last_port": {
+                "name": "Jebel Ali",
+                "location_code": "AEJEA1"
+            },
+            "next_port": {
+                "name": "Fujairah",
+                "location_code": "AEFJR1"
+            },
+            "eta": "2025-07-09T14:22:41.271780Z",
+            "etd": "2025-07-10T14:22:41.271780Z",
+            "purpose_of_call": [
+                "Fuel Bunkering",
+                "Cargo Ops"
+            ]
+        },
+        "crew": {
+            "number_onboard": 49,
+            "nationalities": [
+                "Indonesia",
+                "Egypt",
+                "Ukraine"
+            ]
+        },
+        "passengers": {
+            "number_onboard": 332,
+            "special_needs": "None"
+        },
+        "services": [
+            "Crew Transfer",
+            "Towage",
+            "Provisioning",
+            "Water Supply",
+            "Port Health Inspection",
+            "Bunkering",
+            "Immigration Boarding"
+        ],
+        "documents": {
+            "fal_form_1": "/docs/PA0002/fal1.pdf",
+            "security_certificate": "/docs/PA0002/security.pdf",
+            "health_certificate": "/docs/PA0002/health.pdf",
+            "prearrival_checklist": "/docs/PA0002/checklist.pdf"
+        },
+        "status": "Submitted",
+        "submitted_by": "agent_james",
+        "submitted_date": "2025-07-09T14:22:41.271780Z",
+        "has_stowage_plan": false
+    },
+    {
+        "pre_arrival_id": "PA0003",
+        "vessel": {
+            "name": "MSC Oscar",
+            "imo_no": "9703318",
+            "mmsi_no": "372392000",
+            "call_sign": "3EYR7",
+            "flag": "Panama",
+            "flag_code": "PAN",
+            "ship_type": "Container Ship",
+            "gross_tonnage": 197362,
+            "length_m": 395
+        },
+        "voyage": {
+            "voyage_number": "VOY003",
+            "vcn": "VCN003",
+            "last_port": {
+                "name": "Abu Dhabi",
+                "location_code": "AEAUH1"
+            },
+            "next_port": {
+                "name": "Jebel Ali",
+                "location_code": "AEJEA1"
+            },
+            "eta": "2025-07-10T14:22:41.271838Z",
+            "etd": "2025-07-11T14:22:41.271838Z",
+            "purpose_of_call": [
+                "Cargo Ops",
+                "Fuel Bunkering"
+            ]
+        },
+        "crew": {
+            "number_onboard": 86,
+            "nationalities": [
+                "India",
+                "Philippines",
+                "Egypt"
+            ]
+        },
+        "passengers": {
+            "number_onboard": 1633,
+            "special_needs": "None"
+        },
+        "services": [
+            "Port Health Inspection",
+            "Freshwater Delivery",
+            "Immigration Boarding",
+            "Provisioning",
+            "Quarantine Boarding"
+        ],
+        "documents": {
+            "fal_form_1": "/docs/PA0003/fal1.pdf",
+            "security_certificate": "/docs/PA0003/security.pdf",
+            "health_certificate": "/docs/PA0003/health.pdf",
+            "prearrival_checklist": "/docs/PA0003/checklist.pdf"
+        },
+        "status": "Submitted",
+        "submitted_by": "agent_james",
+        "submitted_date": "2025-07-10T14:22:41.271838Z",
+        "has_stowage_plan": true
+    },
+    {
+        "pre_arrival_id": "PA0004",
+        "vessel": {
+            "name": "Ever Ace",
+            "imo_no": "9876543",
+            "mmsi_no": "566789000",
+            "call_sign": "9V5678",
+            "flag": "Singapore",
+            "flag_code": "SGP",
+            "ship_type": "Container Ship",
+            "gross_tonnage": 235000,
+            "length_m": 399
+        },
+        "voyage": {
+            "voyage_number": "VOY004",
+            "vcn": "VCN004",
+            "last_port": {
+                "name": "Abu Dhabi",
+                "location_code": "AEAUH1"
+            },
+            "next_port": {
+                "name": "Ras Al Khaimah",
+                "location_code": "AERAK1"
+            },
+            "eta": "2025-07-11T14:22:41.271882Z",
+            "etd": "2025-07-12T14:22:41.271882Z",
+            "purpose_of_call": [
+                "Cargo Ops",
+                "Fuel Bunkering"
+            ]
+        },
+        "crew": {
+            "number_onboard": 34,
+            "nationalities": [
+                "Ukraine",
+                "Indonesia",
+                "Philippines"
+            ]
+        },
+        "passengers": {
+            "number_onboard": 1689,
+            "special_needs": "None"
+        },
+        "services": [
+            "Port Health Inspection",
+            "Water Supply",
+            "Customs Boarding",
+            "Provisioning",
+            "Cargo Survey",
+            "Quarantine Boarding"
+        ],
+        "documents": {
+            "fal_form_1": "/docs/PA0004/fal1.pdf",
+            "security_certificate": "/docs/PA0004/security.pdf",
+            "health_certificate": "/docs/PA0004/health.pdf",
+            "prearrival_checklist": "/docs/PA0004/checklist.pdf"
+        },
+        "status": "Submitted",
+        "submitted_by": "cebs_admin",
+        "submitted_date": "2025-07-11T14:22:41.271882Z",
+        "has_stowage_plan": false
+    },
+    {
+        "pre_arrival_id": "PA0005",
+        "vessel": {
+            "name": "Symphony of the Seas",
+            "imo_no": "9744001",
+            "mmsi_no": "311000660",
+            "call_sign": "C6DF6",
+            "flag": "Bahamas",
+            "flag_code": "BHS",
+            "ship_type": "Passenger (Cruise) Ship",
+            "gross_tonnage": 228081,
+            "length_m": 361
+        },
+        "voyage": {
+            "voyage_number": "VOY005",
+            "vcn": "VCN005",
+            "last_port": {
+                "name": "Fujairah",
+                "location_code": "AEFJR1"
+            },
+            "next_port": {
+                "name": "Ras Al Khaimah",
+                "location_code": "AERAK1"
+            },
+            "eta": "2025-07-12T14:22:41.271927Z",
+            "etd": "2025-07-13T14:22:41.271927Z",
+            "purpose_of_call": [
+                "Fuel Bunkering",
+                "Cargo Ops"
+            ]
+        },
+        "crew": {
+            "number_onboard": 71,
+            "nationalities": [
+                "India",
+                "Ukraine",
+                "Indonesia"
+            ]
+        },
+        "passengers": {
+            "number_onboard": 1910,
+            "special_needs": "None"
+        },
+        "services": [
+            "Pilotage",
+            "Bunkering",
+            "Customs Boarding",
+            "Water Supply",
+            "Crew Transfer",
+            "Provisioning",
+            "Port Health Inspection"
+        ],
+        "documents": {
+            "fal_form_1": "/docs/PA0005/fal1.pdf",
+            "security_certificate": "/docs/PA0005/security.pdf",
+            "health_certificate": "/docs/PA0005/health.pdf",
+            "prearrival_checklist": "/docs/PA0005/checklist.pdf"
+        },
+        "status": "Submitted",
+        "submitted_by": "cebs_admin",
+        "submitted_date": "2025-07-12T14:22:41.271927Z",
+        "has_stowage_plan": true
+    },
+    {
+        "pre_arrival_id": "PA0006",
+        "vessel": {
+            "name": "Symphony of the Seas",
+            "imo_no": "9744001",
+            "mmsi_no": "311000660",
+            "call_sign": "C6DF6",
+            "flag": "Bahamas",
+            "flag_code": "BHS",
+            "ship_type": "Passenger (Cruise) Ship",
+            "gross_tonnage": 228081,
+            "length_m": 361
+        },
+        "voyage": {
+            "voyage_number": "VOY006",
+            "vcn": "VCN006",
+            "last_port": {
+                "name": "Jebel Ali",
+                "location_code": "AEJEA1"
+            },
+            "next_port": {
+                "name": "Ras Al Khaimah",
+                "location_code": "AERAK1"
+            },
+            "eta": "2025-07-13T14:22:41.271965Z",
+            "etd": "2025-07-14T14:22:41.271965Z",
+            "purpose_of_call": [
+                "Cargo Ops",
+                "Fuel Bunkering"
+            ]
+        },
+        "crew": {
+            "number_onboard": 42,
+            "nationalities": [
+                "India",
+                "Philippines",
+                "Egypt"
+            ]
+        },
+        "passengers": {
+            "number_onboard": 806,
+            "special_needs": "None"
+        },
+        "services": [
+            "Quarantine Boarding",
+            "Freshwater Delivery",
+            "Water Supply"
+        ],
+        "documents": {
+            "fal_form_1": "/docs/PA0006/fal1.pdf",
+            "security_certificate": "/docs/PA0006/security.pdf",
+            "health_certificate": "/docs/PA0006/health.pdf",
+            "prearrival_checklist": "/docs/PA0006/checklist.pdf"
+        },
+        "status": "Submitted",
+        "submitted_by": "agent_james",
+        "submitted_date": "2025-07-13T14:22:41.271965Z",
+        "has_stowage_plan": false
+    },
+    {
+        "pre_arrival_id": "PA0007",
+        "vessel": {
+            "name": "Symphony of the Seas",
+            "imo_no": "9744001",
+            "mmsi_no": "311000660",
+            "call_sign": "C6DF6",
+            "flag": "Bahamas",
+            "flag_code": "BHS",
+            "ship_type": "Passenger (Cruise) Ship",
+            "gross_tonnage": 228081,
+            "length_m": 361
+        },
+        "voyage": {
+            "voyage_number": "VOY007",
+            "vcn": "VCN007",
+            "last_port": {
+                "name": "Abu Dhabi",
+                "location_code": "AEAUH1"
+            },
+            "next_port": {
+                "name": "Fujairah",
+                "location_code": "AEFJR1"
+            },
+            "eta": "2025-07-14T14:22:41.271993Z",
+            "etd": "2025-07-15T14:22:41.271993Z",
+            "purpose_of_call": [
+                "Cargo Ops",
+                "Fuel Bunkering"
+            ]
+        },
+        "crew": {
+            "number_onboard": 78,
+            "nationalities": [
+                "Ukraine",
+                "Indonesia",
+                "India"
+            ]
+        },
+        "passengers": {
+            "number_onboard": 1452,
+            "special_needs": "None"
+        },
+        "services": [
+            "Provisioning",
+            "Pilotage",
+            "Water Supply"
+        ],
+        "documents": {
+            "fal_form_1": "/docs/PA0007/fal1.pdf",
+            "security_certificate": "/docs/PA0007/security.pdf",
+            "health_certificate": "/docs/PA0007/health.pdf",
+            "prearrival_checklist": "/docs/PA0007/checklist.pdf"
+        },
+        "status": "Submitted",
+        "submitted_by": "agent_nour",
+        "submitted_date": "2025-07-14T14:22:41.271993Z",
+        "has_stowage_plan": true
+    },
+    {
+        "pre_arrival_id": "PA0008",
+        "vessel": {
+            "name": "Symphony of the Seas",
+            "imo_no": "9744001",
+            "mmsi_no": "311000660",
+            "call_sign": "C6DF6",
+            "flag": "Bahamas",
+            "flag_code": "BHS",
+            "ship_type": "Passenger (Cruise) Ship",
+            "gross_tonnage": 228081,
+            "length_m": 361
+        },
+        "voyage": {
+            "voyage_number": "VOY008",
+            "vcn": "VCN008",
+            "last_port": {
+                "name": "Fujairah",
+                "location_code": "AEFJR1"
+            },
+            "next_port": {
+                "name": "Abu Dhabi",
+                "location_code": "AEAUH1"
+            },
+            "eta": "2025-07-15T14:22:41.272021Z",
+            "etd": "2025-07-16T14:22:41.272021Z",
+            "purpose_of_call": [
+                "Crew Change",
+                "Fuel Bunkering"
+            ]
+        },
+        "crew": {
+            "number_onboard": 93,
+            "nationalities": [
+                "Egypt",
+                "India",
+                "Philippines"
+            ]
+        },
+        "passengers": {
+            "number_onboard": 1153,
+            "special_needs": "None"
+        },
+        "services": [
+            "Crew Transfer",
+            "Port Health Inspection",
+            "Customs Boarding",
+            "Pilotage",
+            "Garbage Collection"
+        ],
+        "documents": {
+            "fal_form_1": "/docs/PA0008/fal1.pdf",
+            "security_certificate": "/docs/PA0008/security.pdf",
+            "health_certificate": "/docs/PA0008/health.pdf",
+            "prearrival_checklist": "/docs/PA0008/checklist.pdf"
+        },
+        "status": "Submitted",
+        "submitted_by": "cebs_admin",
+        "submitted_date": "2025-07-15T14:22:41.272021Z",
+        "has_stowage_plan": false
+    },
+    {
+        "pre_arrival_id": "PA0009",
+        "vessel": {
+            "name": "MSC Oscar",
+            "imo_no": "9703318",
+            "mmsi_no": "372392000",
+            "call_sign": "3EYR7",
+            "flag": "Panama",
+            "flag_code": "PAN",
+            "ship_type": "Container Ship",
+            "gross_tonnage": 197362,
+            "length_m": 395
+        },
+        "voyage": {
+            "voyage_number": "VOY009",
+            "vcn": "VCN009",
+            "last_port": {
+                "name": "Abu Dhabi",
+                "location_code": "AEAUH1"
+            },
+            "next_port": {
+                "name": "Khor Fakkan",
+                "location_code": "AEKLF1"
+            },
+            "eta": "2025-07-16T14:22:41.272051Z",
+            "etd": "2025-07-17T14:22:41.272051Z",
+            "purpose_of_call": [
+                "Fuel Bunkering",
+                "Crew Change"
+            ]
+        },
+        "crew": {
+            "number_onboard": 43,
+            "nationalities": [
+                "Indonesia",
+                "Philippines",
+                "India"
+            ]
+        },
+        "passengers": {
+            "number_onboard": 1399,
+            "special_needs": "None"
+        },
+        "services": [
+            "Crew Transfer",
+            "Pilotage",
+            "Customs Boarding",
+            "Medical Evacuation",
+            "Provisioning",
+            "Cargo Survey"
+        ],
+        "documents": {
+            "fal_form_1": "/docs/PA0009/fal1.pdf",
+            "security_certificate": "/docs/PA0009/security.pdf",
+            "health_certificate": "/docs/PA0009/health.pdf",
+            "prearrival_checklist": "/docs/PA0009/checklist.pdf"
+        },
+        "status": "Submitted",
+        "submitted_by": "agent_james",
+        "submitted_date": "2025-07-16T14:22:41.272051Z",
+        "has_stowage_plan": true
+    },
+    {
+        "pre_arrival_id": "PA0010",
+        "vessel": {
+            "name": "Ever Ace",
+            "imo_no": "9876543",
+            "mmsi_no": "566789000",
+            "call_sign": "9V5678",
+            "flag": "Singapore",
+            "flag_code": "SGP",
+            "ship_type": "Container Ship",
+            "gross_tonnage": 235000,
+            "length_m": 399
+        },
+        "voyage": {
+            "voyage_number": "VOY010",
+            "vcn": "VCN010",
+            "last_port": {
+                "name": "Fujairah",
+                "location_code": "AEFJR1"
+            },
+            "next_port": {
+                "name": "Jebel Ali",
+                "location_code": "AEJEA1"
+            },
+            "eta": "2025-07-17T14:22:41.272077Z",
+            "etd": "2025-07-18T14:22:41.272077Z",
+            "purpose_of_call": [
+                "Cargo Ops",
+                "Crew Change"
+            ]
+        },
+        "crew": {
+            "number_onboard": 80,
+            "nationalities": [
+                "Ukraine",
+                "India",
+                "Philippines"
+            ]
+        },
+        "passengers": {
+            "number_onboard": 1868,
+            "special_needs": "None"
+        },
+        "services": [
+            "Freshwater Delivery",
+            "Quarantine Boarding",
+            "Medical Evacuation"
+        ],
+        "documents": {
+            "fal_form_1": "/docs/PA0010/fal1.pdf",
+            "security_certificate": "/docs/PA0010/security.pdf",
+            "health_certificate": "/docs/PA0010/health.pdf",
+            "prearrival_checklist": "/docs/PA0010/checklist.pdf"
+        },
+        "status": "Submitted",
+        "submitted_by": "agent_james",
+        "submitted_date": "2025-07-17T14:22:41.272077Z",
+        "has_stowage_plan": false
+    },
+    {
+        "pre_arrival_id": "PA0011",
+        "vessel": {
+            "name": "Symphony of the Seas",
+            "imo_no": "9744001",
+            "mmsi_no": "311000660",
+            "call_sign": "C6DF6",
+            "flag": "Bahamas",
+            "flag_code": "BHS",
+            "ship_type": "Passenger (Cruise) Ship",
+            "gross_tonnage": 228081,
+            "length_m": 361
+        },
+        "voyage": {
+            "voyage_number": "VOY011",
+            "vcn": "VCN011",
+            "last_port": {
+                "name": "Jebel Ali",
+                "location_code": "AEJEA1"
+            },
+            "next_port": {
+                "name": "Fujairah",
+                "location_code": "AEFJR1"
+            },
+            "eta": "2025-07-18T14:22:41.272101Z",
+            "etd": "2025-07-19T14:22:41.272101Z",
+            "purpose_of_call": [
+                "Fuel Bunkering",
+                "Crew Change"
+            ]
+        },
+        "crew": {
+            "number_onboard": 86,
+            "nationalities": [
+                "Indonesia",
+                "Philippines",
+                "India"
+            ]
+        },
+        "passengers": {
+            "number_onboard": 1518,
+            "special_needs": "None"
+        },
+        "services": [
+            "Quarantine Boarding",
+            "Provisioning",
+            "Garbage Collection",
+            "Crew Transfer",
+            "Immigration Boarding",
+            "Customs Boarding",
+            "Pilotage"
+        ],
+        "documents": {
+            "fal_form_1": "/docs/PA0011/fal1.pdf",
+            "security_certificate": "/docs/PA0011/security.pdf",
+            "health_certificate": "/docs/PA0011/health.pdf",
+            "prearrival_checklist": "/docs/PA0011/checklist.pdf"
+        },
+        "status": "Submitted",
+        "submitted_by": "agent_nour",
+        "submitted_date": "2025-07-18T14:22:41.272101Z",
+        "has_stowage_plan": true
+    },
+    {
+        "pre_arrival_id": "PA0012",
+        "vessel": {
+            "name": "MSC Oscar",
+            "imo_no": "9703318",
+            "mmsi_no": "372392000",
+            "call_sign": "3EYR7",
+            "flag": "Panama",
+            "flag_code": "PAN",
+            "ship_type": "Container Ship",
+            "gross_tonnage": 197362,
+            "length_m": 395
+        },
+        "voyage": {
+            "voyage_number": "VOY012",
+            "vcn": "VCN012",
+            "last_port": {
+                "name": "Khor Fakkan",
+                "location_code": "AEKLF1"
+            },
+            "next_port": {
+                "name": "Ras Al Khaimah",
+                "location_code": "AERAK1"
+            },
+            "eta": "2025-07-19T14:22:41.272134Z",
+            "etd": "2025-07-20T14:22:41.272134Z",
+            "purpose_of_call": [
+                "Crew Change",
+                "Cargo Ops"
+            ]
+        },
+        "crew": {
+            "number_onboard": 77,
+            "nationalities": [
+                "Egypt",
+                "Ukraine",
+                "Indonesia"
+            ]
+        },
+        "passengers": {
+            "number_onboard": 1777,
+            "special_needs": "None"
+        },
+        "services": [
+            "Pilotage",
+            "Quarantine Boarding",
+            "Water Supply",
+            "Freshwater Delivery",
+            "Customs Boarding"
+        ],
+        "documents": {
+            "fal_form_1": "/docs/PA0012/fal1.pdf",
+            "security_certificate": "/docs/PA0012/security.pdf",
+            "health_certificate": "/docs/PA0012/health.pdf",
+            "prearrival_checklist": "/docs/PA0012/checklist.pdf"
+        },
+        "status": "Submitted",
+        "submitted_by": "cebs_admin",
+        "submitted_date": "2025-07-19T14:22:41.272134Z",
+        "has_stowage_plan": false
+    },
+    {
+        "pre_arrival_id": "PA0013",
+        "vessel": {
+            "name": "Ever Ace",
+            "imo_no": "9876543",
+            "mmsi_no": "566789000",
+            "call_sign": "9V5678",
+            "flag": "Singapore",
+            "flag_code": "SGP",
+            "ship_type": "Container Ship",
+            "gross_tonnage": 235000,
+            "length_m": 399
+        },
+        "voyage": {
+            "voyage_number": "VOY013",
+            "vcn": "VCN013",
+            "last_port": {
+                "name": "Jebel Ali",
+                "location_code": "AEJEA1"
+            },
+            "next_port": {
+                "name": "Khor Fakkan",
+                "location_code": "AEKLF1"
+            },
+            "eta": "2025-07-20T14:22:41.272157Z",
+            "etd": "2025-07-21T14:22:41.272157Z",
+            "purpose_of_call": [
+                "Cargo Ops",
+                "Crew Change"
+            ]
+        },
+        "crew": {
+            "number_onboard": 81,
+            "nationalities": [
+                "Philippines",
+                "Indonesia",
+                "India"
+            ]
+        },
+        "passengers": {
+            "number_onboard": 1005,
+            "special_needs": "None"
+        },
+        "services": [
+            "Bunkering",
+            "Freshwater Delivery",
+            "Quarantine Boarding",
+            "Provisioning",
+            "Port Health Inspection",
+            "Water Supply"
+        ],
+        "documents": {
+            "fal_form_1": "/docs/PA0013/fal1.pdf",
+            "security_certificate": "/docs/PA0013/security.pdf",
+            "health_certificate": "/docs/PA0013/health.pdf",
+            "prearrival_checklist": "/docs/PA0013/checklist.pdf"
+        },
+        "status": "Submitted",
+        "submitted_by": "agent_nour",
+        "submitted_date": "2025-07-20T14:22:41.272157Z",
+        "has_stowage_plan": true
+    },
+    {
+        "pre_arrival_id": "PA0014",
+        "vessel": {
+            "name": "Symphony of the Seas",
+            "imo_no": "9744001",
+            "mmsi_no": "311000660",
+            "call_sign": "C6DF6",
+            "flag": "Bahamas",
+            "flag_code": "BHS",
+            "ship_type": "Passenger (Cruise) Ship",
+            "gross_tonnage": 228081,
+            "length_m": 361
+        },
+        "voyage": {
+            "voyage_number": "VOY014",
+            "vcn": "VCN014",
+            "last_port": {
+                "name": "Ras Al Khaimah",
+                "location_code": "AERAK1"
+            },
+            "next_port": {
+                "name": "Khor Fakkan",
+                "location_code": "AEKLF1"
+            },
+            "eta": "2025-07-21T14:22:41.272180Z",
+            "etd": "2025-07-22T14:22:41.272180Z",
+            "purpose_of_call": [
+                "Fuel Bunkering",
+                "Cargo Ops"
+            ]
+        },
+        "crew": {
+            "number_onboard": 28,
+            "nationalities": [
+                "India",
+                "Indonesia",
+                "Philippines"
+            ]
+        },
+        "passengers": {
+            "number_onboard": 903,
+            "special_needs": "None"
+        },
+        "services": [
+            "Garbage Collection",
+            "Towage",
+            "Pilotage",
+            "Immigration Boarding",
+            "Customs Boarding",
+            "Crew Transfer",
+            "Quarantine Boarding"
+        ],
+        "documents": {
+            "fal_form_1": "/docs/PA0014/fal1.pdf",
+            "security_certificate": "/docs/PA0014/security.pdf",
+            "health_certificate": "/docs/PA0014/health.pdf",
+            "prearrival_checklist": "/docs/PA0014/checklist.pdf"
+        },
+        "status": "Submitted",
+        "submitted_by": "cebs_admin",
+        "submitted_date": "2025-07-21T14:22:41.272180Z",
+        "has_stowage_plan": false
+    },
+    {
+        "pre_arrival_id": "PA0015",
+        "vessel": {
+            "name": "MSC Oscar",
+            "imo_no": "9703318",
+            "mmsi_no": "372392000",
+            "call_sign": "3EYR7",
+            "flag": "Panama",
+            "flag_code": "PAN",
+            "ship_type": "Container Ship",
+            "gross_tonnage": 197362,
+            "length_m": 395
+        },
+        "voyage": {
+            "voyage_number": "VOY015",
+            "vcn": "VCN015",
+            "last_port": {
+                "name": "Jebel Ali",
+                "location_code": "AEJEA1"
+            },
+            "next_port": {
+                "name": "Ras Al Khaimah",
+                "location_code": "AERAK1"
+            },
+            "eta": "2025-07-22T14:22:41.272214Z",
+            "etd": "2025-07-23T14:22:41.272214Z",
+            "purpose_of_call": [
+                "Fuel Bunkering",
+                "Cargo Ops"
+            ]
+        },
+        "crew": {
+            "number_onboard": 72,
+            "nationalities": [
+                "Philippines",
+                "India",
+                "Egypt"
+            ]
+        },
+        "passengers": {
+            "number_onboard": 538,
+            "special_needs": "None"
+        },
+        "services": [
+            "Medical Evacuation",
+            "Garbage Collection",
+            "Pilotage",
+            "Cargo Survey",
+            "Water Supply"
+        ],
+        "documents": {
+            "fal_form_1": "/docs/PA0015/fal1.pdf",
+            "security_certificate": "/docs/PA0015/security.pdf",
+            "health_certificate": "/docs/PA0015/health.pdf",
+            "prearrival_checklist": "/docs/PA0015/checklist.pdf"
+        },
+        "status": "Submitted",
+        "submitted_by": "agent_nour",
+        "submitted_date": "2025-07-22T14:22:41.272214Z",
+        "has_stowage_plan": true
+    },
+    {
+        "pre_arrival_id": "PA0016",
+        "vessel": {
+            "name": "Ever Ace",
+            "imo_no": "9876543",
+            "mmsi_no": "566789000",
+            "call_sign": "9V5678",
+            "flag": "Singapore",
+            "flag_code": "SGP",
+            "ship_type": "Container Ship",
+            "gross_tonnage": 235000,
+            "length_m": 399
+        },
+        "voyage": {
+            "voyage_number": "VOY016",
+            "vcn": "VCN016",
+            "last_port": {
+                "name": "Fujairah",
+                "location_code": "AEFJR1"
+            },
+            "next_port": {
+                "name": "Khor Fakkan",
+                "location_code": "AEKLF1"
+            },
+            "eta": "2025-07-23T14:22:41.272251Z",
+            "etd": "2025-07-24T14:22:41.272251Z",
+            "purpose_of_call": [
+                "Fuel Bunkering",
+                "Crew Change"
+            ]
+        },
+        "crew": {
+            "number_onboard": 26,
+            "nationalities": [
+                "Philippines",
+                "India",
+                "Egypt"
+            ]
+        },
+        "passengers": {
+            "number_onboard": 1387,
+            "special_needs": "None"
+        },
+        "services": [
+            "Customs Boarding",
+            "Freshwater Delivery",
+            "Provisioning",
+            "Bunkering",
+            "Quarantine Boarding",
+            "Crew Transfer"
+        ],
+        "documents": {
+            "fal_form_1": "/docs/PA0016/fal1.pdf",
+            "security_certificate": "/docs/PA0016/security.pdf",
+            "health_certificate": "/docs/PA0016/health.pdf",
+            "prearrival_checklist": "/docs/PA0016/checklist.pdf"
+        },
+        "status": "Submitted",
+        "submitted_by": "agent_james",
+        "submitted_date": "2025-07-23T14:22:41.272251Z",
+        "has_stowage_plan": false
+    },
+    {
+        "pre_arrival_id": "PA0017",
+        "vessel": {
+            "name": "Ever Ace",
+            "imo_no": "9876543",
+            "mmsi_no": "566789000",
+            "call_sign": "9V5678",
+            "flag": "Singapore",
+            "flag_code": "SGP",
+            "ship_type": "Container Ship",
+            "gross_tonnage": 235000,
+            "length_m": 399
+        },
+        "voyage": {
+            "voyage_number": "VOY017",
+            "vcn": "VCN017",
+            "last_port": {
+                "name": "Khor Fakkan",
+                "location_code": "AEKLF1"
+            },
+            "next_port": {
+                "name": "Abu Dhabi",
+                "location_code": "AEAUH1"
+            },
+            "eta": "2025-07-24T14:22:41.272289Z",
+            "etd": "2025-07-25T14:22:41.272289Z",
+            "purpose_of_call": [
+                "Cargo Ops",
+                "Fuel Bunkering"
+            ]
+        },
+        "crew": {
+            "number_onboard": 33,
+            "nationalities": [
+                "Ukraine",
+                "Indonesia",
+                "Egypt"
+            ]
+        },
+        "passengers": {
+            "number_onboard": 755,
+            "special_needs": "None"
+        },
+        "services": [
+            "Quarantine Boarding",
+            "Cargo Survey",
+            "Crew Transfer",
+            "Bunkering",
+            "Provisioning",
+            "Water Supply"
+        ],
+        "documents": {
+            "fal_form_1": "/docs/PA0017/fal1.pdf",
+            "security_certificate": "/docs/PA0017/security.pdf",
+            "health_certificate": "/docs/PA0017/health.pdf",
+            "prearrival_checklist": "/docs/PA0017/checklist.pdf"
+        },
+        "status": "Submitted",
+        "submitted_by": "agent_nour",
+        "submitted_date": "2025-07-24T14:22:41.272289Z",
+        "has_stowage_plan": true
+    },
+    {
+        "pre_arrival_id": "PA0018",
+        "vessel": {
+            "name": "Ever Ace",
+            "imo_no": "9876543",
+            "mmsi_no": "566789000",
+            "call_sign": "9V5678",
+            "flag": "Singapore",
+            "flag_code": "SGP",
+            "ship_type": "Container Ship",
+            "gross_tonnage": 235000,
+            "length_m": 399
+        },
+        "voyage": {
+            "voyage_number": "VOY018",
+            "vcn": "VCN018",
+            "last_port": {
+                "name": "Jebel Ali",
+                "location_code": "AEJEA1"
+            },
+            "next_port": {
+                "name": "Ras Al Khaimah",
+                "location_code": "AERAK1"
+            },
+            "eta": "2025-07-25T14:22:41.272334Z",
+            "etd": "2025-07-26T14:22:41.272334Z",
+            "purpose_of_call": [
+                "Crew Change",
+                "Fuel Bunkering"
+            ]
+        },
+        "crew": {
+            "number_onboard": 56,
+            "nationalities": [
+                "Indonesia",
+                "India",
+                "Ukraine"
+            ]
+        },
+        "passengers": {
+            "number_onboard": 1897,
+            "special_needs": "None"
+        },
+        "services": [
+            "Water Supply",
+            "Immigration Boarding",
+            "Freshwater Delivery"
+        ],
+        "documents": {
+            "fal_form_1": "/docs/PA0018/fal1.pdf",
+            "security_certificate": "/docs/PA0018/security.pdf",
+            "health_certificate": "/docs/PA0018/health.pdf",
+            "prearrival_checklist": "/docs/PA0018/checklist.pdf"
+        },
+        "status": "Submitted",
+        "submitted_by": "agent_james",
+        "submitted_date": "2025-07-25T14:22:41.272334Z",
+        "has_stowage_plan": false
+    },
+    {
+        "pre_arrival_id": "PA0019",
+        "vessel": {
+            "name": "MSC Oscar",
+            "imo_no": "9703318",
+            "mmsi_no": "372392000",
+            "call_sign": "3EYR7",
+            "flag": "Panama",
+            "flag_code": "PAN",
+            "ship_type": "Container Ship",
+            "gross_tonnage": 197362,
+            "length_m": 395
+        },
+        "voyage": {
+            "voyage_number": "VOY019",
+            "vcn": "VCN019",
+            "last_port": {
+                "name": "Abu Dhabi",
+                "location_code": "AEAUH1"
+            },
+            "next_port": {
+                "name": "Khor Fakkan",
+                "location_code": "AEKLF1"
+            },
+            "eta": "2025-07-26T14:22:41.272360Z",
+            "etd": "2025-07-27T14:22:41.272360Z",
+            "purpose_of_call": [
+                "Fuel Bunkering",
+                "Crew Change"
+            ]
+        },
+        "crew": {
+            "number_onboard": 70,
+            "nationalities": [
+                "Indonesia",
+                "Philippines",
+                "India"
+            ]
+        },
+        "passengers": {
+            "number_onboard": 1526,
+            "special_needs": "None"
+        },
+        "services": [
+            "Water Supply",
+            "Crew Transfer",
+            "Customs Boarding"
+        ],
+        "documents": {
+            "fal_form_1": "/docs/PA0019/fal1.pdf",
+            "security_certificate": "/docs/PA0019/security.pdf",
+            "health_certificate": "/docs/PA0019/health.pdf",
+            "prearrival_checklist": "/docs/PA0019/checklist.pdf"
+        },
+        "status": "Submitted",
+        "submitted_by": "agent_nour",
+        "submitted_date": "2025-07-26T14:22:41.272360Z",
+        "has_stowage_plan": true
+    },
+    {
+        "pre_arrival_id": "PA0020",
+        "vessel": {
+            "name": "Symphony of the Seas",
+            "imo_no": "9744001",
+            "mmsi_no": "311000660",
+            "call_sign": "C6DF6",
+            "flag": "Bahamas",
+            "flag_code": "BHS",
+            "ship_type": "Passenger (Cruise) Ship",
+            "gross_tonnage": 228081,
+            "length_m": 361
+        },
+        "voyage": {
+            "voyage_number": "VOY020",
+            "vcn": "VCN020",
+            "last_port": {
+                "name": "Fujairah",
+                "location_code": "AEFJR1"
+            },
+            "next_port": {
+                "name": "Khor Fakkan",
+                "location_code": "AEKLF1"
+            },
+            "eta": "2025-07-27T14:22:41.272383Z",
+            "etd": "2025-07-28T14:22:41.272383Z",
+            "purpose_of_call": [
+                "Fuel Bunkering",
+                "Crew Change"
+            ]
+        },
+        "crew": {
+            "number_onboard": 77,
+            "nationalities": [
+                "India",
+                "Ukraine",
+                "Philippines"
+            ]
+        },
+        "passengers": {
+            "number_onboard": 98,
+            "special_needs": "None"
+        },
+        "services": [
+            "Freshwater Delivery",
+            "Crew Transfer",
+            "Water Supply",
+            "Port Health Inspection",
+            "Pilotage",
+            "Cargo Survey"
+        ],
+        "documents": {
+            "fal_form_1": "/docs/PA0020/fal1.pdf",
+            "security_certificate": "/docs/PA0020/security.pdf",
+            "health_certificate": "/docs/PA0020/health.pdf",
+            "prearrival_checklist": "/docs/PA0020/checklist.pdf"
+        },
+        "status": "Submitted",
+        "submitted_by": "agent_nour",
+        "submitted_date": "2025-07-27T14:22:41.272383Z",
+        "has_stowage_plan": false
+    },
+    {
+        "pre_arrival_id": "PA0021",
+        "vessel": {
+            "name": "Ever Ace",
+            "imo_no": "9876543",
+            "mmsi_no": "566789000",
+            "call_sign": "9V5678",
+            "flag": "Singapore",
+            "flag_code": "SGP",
+            "ship_type": "Container Ship",
+            "gross_tonnage": 235000,
+            "length_m": 399
+        },
+        "voyage": {
+            "voyage_number": "VOY021",
+            "vcn": "VCN021",
+            "last_port": {
+                "name": "Khor Fakkan",
+                "location_code": "AEKLF1"
+            },
+            "next_port": {
+                "name": "Ras Al Khaimah",
+                "location_code": "AERAK1"
+            },
+            "eta": "2025-07-28T14:22:41.272414Z",
+            "etd": "2025-07-29T14:22:41.272414Z",
+            "purpose_of_call": [
+                "Fuel Bunkering",
+                "Cargo Ops"
+            ]
+        },
+        "crew": {
+            "number_onboard": 67,
+            "nationalities": [
+                "Ukraine",
+                "Indonesia",
+                "India"
+            ]
+        },
+        "passengers": {
+            "number_onboard": 1668,
+            "special_needs": "None"
+        },
+        "services": [
+            "Garbage Collection",
+            "Provisioning",
+            "Pilotage",
+            "Water Supply",
+            "Bunkering",
+            "Crew Transfer",
+            "Quarantine Boarding"
+        ],
+        "documents": {
+            "fal_form_1": "/docs/PA0021/fal1.pdf",
+            "security_certificate": "/docs/PA0021/security.pdf",
+            "health_certificate": "/docs/PA0021/health.pdf",
+            "prearrival_checklist": "/docs/PA0021/checklist.pdf"
+        },
+        "status": "Submitted",
+        "submitted_by": "cebs_admin",
+        "submitted_date": "2025-07-28T14:22:41.272414Z",
+        "has_stowage_plan": true
+    },
+    {
+        "pre_arrival_id": "PA0022",
+        "vessel": {
+            "name": "Ever Ace",
+            "imo_no": "9876543",
+            "mmsi_no": "566789000",
+            "call_sign": "9V5678",
+            "flag": "Singapore",
+            "flag_code": "SGP",
+            "ship_type": "Container Ship",
+            "gross_tonnage": 235000,
+            "length_m": 399
+        },
+        "voyage": {
+            "voyage_number": "VOY022",
+            "vcn": "VCN022",
+            "last_port": {
+                "name": "Fujairah",
+                "location_code": "AEFJR1"
+            },
+            "next_port": {
+                "name": "Ras Al Khaimah",
+                "location_code": "AERAK1"
+            },
+            "eta": "2025-07-29T14:22:41.272437Z",
+            "etd": "2025-07-30T14:22:41.272437Z",
+            "purpose_of_call": [
+                "Crew Change",
+                "Fuel Bunkering"
+            ]
+        },
+        "crew": {
+            "number_onboard": 89,
+            "nationalities": [
+                "India",
+                "Ukraine",
+                "Indonesia"
+            ]
+        },
+        "passengers": {
+            "number_onboard": 1502,
+            "special_needs": "None"
+        },
+        "services": [
+            "Crew Transfer",
+            "Water Supply",
+            "Cargo Survey",
+            "Garbage Collection"
+        ],
+        "documents": {
+            "fal_form_1": "/docs/PA0022/fal1.pdf",
+            "security_certificate": "/docs/PA0022/security.pdf",
+            "health_certificate": "/docs/PA0022/health.pdf",
+            "prearrival_checklist": "/docs/PA0022/checklist.pdf"
+        },
+        "status": "Submitted",
+        "submitted_by": "agent_james",
+        "submitted_date": "2025-07-29T14:22:41.272437Z",
+        "has_stowage_plan": false
+    },
+    {
+        "pre_arrival_id": "PA0023",
+        "vessel": {
+            "name": "MSC Oscar",
+            "imo_no": "9703318",
+            "mmsi_no": "372392000",
+            "call_sign": "3EYR7",
+            "flag": "Panama",
+            "flag_code": "PAN",
+            "ship_type": "Container Ship",
+            "gross_tonnage": 197362,
+            "length_m": 395
+        },
+        "voyage": {
+            "voyage_number": "VOY023",
+            "vcn": "VCN023",
+            "last_port": {
+                "name": "Jebel Ali",
+                "location_code": "AEJEA1"
+            },
+            "next_port": {
+                "name": "Abu Dhabi",
+                "location_code": "AEAUH1"
+            },
+            "eta": "2025-07-30T14:22:41.272458Z",
+            "etd": "2025-07-31T14:22:41.272458Z",
+            "purpose_of_call": [
+                "Crew Change",
+                "Cargo Ops"
+            ]
+        },
+        "crew": {
+            "number_onboard": 37,
+            "nationalities": [
+                "Egypt",
+                "Ukraine",
+                "India"
+            ]
+        },
+        "passengers": {
+            "number_onboard": 1583,
+            "special_needs": "None"
+        },
+        "services": [
+            "Cargo Survey",
+            "Quarantine Boarding",
+            "Freshwater Delivery"
+        ],
+        "documents": {
+            "fal_form_1": "/docs/PA0023/fal1.pdf",
+            "security_certificate": "/docs/PA0023/security.pdf",
+            "health_certificate": "/docs/PA0023/health.pdf",
+            "prearrival_checklist": "/docs/PA0023/checklist.pdf"
+        },
+        "status": "Submitted",
+        "submitted_by": "agent_nour",
+        "submitted_date": "2025-07-30T14:22:41.272458Z",
+        "has_stowage_plan": true
+    },
+    {
+        "pre_arrival_id": "PA0024",
+        "vessel": {
+            "name": "Ever Ace",
+            "imo_no": "9876543",
+            "mmsi_no": "566789000",
+            "call_sign": "9V5678",
+            "flag": "Singapore",
+            "flag_code": "SGP",
+            "ship_type": "Container Ship",
+            "gross_tonnage": 235000,
+            "length_m": 399
+        },
+        "voyage": {
+            "voyage_number": "VOY024",
+            "vcn": "VCN024",
+            "last_port": {
+                "name": "Jebel Ali",
+                "location_code": "AEJEA1"
+            },
+            "next_port": {
+                "name": "Ras Al Khaimah",
+                "location_code": "AERAK1"
+            },
+            "eta": "2025-07-31T14:22:41.272478Z",
+            "etd": "2025-08-01T14:22:41.272478Z",
+            "purpose_of_call": [
+                "Fuel Bunkering",
+                "Cargo Ops"
+            ]
+        },
+        "crew": {
+            "number_onboard": 92,
+            "nationalities": [
+                "India",
+                "Indonesia",
+                "Egypt"
+            ]
+        },
+        "passengers": {
+            "number_onboard": 1606,
+            "special_needs": "None"
+        },
+        "services": [
+            "Quarantine Boarding",
+            "Garbage Collection",
+            "Bunkering",
+            "Towage",
+            "Pilotage",
+            "Cargo Survey"
+        ],
+        "documents": {
+            "fal_form_1": "/docs/PA0024/fal1.pdf",
+            "security_certificate": "/docs/PA0024/security.pdf",
+            "health_certificate": "/docs/PA0024/health.pdf",
+            "prearrival_checklist": "/docs/PA0024/checklist.pdf"
+        },
+        "status": "Submitted",
+        "submitted_by": "agent_james",
+        "submitted_date": "2025-07-31T14:22:41.272478Z",
+        "has_stowage_plan": false
+    },
+    {
+        "pre_arrival_id": "PA0025",
+        "vessel": {
+            "name": "Symphony of the Seas",
+            "imo_no": "9744001",
+            "mmsi_no": "311000660",
+            "call_sign": "C6DF6",
+            "flag": "Bahamas",
+            "flag_code": "BHS",
+            "ship_type": "Passenger (Cruise) Ship",
+            "gross_tonnage": 228081,
+            "length_m": 361
+        },
+        "voyage": {
+            "voyage_number": "VOY025",
+            "vcn": "VCN025",
+            "last_port": {
+                "name": "Ras Al Khaimah",
+                "location_code": "AERAK1"
+            },
+            "next_port": {
+                "name": "Abu Dhabi",
+                "location_code": "AEAUH1"
+            },
+            "eta": "2025-08-01T14:22:41.272516Z",
+            "etd": "2025-08-02T14:22:41.272516Z",
+            "purpose_of_call": [
+                "Crew Change",
+                "Cargo Ops"
+            ]
+        },
+        "crew": {
+            "number_onboard": 20,
+            "nationalities": [
+                "Ukraine",
+                "India",
+                "Egypt"
+            ]
+        },
+        "passengers": {
+            "number_onboard": 1174,
+            "special_needs": "None"
+        },
+        "services": [
+            "Provisioning",
+            "Pilotage",
+            "Towage",
+            "Bunkering",
+            "Port Health Inspection"
+        ],
+        "documents": {
+            "fal_form_1": "/docs/PA0025/fal1.pdf",
+            "security_certificate": "/docs/PA0025/security.pdf",
+            "health_certificate": "/docs/PA0025/health.pdf",
+            "prearrival_checklist": "/docs/PA0025/checklist.pdf"
+        },
+        "status": "Submitted",
+        "submitted_by": "agent_nour",
+        "submitted_date": "2025-08-01T14:22:41.272516Z",
+        "has_stowage_plan": true
+    },
+    {
+        "pre_arrival_id": "PA0026",
+        "vessel": {
+            "name": "Ever Ace",
+            "imo_no": "9876543",
+            "mmsi_no": "566789000",
+            "call_sign": "9V5678",
+            "flag": "Singapore",
+            "flag_code": "SGP",
+            "ship_type": "Container Ship",
+            "gross_tonnage": 235000,
+            "length_m": 399
+        },
+        "voyage": {
+            "voyage_number": "VOY026",
+            "vcn": "VCN026",
+            "last_port": {
+                "name": "Abu Dhabi",
+                "location_code": "AEAUH1"
+            },
+            "next_port": {
+                "name": "Fujairah",
+                "location_code": "AEFJR1"
+            },
+            "eta": "2025-08-02T14:22:41.272553Z",
+            "etd": "2025-08-03T14:22:41.272553Z",
+            "purpose_of_call": [
+                "Fuel Bunkering",
+                "Crew Change"
+            ]
+        },
+        "crew": {
+            "number_onboard": 46,
+            "nationalities": [
+                "Ukraine",
+                "India",
+                "Egypt"
+            ]
+        },
+        "passengers": {
+            "number_onboard": 592,
+            "special_needs": "None"
+        },
+        "services": [
+            "Pilotage",
+            "Crew Transfer",
+            "Customs Boarding"
+        ],
+        "documents": {
+            "fal_form_1": "/docs/PA0026/fal1.pdf",
+            "security_certificate": "/docs/PA0026/security.pdf",
+            "health_certificate": "/docs/PA0026/health.pdf",
+            "prearrival_checklist": "/docs/PA0026/checklist.pdf"
+        },
+        "status": "Submitted",
+        "submitted_by": "cebs_admin",
+        "submitted_date": "2025-08-02T14:22:41.272553Z",
+        "has_stowage_plan": false
+    },
+    {
+        "pre_arrival_id": "PA0027",
+        "vessel": {
+            "name": "Ever Ace",
+            "imo_no": "9876543",
+            "mmsi_no": "566789000",
+            "call_sign": "9V5678",
+            "flag": "Singapore",
+            "flag_code": "SGP",
+            "ship_type": "Container Ship",
+            "gross_tonnage": 235000,
+            "length_m": 399
+        },
+        "voyage": {
+            "voyage_number": "VOY027",
+            "vcn": "VCN027",
+            "last_port": {
+                "name": "Khor Fakkan",
+                "location_code": "AEKLF1"
+            },
+            "next_port": {
+                "name": "Abu Dhabi",
+                "location_code": "AEAUH1"
+            },
+            "eta": "2025-08-03T14:22:41.272575Z",
+            "etd": "2025-08-04T14:22:41.272575Z",
+            "purpose_of_call": [
+                "Cargo Ops",
+                "Fuel Bunkering"
+            ]
+        },
+        "crew": {
+            "number_onboard": 77,
+            "nationalities": [
+                "Egypt",
+                "Philippines",
+                "Ukraine"
+            ]
+        },
+        "passengers": {
+            "number_onboard": 1522,
+            "special_needs": "None"
+        },
+        "services": [
+            "Customs Boarding",
+            "Immigration Boarding",
+            "Quarantine Boarding",
+            "Garbage Collection",
+            "Port Health Inspection",
+            "Crew Transfer",
+            "Provisioning"
+        ],
+        "documents": {
+            "fal_form_1": "/docs/PA0027/fal1.pdf",
+            "security_certificate": "/docs/PA0027/security.pdf",
+            "health_certificate": "/docs/PA0027/health.pdf",
+            "prearrival_checklist": "/docs/PA0027/checklist.pdf"
+        },
+        "status": "Submitted",
+        "submitted_by": "cebs_admin",
+        "submitted_date": "2025-08-03T14:22:41.272575Z",
+        "has_stowage_plan": true
+    },
+    {
+        "pre_arrival_id": "PA0028",
+        "vessel": {
+            "name": "MSC Oscar",
+            "imo_no": "9703318",
+            "mmsi_no": "372392000",
+            "call_sign": "3EYR7",
+            "flag": "Panama",
+            "flag_code": "PAN",
+            "ship_type": "Container Ship",
+            "gross_tonnage": 197362,
+            "length_m": 395
+        },
+        "voyage": {
+            "voyage_number": "VOY028",
+            "vcn": "VCN028",
+            "last_port": {
+                "name": "Khor Fakkan",
+                "location_code": "AEKLF1"
+            },
+            "next_port": {
+                "name": "Fujairah",
+                "location_code": "AEFJR1"
+            },
+            "eta": "2025-08-04T14:22:41.272597Z",
+            "etd": "2025-08-05T14:22:41.272597Z",
+            "purpose_of_call": [
+                "Fuel Bunkering",
+                "Crew Change"
+            ]
+        },
+        "crew": {
+            "number_onboard": 44,
+            "nationalities": [
+                "India",
+                "Philippines",
+                "Egypt"
+            ]
+        },
+        "passengers": {
+            "number_onboard": 530,
+            "special_needs": "None"
+        },
+        "services": [
+            "Bunkering",
+            "Customs Boarding",
+            "Quarantine Boarding",
+            "Freshwater Delivery",
+            "Cargo Survey"
+        ],
+        "documents": {
+            "fal_form_1": "/docs/PA0028/fal1.pdf",
+            "security_certificate": "/docs/PA0028/security.pdf",
+            "health_certificate": "/docs/PA0028/health.pdf",
+            "prearrival_checklist": "/docs/PA0028/checklist.pdf"
+        },
+        "status": "Submitted",
+        "submitted_by": "agent_nour",
+        "submitted_date": "2025-08-04T14:22:41.272597Z",
+        "has_stowage_plan": false
+    },
+    {
+        "pre_arrival_id": "PA0029",
+        "vessel": {
+            "name": "Symphony of the Seas",
+            "imo_no": "9744001",
+            "mmsi_no": "311000660",
+            "call_sign": "C6DF6",
+            "flag": "Bahamas",
+            "flag_code": "BHS",
+            "ship_type": "Passenger (Cruise) Ship",
+            "gross_tonnage": 228081,
+            "length_m": 361
+        },
+        "voyage": {
+            "voyage_number": "VOY029",
+            "vcn": "VCN029",
+            "last_port": {
+                "name": "Abu Dhabi",
+                "location_code": "AEAUH1"
+            },
+            "next_port": {
+                "name": "Fujairah",
+                "location_code": "AEFJR1"
+            },
+            "eta": "2025-08-05T14:22:41.272620Z",
+            "etd": "2025-08-06T14:22:41.272620Z",
+            "purpose_of_call": [
+                "Fuel Bunkering",
+                "Crew Change"
+            ]
+        },
+        "crew": {
+            "number_onboard": 66,
+            "nationalities": [
+                "Indonesia",
+                "Philippines",
+                "Egypt"
+            ]
+        },
+        "passengers": {
+            "number_onboard": 893,
+            "special_needs": "None"
+        },
+        "services": [
+            "Provisioning",
+            "Cargo Survey",
+            "Freshwater Delivery",
+            "Port Health Inspection",
+            "Customs Boarding",
+            "Immigration Boarding"
+        ],
+        "documents": {
+            "fal_form_1": "/docs/PA0029/fal1.pdf",
+            "security_certificate": "/docs/PA0029/security.pdf",
+            "health_certificate": "/docs/PA0029/health.pdf",
+            "prearrival_checklist": "/docs/PA0029/checklist.pdf"
+        },
+        "status": "Submitted",
+        "submitted_by": "agent_james",
+        "submitted_date": "2025-08-05T14:22:41.272620Z",
+        "has_stowage_plan": true
+    },
+    {
+        "pre_arrival_id": "PA0030",
+        "vessel": {
+            "name": "MSC Oscar",
+            "imo_no": "9703318",
+            "mmsi_no": "372392000",
+            "call_sign": "3EYR7",
+            "flag": "Panama",
+            "flag_code": "PAN",
+            "ship_type": "Container Ship",
+            "gross_tonnage": 197362,
+            "length_m": 395
+        },
+        "voyage": {
+            "voyage_number": "VOY030",
+            "vcn": "VCN030",
+            "last_port": {
+                "name": "Jebel Ali",
+                "location_code": "AEJEA1"
+            },
+            "next_port": {
+                "name": "Fujairah",
+                "location_code": "AEFJR1"
+            },
+            "eta": "2025-08-06T14:22:41.272642Z",
+            "etd": "2025-08-07T14:22:41.272642Z",
+            "purpose_of_call": [
+                "Crew Change",
+                "Cargo Ops"
+            ]
+        },
+        "crew": {
+            "number_onboard": 85,
+            "nationalities": [
+                "Ukraine",
+                "India",
+                "Philippines"
+            ]
+        },
+        "passengers": {
+            "number_onboard": 665,
+            "special_needs": "None"
+        },
+        "services": [
+            "Garbage Collection",
+            "Pilotage",
+            "Medical Evacuation"
+        ],
+        "documents": {
+            "fal_form_1": "/docs/PA0030/fal1.pdf",
+            "security_certificate": "/docs/PA0030/security.pdf",
+            "health_certificate": "/docs/PA0030/health.pdf",
+            "prearrival_checklist": "/docs/PA0030/checklist.pdf"
+        },
+        "status": "Submitted",
+        "submitted_by": "agent_nour",
+        "submitted_date": "2025-08-06T14:22:41.272642Z",
+        "has_stowage_plan": false
+    }
+]

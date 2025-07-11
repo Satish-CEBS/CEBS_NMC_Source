@@ -1,0 +1,2589 @@
+[
+    {
+        "pre_arrival_id": "PRE-0001",
+        "vessel": {
+            "name": "Symphony of the Seas",
+            "imo_no": "9744001",
+            "mmsi_no": "311000660",
+            "call_sign": "C6DF6",
+            "flag": "Bahamas",
+            "flag_code": "BHS",
+            "ship_type": "Passenger (Cruise) Ship",
+            "gross_tonnage": 228081,
+            "length_m": 361
+        },
+        "voyage": {
+            "voyage_number": "SYMPH-2025-07",
+            "last_port": {
+                "name": "Barcelona",
+                "location_code": "ESBCN1"
+            },
+            "next_port": {
+                "name": "Dubai",
+                "location_code": "AEDXB1"
+            },
+            "eta": "2025-07-05T08:00:00",
+            "etd": "2025-07-07T19:00:00",
+            "purpose_of_call": [ "Crew Change", "Provisioning" ]
+        },
+        "crew": {
+            "number_onboard": 2100,
+            "nationalities": [ "Philippines", "India", "Ukraine", "Indonesia" ]
+        },
+        "passengers": {
+            "number_onboard": 5800,
+            "special_needs": "Yes – 5 requiring wheelchair"
+        },
+        "documents": {
+            "fal_form_1": "/documents/PRE-0001/FAL_Form_1.pdf",
+            "security_certificate": "/documents/PRE-0001/Security_Certificate.pdf",
+            "health_certificate": "/documents/PRE-0001/Maritime_Health_Cert.pdf",
+            "prearrival_checklist": "/documents/PRE-0001/Prearrival_Checklist.pdf"
+        },
+        "status": "Submitted",
+        "submitted_by": "agent_james",
+        "submitted_date": "2025-07-02T11:30:00Z"
+    },
+    {
+        "pre_arrival_id": "PRE-0002",
+        "vessel": {
+            "name": "Maersk Gairloch",
+            "imo_no": "9632203",
+            "mmsi_no": "219632000",
+            "call_sign": "OXBK2",
+            "flag": "Denmark",
+            "flag_code": "DNK",
+            "ship_type": "Container Ship",
+            "gross_tonnage": 94300,
+            "length_m": 300
+        },
+        "voyage": {
+            "voyage_number": "MRSK-DXB-444",
+            "last_port": {
+                "name": "Singapore",
+                "location_code": "SGSIN"
+            },
+            "next_port": {
+                "name": "Port of Jebel Ali",
+                "location_code": "AEJEA1"
+            },
+            "eta": "2025-07-06T03:00:00",
+            "etd": "2025-07-06T18:00:00",
+            "purpose_of_call": [ "Loading / Discharging", "Bunkering" ]
+        },
+        "crew": {
+            "number_onboard": 24,
+            "nationalities": [ "India", "Sri Lanka", "Philippines" ]
+        },
+        "passengers": {
+            "number_onboard": 0,
+            "special_needs": "None"
+        },
+        "documents": {
+            "fal_form_1": "/documents/PRE-0002/FAL_Form_1.pdf",
+            "security_certificate": "/documents/PRE-0002/Security_Certificate.pdf",
+            "health_certificate": "/documents/PRE-0002/Maritime_Health_Cert.pdf",
+            "prearrival_checklist": "/documents/PRE-0002/Prearrival_Checklist.pdf"
+        },
+        "status": "Draft",
+        "submitted_by": "agent_lina",
+        "submitted_date": "2025-07-01T10:45:00Z"
+    },
+    {
+        "pre_arrival_id": "PRE-0003",
+        "vessel": {
+            "name": "Ever Given",
+            "imo_no": "9811000",
+            "mmsi_no": "353136000",
+            "call_sign": "H3RC",
+            "flag": "Panama",
+            "flag_code": "PAN",
+            "ship_type": "Container Ship",
+            "gross_tonnage": 219079,
+            "length_m": 400
+        },
+        "voyage": {
+            "voyage_number": "EVRG-SHZ-883",
+            "last_port": {
+                "name": "Port Klang",
+                "location_code": "MYPKG"
+            },
+            "next_port": {
+                "name": "Abu Dhabi",
+                "location_code": "AEAUH"
+            },
+            "eta": "2025-07-07T06:00:00",
+            "etd": "2025-07-07T22:00:00",
+            "purpose_of_call": [ "Bunkering", "Crew Change" ]
+        },
+        "crew": {
+            "number_onboard": 25,
+            "nationalities": [ "India", "Egypt", "Philippines" ]
+        },
+        "passengers": {
+            "number_onboard": 0,
+            "special_needs": "None"
+        },
+        "documents": {
+            "fal_form_1": "/documents/PRE-0003/FAL_Form_1.pdf",
+            "security_certificate": "/documents/PRE-0003/Security_Certificate.pdf",
+            "health_certificate": "/documents/PRE-0003/Maritime_Health_Cert.pdf",
+            "prearrival_checklist": "/documents/PRE-0003/Prearrival_Checklist.pdf"
+        },
+        "status": "Submitted",
+        "submitted_by": "agent_ahmed",
+        "submitted_date": "2025-07-03T12:00:00Z"
+    },
+    {
+        "pre_arrival_id": "PRE-0004",
+        "vessel": {
+            "name": "MSC Oscar",
+            "imo_no": "9703291",
+            "mmsi_no": "355906000",
+            "call_sign": "H9OU",
+            "flag": "Panama",
+            "flag_code": "PAN",
+            "ship_type": "Container Ship",
+            "gross_tonnage": 192237,
+            "length_m": 395.4
+        },
+        "voyage": {
+            "voyage_number": "MSC-SG-554",
+            "last_port": {
+                "name": "Gioia Tauro",
+                "location_code": "ITGIT"
+            },
+            "next_port": {
+                "name": "Port Rashid",
+                "location_code": "AEDXB"
+            },
+            "eta": "2025-07-08T08:30:00",
+            "etd": "2025-07-08T20:30:00",
+            "purpose_of_call": [ "Loading / Discharging" ]
+        },
+        "crew": {
+            "number_onboard": 23,
+            "nationalities": [ "Philippines", "Ukraine" ]
+        },
+        "passengers": {
+            "number_onboard": 0,
+            "special_needs": "None"
+        },
+        "documents": {
+            "fal_form_1": "/documents/PRE-0004/FAL_Form_1.pdf",
+            "security_certificate": "/documents/PRE-0004/Security_Certificate.pdf",
+            "health_certificate": "/documents/PRE-0004/Maritime_Health_Cert.pdf",
+            "prearrival_checklist": "/documents/PRE-0004/Prearrival_Checklist.pdf"
+        },
+        "status": "Submitted",
+        "submitted_by": "agent_salma",
+        "submitted_date": "2025-07-03T14:15:00Z"
+    },
+    {
+        "pre_arrival_id": "PRE-0005",
+        "vessel": {
+            "name": "Al Muraykh",
+            "imo_no": "9708851",
+            "mmsi_no": "370648000",
+            "call_sign": "3FRU4",
+            "flag": "Panama",
+            "flag_code": "PAN",
+            "ship_type": "Container Ship",
+            "gross_tonnage": 195636,
+            "length_m": 400
+        },
+        "voyage": {
+            "voyage_number": "MURK-JED-103",
+            "last_port": {
+                "name": "Port of Colombo",
+                "location_code": "LKCMB"
+            },
+            "next_port": {
+                "name": "Jeddah Islamic Port",
+                "location_code": "SAJED"
+            },
+            "eta": "2025-07-09T06:15:00",
+            "etd": "2025-07-09T22:45:00",
+            "purpose_of_call": [ "Provisioning", "Medical Assistance" ]
+        },
+        "crew": {
+            "number_onboard": 26,
+            "nationalities": [ "India", "Pakistan", "Myanmar" ]
+        },
+        "passengers": {
+            "number_onboard": 0,
+            "special_needs": "None"
+        },
+        "documents": {
+            "fal_form_1": "/documents/PRE-0005/FAL_Form_1.pdf",
+            "security_certificate": "/documents/PRE-0005/Security_Certificate.pdf",
+            "health_certificate": "/documents/PRE-0005/Maritime_Health_Cert.pdf",
+            "prearrival_checklist": "/documents/PRE-0005/Prearrival_Checklist.pdf"
+        },
+        "status": "Draft",
+        "submitted_by": "agent_faisal",
+        "submitted_date": "2025-07-04T09:20:00Z"
+    },
+    {
+        "pre_arrival_id": "PRE-0006",
+        "vessel": {
+            "name": "HMM Algeciras",
+            "imo_no": "9863297",
+            "mmsi_no": "351980000",
+            "call_sign": "3EOL",
+            "flag": "Panama",
+            "flag_code": "PAN",
+            "ship_type": "Container Ship",
+            "gross_tonnage": 228283,
+            "length_m": 399.9
+        },
+        "voyage": {
+            "voyage_number": "HMM-ALG-202",
+            "last_port": {
+                "name": "Port of Busan",
+                "location_code": "KRPUS"
+            },
+            "next_port": {
+                "name": "Khalifa Port",
+                "location_code": "AEKHL"
+            },
+            "eta": "2025-07-10T10:00:00",
+            "etd": "2025-07-10T22:00:00",
+            "purpose_of_call": [ "Testing", "Lay Up" ]
+        },
+        "crew": {
+            "number_onboard": 22,
+            "nationalities": [ "South Korea", "Philippines" ]
+        },
+        "passengers": {
+            "number_onboard": 0,
+            "special_needs": "None"
+        },
+        "documents": {
+            "fal_form_1": "/documents/PRE-0006/FAL_Form_1.pdf",
+            "security_certificate": "/documents/PRE-0006/Security_Certificate.pdf",
+            "health_certificate": "/documents/PRE-0006/Maritime_Health_Cert.pdf",
+            "prearrival_checklist": "/documents/PRE-0006/Prearrival_Checklist.pdf"
+        },
+        "status": "Submitted",
+        "submitted_by": "agent_sangmin",
+        "submitted_date": "2025-07-04T12:45:00Z"
+    },
+    {
+        "pre_arrival_id": "PRE-1000",
+        "vessel": {
+            "name": "MSC Zoe",
+            "imo_no": "9703318",
+            "mmsi_no": "355906000",
+            "call_sign": "H9ZI",
+            "flag": "Panama",
+            "flag_code": "PAN",
+            "ship_type": "Container Ship",
+            "gross_tonnage": 192237,
+            "length_m": 395
+        },
+        "voyage": {
+            "voyage_number": "MSC-2840",
+            "last_port": {
+                "name": "Rotterdam",
+                "location_code": "NLRTM1"
+            },
+            "next_port": {
+                "name": "Singapore",
+                "location_code": "SGSIN1"
+            },
+            "eta": "2025-07-09T03:54:36",
+            "etd": "2025-07-12T03:54:36",
+            "purpose_of_call": [
+                "Crew Change",
+                "Provisioning"
+            ]
+        },
+        "crew": {
+            "number_onboard": 22,
+            "nationalities": [
+                "China",
+                "Philippines",
+                "India"
+            ]
+        },
+        "passengers": {
+            "number_onboard": 41,
+            "special_needs": "Medical"
+        },
+        "documents": {
+            "fal_form_1": "/documents/PRE-1000/FAL_Form_1.pdf",
+            "security_certificate": "/documents/PRE-1000/Security_Certificate.pdf",
+            "health_certificate": "/documents/PRE-1000/Maritime_Health_Cert.pdf",
+            "prearrival_checklist": "/documents/PRE-1000/Prearrival_Checklist.pdf"
+        },
+        "status": "Approved",
+        "submitted_by": "harbor_ops",
+        "submitted_date": "2025-06-30T03:54:36"
+    },
+    {
+        "pre_arrival_id": "PRE-1001",
+        "vessel": {
+            "name": "Maersk Mc-Kinney Moller",
+            "imo_no": "9619907",
+            "mmsi_no": "219018271",
+            "call_sign": "OWIZ2",
+            "flag": "Denmark",
+            "flag_code": "DNK",
+            "ship_type": "Container Ship",
+            "gross_tonnage": 194849,
+            "length_m": 399
+        },
+        "voyage": {
+            "voyage_number": "Maersk-3543",
+            "last_port": {
+                "name": "Hamburg",
+                "location_code": "DEHAM1"
+            },
+            "next_port": {
+                "name": "Colombo",
+                "location_code": "LKCMB1"
+            },
+            "eta": "2025-07-10T03:54:36",
+            "etd": "2025-07-14T03:54:36",
+            "purpose_of_call": [
+                "Force Majeure"
+            ]
+        },
+        "crew": {
+            "number_onboard": 20,
+            "nationalities": [
+                "China",
+                "Philippines",
+                "Ukraine"
+            ]
+        },
+        "passengers": {
+            "number_onboard": 20,
+            "special_needs": "Yes \u2013 2 requiring wheelchair"
+        },
+        "documents": {
+            "fal_form_1": "/documents/PRE-1001/FAL_Form_1.pdf",
+            "security_certificate": "/documents/PRE-1001/Security_Certificate.pdf",
+            "health_certificate": "/documents/PRE-1001/Maritime_Health_Cert.pdf",
+            "prearrival_checklist": "/documents/PRE-1001/Prearrival_Checklist.pdf"
+        },
+        "status": "Submitted",
+        "submitted_by": "cebs_admin",
+        "submitted_date": "2025-06-28T03:54:36"
+    },
+    {
+        "pre_arrival_id": "PRE-1002",
+        "vessel": {
+            "name": "Maersk Mc-Kinney Moller",
+            "imo_no": "9619907",
+            "mmsi_no": "219018271",
+            "call_sign": "OWIZ2",
+            "flag": "Denmark",
+            "flag_code": "DNK",
+            "ship_type": "Container Ship",
+            "gross_tonnage": 194849,
+            "length_m": 399
+        },
+        "voyage": {
+            "voyage_number": "Maersk-3576",
+            "last_port": {
+                "name": "Shanghai",
+                "location_code": "CNSHG1"
+            },
+            "next_port": {
+                "name": "Rotterdam",
+                "location_code": "NLRTM1"
+            },
+            "eta": "2025-07-10T03:54:36",
+            "etd": "2025-07-15T03:54:36",
+            "purpose_of_call": [
+                "Testing"
+            ]
+        },
+        "crew": {
+            "number_onboard": 21,
+            "nationalities": [
+                "China",
+                "Ukraine",
+                "Philippines"
+            ]
+        },
+        "passengers": {
+            "number_onboard": 9,
+            "special_needs": "Diplomatic"
+        },
+        "documents": {
+            "fal_form_1": "/documents/PRE-1002/FAL_Form_1.pdf",
+            "security_certificate": "/documents/PRE-1002/Security_Certificate.pdf",
+            "health_certificate": "/documents/PRE-1002/Maritime_Health_Cert.pdf",
+            "prearrival_checklist": "/documents/PRE-1002/Prearrival_Checklist.pdf"
+        },
+        "status": "Under Review",
+        "submitted_by": "cebs_admin",
+        "submitted_date": "2025-06-30T03:54:36"
+    },
+    {
+        "pre_arrival_id": "PRE-1003",
+        "vessel": {
+            "name": "Maersk Mc-Kinney Moller",
+            "imo_no": "9619907",
+            "mmsi_no": "219018271",
+            "call_sign": "OWIZ2",
+            "flag": "Denmark",
+            "flag_code": "DNK",
+            "ship_type": "Container Ship",
+            "gross_tonnage": 194849,
+            "length_m": 399
+        },
+        "voyage": {
+            "voyage_number": "Maersk-8154",
+            "last_port": {
+                "name": "Rotterdam",
+                "location_code": "NLRTM1"
+            },
+            "next_port": {
+                "name": "Mumbai",
+                "location_code": "INBOM1"
+            },
+            "eta": "2025-07-09T03:54:36",
+            "etd": "2025-07-12T03:54:36",
+            "purpose_of_call": [
+                "Crew Change",
+                "Provisioning"
+            ]
+        },
+        "crew": {
+            "number_onboard": 20,
+            "nationalities": [
+                "Philippines",
+                "China",
+                "Indonesia"
+            ]
+        },
+        "passengers": {
+            "number_onboard": 27,
+            "special_needs": "Diplomatic"
+        },
+        "documents": {
+            "fal_form_1": "/documents/PRE-1003/FAL_Form_1.pdf",
+            "security_certificate": "/documents/PRE-1003/Security_Certificate.pdf",
+            "health_certificate": "/documents/PRE-1003/Maritime_Health_Cert.pdf",
+            "prearrival_checklist": "/documents/PRE-1003/Prearrival_Checklist.pdf"
+        },
+        "status": "Approved",
+        "submitted_by": "agent_james",
+        "submitted_date": "2025-07-05T03:54:36"
+    },
+    {
+        "pre_arrival_id": "PRE-1004",
+        "vessel": {
+            "name": "MSC Zoe",
+            "imo_no": "9703318",
+            "mmsi_no": "355906000",
+            "call_sign": "H9ZI",
+            "flag": "Panama",
+            "flag_code": "PAN",
+            "ship_type": "Container Ship",
+            "gross_tonnage": 192237,
+            "length_m": 395
+        },
+        "voyage": {
+            "voyage_number": "MSC-9198",
+            "last_port": {
+                "name": "Jebel Ali",
+                "location_code": "AEJEA1"
+            },
+            "next_port": {
+                "name": "Rotterdam",
+                "location_code": "NLRTM1"
+            },
+            "eta": "2025-07-09T03:54:36",
+            "etd": "2025-07-13T03:54:36",
+            "purpose_of_call": [
+                "Repairs"
+            ]
+        },
+        "crew": {
+            "number_onboard": 19,
+            "nationalities": [
+                "Indonesia",
+                "China",
+                "India"
+            ]
+        },
+        "passengers": {
+            "number_onboard": 25,
+            "special_needs": "Medical"
+        },
+        "documents": {
+            "fal_form_1": "/documents/PRE-1004/FAL_Form_1.pdf",
+            "security_certificate": "/documents/PRE-1004/Security_Certificate.pdf",
+            "health_certificate": "/documents/PRE-1004/Maritime_Health_Cert.pdf",
+            "prearrival_checklist": "/documents/PRE-1004/Prearrival_Checklist.pdf"
+        },
+        "status": "Rejected",
+        "submitted_by": "nmc_portuser",
+        "submitted_date": "2025-07-04T03:54:36"
+    },
+    {
+        "pre_arrival_id": "PRE-1005",
+        "vessel": {
+            "name": "Ever Given",
+            "imo_no": "9811000",
+            "mmsi_no": "353136000",
+            "call_sign": "H3RC",
+            "flag": "Panama",
+            "flag_code": "PAN",
+            "ship_type": "Container Ship",
+            "gross_tonnage": 220940,
+            "length_m": 400
+        },
+        "voyage": {
+            "voyage_number": "Ever-1164",
+            "last_port": {
+                "name": "Rotterdam",
+                "location_code": "NLRTM1"
+            },
+            "next_port": {
+                "name": "Singapore",
+                "location_code": "SGSIN1"
+            },
+            "eta": "2025-07-11T03:54:36",
+            "etd": "2025-07-13T03:54:36",
+            "purpose_of_call": [
+                "Anchoring"
+            ]
+        },
+        "crew": {
+            "number_onboard": 19,
+            "nationalities": [
+                "China",
+                "Ukraine",
+                "India"
+            ]
+        },
+        "passengers": {
+            "number_onboard": 37,
+            "special_needs": "Medical"
+        },
+        "documents": {
+            "fal_form_1": "/documents/PRE-1005/FAL_Form_1.pdf",
+            "security_certificate": "/documents/PRE-1005/Security_Certificate.pdf",
+            "health_certificate": "/documents/PRE-1005/Maritime_Health_Cert.pdf",
+            "prearrival_checklist": "/documents/PRE-1005/Prearrival_Checklist.pdf"
+        },
+        "status": "Rejected",
+        "submitted_by": "agent_james",
+        "submitted_date": "2025-07-04T03:54:36"
+    },
+    {
+        "pre_arrival_id": "PRE-1006",
+        "vessel": {
+            "name": "Ever Given",
+            "imo_no": "9811000",
+            "mmsi_no": "353136000",
+            "call_sign": "H3RC",
+            "flag": "Panama",
+            "flag_code": "PAN",
+            "ship_type": "Container Ship",
+            "gross_tonnage": 220940,
+            "length_m": 400
+        },
+        "voyage": {
+            "voyage_number": "Ever-1805",
+            "last_port": {
+                "name": "Colombo",
+                "location_code": "LKCMB1"
+            },
+            "next_port": {
+                "name": "Hamburg",
+                "location_code": "DEHAM1"
+            },
+            "eta": "2025-07-09T03:54:36",
+            "etd": "2025-07-16T03:54:36",
+            "purpose_of_call": [
+                "Anchoring"
+            ]
+        },
+        "crew": {
+            "number_onboard": 21,
+            "nationalities": [
+                "Philippines",
+                "India",
+                "China"
+            ]
+        },
+        "passengers": {
+            "number_onboard": 28,
+            "special_needs": "Yes \u2013 2 requiring wheelchair"
+        },
+        "documents": {
+            "fal_form_1": "/documents/PRE-1006/FAL_Form_1.pdf",
+            "security_certificate": "/documents/PRE-1006/Security_Certificate.pdf",
+            "health_certificate": "/documents/PRE-1006/Maritime_Health_Cert.pdf",
+            "prearrival_checklist": "/documents/PRE-1006/Prearrival_Checklist.pdf"
+        },
+        "status": "Approved",
+        "submitted_by": "agent_james",
+        "submitted_date": "2025-07-01T03:54:36"
+    },
+    {
+        "pre_arrival_id": "PRE-1007",
+        "vessel": {
+            "name": "Ever Given",
+            "imo_no": "9811000",
+            "mmsi_no": "353136000",
+            "call_sign": "H3RC",
+            "flag": "Panama",
+            "flag_code": "PAN",
+            "ship_type": "Container Ship",
+            "gross_tonnage": 220940,
+            "length_m": 400
+        },
+        "voyage": {
+            "voyage_number": "Ever-9885",
+            "last_port": {
+                "name": "Singapore",
+                "location_code": "SGSIN1"
+            },
+            "next_port": {
+                "name": "Mumbai",
+                "location_code": "INBOM1"
+            },
+            "eta": "2025-07-11T03:54:36",
+            "etd": "2025-07-15T03:54:36",
+            "purpose_of_call": [
+                "Medical Assistance"
+            ]
+        },
+        "crew": {
+            "number_onboard": 18,
+            "nationalities": [
+                "China",
+                "Philippines",
+                "Indonesia"
+            ]
+        },
+        "passengers": {
+            "number_onboard": 39,
+            "special_needs": "Medical"
+        },
+        "documents": {
+            "fal_form_1": "/documents/PRE-1007/FAL_Form_1.pdf",
+            "security_certificate": "/documents/PRE-1007/Security_Certificate.pdf",
+            "health_certificate": "/documents/PRE-1007/Maritime_Health_Cert.pdf",
+            "prearrival_checklist": "/documents/PRE-1007/Prearrival_Checklist.pdf"
+        },
+        "status": "Rejected",
+        "submitted_by": "cebs_admin",
+        "submitted_date": "2025-06-29T03:54:36"
+    },
+    {
+        "pre_arrival_id": "PRE-1008",
+        "vessel": {
+            "name": "Maersk Mc-Kinney Moller",
+            "imo_no": "9619907",
+            "mmsi_no": "219018271",
+            "call_sign": "OWIZ2",
+            "flag": "Denmark",
+            "flag_code": "DNK",
+            "ship_type": "Container Ship",
+            "gross_tonnage": 194849,
+            "length_m": 399
+        },
+        "voyage": {
+            "voyage_number": "Maersk-1056",
+            "last_port": {
+                "name": "Jebel Ali",
+                "location_code": "AEJEA1"
+            },
+            "next_port": {
+                "name": "Rotterdam",
+                "location_code": "NLRTM1"
+            },
+            "eta": "2025-07-08T03:54:36",
+            "etd": "2025-07-16T03:54:36",
+            "purpose_of_call": [
+                "Medical Assistance"
+            ]
+        },
+        "crew": {
+            "number_onboard": 20,
+            "nationalities": [
+                "Philippines",
+                "Indonesia",
+                "India"
+            ]
+        },
+        "passengers": {
+            "number_onboard": 33,
+            "special_needs": "Yes \u2013 2 requiring wheelchair"
+        },
+        "documents": {
+            "fal_form_1": "/documents/PRE-1008/FAL_Form_1.pdf",
+            "security_certificate": "/documents/PRE-1008/Security_Certificate.pdf",
+            "health_certificate": "/documents/PRE-1008/Maritime_Health_Cert.pdf",
+            "prearrival_checklist": "/documents/PRE-1008/Prearrival_Checklist.pdf"
+        },
+        "status": "Rejected",
+        "submitted_by": "harbor_ops",
+        "submitted_date": "2025-07-03T03:54:36"
+    },
+    {
+        "pre_arrival_id": "PRE-1009",
+        "vessel": {
+            "name": "Maersk Mc-Kinney Moller",
+            "imo_no": "9619907",
+            "mmsi_no": "219018271",
+            "call_sign": "OWIZ2",
+            "flag": "Denmark",
+            "flag_code": "DNK",
+            "ship_type": "Container Ship",
+            "gross_tonnage": 194849,
+            "length_m": 399
+        },
+        "voyage": {
+            "voyage_number": "Maersk-9661",
+            "last_port": {
+                "name": "Shanghai",
+                "location_code": "CNSHG1"
+            },
+            "next_port": {
+                "name": "Colombo",
+                "location_code": "LKCMB1"
+            },
+            "eta": "2025-07-10T03:54:36",
+            "etd": "2025-07-13T03:54:36",
+            "purpose_of_call": [
+                "Repairs"
+            ]
+        },
+        "crew": {
+            "number_onboard": 20,
+            "nationalities": [
+                "India",
+                "Philippines",
+                "Indonesia"
+            ]
+        },
+        "passengers": {
+            "number_onboard": 49,
+            "special_needs": "Diplomatic"
+        },
+        "documents": {
+            "fal_form_1": "/documents/PRE-1009/FAL_Form_1.pdf",
+            "security_certificate": "/documents/PRE-1009/Security_Certificate.pdf",
+            "health_certificate": "/documents/PRE-1009/Maritime_Health_Cert.pdf",
+            "prearrival_checklist": "/documents/PRE-1009/Prearrival_Checklist.pdf"
+        },
+        "status": "Submitted",
+        "submitted_by": "nmc_portuser",
+        "submitted_date": "2025-07-04T03:54:36"
+    },
+    {
+        "pre_arrival_id": "PRE-1010",
+        "vessel": {
+            "name": "Maersk Mc-Kinney Moller",
+            "imo_no": "9619907",
+            "mmsi_no": "219018271",
+            "call_sign": "OWIZ2",
+            "flag": "Denmark",
+            "flag_code": "DNK",
+            "ship_type": "Container Ship",
+            "gross_tonnage": 194849,
+            "length_m": 399
+        },
+        "voyage": {
+            "voyage_number": "Maersk-2400",
+            "last_port": {
+                "name": "Mumbai",
+                "location_code": "INBOM1"
+            },
+            "next_port": {
+                "name": "Singapore",
+                "location_code": "SGSIN1"
+            },
+            "eta": "2025-07-08T03:54:36",
+            "etd": "2025-07-15T03:54:36",
+            "purpose_of_call": [
+                "Loading / Discharging"
+            ]
+        },
+        "crew": {
+            "number_onboard": 21,
+            "nationalities": [
+                "India",
+                "Ukraine",
+                "Philippines"
+            ]
+        },
+        "passengers": {
+            "number_onboard": 42,
+            "special_needs": "None"
+        },
+        "documents": {
+            "fal_form_1": "/documents/PRE-1010/FAL_Form_1.pdf",
+            "security_certificate": "/documents/PRE-1010/Security_Certificate.pdf",
+            "health_certificate": "/documents/PRE-1010/Maritime_Health_Cert.pdf",
+            "prearrival_checklist": "/documents/PRE-1010/Prearrival_Checklist.pdf"
+        },
+        "status": "Submitted",
+        "submitted_by": "cebs_admin",
+        "submitted_date": "2025-06-28T03:54:36"
+    },
+    {
+        "pre_arrival_id": "PRE-1011",
+        "vessel": {
+            "name": "Maersk Mc-Kinney Moller",
+            "imo_no": "9619907",
+            "mmsi_no": "219018271",
+            "call_sign": "OWIZ2",
+            "flag": "Denmark",
+            "flag_code": "DNK",
+            "ship_type": "Container Ship",
+            "gross_tonnage": 194849,
+            "length_m": 399
+        },
+        "voyage": {
+            "voyage_number": "Maersk-5130",
+            "last_port": {
+                "name": "Jebel Ali",
+                "location_code": "AEJEA1"
+            },
+            "next_port": {
+                "name": "Rotterdam",
+                "location_code": "NLRTM1"
+            },
+            "eta": "2025-07-09T03:54:36",
+            "etd": "2025-07-14T03:54:36",
+            "purpose_of_call": [
+                "Force Majeure"
+            ]
+        },
+        "crew": {
+            "number_onboard": 18,
+            "nationalities": [
+                "China",
+                "Ukraine",
+                "India"
+            ]
+        },
+        "passengers": {
+            "number_onboard": 49,
+            "special_needs": "Medical"
+        },
+        "documents": {
+            "fal_form_1": "/documents/PRE-1011/FAL_Form_1.pdf",
+            "security_certificate": "/documents/PRE-1011/Security_Certificate.pdf",
+            "health_certificate": "/documents/PRE-1011/Maritime_Health_Cert.pdf",
+            "prearrival_checklist": "/documents/PRE-1011/Prearrival_Checklist.pdf"
+        },
+        "status": "Rejected",
+        "submitted_by": "cebs_admin",
+        "submitted_date": "2025-06-26T03:54:36"
+    },
+    {
+        "pre_arrival_id": "PRE-1012",
+        "vessel": {
+            "name": "MSC Zoe",
+            "imo_no": "9703318",
+            "mmsi_no": "355906000",
+            "call_sign": "H9ZI",
+            "flag": "Panama",
+            "flag_code": "PAN",
+            "ship_type": "Container Ship",
+            "gross_tonnage": 192237,
+            "length_m": 395
+        },
+        "voyage": {
+            "voyage_number": "MSC-6904",
+            "last_port": {
+                "name": "Colombo",
+                "location_code": "LKCMB1"
+            },
+            "next_port": {
+                "name": "Shanghai",
+                "location_code": "CNSHG1"
+            },
+            "eta": "2025-07-10T03:54:36",
+            "etd": "2025-07-12T03:54:36",
+            "purpose_of_call": [
+                "Loading / Discharging"
+            ]
+        },
+        "crew": {
+            "number_onboard": 21,
+            "nationalities": [
+                "Philippines",
+                "China",
+                "Ukraine"
+            ]
+        },
+        "passengers": {
+            "number_onboard": 43,
+            "special_needs": "Medical"
+        },
+        "documents": {
+            "fal_form_1": "/documents/PRE-1012/FAL_Form_1.pdf",
+            "security_certificate": "/documents/PRE-1012/Security_Certificate.pdf",
+            "health_certificate": "/documents/PRE-1012/Maritime_Health_Cert.pdf",
+            "prearrival_checklist": "/documents/PRE-1012/Prearrival_Checklist.pdf"
+        },
+        "status": "Under Review",
+        "submitted_by": "cebs_admin",
+        "submitted_date": "2025-06-28T03:54:36"
+    },
+    {
+        "pre_arrival_id": "PRE-1013",
+        "vessel": {
+            "name": "MSC Zoe",
+            "imo_no": "9703318",
+            "mmsi_no": "355906000",
+            "call_sign": "H9ZI",
+            "flag": "Panama",
+            "flag_code": "PAN",
+            "ship_type": "Container Ship",
+            "gross_tonnage": 192237,
+            "length_m": 395
+        },
+        "voyage": {
+            "voyage_number": "MSC-1261",
+            "last_port": {
+                "name": "Mumbai",
+                "location_code": "INBOM1"
+            },
+            "next_port": {
+                "name": "Colombo",
+                "location_code": "LKCMB1"
+            },
+            "eta": "2025-07-10T03:54:36",
+            "etd": "2025-07-15T03:54:36",
+            "purpose_of_call": [
+                "Crew Change",
+                "Provisioning"
+            ]
+        },
+        "crew": {
+            "number_onboard": 20,
+            "nationalities": [
+                "India",
+                "China",
+                "Philippines"
+            ]
+        },
+        "passengers": {
+            "number_onboard": 7,
+            "special_needs": "Yes \u2013 2 requiring wheelchair"
+        },
+        "documents": {
+            "fal_form_1": "/documents/PRE-1013/FAL_Form_1.pdf",
+            "security_certificate": "/documents/PRE-1013/Security_Certificate.pdf",
+            "health_certificate": "/documents/PRE-1013/Maritime_Health_Cert.pdf",
+            "prearrival_checklist": "/documents/PRE-1013/Prearrival_Checklist.pdf"
+        },
+        "status": "Approved",
+        "submitted_by": "harbor_ops",
+        "submitted_date": "2025-07-04T03:54:36"
+    },
+    {
+        "pre_arrival_id": "PRE-1014",
+        "vessel": {
+            "name": "Maersk Mc-Kinney Moller",
+            "imo_no": "9619907",
+            "mmsi_no": "219018271",
+            "call_sign": "OWIZ2",
+            "flag": "Denmark",
+            "flag_code": "DNK",
+            "ship_type": "Container Ship",
+            "gross_tonnage": 194849,
+            "length_m": 399
+        },
+        "voyage": {
+            "voyage_number": "Maersk-9470",
+            "last_port": {
+                "name": "Hamburg",
+                "location_code": "DEHAM1"
+            },
+            "next_port": {
+                "name": "Shanghai",
+                "location_code": "CNSHG1"
+            },
+            "eta": "2025-07-09T03:54:36",
+            "etd": "2025-07-15T03:54:36",
+            "purpose_of_call": [
+                "Testing"
+            ]
+        },
+        "crew": {
+            "number_onboard": 20,
+            "nationalities": [
+                "China",
+                "Philippines",
+                "Ukraine"
+            ]
+        },
+        "passengers": {
+            "number_onboard": 39,
+            "special_needs": "None"
+        },
+        "documents": {
+            "fal_form_1": "/documents/PRE-1014/FAL_Form_1.pdf",
+            "security_certificate": "/documents/PRE-1014/Security_Certificate.pdf",
+            "health_certificate": "/documents/PRE-1014/Maritime_Health_Cert.pdf",
+            "prearrival_checklist": "/documents/PRE-1014/Prearrival_Checklist.pdf"
+        },
+        "status": "Approved",
+        "submitted_by": "nmc_portuser",
+        "submitted_date": "2025-06-28T03:54:36"
+    },
+    {
+        "pre_arrival_id": "PRE-1015",
+        "vessel": {
+            "name": "MSC Zoe",
+            "imo_no": "9703318",
+            "mmsi_no": "355906000",
+            "call_sign": "H9ZI",
+            "flag": "Panama",
+            "flag_code": "PAN",
+            "ship_type": "Container Ship",
+            "gross_tonnage": 192237,
+            "length_m": 395
+        },
+        "voyage": {
+            "voyage_number": "MSC-2655",
+            "last_port": {
+                "name": "Hamburg",
+                "location_code": "DEHAM1"
+            },
+            "next_port": {
+                "name": "Colombo",
+                "location_code": "LKCMB1"
+            },
+            "eta": "2025-07-10T03:54:36",
+            "etd": "2025-07-13T03:54:36",
+            "purpose_of_call": [
+                "Crew Change",
+                "Provisioning"
+            ]
+        },
+        "crew": {
+            "number_onboard": 19,
+            "nationalities": [
+                "China",
+                "India",
+                "Ukraine"
+            ]
+        },
+        "passengers": {
+            "number_onboard": 39,
+            "special_needs": "Medical"
+        },
+        "documents": {
+            "fal_form_1": "/documents/PRE-1015/FAL_Form_1.pdf",
+            "security_certificate": "/documents/PRE-1015/Security_Certificate.pdf",
+            "health_certificate": "/documents/PRE-1015/Maritime_Health_Cert.pdf",
+            "prearrival_checklist": "/documents/PRE-1015/Prearrival_Checklist.pdf"
+        },
+        "status": "Approved",
+        "submitted_by": "nmc_portuser",
+        "submitted_date": "2025-07-01T03:54:36"
+    },
+    {
+        "pre_arrival_id": "PRE-1016",
+        "vessel": {
+            "name": "Maersk Mc-Kinney Moller",
+            "imo_no": "9619907",
+            "mmsi_no": "219018271",
+            "call_sign": "OWIZ2",
+            "flag": "Denmark",
+            "flag_code": "DNK",
+            "ship_type": "Container Ship",
+            "gross_tonnage": 194849,
+            "length_m": 399
+        },
+        "voyage": {
+            "voyage_number": "Maersk-1903",
+            "last_port": {
+                "name": "Rotterdam",
+                "location_code": "NLRTM1"
+            },
+            "next_port": {
+                "name": "Colombo",
+                "location_code": "LKCMB1"
+            },
+            "eta": "2025-07-09T03:54:36",
+            "etd": "2025-07-13T03:54:36",
+            "purpose_of_call": [
+                "Crew Change",
+                "Provisioning"
+            ]
+        },
+        "crew": {
+            "number_onboard": 25,
+            "nationalities": [
+                "Ukraine",
+                "Indonesia",
+                "India"
+            ]
+        },
+        "passengers": {
+            "number_onboard": 20,
+            "special_needs": "Diplomatic"
+        },
+        "documents": {
+            "fal_form_1": "/documents/PRE-1016/FAL_Form_1.pdf",
+            "security_certificate": "/documents/PRE-1016/Security_Certificate.pdf",
+            "health_certificate": "/documents/PRE-1016/Maritime_Health_Cert.pdf",
+            "prearrival_checklist": "/documents/PRE-1016/Prearrival_Checklist.pdf"
+        },
+        "status": "Under Review",
+        "submitted_by": "cebs_admin",
+        "submitted_date": "2025-06-28T03:54:36"
+    },
+    {
+        "pre_arrival_id": "PRE-1017",
+        "vessel": {
+            "name": "MSC Zoe",
+            "imo_no": "9703318",
+            "mmsi_no": "355906000",
+            "call_sign": "H9ZI",
+            "flag": "Panama",
+            "flag_code": "PAN",
+            "ship_type": "Container Ship",
+            "gross_tonnage": 192237,
+            "length_m": 395
+        },
+        "voyage": {
+            "voyage_number": "MSC-3354",
+            "last_port": {
+                "name": "Hamburg",
+                "location_code": "DEHAM1"
+            },
+            "next_port": {
+                "name": "Colombo",
+                "location_code": "LKCMB1"
+            },
+            "eta": "2025-07-09T03:54:36",
+            "etd": "2025-07-16T03:54:36",
+            "purpose_of_call": [
+                "Repairs"
+            ]
+        },
+        "crew": {
+            "number_onboard": 19,
+            "nationalities": [
+                "Philippines",
+                "India",
+                "Ukraine"
+            ]
+        },
+        "passengers": {
+            "number_onboard": 7,
+            "special_needs": "Medical"
+        },
+        "documents": {
+            "fal_form_1": "/documents/PRE-1017/FAL_Form_1.pdf",
+            "security_certificate": "/documents/PRE-1017/Security_Certificate.pdf",
+            "health_certificate": "/documents/PRE-1017/Maritime_Health_Cert.pdf",
+            "prearrival_checklist": "/documents/PRE-1017/Prearrival_Checklist.pdf"
+        },
+        "status": "Rejected",
+        "submitted_by": "agent_james",
+        "submitted_date": "2025-06-28T03:54:36"
+    },
+    {
+        "pre_arrival_id": "PRE-1018",
+        "vessel": {
+            "name": "Ever Given",
+            "imo_no": "9811000",
+            "mmsi_no": "353136000",
+            "call_sign": "H3RC",
+            "flag": "Panama",
+            "flag_code": "PAN",
+            "ship_type": "Container Ship",
+            "gross_tonnage": 220940,
+            "length_m": 400
+        },
+        "voyage": {
+            "voyage_number": "Ever-6312",
+            "last_port": {
+                "name": "Jebel Ali",
+                "location_code": "AEJEA1"
+            },
+            "next_port": {
+                "name": "Rotterdam",
+                "location_code": "NLRTM1"
+            },
+            "eta": "2025-07-10T03:54:36",
+            "etd": "2025-07-15T03:54:36",
+            "purpose_of_call": [
+                "Anchoring"
+            ]
+        },
+        "crew": {
+            "number_onboard": 21,
+            "nationalities": [
+                "Ukraine",
+                "India",
+                "Indonesia"
+            ]
+        },
+        "passengers": {
+            "number_onboard": 38,
+            "special_needs": "Medical"
+        },
+        "documents": {
+            "fal_form_1": "/documents/PRE-1018/FAL_Form_1.pdf",
+            "security_certificate": "/documents/PRE-1018/Security_Certificate.pdf",
+            "health_certificate": "/documents/PRE-1018/Maritime_Health_Cert.pdf",
+            "prearrival_checklist": "/documents/PRE-1018/Prearrival_Checklist.pdf"
+        },
+        "status": "Rejected",
+        "submitted_by": "cebs_admin",
+        "submitted_date": "2025-07-04T03:54:36"
+    },
+    {
+        "pre_arrival_id": "PRE-1019",
+        "vessel": {
+            "name": "Maersk Mc-Kinney Moller",
+            "imo_no": "9619907",
+            "mmsi_no": "219018271",
+            "call_sign": "OWIZ2",
+            "flag": "Denmark",
+            "flag_code": "DNK",
+            "ship_type": "Container Ship",
+            "gross_tonnage": 194849,
+            "length_m": 399
+        },
+        "voyage": {
+            "voyage_number": "Maersk-6235",
+            "last_port": {
+                "name": "Mumbai",
+                "location_code": "INBOM1"
+            },
+            "next_port": {
+                "name": "Shanghai",
+                "location_code": "CNSHG1"
+            },
+            "eta": "2025-07-11T03:54:36",
+            "etd": "2025-07-15T03:54:36",
+            "purpose_of_call": [
+                "Testing"
+            ]
+        },
+        "crew": {
+            "number_onboard": 19,
+            "nationalities": [
+                "China",
+                "Ukraine",
+                "Philippines"
+            ]
+        },
+        "passengers": {
+            "number_onboard": 41,
+            "special_needs": "None"
+        },
+        "documents": {
+            "fal_form_1": "/documents/PRE-1019/FAL_Form_1.pdf",
+            "security_certificate": "/documents/PRE-1019/Security_Certificate.pdf",
+            "health_certificate": "/documents/PRE-1019/Maritime_Health_Cert.pdf",
+            "prearrival_checklist": "/documents/PRE-1019/Prearrival_Checklist.pdf"
+        },
+        "status": "Rejected",
+        "submitted_by": "agent_james",
+        "submitted_date": "2025-07-04T03:54:36"
+    },
+	{
+    "pre_arrival_id": "PRE-1001",
+    "vessel": {
+      "name": "CMA CGM Antoine",
+      "imo_no": "9706903",
+      "mmsi_no": "228339600",
+      "call_sign": "FLPG",
+      "flag": "France",
+      "flag_code": "FRA",
+      "ship_type": "Container Ship",
+      "gross_tonnage": 178228,
+      "length_m": 398
+    },
+    "voyage": {
+      "voyage_number": "CMA-2025-1",
+      "last_port": {
+        "name": "Rotterdam",
+        "location_code": "NLRTM1"
+      },
+      "next_port": {
+        "name": "Jebel Ali",
+        "location_code": "AEJEA1"
+      },
+      "eta": "2025-07-14T05:02:14.208905",
+      "etd": "2025-07-18T05:02:14.208905",
+      "purpose_of_call": [
+        "Other",
+        "Loading / Discharging"
+      ]
+    },
+    "crew": {
+      "number_onboard": 16,
+      "nationalities": [
+        "Indonesia",
+        "Philippines",
+        "India",
+        "Ukraine"
+      ]
+    },
+    "passengers": {
+      "number_onboard": 0,
+      "special_needs": "Wheelchair support required"
+    },
+    "documents": {
+      "fal_form_1": "/documents/PRE-1001/FAL_Form_1.pdf",
+      "security_certificate": "/documents/PRE-1001/Security_Certificate.pdf",
+      "health_certificate": "/documents/PRE-1001/Maritime_Health_Cert.pdf",
+      "prearrival_checklist": "/documents/PRE-1001/Prearrival_Checklist.pdf"
+    },
+    "status": "Draft",
+    "submitted_by": "agent_160",
+    "submitted_date": "2025-07-13T05:02:14.208905"
+  },
+  {
+    "pre_arrival_id": "PRE-1002",
+    "vessel": {
+      "name": "Ever Given",
+      "imo_no": "9811000",
+      "mmsi_no": "353136000",
+      "call_sign": "H3RC",
+      "flag": "Panama",
+      "flag_code": "PAN",
+      "ship_type": "Container Ship",
+      "gross_tonnage": 219079,
+      "length_m": 399.94
+    },
+    "voyage": {
+      "voyage_number": "EVER-2025-2",
+      "last_port": {
+        "name": "Hamburg",
+        "location_code": "DEHAM1"
+      },
+      "next_port": {
+        "name": "Shanghai",
+        "location_code": "CNSHA1"
+      },
+      "eta": "2025-07-10T05:02:14.208972",
+      "etd": "2025-07-11T05:02:14.208972",
+      "purpose_of_call": [
+        "Force Majeure",
+        "Repairs",
+        "Lay Up"
+      ]
+    },
+    "crew": {
+      "number_onboard": 16,
+      "nationalities": [
+        "Indonesia",
+        "Russia",
+        "China",
+        "Philippines"
+      ]
+    },
+    "passengers": {
+      "number_onboard": 0,
+      "special_needs": "None"
+    },
+    "documents": {
+      "fal_form_1": "/documents/PRE-1002/FAL_Form_1.pdf",
+      "security_certificate": "/documents/PRE-1002/Security_Certificate.pdf",
+      "health_certificate": "/documents/PRE-1002/Maritime_Health_Cert.pdf",
+      "prearrival_checklist": "/documents/PRE-1002/Prearrival_Checklist.pdf"
+    },
+    "status": "In-progress",
+    "submitted_by": "agent_105",
+    "submitted_date": "2025-07-09T05:02:14.208972"
+  },
+  {
+    "pre_arrival_id": "PRE-1003",
+    "vessel": {
+      "name": "Emma Maersk",
+      "imo_no": "9321483",
+      "mmsi_no": "220417000",
+      "call_sign": "OUHR2",
+      "flag": "Denmark",
+      "flag_code": "DNK",
+      "ship_type": "Container Ship",
+      "gross_tonnage": 170794,
+      "length_m": 397.7
+    },
+    "voyage": {
+      "voyage_number": "EMMA-2025-3",
+      "last_port": {
+        "name": "Shanghai",
+        "location_code": "CNSHA1"
+      },
+      "next_port": {
+        "name": "Jebel Ali",
+        "location_code": "AEJEA1"
+      },
+      "eta": "2025-07-09T05:02:14.209000",
+      "etd": "2025-07-12T05:02:14.209000",
+      "purpose_of_call": [
+        "Bunkering",
+        "Lay Up"
+      ]
+    },
+    "crew": {
+      "number_onboard": 17,
+      "nationalities": [
+        "Ukraine",
+        "Philippines"
+      ]
+    },
+    "passengers": {
+      "number_onboard": 150,
+      "special_needs": "None"
+    },
+    "documents": {
+      "fal_form_1": "/documents/PRE-1003/FAL_Form_1.pdf",
+      "security_certificate": "/documents/PRE-1003/Security_Certificate.pdf",
+      "health_certificate": "/documents/PRE-1003/Maritime_Health_Cert.pdf",
+      "prearrival_checklist": "/documents/PRE-1003/Prearrival_Checklist.pdf"
+    },
+    "status": "Submitted",
+    "submitted_by": "agent_878",
+    "submitted_date": "2025-07-08T05:02:14.209000"
+  },
+  {
+    "pre_arrival_id": "PRE-1004",
+    "vessel": {
+      "name": "CMA CGM Antoine",
+      "imo_no": "9706903",
+      "mmsi_no": "228339600",
+      "call_sign": "FLPG",
+      "flag": "France",
+      "flag_code": "FRA",
+      "ship_type": "Container Ship",
+      "gross_tonnage": 178228,
+      "length_m": 398
+    },
+    "voyage": {
+      "voyage_number": "CMA-2025-4",
+      "last_port": {
+        "name": "Hamburg",
+        "location_code": "DEHAM1"
+      },
+      "next_port": {
+        "name": "Shanghai",
+        "location_code": "CNSHA1"
+      },
+      "eta": "2025-07-08T05:02:14.209025",
+      "etd": "2025-07-11T05:02:14.209025",
+      "purpose_of_call": [
+        "Anchoring"
+      ]
+    },
+    "crew": {
+      "number_onboard": 26,
+      "nationalities": [
+        "Ukraine",
+        "Indonesia",
+        "India",
+        "Philippines"
+      ]
+    },
+    "passengers": {
+      "number_onboard": 0,
+      "special_needs": "Diplomatic group"
+    },
+    "documents": {
+      "fal_form_1": "/documents/PRE-1004/FAL_Form_1.pdf",
+      "security_certificate": "/documents/PRE-1004/Security_Certificate.pdf",
+      "health_certificate": "/documents/PRE-1004/Maritime_Health_Cert.pdf",
+      "prearrival_checklist": "/documents/PRE-1004/Prearrival_Checklist.pdf"
+    },
+    "status": "In-progress",
+    "submitted_by": "agent_490",
+    "submitted_date": "2025-07-07T05:02:14.209025"
+  },
+  {
+    "pre_arrival_id": "PRE-1005",
+    "vessel": {
+      "name": "OOCL Hong Kong",
+      "imo_no": "9776171",
+      "mmsi_no": "477333500",
+      "call_sign": "VRNG9",
+      "flag": "Hong Kong",
+      "flag_code": "HKG",
+      "ship_type": "Container Ship",
+      "gross_tonnage": 210890,
+      "length_m": 399.87
+    },
+    "voyage": {
+      "voyage_number": "OOCL-2025-5",
+      "last_port": {
+        "name": "Hamburg",
+        "location_code": "DEHAM1"
+      },
+      "next_port": {
+        "name": "Singapore",
+        "location_code": "SGSIN1"
+      },
+      "eta": "2025-07-21T05:02:14.209050",
+      "etd": "2025-07-23T05:02:14.209050",
+      "purpose_of_call": [
+        "Crew change",
+        "Bunkering",
+        "Anchoring"
+      ]
+    },
+    "crew": {
+      "number_onboard": 17,
+      "nationalities": [
+        "China",
+        "Ukraine"
+      ]
+    },
+    "passengers": {
+      "number_onboard": 0,
+      "special_needs": "Senior citizens"
+    },
+    "documents": {
+      "fal_form_1": "/documents/PRE-1005/FAL_Form_1.pdf",
+      "security_certificate": "/documents/PRE-1005/Security_Certificate.pdf",
+      "health_certificate": "/documents/PRE-1005/Maritime_Health_Cert.pdf",
+      "prearrival_checklist": "/documents/PRE-1005/Prearrival_Checklist.pdf"
+    },
+    "status": "In-progress",
+    "submitted_by": "agent_278",
+    "submitted_date": "2025-07-20T05:02:14.209050"
+  },
+  {
+    "pre_arrival_id": "PRE-1006",
+    "vessel": {
+      "name": "Emma Maersk",
+      "imo_no": "9321483",
+      "mmsi_no": "220417000",
+      "call_sign": "OUHR2",
+      "flag": "Denmark",
+      "flag_code": "DNK",
+      "ship_type": "Container Ship",
+      "gross_tonnage": 170794,
+      "length_m": 397.7
+    },
+    "voyage": {
+      "voyage_number": "EMMA-2025-6",
+      "last_port": {
+        "name": "Jebel Ali",
+        "location_code": "AEJEA1"
+      },
+      "next_port": {
+        "name": "Rotterdam",
+        "location_code": "NLRTM1"
+      },
+      "eta": "2025-07-17T05:02:14.209074",
+      "etd": "2025-07-18T05:02:14.209074",
+      "purpose_of_call": [
+        "Repairs",
+        "Force Majeure",
+        "Bunkering"
+      ]
+    },
+    "crew": {
+      "number_onboard": 24,
+      "nationalities": [
+        "Philippines",
+        "China",
+        "Indonesia",
+        "India"
+      ]
+    },
+    "passengers": {
+      "number_onboard": 12,
+      "special_needs": "None"
+    },
+    "documents": {
+      "fal_form_1": "/documents/PRE-1006/FAL_Form_1.pdf",
+      "security_certificate": "/documents/PRE-1006/Security_Certificate.pdf",
+      "health_certificate": "/documents/PRE-1006/Maritime_Health_Cert.pdf",
+      "prearrival_checklist": "/documents/PRE-1006/Prearrival_Checklist.pdf"
+    },
+    "status": "In-progress",
+    "submitted_by": "agent_970",
+    "submitted_date": "2025-07-16T05:02:14.209074"
+  },
+  {
+    "pre_arrival_id": "PRE-1007",
+    "vessel": {
+      "name": "Emma Maersk",
+      "imo_no": "9321483",
+      "mmsi_no": "220417000",
+      "call_sign": "OUHR2",
+      "flag": "Denmark",
+      "flag_code": "DNK",
+      "ship_type": "Container Ship",
+      "gross_tonnage": 170794,
+      "length_m": 397.7
+    },
+    "voyage": {
+      "voyage_number": "EMMA-2025-7",
+      "last_port": {
+        "name": "Rotterdam",
+        "location_code": "NLRTM1"
+      },
+      "next_port": {
+        "name": "Hamburg",
+        "location_code": "DEHAM1"
+      },
+      "eta": "2025-07-08T05:02:14.209100",
+      "etd": "2025-07-09T05:02:14.209100",
+      "purpose_of_call": [
+        "Medical Assistance",
+        "Anchoring"
+      ]
+    },
+    "crew": {
+      "number_onboard": 16,
+      "nationalities": [
+        "India",
+        "Philippines",
+        "China"
+      ]
+    },
+    "passengers": {
+      "number_onboard": 0,
+      "special_needs": "None"
+    },
+    "documents": {
+      "fal_form_1": "/documents/PRE-1007/FAL_Form_1.pdf",
+      "security_certificate": "/documents/PRE-1007/Security_Certificate.pdf",
+      "health_certificate": "/documents/PRE-1007/Maritime_Health_Cert.pdf",
+      "prearrival_checklist": "/documents/PRE-1007/Prearrival_Checklist.pdf"
+    },
+    "status": "In-progress",
+    "submitted_by": "agent_447",
+    "submitted_date": "2025-07-07T05:02:14.209100"
+  },
+  {
+    "pre_arrival_id": "PRE-1008",
+    "vessel": {
+      "name": "Emma Maersk",
+      "imo_no": "9321483",
+      "mmsi_no": "220417000",
+      "call_sign": "OUHR2",
+      "flag": "Denmark",
+      "flag_code": "DNK",
+      "ship_type": "Container Ship",
+      "gross_tonnage": 170794,
+      "length_m": 397.7
+    },
+    "voyage": {
+      "voyage_number": "EMMA-2025-8",
+      "last_port": {
+        "name": "Rotterdam",
+        "location_code": "NLRTM1"
+      },
+      "next_port": {
+        "name": "Singapore",
+        "location_code": "SGSIN1"
+      },
+      "eta": "2025-07-12T05:02:14.209129",
+      "etd": "2025-07-15T05:02:14.209129",
+      "purpose_of_call": [
+        "Testing"
+      ]
+    },
+    "crew": {
+      "number_onboard": 25,
+      "nationalities": [
+        "Indonesia",
+        "India",
+        "China"
+      ]
+    },
+    "passengers": {
+      "number_onboard": 12,
+      "special_needs": "None"
+    },
+    "documents": {
+      "fal_form_1": "/documents/PRE-1008/FAL_Form_1.pdf",
+      "security_certificate": "/documents/PRE-1008/Security_Certificate.pdf",
+      "health_certificate": "/documents/PRE-1008/Maritime_Health_Cert.pdf",
+      "prearrival_checklist": "/documents/PRE-1008/Prearrival_Checklist.pdf"
+    },
+    "status": "Draft",
+    "submitted_by": "agent_181",
+    "submitted_date": "2025-07-11T05:02:14.209129"
+  },
+  {
+    "pre_arrival_id": "PRE-1009",
+    "vessel": {
+      "name": "MSC Oscar",
+      "imo_no": "9703291",
+      "mmsi_no": "355906000",
+      "call_sign": "H9GI",
+      "flag": "Panama",
+      "flag_code": "PAN",
+      "ship_type": "Container Ship",
+      "gross_tonnage": 192237,
+      "length_m": 395.4
+    },
+    "voyage": {
+      "voyage_number": "MSC-2025-9",
+      "last_port": {
+        "name": "Jebel Ali",
+        "location_code": "AEJEA1"
+      },
+      "next_port": {
+        "name": "Hamburg",
+        "location_code": "DEHAM1"
+      },
+      "eta": "2025-07-21T05:02:14.209157",
+      "etd": "2025-07-25T05:02:14.209157",
+      "purpose_of_call": [
+        "Anchoring",
+        "Repairs"
+      ]
+    },
+    "crew": {
+      "number_onboard": 16,
+      "nationalities": [
+        "China",
+        "India"
+      ]
+    },
+    "passengers": {
+      "number_onboard": 0,
+      "special_needs": "Pregnant women"
+    },
+    "documents": {
+      "fal_form_1": "/documents/PRE-1009/FAL_Form_1.pdf",
+      "security_certificate": "/documents/PRE-1009/Security_Certificate.pdf",
+      "health_certificate": "/documents/PRE-1009/Maritime_Health_Cert.pdf",
+      "prearrival_checklist": "/documents/PRE-1009/Prearrival_Checklist.pdf"
+    },
+    "status": "In-progress",
+    "submitted_by": "agent_376",
+    "submitted_date": "2025-07-20T05:02:14.209157"
+  },
+  {
+    "pre_arrival_id": "PRE-1010",
+    "vessel": {
+      "name": "MSC Oscar",
+      "imo_no": "9703291",
+      "mmsi_no": "355906000",
+      "call_sign": "H9GI",
+      "flag": "Panama",
+      "flag_code": "PAN",
+      "ship_type": "Container Ship",
+      "gross_tonnage": 192237,
+      "length_m": 395.4
+    },
+    "voyage": {
+      "voyage_number": "MSC-2025-10",
+      "last_port": {
+        "name": "Rotterdam",
+        "location_code": "NLRTM1"
+      },
+      "next_port": {
+        "name": "Singapore",
+        "location_code": "SGSIN1"
+      },
+      "eta": "2025-07-19T05:02:14.209206",
+      "etd": "2025-07-20T05:02:14.209206",
+      "purpose_of_call": [
+        "Ship To Ship Operations"
+      ]
+    },
+    "crew": {
+      "number_onboard": 24,
+      "nationalities": [
+        "Philippines",
+        "India"
+      ]
+    },
+    "passengers": {
+      "number_onboard": 0,
+      "special_needs": "Diplomatic group"
+    },
+    "documents": {
+      "fal_form_1": "/documents/PRE-1010/FAL_Form_1.pdf",
+      "security_certificate": "/documents/PRE-1010/Security_Certificate.pdf",
+      "health_certificate": "/documents/PRE-1010/Maritime_Health_Cert.pdf",
+      "prearrival_checklist": "/documents/PRE-1010/Prearrival_Checklist.pdf"
+    },
+    "status": "Submitted",
+    "submitted_by": "agent_690",
+    "submitted_date": "2025-07-18T05:02:14.209206"
+  },
+  {
+    "pre_arrival_id": "PRE-1011",
+    "vessel": {
+      "name": "Ever Given",
+      "imo_no": "9811000",
+      "mmsi_no": "353136000",
+      "call_sign": "H3RC",
+      "flag": "Panama",
+      "flag_code": "PAN",
+      "ship_type": "Container Ship",
+      "gross_tonnage": 219079,
+      "length_m": 399.94
+    },
+    "voyage": {
+      "voyage_number": "EVER-2025-11",
+      "last_port": {
+        "name": "Hamburg",
+        "location_code": "DEHAM1"
+      },
+      "next_port": {
+        "name": "Shanghai",
+        "location_code": "CNSHA1"
+      },
+      "eta": "2025-07-14T05:02:14.209249",
+      "etd": "2025-07-17T05:02:14.209249",
+      "purpose_of_call": [
+        "Bunkering"
+      ]
+    },
+    "crew": {
+      "number_onboard": 24,
+      "nationalities": [
+        "China",
+        "Philippines"
+      ]
+    },
+    "passengers": {
+      "number_onboard": 25,
+      "special_needs": "Senior citizens"
+    },
+    "documents": {
+      "fal_form_1": "/documents/PRE-1011/FAL_Form_1.pdf",
+      "security_certificate": "/documents/PRE-1011/Security_Certificate.pdf",
+      "health_certificate": "/documents/PRE-1011/Maritime_Health_Cert.pdf",
+      "prearrival_checklist": "/documents/PRE-1011/Prearrival_Checklist.pdf"
+    },
+    "status": "Submitted",
+    "submitted_by": "agent_335",
+    "submitted_date": "2025-07-13T05:02:14.209249"
+  },
+  {
+    "pre_arrival_id": "PRE-1012",
+    "vessel": {
+      "name": "MSC Oscar",
+      "imo_no": "9703291",
+      "mmsi_no": "355906000",
+      "call_sign": "H9GI",
+      "flag": "Panama",
+      "flag_code": "PAN",
+      "ship_type": "Container Ship",
+      "gross_tonnage": 192237,
+      "length_m": 395.4
+    },
+    "voyage": {
+      "voyage_number": "MSC-2025-12",
+      "last_port": {
+        "name": "Hamburg",
+        "location_code": "DEHAM1"
+      },
+      "next_port": {
+        "name": "Jebel Ali",
+        "location_code": "AEJEA1"
+      },
+      "eta": "2025-07-19T05:02:14.209271",
+      "etd": "2025-07-22T05:02:14.209271",
+      "purpose_of_call": [
+        "Medical Assistance",
+        "Bunkering",
+        "Other"
+      ]
+    },
+    "crew": {
+      "number_onboard": 32,
+      "nationalities": [
+        "China",
+        "Russia",
+        "Indonesia",
+        "India"
+      ]
+    },
+    "passengers": {
+      "number_onboard": 150,
+      "special_needs": "Diplomatic group"
+    },
+    "documents": {
+      "fal_form_1": "/documents/PRE-1012/FAL_Form_1.pdf",
+      "security_certificate": "/documents/PRE-1012/Security_Certificate.pdf",
+      "health_certificate": "/documents/PRE-1012/Maritime_Health_Cert.pdf",
+      "prearrival_checklist": "/documents/PRE-1012/Prearrival_Checklist.pdf"
+    },
+    "status": "Cancelled",
+    "submitted_by": "agent_541",
+    "submitted_date": "2025-07-18T05:02:14.209271"
+  },
+  {
+    "pre_arrival_id": "PRE-1013",
+    "vessel": {
+      "name": "Emma Maersk",
+      "imo_no": "9321483",
+      "mmsi_no": "220417000",
+      "call_sign": "OUHR2",
+      "flag": "Denmark",
+      "flag_code": "DNK",
+      "ship_type": "Container Ship",
+      "gross_tonnage": 170794,
+      "length_m": 397.7
+    },
+    "voyage": {
+      "voyage_number": "EMMA-2025-13",
+      "last_port": {
+        "name": "Rotterdam",
+        "location_code": "NLRTM1"
+      },
+      "next_port": {
+        "name": "Singapore",
+        "location_code": "SGSIN1"
+      },
+      "eta": "2025-07-20T05:02:14.209295",
+      "etd": "2025-07-21T05:02:14.209295",
+      "purpose_of_call": [
+        "Provisioning"
+      ]
+    },
+    "crew": {
+      "number_onboard": 30,
+      "nationalities": [
+        "India",
+        "China",
+        "Philippines"
+      ]
+    },
+    "passengers": {
+      "number_onboard": 0,
+      "special_needs": "Pregnant women"
+    },
+    "documents": {
+      "fal_form_1": "/documents/PRE-1013/FAL_Form_1.pdf",
+      "security_certificate": "/documents/PRE-1013/Security_Certificate.pdf",
+      "health_certificate": "/documents/PRE-1013/Maritime_Health_Cert.pdf",
+      "prearrival_checklist": "/documents/PRE-1013/Prearrival_Checklist.pdf"
+    },
+    "status": "Draft",
+    "submitted_by": "agent_730",
+    "submitted_date": "2025-07-19T05:02:14.209295"
+  },
+  {
+    "pre_arrival_id": "PRE-1014",
+    "vessel": {
+      "name": "CMA CGM Antoine",
+      "imo_no": "9706903",
+      "mmsi_no": "228339600",
+      "call_sign": "FLPG",
+      "flag": "France",
+      "flag_code": "FRA",
+      "ship_type": "Container Ship",
+      "gross_tonnage": 178228,
+      "length_m": 398
+    },
+    "voyage": {
+      "voyage_number": "CMA-2025-14",
+      "last_port": {
+        "name": "Hamburg",
+        "location_code": "DEHAM1"
+      },
+      "next_port": {
+        "name": "Rotterdam",
+        "location_code": "NLRTM1"
+      },
+      "eta": "2025-07-18T05:02:14.209329",
+      "etd": "2025-07-20T05:02:14.209329",
+      "purpose_of_call": [
+        "Ship To Ship Operations",
+        "Loading / Discharging",
+        "Bunkering"
+      ]
+    },
+    "crew": {
+      "number_onboard": 29,
+      "nationalities": [
+        "Philippines",
+        "Indonesia",
+        "Ukraine",
+        "China"
+      ]
+    },
+    "passengers": {
+      "number_onboard": 25,
+      "special_needs": "Diplomatic group"
+    },
+    "documents": {
+      "fal_form_1": "/documents/PRE-1014/FAL_Form_1.pdf",
+      "security_certificate": "/documents/PRE-1014/Security_Certificate.pdf",
+      "health_certificate": "/documents/PRE-1014/Maritime_Health_Cert.pdf",
+      "prearrival_checklist": "/documents/PRE-1014/Prearrival_Checklist.pdf"
+    },
+    "status": "Draft",
+    "submitted_by": "agent_593",
+    "submitted_date": "2025-07-17T05:02:14.209329"
+  },
+  {
+    "pre_arrival_id": "PRE-1015",
+    "vessel": {
+      "name": "OOCL Hong Kong",
+      "imo_no": "9776171",
+      "mmsi_no": "477333500",
+      "call_sign": "VRNG9",
+      "flag": "Hong Kong",
+      "flag_code": "HKG",
+      "ship_type": "Container Ship",
+      "gross_tonnage": 210890,
+      "length_m": 399.87
+    },
+    "voyage": {
+      "voyage_number": "OOCL-2025-15",
+      "last_port": {
+        "name": "Singapore",
+        "location_code": "SGSIN1"
+      },
+      "next_port": {
+        "name": "Shanghai",
+        "location_code": "CNSHA1"
+      },
+      "eta": "2025-07-16T05:02:14.209366",
+      "etd": "2025-07-19T05:02:14.209366",
+      "purpose_of_call": [
+        "Anchoring",
+        "Ship To Ship Operations"
+      ]
+    },
+    "crew": {
+      "number_onboard": 25,
+      "nationalities": [
+        "Ukraine",
+        "India",
+        "Russia"
+      ]
+    },
+    "passengers": {
+      "number_onboard": 0,
+      "special_needs": "Diplomatic group"
+    },
+    "documents": {
+      "fal_form_1": "/documents/PRE-1015/FAL_Form_1.pdf",
+      "security_certificate": "/documents/PRE-1015/Security_Certificate.pdf",
+      "health_certificate": "/documents/PRE-1015/Maritime_Health_Cert.pdf",
+      "prearrival_checklist": "/documents/PRE-1015/Prearrival_Checklist.pdf"
+    },
+    "status": "Submitted",
+    "submitted_by": "agent_282",
+    "submitted_date": "2025-07-15T05:02:14.209366"
+  },
+  {
+    "pre_arrival_id": "PRE-1016",
+    "vessel": {
+      "name": "Ever Given",
+      "imo_no": "9811000",
+      "mmsi_no": "353136000",
+      "call_sign": "H3RC",
+      "flag": "Panama",
+      "flag_code": "PAN",
+      "ship_type": "Container Ship",
+      "gross_tonnage": 219079,
+      "length_m": 399.94
+    },
+    "voyage": {
+      "voyage_number": "EVER-2025-16",
+      "last_port": {
+        "name": "Singapore",
+        "location_code": "SGSIN1"
+      },
+      "next_port": {
+        "name": "Rotterdam",
+        "location_code": "NLRTM1"
+      },
+      "eta": "2025-07-08T05:02:14.209403",
+      "etd": "2025-07-10T05:02:14.209403",
+      "purpose_of_call": [
+        "Provisioning",
+        "Medical Assistance"
+      ]
+    },
+    "crew": {
+      "number_onboard": 20,
+      "nationalities": [
+        "Indonesia",
+        "Philippines",
+        "Ukraine"
+      ]
+    },
+    "passengers": {
+      "number_onboard": 0,
+      "special_needs": "None"
+    },
+    "documents": {
+      "fal_form_1": "/documents/PRE-1016/FAL_Form_1.pdf",
+      "security_certificate": "/documents/PRE-1016/Security_Certificate.pdf",
+      "health_certificate": "/documents/PRE-1016/Maritime_Health_Cert.pdf",
+      "prearrival_checklist": "/documents/PRE-1016/Prearrival_Checklist.pdf"
+    },
+    "status": "Submitted",
+    "submitted_by": "agent_160",
+    "submitted_date": "2025-07-07T05:02:14.209403"
+  },
+  {
+    "pre_arrival_id": "PRE-1017",
+    "vessel": {
+      "name": "OOCL Hong Kong",
+      "imo_no": "9776171",
+      "mmsi_no": "477333500",
+      "call_sign": "VRNG9",
+      "flag": "Hong Kong",
+      "flag_code": "HKG",
+      "ship_type": "Container Ship",
+      "gross_tonnage": 210890,
+      "length_m": 399.87
+    },
+    "voyage": {
+      "voyage_number": "OOCL-2025-17",
+      "last_port": {
+        "name": "Rotterdam",
+        "location_code": "NLRTM1"
+      },
+      "next_port": {
+        "name": "Singapore",
+        "location_code": "SGSIN1"
+      },
+      "eta": "2025-07-16T05:02:14.209426",
+      "etd": "2025-07-17T05:02:14.209426",
+      "purpose_of_call": [
+        "Other",
+        "Lay Up"
+      ]
+    },
+    "crew": {
+      "number_onboard": 31,
+      "nationalities": [
+        "Ukraine",
+        "India"
+      ]
+    },
+    "passengers": {
+      "number_onboard": 0,
+      "special_needs": "Pregnant women"
+    },
+    "documents": {
+      "fal_form_1": "/documents/PRE-1017/FAL_Form_1.pdf",
+      "security_certificate": "/documents/PRE-1017/Security_Certificate.pdf",
+      "health_certificate": "/documents/PRE-1017/Maritime_Health_Cert.pdf",
+      "prearrival_checklist": "/documents/PRE-1017/Prearrival_Checklist.pdf"
+    },
+    "status": "Submitted",
+    "submitted_by": "agent_774",
+    "submitted_date": "2025-07-15T05:02:14.209426"
+  },
+  {
+    "pre_arrival_id": "PRE-1018",
+    "vessel": {
+      "name": "Emma Maersk",
+      "imo_no": "9321483",
+      "mmsi_no": "220417000",
+      "call_sign": "OUHR2",
+      "flag": "Denmark",
+      "flag_code": "DNK",
+      "ship_type": "Container Ship",
+      "gross_tonnage": 170794,
+      "length_m": 397.7
+    },
+    "voyage": {
+      "voyage_number": "EMMA-2025-18",
+      "last_port": {
+        "name": "Rotterdam",
+        "location_code": "NLRTM1"
+      },
+      "next_port": {
+        "name": "Hamburg",
+        "location_code": "DEHAM1"
+      },
+      "eta": "2025-07-11T05:02:14.209449",
+      "etd": "2025-07-15T05:02:14.209449",
+      "purpose_of_call": [
+        "Medical Assistance"
+      ]
+    },
+    "crew": {
+      "number_onboard": 25,
+      "nationalities": [
+        "India",
+        "China"
+      ]
+    },
+    "passengers": {
+      "number_onboard": 0,
+      "special_needs": "None"
+    },
+    "documents": {
+      "fal_form_1": "/documents/PRE-1018/FAL_Form_1.pdf",
+      "security_certificate": "/documents/PRE-1018/Security_Certificate.pdf",
+      "health_certificate": "/documents/PRE-1018/Maritime_Health_Cert.pdf",
+      "prearrival_checklist": "/documents/PRE-1018/Prearrival_Checklist.pdf"
+    },
+    "status": "Draft",
+    "submitted_by": "agent_293",
+    "submitted_date": "2025-07-10T05:02:14.209449"
+  },
+  {
+    "pre_arrival_id": "PRE-1019",
+    "vessel": {
+      "name": "OOCL Hong Kong",
+      "imo_no": "9776171",
+      "mmsi_no": "477333500",
+      "call_sign": "VRNG9",
+      "flag": "Hong Kong",
+      "flag_code": "HKG",
+      "ship_type": "Container Ship",
+      "gross_tonnage": 210890,
+      "length_m": 399.87
+    },
+    "voyage": {
+      "voyage_number": "OOCL-2025-19",
+      "last_port": {
+        "name": "Rotterdam",
+        "location_code": "NLRTM1"
+      },
+      "next_port": {
+        "name": "Hamburg",
+        "location_code": "DEHAM1"
+      },
+      "eta": "2025-07-07T05:02:14.209485",
+      "etd": "2025-07-08T05:02:14.209485",
+      "purpose_of_call": [
+        "Bunkering",
+        "Crew change",
+        "Medical Assistance"
+      ]
+    },
+    "crew": {
+      "number_onboard": 26,
+      "nationalities": [
+        "Russia",
+        "India"
+      ]
+    },
+    "passengers": {
+      "number_onboard": 12,
+      "special_needs": "Senior citizens"
+    },
+    "documents": {
+      "fal_form_1": "/documents/PRE-1019/FAL_Form_1.pdf",
+      "security_certificate": "/documents/PRE-1019/Security_Certificate.pdf",
+      "health_certificate": "/documents/PRE-1019/Maritime_Health_Cert.pdf",
+      "prearrival_checklist": "/documents/PRE-1019/Prearrival_Checklist.pdf"
+    },
+    "status": "Draft",
+    "submitted_by": "agent_543",
+    "submitted_date": "2025-07-06T05:02:14.209485"
+  },
+  {
+    "pre_arrival_id": "PRE-1020",
+    "vessel": {
+      "name": "Ever Given",
+      "imo_no": "9811000",
+      "mmsi_no": "353136000",
+      "call_sign": "H3RC",
+      "flag": "Panama",
+      "flag_code": "PAN",
+      "ship_type": "Container Ship",
+      "gross_tonnage": 219079,
+      "length_m": 399.94
+    },
+    "voyage": {
+      "voyage_number": "EVER-2025-20",
+      "last_port": {
+        "name": "Jebel Ali",
+        "location_code": "AEJEA1"
+      },
+      "next_port": {
+        "name": "Hamburg",
+        "location_code": "DEHAM1"
+      },
+      "eta": "2025-07-12T05:02:14.209509",
+      "etd": "2025-07-16T05:02:14.209509",
+      "purpose_of_call": [
+        "Lay Up"
+      ]
+    },
+    "crew": {
+      "number_onboard": 18,
+      "nationalities": [
+        "Ukraine",
+        "China",
+        "Indonesia"
+      ]
+    },
+    "passengers": {
+      "number_onboard": 0,
+      "special_needs": "Diplomatic group"
+    },
+    "documents": {
+      "fal_form_1": "/documents/PRE-1020/FAL_Form_1.pdf",
+      "security_certificate": "/documents/PRE-1020/Security_Certificate.pdf",
+      "health_certificate": "/documents/PRE-1020/Maritime_Health_Cert.pdf",
+      "prearrival_checklist": "/documents/PRE-1020/Prearrival_Checklist.pdf"
+    },
+    "status": "In-progress",
+    "submitted_by": "agent_499",
+    "submitted_date": "2025-07-11T05:02:14.209509"
+  },
+  {
+    "pre_arrival_id": "PRE-1021",
+    "vessel": {
+      "name": "CMA CGM Antoine",
+      "imo_no": "9706903",
+      "mmsi_no": "228339600",
+      "call_sign": "FLPG",
+      "flag": "France",
+      "flag_code": "FRA",
+      "ship_type": "Container Ship",
+      "gross_tonnage": 178228,
+      "length_m": 398
+    },
+    "voyage": {
+      "voyage_number": "CMA-2025-21",
+      "last_port": {
+        "name": "Shanghai",
+        "location_code": "CNSHA1"
+      },
+      "next_port": {
+        "name": "Jebel Ali",
+        "location_code": "AEJEA1"
+      },
+      "eta": "2025-07-12T05:02:14.209530",
+      "etd": "2025-07-14T05:02:14.209530",
+      "purpose_of_call": [
+        "Bunkering"
+      ]
+    },
+    "crew": {
+      "number_onboard": 17,
+      "nationalities": [
+        "Indonesia",
+        "Philippines"
+      ]
+    },
+    "passengers": {
+      "number_onboard": 12,
+      "special_needs": "Wheelchair support required"
+    },
+    "documents": {
+      "fal_form_1": "/documents/PRE-1021/FAL_Form_1.pdf",
+      "security_certificate": "/documents/PRE-1021/Security_Certificate.pdf",
+      "health_certificate": "/documents/PRE-1021/Maritime_Health_Cert.pdf",
+      "prearrival_checklist": "/documents/PRE-1021/Prearrival_Checklist.pdf"
+    },
+    "status": "Submitted",
+    "submitted_by": "agent_822",
+    "submitted_date": "2025-07-11T05:02:14.209530"
+  },
+  {
+    "pre_arrival_id": "PRE-1022",
+    "vessel": {
+      "name": "CMA CGM Antoine",
+      "imo_no": "9706903",
+      "mmsi_no": "228339600",
+      "call_sign": "FLPG",
+      "flag": "France",
+      "flag_code": "FRA",
+      "ship_type": "Container Ship",
+      "gross_tonnage": 178228,
+      "length_m": 398
+    },
+    "voyage": {
+      "voyage_number": "CMA-2025-22",
+      "last_port": {
+        "name": "Hamburg",
+        "location_code": "DEHAM1"
+      },
+      "next_port": {
+        "name": "Rotterdam",
+        "location_code": "NLRTM1"
+      },
+      "eta": "2025-07-18T05:02:14.209551",
+      "etd": "2025-07-20T05:02:14.209551",
+      "purpose_of_call": [
+        "Ship To Ship Operations"
+      ]
+    },
+    "crew": {
+      "number_onboard": 27,
+      "nationalities": [
+        "Indonesia",
+        "Russia"
+      ]
+    },
+    "passengers": {
+      "number_onboard": 25,
+      "special_needs": "Wheelchair support required"
+    },
+    "documents": {
+      "fal_form_1": "/documents/PRE-1022/FAL_Form_1.pdf",
+      "security_certificate": "/documents/PRE-1022/Security_Certificate.pdf",
+      "health_certificate": "/documents/PRE-1022/Maritime_Health_Cert.pdf",
+      "prearrival_checklist": "/documents/PRE-1022/Prearrival_Checklist.pdf"
+    },
+    "status": "Submitted",
+    "submitted_by": "agent_469",
+    "submitted_date": "2025-07-17T05:02:14.209551"
+  },
+  {
+    "pre_arrival_id": "PRE-1023",
+    "vessel": {
+      "name": "MSC Oscar",
+      "imo_no": "9703291",
+      "mmsi_no": "355906000",
+      "call_sign": "H9GI",
+      "flag": "Panama",
+      "flag_code": "PAN",
+      "ship_type": "Container Ship",
+      "gross_tonnage": 192237,
+      "length_m": 395.4
+    },
+    "voyage": {
+      "voyage_number": "MSC-2025-23",
+      "last_port": {
+        "name": "Jebel Ali",
+        "location_code": "AEJEA1"
+      },
+      "next_port": {
+        "name": "Rotterdam",
+        "location_code": "NLRTM1"
+      },
+      "eta": "2025-07-16T05:02:14.209581",
+      "etd": "2025-07-20T05:02:14.209581",
+      "purpose_of_call": [
+        "Testing"
+      ]
+    },
+    "crew": {
+      "number_onboard": 19,
+      "nationalities": [
+        "Ukraine",
+        "India",
+        "Russia"
+      ]
+    },
+    "passengers": {
+      "number_onboard": 0,
+      "special_needs": "Senior citizens"
+    },
+    "documents": {
+      "fal_form_1": "/documents/PRE-1023/FAL_Form_1.pdf",
+      "security_certificate": "/documents/PRE-1023/Security_Certificate.pdf",
+      "health_certificate": "/documents/PRE-1023/Maritime_Health_Cert.pdf",
+      "prearrival_checklist": "/documents/PRE-1023/Prearrival_Checklist.pdf"
+    },
+    "status": "Draft",
+    "submitted_by": "agent_364",
+    "submitted_date": "2025-07-15T05:02:14.209581"
+  },
+  {
+    "pre_arrival_id": "PRE-1024",
+    "vessel": {
+      "name": "OOCL Hong Kong",
+      "imo_no": "9776171",
+      "mmsi_no": "477333500",
+      "call_sign": "VRNG9",
+      "flag": "Hong Kong",
+      "flag_code": "HKG",
+      "ship_type": "Container Ship",
+      "gross_tonnage": 210890,
+      "length_m": 399.87
+    },
+    "voyage": {
+      "voyage_number": "OOCL-2025-24",
+      "last_port": {
+        "name": "Singapore",
+        "location_code": "SGSIN1"
+      },
+      "next_port": {
+        "name": "Shanghai",
+        "location_code": "CNSHA1"
+      },
+      "eta": "2025-07-07T05:02:14.209617",
+      "etd": "2025-07-08T05:02:14.209617",
+      "purpose_of_call": [
+        "Force Majeure"
+      ]
+    },
+    "crew": {
+      "number_onboard": 25,
+      "nationalities": [
+        "China",
+        "Russia",
+        "Ukraine",
+        "Philippines"
+      ]
+    },
+    "passengers": {
+      "number_onboard": 150,
+      "special_needs": "Diplomatic group"
+    },
+    "documents": {
+      "fal_form_1": "/documents/PRE-1024/FAL_Form_1.pdf",
+      "security_certificate": "/documents/PRE-1024/Security_Certificate.pdf",
+      "health_certificate": "/documents/PRE-1024/Maritime_Health_Cert.pdf",
+      "prearrival_checklist": "/documents/PRE-1024/Prearrival_Checklist.pdf"
+    },
+    "status": "Draft",
+    "submitted_by": "agent_942",
+    "submitted_date": "2025-07-06T05:02:14.209617"
+  },
+  {
+    "pre_arrival_id": "PRE-1025",
+    "vessel": {
+      "name": "Ever Given",
+      "imo_no": "9811000",
+      "mmsi_no": "353136000",
+      "call_sign": "H3RC",
+      "flag": "Panama",
+      "flag_code": "PAN",
+      "ship_type": "Container Ship",
+      "gross_tonnage": 219079,
+      "length_m": 399.94
+    },
+    "voyage": {
+      "voyage_number": "EVER-2025-25",
+      "last_port": {
+        "name": "Shanghai",
+        "location_code": "CNSHA1"
+      },
+      "next_port": {
+        "name": "Singapore",
+        "location_code": "SGSIN1"
+      },
+      "eta": "2025-07-17T05:02:14.209655",
+      "etd": "2025-07-18T05:02:14.209655",
+      "purpose_of_call": [
+        "Medical Assistance",
+        "Repairs"
+      ]
+    },
+    "crew": {
+      "number_onboard": 31,
+      "nationalities": [
+        "Ukraine",
+        "India",
+        "Philippines"
+      ]
+    },
+    "passengers": {
+      "number_onboard": 0,
+      "special_needs": "Senior citizens"
+    },
+    "documents": {
+      "fal_form_1": "/documents/PRE-1025/FAL_Form_1.pdf",
+      "security_certificate": "/documents/PRE-1025/Security_Certificate.pdf",
+      "health_certificate": "/documents/PRE-1025/Maritime_Health_Cert.pdf",
+      "prearrival_checklist": "/documents/PRE-1025/Prearrival_Checklist.pdf"
+    },
+    "status": "Submitted",
+    "submitted_by": "agent_651",
+    "submitted_date": "2025-07-16T05:02:14.209655"
+  }
+]

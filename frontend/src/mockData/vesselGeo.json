@@ -1,0 +1,4010 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "vessel_name": "Vessel-1",
+                "flag": "South Korea",
+                "flag_code": "KOR",
+                "last_port": "Port-39"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    128.12845105219557,
+                    36.70943238036233
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "vessel_name": "Vessel-2",
+                "flag": "France",
+                "flag_code": "FRA",
+                "last_port": "Port-39"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.5148517647367608,
+                    45.246315839841344
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "vessel_name": "Vessel-3",
+                "flag": "Germany",
+                "flag_code": "DEU",
+                "last_port": "Port-28"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    10.41740310427712,
+                    49.84303176045806
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "vessel_name": "Vessel-4",
+                "flag": "Singapore",
+                "flag_code": "SGP",
+                "last_port": "Port-16"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    102.9598019426844,
+                    -0.03841887962481261
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "vessel_name": "Vessel-5",
+                "flag": "India",
+                "flag_code": "IND",
+                "last_port": "Port-45"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    79.42595333439355,
+                    19.279279037648003
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "vessel_name": "Vessel-6",
+                "flag": "France",
+                "flag_code": "FRA",
+                "last_port": "Port-31"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    1.6969466750080415,
+                    48.071626433381454
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "vessel_name": "Vessel-7",
+                "flag": "UAE",
+                "flag_code": "ARE",
+                "last_port": "Port-8"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    53.133609571663754,
+                    23.99429015915978
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "vessel_name": "Vessel-8",
+                "flag": "Bahamas",
+                "flag_code": "BHS",
+                "last_port": "Port-14"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -76.75897476943479,
+                    26.592085991048176
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "vessel_name": "Vessel-9",
+                "flag": "South Korea",
+                "flag_code": "KOR",
+                "last_port": "Port-36"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    127.40470965899958,
+                    34.60645498415855
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "vessel_name": "Vessel-10",
+                "flag": "Singapore",
+                "flag_code": "SGP",
+                "last_port": "Port-17"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    103.78608065677254,
+                    2.017356439515581
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "vessel_name": "Vessel-11",
+                "flag": "India",
+                "flag_code": "IND",
+                "last_port": "Port-29"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    79.29991573315644,
+                    19.821328484943464
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "vessel_name": "Vessel-12",
+                "flag": "UAE",
+                "flag_code": "ARE",
+                "last_port": "Port-1"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    54.470294135045464,
+                    25.266791885539494
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "vessel_name": "Vessel-13",
+                "flag": "Germany",
+                "flag_code": "DEU",
+                "last_port": "Port-21"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    10.39915889042879,
+                    49.986844839296346
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "vessel_name": "Vessel-14",
+                "flag": "Saudi Arabia",
+                "flag_code": "SAU",
+                "last_port": "Port-33"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    43.3402505930018,
+                    25.23103291769908
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "vessel_name": "Vessel-15",
+                "flag": "Singapore",
+                "flag_code": "SGP",
+                "last_port": "Port-34"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    103.46344972104558,
+                    1.4216999364575127
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "vessel_name": "Vessel-16",
+                "flag": "UAE",
+                "flag_code": "ARE",
+                "last_port": "Port-6"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    55.23658409131639,
+                    22.532053414348564
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "vessel_name": "Vessel-17",
+                "flag": "South Africa",
+                "flag_code": "ZAF",
+                "last_port": "Port-49"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    23.733874510246398,
+                    -31.407652866927652
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "vessel_name": "Vessel-18",
+                "flag": "China",
+                "flag_code": "CHN",
+                "last_port": "Port-18"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    102.21845247001748,
+                    36.140425887639985
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "vessel_name": "Vessel-19",
+                "flag": "Singapore",
+                "flag_code": "SGP",
+                "last_port": "Port-9"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    103.45523185850698,
+                    1.546134781054044
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "vessel_name": "Vessel-20",
+                "flag": "United Kingdom",
+                "flag_code": "GBR",
+                "last_port": "Port-43"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -4.450161975868923,
+                    54.21534754220179
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "vessel_name": "Vessel-21",
+                "flag": "Panama",
+                "flag_code": "PAN",
+                "last_port": "Port-35"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -80.09850020141967,
+                    8.034222843872474
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "vessel_name": "Vessel-22",
+                "flag": "India",
+                "flag_code": "IND",
+                "last_port": "Port-22"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    78.24467016806,
+                    19.091898903543708
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "vessel_name": "Vessel-23",
+                "flag": "China",
+                "flag_code": "CHN",
+                "last_port": "Port-49"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    104.69656147545139,
+                    37.30424438239095
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "vessel_name": "Vessel-24",
+                "flag": "South Korea",
+                "flag_code": "KOR",
+                "last_port": "Port-20"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    128.55021704096617,
+                    34.46094346194193
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "vessel_name": "Vessel-25",
+                "flag": "China",
+                "flag_code": "CHN",
+                "last_port": "Port-6"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    104.37292134793417,
+                    37.11811792849567
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "vessel_name": "Vessel-26",
+                "flag": "South Korea",
+                "flag_code": "KOR",
+                "last_port": "Port-19"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    125.79140790555135,
+                    37.42576217411798
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "vessel_name": "Vessel-27",
+                "flag": "South Africa",
+                "flag_code": "ZAF",
+                "last_port": "Port-7"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    24.72069824480701,
+                    -29.59151110453274
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "vessel_name": "Vessel-28",
+                "flag": "Bahamas",
+                "flag_code": "BHS",
+                "last_port": "Port-49"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -78.84043182611039,
+                    24.408906793063046
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "vessel_name": "Vessel-29",
+                "flag": "France",
+                "flag_code": "FRA",
+                "last_port": "Port-47"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    0.7487693253933791,
+                    45.46028005646729
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "vessel_name": "Vessel-30",
+                "flag": "UAE",
+                "flag_code": "ARE",
+                "last_port": "Port-16"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    54.537658924107625,
+                    24.130075814726915
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "vessel_name": "Vessel-31",
+                "flag": "Japan",
+                "flag_code": "JPN",
+                "last_port": "Port-24"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    138.1391209500951,
+                    34.33174564320834
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "vessel_name": "Vessel-32",
+                "flag": "Brazil",
+                "flag_code": "BRA",
+                "last_port": "Port-30"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -53.69525419545904,
+                    -13.97614152307822
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "vessel_name": "Vessel-33",
+                "flag": "United Kingdom",
+                "flag_code": "GBR",
+                "last_port": "Port-26"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.984281442905783,
+                    56.38517044557437
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "vessel_name": "Vessel-34",
+                "flag": "United Kingdom",
+                "flag_code": "GBR",
+                "last_port": "Port-12"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.097913089074278,
+                    56.092582672317405
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "vessel_name": "Vessel-35",
+                "flag": "China",
+                "flag_code": "CHN",
+                "last_port": "Port-32"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    105.13920422939685,
+                    34.48602164722896
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "vessel_name": "Vessel-36",
+                "flag": "Bahamas",
+                "flag_code": "BHS",
+                "last_port": "Port-38"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.10944456676717,
+                    26.552095608544644
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "vessel_name": "Vessel-37",
+                "flag": "Bahamas",
+                "flag_code": "BHS",
+                "last_port": "Port-42"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -75.44874875345957,
+                    26.5561769509184
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "vessel_name": "Vessel-38",
+                "flag": "UAE",
+                "flag_code": "ARE",
+                "last_port": "Port-47"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    56.22029837747096,
+                    25.39750190664085
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "vessel_name": "Vessel-39",
+                "flag": "Germany",
+                "flag_code": "DEU",
+                "last_port": "Port-1"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    9.09357492986804,
+                    50.889468884094924
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "vessel_name": "Vessel-40",
+                "flag": "Panama",
+                "flag_code": "PAN",
+                "last_port": "Port-29"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -81.00987907469829,
+                    8.565693933641906
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "vessel_name": "Vessel-41",
+                "flag": "Brazil",
+                "flag_code": "BRA",
+                "last_port": "Port-22"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -50.6028103690601,
+                    -15.990081060628388
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "vessel_name": "Vessel-42",
+                "flag": "China",
+                "flag_code": "CHN",
+                "last_port": "Port-32"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    105.76577526217118,
+                    36.35084698738121
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "vessel_name": "Vessel-43",
+                "flag": "China",
+                "flag_code": "CHN",
+                "last_port": "Port-33"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    104.9052388122187,
+                    37.01037068886411
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "vessel_name": "Vessel-44",
+                "flag": "South Africa",
+                "flag_code": "ZAF",
+                "last_port": "Port-29"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    22.008488690471605,
+                    -28.698490699495277
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "vessel_name": "Vessel-45",
+                "flag": "Singapore",
+                "flag_code": "SGP",
+                "last_port": "Port-40"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    105.74292274287475,
+                    3.2305239455321306
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "vessel_name": "Vessel-46",
+                "flag": "Germany",
+                "flag_code": "DEU",
+                "last_port": "Port-23"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    10.158198461729832,
+                    52.01029114782244
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "vessel_name": "Vessel-47",
+                "flag": "UAE",
+                "flag_code": "ARE",
+                "last_port": "Port-46"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    53.06130203314737,
+                    23.51768220601228
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "vessel_name": "Vessel-48",
+                "flag": "Singapore",
+                "flag_code": "SGP",
+                "last_port": "Port-8"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    104.74501716148033,
+                    0.6518674364996824
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "vessel_name": "Vessel-49",
+                "flag": "China",
+                "flag_code": "CHN",
+                "last_port": "Port-10"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    103.84266209941232,
+                    35.95550215495895
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "vessel_name": "Vessel-50",
+                "flag": "Brazil",
+                "flag_code": "BRA",
+                "last_port": "Port-2"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -50.21909009375996,
+                    -13.182302171605794
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "vessel_name": "Vessel-51",
+                "flag": "Panama",
+                "flag_code": "PAN",
+                "last_port": "Port-7"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.152273202442,
+                    8.382196636664801
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "vessel_name": "Vessel-52",
+                "flag": "United States",
+                "flag_code": "USA",
+                "last_port": "Port-16"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -96.6640262112378,
+                    37.28642366265632
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "vessel_name": "Vessel-53",
+                "flag": "Brazil",
+                "flag_code": "BRA",
+                "last_port": "Port-29"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -49.94501502084524,
+                    -16.031723692641084
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "vessel_name": "Vessel-54",
+                "flag": "Panama",
+                "flag_code": "PAN",
+                "last_port": "Port-19"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -80.49634692065882,
+                    8.282146685964573
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "vessel_name": "Vessel-55",
+                "flag": "France",
+                "flag_code": "FRA",
+                "last_port": "Port-8"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.714814282790766,
+                    46.932274607924406
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "vessel_name": "Vessel-56",
+                "flag": "Panama",
+                "flag_code": "PAN",
+                "last_port": "Port-4"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.62293954184635,
+                    6.685141172636577
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "vessel_name": "Vessel-57",
+                "flag": "UAE",
+                "flag_code": "ARE",
+                "last_port": "Port-37"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    54.379514253526246,
+                    23.199024516930216
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "vessel_name": "Vessel-58",
+                "flag": "India",
+                "flag_code": "IND",
+                "last_port": "Port-43"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    79.57534570030842,
+                    18.675073141406564
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "vessel_name": "Vessel-59",
+                "flag": "Panama",
+                "flag_code": "PAN",
+                "last_port": "Port-23"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.32044316416156,
+                    8.713101455107584
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "vessel_name": "Vessel-60",
+                "flag": "South Africa",
+                "flag_code": "ZAF",
+                "last_port": "Port-28"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    22.450372642566744,
+                    -28.635790826045138
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "vessel_name": "Vessel-61",
+                "flag": "Bahamas",
+                "flag_code": "BHS",
+                "last_port": "Port-19"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.01323718425738,
+                    26.772159347528312
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "vessel_name": "Vessel-62",
+                "flag": "South Korea",
+                "flag_code": "KOR",
+                "last_port": "Port-33"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    128.2557433253424,
+                    36.69857958341758
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "vessel_name": "Vessel-63",
+                "flag": "Bahamas",
+                "flag_code": "BHS",
+                "last_port": "Port-31"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -76.77343197238739,
+                    24.719073583627946
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "vessel_name": "Vessel-64",
+                "flag": "South Korea",
+                "flag_code": "KOR",
+                "last_port": "Port-4"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    127.3361052794972,
+                    36.07327178001222
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "vessel_name": "Vessel-65",
+                "flag": "United Kingdom",
+                "flag_code": "GBR",
+                "last_port": "Port-36"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -5.4018996373355925,
+                    55.6749544950092
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "vessel_name": "Vessel-66",
+                "flag": "United Kingdom",
+                "flag_code": "GBR",
+                "last_port": "Port-40"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -3.1046470203157055,
+                    56.02213483506739
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "vessel_name": "Vessel-67",
+                "flag": "France",
+                "flag_code": "FRA",
+                "last_port": "Port-23"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    1.0276648815156184,
+                    44.5115917828389
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "vessel_name": "Vessel-68",
+                "flag": "Bahamas",
+                "flag_code": "BHS",
+                "last_port": "Port-44"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.49922373556257,
+                    24.49347045536973
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "vessel_name": "Vessel-69",
+                "flag": "Panama",
+                "flag_code": "PAN",
+                "last_port": "Port-18"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -80.25273461511547,
+                    9.17755633743774
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "vessel_name": "Vessel-70",
+                "flag": "United Kingdom",
+                "flag_code": "GBR",
+                "last_port": "Port-45"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.3128506788408,
+                    54.60398129487955
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "vessel_name": "Vessel-71",
+                "flag": "South Africa",
+                "flag_code": "ZAF",
+                "last_port": "Port-44"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    22.86244501143274,
+                    -30.165848317921814
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "vessel_name": "Vessel-72",
+                "flag": "United States",
+                "flag_code": "USA",
+                "last_port": "Port-18"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -96.94312038007848,
+                    36.846197856593115
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "vessel_name": "Vessel-73",
+                "flag": "South Africa",
+                "flag_code": "ZAF",
+                "last_port": "Port-47"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    21.957140874864987,
+                    -29.920648545288998
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "vessel_name": "Vessel-74",
+                "flag": "Bahamas",
+                "flag_code": "BHS",
+                "last_port": "Port-12"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -76.47097743825013,
+                    25.92596118551232
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "vessel_name": "Vessel-75",
+                "flag": "South Africa",
+                "flag_code": "ZAF",
+                "last_port": "Port-1"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    22.079511083776172,
+                    -29.36201848341019
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "vessel_name": "Vessel-76",
+                "flag": "Bahamas",
+                "flag_code": "BHS",
+                "last_port": "Port-47"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -76.11957528590817,
+                    24.686476664561447
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "vessel_name": "Vessel-77",
+                "flag": "United States",
+                "flag_code": "USA",
+                "last_port": "Port-43"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -97.16255724497793,
+                    38.32888647269442
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "vessel_name": "Vessel-78",
+                "flag": "Bahamas",
+                "flag_code": "BHS",
+                "last_port": "Port-21"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -78.70371654093245,
+                    23.338421974042365
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "vessel_name": "Vessel-79",
+                "flag": "South Korea",
+                "flag_code": "KOR",
+                "last_port": "Port-44"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    128.25956047150945,
+                    37.79191880199905
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "vessel_name": "Vessel-80",
+                "flag": "India",
+                "flag_code": "IND",
+                "last_port": "Port-45"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.9892209534368,
+                    20.88082173036577
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "vessel_name": "Vessel-81",
+                "flag": "South Africa",
+                "flag_code": "ZAF",
+                "last_port": "Port-27"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    21.26249191289983,
+                    -28.745216660554338
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "vessel_name": "Vessel-82",
+                "flag": "Singapore",
+                "flag_code": "SGP",
+                "last_port": "Port-34"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    102.39355773114356,
+                    -0.003412991241380059
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "vessel_name": "Vessel-83",
+                "flag": "Saudi Arabia",
+                "flag_code": "SAU",
+                "last_port": "Port-1"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    44.52608488144058,
+                    24.658249127419854
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "vessel_name": "Vessel-84",
+                "flag": "United States",
+                "flag_code": "USA",
+                "last_port": "Port-5"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -97.06758632055302,
+                    35.13300748636191
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "vessel_name": "Vessel-85",
+                "flag": "South Korea",
+                "flag_code": "KOR",
+                "last_port": "Port-1"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    127.30472360468555,
+                    35.20131279126122
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "vessel_name": "Vessel-86",
+                "flag": "China",
+                "flag_code": "CHN",
+                "last_port": "Port-37"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    104.51156644516944,
+                    34.12372924825679
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "vessel_name": "Vessel-87",
+                "flag": "South Africa",
+                "flag_code": "ZAF",
+                "last_port": "Port-48"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    21.6998915089345,
+                    -30.00687245723953
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "vessel_name": "Vessel-88",
+                "flag": "Japan",
+                "flag_code": "JPN",
+                "last_port": "Port-6"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    139.82841742194393,
+                    36.20126061108303
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "vessel_name": "Vessel-89",
+                "flag": "Saudi Arabia",
+                "flag_code": "SAU",
+                "last_port": "Port-6"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    43.694019970114994,
+                    25.59535367285133
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "vessel_name": "Vessel-90",
+                "flag": "France",
+                "flag_code": "FRA",
+                "last_port": "Port-8"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    1.1778110603731586,
+                    47.549721545544934
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "vessel_name": "Vessel-91",
+                "flag": "Japan",
+                "flag_code": "JPN",
+                "last_port": "Port-44"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    138.0631530848143,
+                    34.66837676288676
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "vessel_name": "Vessel-92",
+                "flag": "Saudi Arabia",
+                "flag_code": "SAU",
+                "last_port": "Port-33"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    46.90771214505394,
+                    22.535146833444937
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "vessel_name": "Vessel-93",
+                "flag": "Japan",
+                "flag_code": "JPN",
+                "last_port": "Port-6"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    138.03272412441947,
+                    36.69616529276353
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "vessel_name": "Vessel-94",
+                "flag": "Saudi Arabia",
+                "flag_code": "SAU",
+                "last_port": "Port-26"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    44.9934095700869,
+                    23.408156033967924
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "vessel_name": "Vessel-95",
+                "flag": "United Kingdom",
+                "flag_code": "GBR",
+                "last_port": "Port-18"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -4.230061671524414,
+                    54.043043817102166
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "vessel_name": "Vessel-96",
+                "flag": "Japan",
+                "flag_code": "JPN",
+                "last_port": "Port-1"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    136.52277503569107,
+                    37.585912422615664
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "vessel_name": "Vessel-97",
+                "flag": "Brazil",
+                "flag_code": "BRA",
+                "last_port": "Port-2"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -51.30499744720859,
+                    -15.34466611500277
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "vessel_name": "Vessel-98",
+                "flag": "India",
+                "flag_code": "IND",
+                "last_port": "Port-22"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    78.77303729623513,
+                    20.491502984142272
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "vessel_name": "Vessel-99",
+                "flag": "United States",
+                "flag_code": "USA",
+                "last_port": "Port-19"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -97.63239843766128,
+                    38.13126010892901
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "vessel_name": "Vessel-100",
+                "flag": "China",
+                "flag_code": "CHN",
+                "last_port": "Port-10"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    105.88425311497063,
+                    35.248903901729946
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "vessel_name": "Vessel-101",
+                "flag": "Panama",
+                "flag_code": "PAN",
+                "last_port": "Port-38"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.6343554453146,
+                    10.353512410590843
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "vessel_name": "Vessel-102",
+                "flag": "Saudi Arabia",
+                "flag_code": "SAU",
+                "last_port": "Port-43"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    44.041130413297154,
+                    25.801184403785125
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "vessel_name": "Vessel-103",
+                "flag": "Saudi Arabia",
+                "flag_code": "SAU",
+                "last_port": "Port-46"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    43.27651426968758,
+                    23.612276776433067
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "vessel_name": "Vessel-104",
+                "flag": "Japan",
+                "flag_code": "JPN",
+                "last_port": "Port-9"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    140.05374244893042,
+                    36.951469804817116
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "vessel_name": "Vessel-105",
+                "flag": "India",
+                "flag_code": "IND",
+                "last_port": "Port-32"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    80.79250324410346,
+                    18.983977995289074
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "vessel_name": "Vessel-106",
+                "flag": "Japan",
+                "flag_code": "JPN",
+                "last_port": "Port-24"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    139.26997255365873,
+                    34.697242427169854
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "vessel_name": "Vessel-107",
+                "flag": "China",
+                "flag_code": "CHN",
+                "last_port": "Port-25"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    102.42257818141928,
+                    36.38475379005393
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "vessel_name": "Vessel-108",
+                "flag": "South Africa",
+                "flag_code": "ZAF",
+                "last_port": "Port-23"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    21.481159826398148,
+                    -31.821104510439856
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "vessel_name": "Vessel-109",
+                "flag": "South Korea",
+                "flag_code": "KOR",
+                "last_port": "Port-13"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    129.3293366859921,
+                    36.86592417720568
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "vessel_name": "Vessel-110",
+                "flag": "Singapore",
+                "flag_code": "SGP",
+                "last_port": "Port-30"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    104.57196022617735,
+                    0.9904433634967713
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "vessel_name": "Vessel-111",
+                "flag": "South Africa",
+                "flag_code": "ZAF",
+                "last_port": "Port-13"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    21.743421004785112,
+                    -28.805153564941943
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "vessel_name": "Vessel-112",
+                "flag": "United Kingdom",
+                "flag_code": "GBR",
+                "last_port": "Port-27"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -4.492010282897724,
+                    55.35465740246492
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "vessel_name": "Vessel-113",
+                "flag": "United Kingdom",
+                "flag_code": "GBR",
+                "last_port": "Port-8"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -3.024041163575088,
+                    56.929834389333976
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "vessel_name": "Vessel-114",
+                "flag": "Saudi Arabia",
+                "flag_code": "SAU",
+                "last_port": "Port-6"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    44.22386767523091,
+                    22.19832557242732
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "vessel_name": "Vessel-115",
+                "flag": "Panama",
+                "flag_code": "PAN",
+                "last_port": "Port-38"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -81.35233042162271,
+                    8.118577737511792
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "vessel_name": "Vessel-116",
+                "flag": "India",
+                "flag_code": "IND",
+                "last_port": "Port-1"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    78.06601995292655,
+                    20.248729807662933
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "vessel_name": "Vessel-117",
+                "flag": "Germany",
+                "flag_code": "DEU",
+                "last_port": "Port-3"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.941025196531434,
+                    53.13140147140963
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "vessel_name": "Vessel-118",
+                "flag": "Saudi Arabia",
+                "flag_code": "SAU",
+                "last_port": "Port-50"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    45.65464772324663,
+                    25.77019230464112
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "vessel_name": "Vessel-119",
+                "flag": "South Africa",
+                "flag_code": "ZAF",
+                "last_port": "Port-27"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    24.37715192624116,
+                    -30.139071786798198
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "vessel_name": "Vessel-120",
+                "flag": "United Kingdom",
+                "flag_code": "GBR",
+                "last_port": "Port-5"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -3.1969821887178544,
+                    53.86345077541777
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "vessel_name": "Vessel-121",
+                "flag": "Germany",
+                "flag_code": "DEU",
+                "last_port": "Port-39"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.942248177431628,
+                    51.3759465353351
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "vessel_name": "Vessel-122",
+                "flag": "Panama",
+                "flag_code": "PAN",
+                "last_port": "Port-38"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -80.47655712409836,
+                    8.507269299026063
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "vessel_name": "Vessel-123",
+                "flag": "Japan",
+                "flag_code": "JPN",
+                "last_port": "Port-48"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    138.6097308535751,
+                    35.19491254200026
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "vessel_name": "Vessel-124",
+                "flag": "China",
+                "flag_code": "CHN",
+                "last_port": "Port-13"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    104.36278985429068,
+                    34.361419217974394
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "vessel_name": "Vessel-125",
+                "flag": "United States",
+                "flag_code": "USA",
+                "last_port": "Port-12"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -96.83384937288612,
+                    36.021786772102615
+                ]
+            }
+        },
+        {
+            "type": "FeatureCollection",
+            "features": [
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "vessel_name": "Vessel-1000",
+                        "flag": "India",
+                        "flag_code": "IND",
+                        "last_port": "Rotterdam"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -170.672333,
+                            -82.387659
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "vessel_name": "Vessel-1001",
+                        "flag": "China",
+                        "flag_code": "CHN",
+                        "last_port": "Dubai"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -39.847033,
+                            35.747377
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "vessel_name": "Vessel-1002",
+                        "flag": "Panama",
+                        "flag_code": "PAN",
+                        "last_port": "Los Angeles"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -117.871424,
+                            -89.875302
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "vessel_name": "Vessel-1003",
+                        "flag": "South Korea",
+                        "flag_code": "KOR",
+                        "last_port": "New York"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -18.416981,
+                            -80.479437
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "vessel_name": "Vessel-1004",
+                        "flag": "Singapore",
+                        "flag_code": "SGP",
+                        "last_port": "Dubai"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -0.31739,
+                            57.775371
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "vessel_name": "Vessel-1005",
+                        "flag": "Panama",
+                        "flag_code": "PAN",
+                        "last_port": "Busan"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            106.73089,
+                            -71.703175
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "vessel_name": "Vessel-1006",
+                        "flag": "Japan",
+                        "flag_code": "JPN",
+                        "last_port": "Los Angeles"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            9.058738,
+                            88.752258
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "vessel_name": "Vessel-1007",
+                        "flag": "UAE",
+                        "flag_code": "ARE",
+                        "last_port": "Mumbai"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            45.701561,
+                            8.47747
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "vessel_name": "Vessel-1008",
+                        "flag": "China",
+                        "flag_code": "CHN",
+                        "last_port": "Mumbai"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            34.778147,
+                            -39.43718
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "vessel_name": "Vessel-1009",
+                        "flag": "China",
+                        "flag_code": "CHN",
+                        "last_port": "Singapore"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            19.240494,
+                            68.533307
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "vessel_name": "Vessel-1010",
+                        "flag": "China",
+                        "flag_code": "CHN",
+                        "last_port": "Busan"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            0.915196,
+                            12.526568
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "vessel_name": "Vessel-1011",
+                        "flag": "Singapore",
+                        "flag_code": "SGP",
+                        "last_port": "Rotterdam"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            70.554605,
+                            28.650441
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "vessel_name": "Vessel-1012",
+                        "flag": "Bahamas",
+                        "flag_code": "BHS",
+                        "last_port": "Singapore"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            136.720806,
+                            -87.434486
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "vessel_name": "Vessel-1013",
+                        "flag": "UAE",
+                        "flag_code": "ARE",
+                        "last_port": "New York"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            18.682643,
+                            -31.212524
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "vessel_name": "Vessel-1014",
+                        "flag": "Bahamas",
+                        "flag_code": "BHS",
+                        "last_port": "New York"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -94.210506,
+                            87.787118
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "vessel_name": "Vessel-1015",
+                        "flag": "South Korea",
+                        "flag_code": "KOR",
+                        "last_port": "Rotterdam"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -51.604673,
+                            -0.218872
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "vessel_name": "Vessel-1016",
+                        "flag": "USA",
+                        "flag_code": "USA",
+                        "last_port": "Mumbai"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -21.624351,
+                            73.539724
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "vessel_name": "Vessel-1017",
+                        "flag": "China",
+                        "flag_code": "CHN",
+                        "last_port": "Busan"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            137.175651,
+                            -23.930428
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "vessel_name": "Vessel-1018",
+                        "flag": "Panama",
+                        "flag_code": "PAN",
+                        "last_port": "Singapore"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            40.578965,
+                            83.13964
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "vessel_name": "Vessel-1019",
+                        "flag": "China",
+                        "flag_code": "CHN",
+                        "last_port": "Dubai"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -91.497804,
+                            20.343516
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "vessel_name": "Vessel-1020",
+                        "flag": "Panama",
+                        "flag_code": "PAN",
+                        "last_port": "Dubai"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -172.499589,
+                            42.494712
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "vessel_name": "Vessel-1021",
+                        "flag": "Panama",
+                        "flag_code": "PAN",
+                        "last_port": "Dubai"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -72.023734,
+                            0.52202
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "vessel_name": "Vessel-1022",
+                        "flag": "Japan",
+                        "flag_code": "JPN",
+                        "last_port": "Busan"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -149.885189,
+                            -75.565015
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "vessel_name": "Vessel-1023",
+                        "flag": "Bahamas",
+                        "flag_code": "BHS",
+                        "last_port": "Dubai"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -82.19927,
+                            -21.686287
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "vessel_name": "Vessel-1024",
+                        "flag": "Panama",
+                        "flag_code": "PAN",
+                        "last_port": "New York"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -152.208194,
+                            58.830735
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "vessel_name": "Vessel-1025",
+                        "flag": "USA",
+                        "flag_code": "USA",
+                        "last_port": "Hamburg"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -111.078065,
+                            -80.186824
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "vessel_name": "Vessel-1026",
+                        "flag": "Bahamas",
+                        "flag_code": "BHS",
+                        "last_port": "Singapore"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            87.820195,
+                            -39.011627
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "vessel_name": "Vessel-1027",
+                        "flag": "USA",
+                        "flag_code": "USA",
+                        "last_port": "Los Angeles"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            139.643008,
+                            -55.161274
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "vessel_name": "Vessel-1028",
+                        "flag": "Bahamas",
+                        "flag_code": "BHS",
+                        "last_port": "Singapore"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            160.951154,
+                            -36.605659
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "vessel_name": "Vessel-1029",
+                        "flag": "UAE",
+                        "flag_code": "ARE",
+                        "last_port": "Rotterdam"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -19.149149,
+                            -14.562981
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "vessel_name": "Vessel-1030",
+                        "flag": "Norway",
+                        "flag_code": "NOR",
+                        "last_port": "Los Angeles"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            107.949621,
+                            5.39964
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "vessel_name": "Vessel-1031",
+                        "flag": "Norway",
+                        "flag_code": "NOR",
+                        "last_port": "Mumbai"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -143.440679,
+                            -54.933551
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "vessel_name": "Vessel-1032",
+                        "flag": "China",
+                        "flag_code": "CHN",
+                        "last_port": "Hamburg"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            138.154671,
+                            65.101978
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "vessel_name": "Vessel-1033",
+                        "flag": "Japan",
+                        "flag_code": "JPN",
+                        "last_port": "Singapore"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            64.649382,
+                            6.173792
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "vessel_name": "Vessel-1034",
+                        "flag": "India",
+                        "flag_code": "IND",
+                        "last_port": "Singapore"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -29.211042,
+                            -19.066383
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "vessel_name": "Vessel-1035",
+                        "flag": "India",
+                        "flag_code": "IND",
+                        "last_port": "Shanghai"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            67.287559,
+                            -75.759677
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "vessel_name": "Vessel-1036",
+                        "flag": "China",
+                        "flag_code": "CHN",
+                        "last_port": "Los Angeles"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            83.940093,
+                            50.144408
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "vessel_name": "Vessel-1037",
+                        "flag": "China",
+                        "flag_code": "CHN",
+                        "last_port": "Shanghai"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -14.703149,
+                            -67.217197
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "vessel_name": "Vessel-1038",
+                        "flag": "Panama",
+                        "flag_code": "PAN",
+                        "last_port": "Los Angeles"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -96.440529,
+                            26.84315
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "vessel_name": "Vessel-1039",
+                        "flag": "Panama",
+                        "flag_code": "PAN",
+                        "last_port": "Mumbai"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            69.825843,
+                            -3.727452
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "vessel_name": "Vessel-1040",
+                        "flag": "UAE",
+                        "flag_code": "ARE",
+                        "last_port": "Busan"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            29.613305,
+                            -37.317839
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "vessel_name": "Vessel-1041",
+                        "flag": "India",
+                        "flag_code": "IND",
+                        "last_port": "Singapore"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            5.471419,
+                            -0.929612
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "vessel_name": "Vessel-1042",
+                        "flag": "Panama",
+                        "flag_code": "PAN",
+                        "last_port": "Tokyo"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -68.312355,
+                            20.031207
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "vessel_name": "Vessel-1043",
+                        "flag": "UAE",
+                        "flag_code": "ARE",
+                        "last_port": "Hamburg"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -159.578531,
+                            72.527928
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "vessel_name": "Vessel-1044",
+                        "flag": "UAE",
+                        "flag_code": "ARE",
+                        "last_port": "Tokyo"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            52.208767,
+                            12.082957
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "vessel_name": "Vessel-1045",
+                        "flag": "Japan",
+                        "flag_code": "JPN",
+                        "last_port": "Shanghai"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            3.057576,
+                            -81.20476
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "vessel_name": "Vessel-1046",
+                        "flag": "Bahamas",
+                        "flag_code": "BHS",
+                        "last_port": "Rotterdam"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -82.37874,
+                            -39.342827
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "vessel_name": "Vessel-1047",
+                        "flag": "Norway",
+                        "flag_code": "NOR",
+                        "last_port": "Busan"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -85.867209,
+                            -9.348417
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "vessel_name": "Vessel-1048",
+                        "flag": "USA",
+                        "flag_code": "USA",
+                        "last_port": "Los Angeles"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -59.430515,
+                            26.052875
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "vessel_name": "Vessel-1049",
+                        "flag": "Japan",
+                        "flag_code": "JPN",
+                        "last_port": "Los Angeles"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -41.141238,
+                            -35.008339
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "vessel_name": "Vessel-1050",
+                        "flag": "Singapore",
+                        "flag_code": "SGP",
+                        "last_port": "Los Angeles"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            37.159819,
+                            -73.22591
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "vessel_name": "Vessel-1051",
+                        "flag": "Bahamas",
+                        "flag_code": "BHS",
+                        "last_port": "Rotterdam"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -60.782704,
+                            -32.0273
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "vessel_name": "Vessel-1052",
+                        "flag": "Panama",
+                        "flag_code": "PAN",
+                        "last_port": "Rotterdam"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -176.994799,
+                            -73.774206
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "vessel_name": "Vessel-1053",
+                        "flag": "Bahamas",
+                        "flag_code": "BHS",
+                        "last_port": "Mumbai"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            111.343659,
+                            -2.291548
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "vessel_name": "Vessel-1054",
+                        "flag": "Japan",
+                        "flag_code": "JPN",
+                        "last_port": "Dubai"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            126.840757,
+                            8.94235
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "vessel_name": "Vessel-1055",
+                        "flag": "Singapore",
+                        "flag_code": "SGP",
+                        "last_port": "Hamburg"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -9.536918,
+                            77.79004
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "vessel_name": "Vessel-1056",
+                        "flag": "South Korea",
+                        "flag_code": "KOR",
+                        "last_port": "Dubai"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            119.937729,
+                            29.962445
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "vessel_name": "Vessel-1057",
+                        "flag": "South Korea",
+                        "flag_code": "KOR",
+                        "last_port": "Rotterdam"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            137.124265,
+                            -79.230041
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "vessel_name": "Vessel-1058",
+                        "flag": "Japan",
+                        "flag_code": "JPN",
+                        "last_port": "Los Angeles"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -125.948316,
+                            67.234201
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "vessel_name": "Vessel-1059",
+                        "flag": "Norway",
+                        "flag_code": "NOR",
+                        "last_port": "Mumbai"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            137.527339,
+                            -55.967665
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "vessel_name": "Vessel-1060",
+                        "flag": "South Korea",
+                        "flag_code": "KOR",
+                        "last_port": "Los Angeles"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -107.285057,
+                            -48.481752
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "vessel_name": "Vessel-1061",
+                        "flag": "Singapore",
+                        "flag_code": "SGP",
+                        "last_port": "Rotterdam"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -33.253546,
+                            -78.972019
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "vessel_name": "Vessel-1062",
+                        "flag": "South Korea",
+                        "flag_code": "KOR",
+                        "last_port": "Dubai"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -138.050147,
+                            70.310019
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "vessel_name": "Vessel-1063",
+                        "flag": "USA",
+                        "flag_code": "USA",
+                        "last_port": "Shanghai"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            24.519544,
+                            -28.191603
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "vessel_name": "Vessel-1064",
+                        "flag": "Japan",
+                        "flag_code": "JPN",
+                        "last_port": "Rotterdam"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -78.00263,
+                            -17.0661
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "vessel_name": "Vessel-1065",
+                        "flag": "USA",
+                        "flag_code": "USA",
+                        "last_port": "Dubai"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -89.398761,
+                            77.242007
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "vessel_name": "Vessel-1066",
+                        "flag": "Singapore",
+                        "flag_code": "SGP",
+                        "last_port": "Los Angeles"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            144.503273,
+                            50.033099
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "vessel_name": "Vessel-1067",
+                        "flag": "South Korea",
+                        "flag_code": "KOR",
+                        "last_port": "New York"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            91.260766,
+                            44.002587
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "vessel_name": "Vessel-1068",
+                        "flag": "Singapore",
+                        "flag_code": "SGP",
+                        "last_port": "Los Angeles"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -27.859754,
+                            -37.966538
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "vessel_name": "Vessel-1069",
+                        "flag": "USA",
+                        "flag_code": "USA",
+                        "last_port": "Dubai"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            163.942922,
+                            84.143686
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "vessel_name": "Vessel-1070",
+                        "flag": "Bahamas",
+                        "flag_code": "BHS",
+                        "last_port": "Dubai"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -46.528475,
+                            -75.535186
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "vessel_name": "Vessel-1071",
+                        "flag": "USA",
+                        "flag_code": "USA",
+                        "last_port": "New York"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -103.657989,
+                            -53.145674
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "vessel_name": "Vessel-1072",
+                        "flag": "Panama",
+                        "flag_code": "PAN",
+                        "last_port": "Rotterdam"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -53.895134,
+                            -49.061883
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "vessel_name": "Vessel-1073",
+                        "flag": "Bahamas",
+                        "flag_code": "BHS",
+                        "last_port": "Busan"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -16.186685,
+                            65.73099
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "vessel_name": "Vessel-1074",
+                        "flag": "UAE",
+                        "flag_code": "ARE",
+                        "last_port": "Hamburg"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            97.173424,
+                            56.552236
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "vessel_name": "Vessel-1075",
+                        "flag": "UAE",
+                        "flag_code": "ARE",
+                        "last_port": "Rotterdam"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            157.794059,
+                            -85.499076
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "vessel_name": "Vessel-1076",
+                        "flag": "India",
+                        "flag_code": "IND",
+                        "last_port": "Los Angeles"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -111.185204,
+                            -45.102059
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "vessel_name": "Vessel-1077",
+                        "flag": "Bahamas",
+                        "flag_code": "BHS",
+                        "last_port": "Shanghai"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -134.128815,
+                            27.700628
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "vessel_name": "Vessel-1078",
+                        "flag": "China",
+                        "flag_code": "CHN",
+                        "last_port": "Singapore"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            54.832739,
+                            8.258628
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "vessel_name": "Vessel-1079",
+                        "flag": "UAE",
+                        "flag_code": "ARE",
+                        "last_port": "Mumbai"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -34.589495,
+                            -70.262388
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "vessel_name": "Vessel-1080",
+                        "flag": "Bahamas",
+                        "flag_code": "BHS",
+                        "last_port": "Tokyo"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -3.985501,
+                            42.985432
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "vessel_name": "Vessel-1081",
+                        "flag": "Singapore",
+                        "flag_code": "SGP",
+                        "last_port": "Rotterdam"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            174.235805,
+                            4.471335
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "vessel_name": "Vessel-1082",
+                        "flag": "USA",
+                        "flag_code": "USA",
+                        "last_port": "Dubai"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            82.505617,
+                            -22.073641
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "vessel_name": "Vessel-1083",
+                        "flag": "USA",
+                        "flag_code": "USA",
+                        "last_port": "Singapore"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            119.017312,
+                            53.974458
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "vessel_name": "Vessel-1084",
+                        "flag": "UAE",
+                        "flag_code": "ARE",
+                        "last_port": "Tokyo"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            176.607342,
+                            -64.122629
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "vessel_name": "Vessel-1085",
+                        "flag": "UAE",
+                        "flag_code": "ARE",
+                        "last_port": "New York"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            111.776322,
+                            19.00819
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "vessel_name": "Vessel-1086",
+                        "flag": "Norway",
+                        "flag_code": "NOR",
+                        "last_port": "Dubai"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            87.708244,
+                            83.41458
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "vessel_name": "Vessel-1087",
+                        "flag": "Norway",
+                        "flag_code": "NOR",
+                        "last_port": "New York"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            16.559486,
+                            -4.59504
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "vessel_name": "Vessel-1088",
+                        "flag": "USA",
+                        "flag_code": "USA",
+                        "last_port": "Shanghai"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -85.227866,
+                            60.317453
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "vessel_name": "Vessel-1089",
+                        "flag": "Singapore",
+                        "flag_code": "SGP",
+                        "last_port": "Busan"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -94.967805,
+                            85.534993
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "vessel_name": "Vessel-1090",
+                        "flag": "China",
+                        "flag_code": "CHN",
+                        "last_port": "Rotterdam"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            178.444056,
+                            -32.045358
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "vessel_name": "Vessel-1091",
+                        "flag": "South Korea",
+                        "flag_code": "KOR",
+                        "last_port": "Dubai"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            78.890223,
+                            68.70127
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "vessel_name": "Vessel-1092",
+                        "flag": "South Korea",
+                        "flag_code": "KOR",
+                        "last_port": "Singapore"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -106.770941,
+                            4.199734
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "vessel_name": "Vessel-1093",
+                        "flag": "China",
+                        "flag_code": "CHN",
+                        "last_port": "Mumbai"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            143.0,
+                            -85.357141
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "vessel_name": "Vessel-1094",
+                        "flag": "Norway",
+                        "flag_code": "NOR",
+                        "last_port": "Mumbai"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            99.32254,
+                            37.650793
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "vessel_name": "Vessel-1095",
+                        "flag": "Norway",
+                        "flag_code": "NOR",
+                        "last_port": "Shanghai"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -167.404774,
+                            -56.971733
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "vessel_name": "Vessel-1096",
+                        "flag": "Singapore",
+                        "flag_code": "SGP",
+                        "last_port": "Mumbai"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -179.437867,
+                            29.433325
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "vessel_name": "Vessel-1097",
+                        "flag": "Singapore",
+                        "flag_code": "SGP",
+                        "last_port": "Busan"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -22.286493,
+                            -11.355519
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "vessel_name": "Vessel-1098",
+                        "flag": "Bahamas",
+                        "flag_code": "BHS",
+                        "last_port": "Mumbai"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            168.69248,
+                            -67.984621
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "vessel_name": "Vessel-1099",
+                        "flag": "Norway",
+                        "flag_code": "NOR",
+                        "last_port": "Busan"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -55.977285,
+                            -20.161466
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "vessel_name": "Vessel-1100",
+                        "flag": "UAE",
+                        "flag_code": "ARE",
+                        "last_port": "Singapore"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -130.751215,
+                            -4.642761
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "vessel_name": "Vessel-1101",
+                        "flag": "Japan",
+                        "flag_code": "JPN",
+                        "last_port": "Mumbai"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -107.648828,
+                            67.485406
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "vessel_name": "Vessel-1102",
+                        "flag": "Singapore",
+                        "flag_code": "SGP",
+                        "last_port": "Dubai"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            153.151119,
+                            -39.699168
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "vessel_name": "Vessel-1103",
+                        "flag": "China",
+                        "flag_code": "CHN",
+                        "last_port": "Mumbai"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            141.105151,
+                            -17.697669
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "vessel_name": "Vessel-1104",
+                        "flag": "Bahamas",
+                        "flag_code": "BHS",
+                        "last_port": "Mumbai"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            43.605547,
+                            -9.496926
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "vessel_name": "Vessel-1105",
+                        "flag": "USA",
+                        "flag_code": "USA",
+                        "last_port": "Dubai"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -77.62157,
+                            -11.724839
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "vessel_name": "Vessel-1106",
+                        "flag": "Japan",
+                        "flag_code": "JPN",
+                        "last_port": "Hamburg"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -143.53693,
+                            14.924386
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "vessel_name": "Vessel-1107",
+                        "flag": "South Korea",
+                        "flag_code": "KOR",
+                        "last_port": "Singapore"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -114.883422,
+                            -64.687155
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "vessel_name": "Vessel-1108",
+                        "flag": "Singapore",
+                        "flag_code": "SGP",
+                        "last_port": "Busan"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            69.999285,
+                            18.371773
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "vessel_name": "Vessel-1109",
+                        "flag": "Japan",
+                        "flag_code": "JPN",
+                        "last_port": "Singapore"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            115.667035,
+                            -7.652151
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "vessel_name": "Vessel-1110",
+                        "flag": "UAE",
+                        "flag_code": "ARE",
+                        "last_port": "New York"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            119.935586,
+                            62.285153
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "vessel_name": "Vessel-1111",
+                        "flag": "South Korea",
+                        "flag_code": "KOR",
+                        "last_port": "Busan"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -131.573903,
+                            1.366678
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "vessel_name": "Vessel-1112",
+                        "flag": "Norway",
+                        "flag_code": "NOR",
+                        "last_port": "Dubai"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -4.912478,
+                            -53.237914
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "vessel_name": "Vessel-1113",
+                        "flag": "Panama",
+                        "flag_code": "PAN",
+                        "last_port": "Mumbai"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -25.819591,
+                            -23.36408
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "vessel_name": "Vessel-1114",
+                        "flag": "USA",
+                        "flag_code": "USA",
+                        "last_port": "Rotterdam"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -42.665851,
+                            -81.621461
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "vessel_name": "Vessel-1115",
+                        "flag": "USA",
+                        "flag_code": "USA",
+                        "last_port": "Hamburg"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -121.456484,
+                            -50.931635
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "vessel_name": "Vessel-1116",
+                        "flag": "South Korea",
+                        "flag_code": "KOR",
+                        "last_port": "New York"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -121.449252,
+                            67.513485
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "vessel_name": "Vessel-1117",
+                        "flag": "Bahamas",
+                        "flag_code": "BHS",
+                        "last_port": "Mumbai"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            104.847352,
+                            12.2201
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "vessel_name": "Vessel-1118",
+                        "flag": "Norway",
+                        "flag_code": "NOR",
+                        "last_port": "Rotterdam"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -7.109266,
+                            82.564718
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "vessel_name": "Vessel-1119",
+                        "flag": "UAE",
+                        "flag_code": "ARE",
+                        "last_port": "Tokyo"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -146.578178,
+                            -81.47792
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "vessel_name": "Vessel-1120",
+                        "flag": "UAE",
+                        "flag_code": "ARE",
+                        "last_port": "Rotterdam"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            44.056769,
+                            -2.685942
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "vessel_name": "Vessel-1121",
+                        "flag": "UAE",
+                        "flag_code": "ARE",
+                        "last_port": "Singapore"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -159.949911,
+                            21.955046
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "vessel_name": "Vessel-1122",
+                        "flag": "UAE",
+                        "flag_code": "ARE",
+                        "last_port": "Rotterdam"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            42.263101,
+                            35.548044
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "vessel_name": "Vessel-1123",
+                        "flag": "India",
+                        "flag_code": "IND",
+                        "last_port": "Rotterdam"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            73.983968,
+                            2.113139
+                        ]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "vessel_name": "Vessel-1124",
+                        "flag": "Norway",
+                        "flag_code": "NOR",
+                        "last_port": "Mumbai"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            8.342696,
+                            68.177818
+                        ]
+                    }
+                }
+            ]
+        }
+    ]
+}
