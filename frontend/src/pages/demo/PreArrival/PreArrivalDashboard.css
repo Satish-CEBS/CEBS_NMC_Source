@@ -621,17 +621,3 @@ a {
     border-radius: 4px;
     cursor: pointer;
 }
-.btn-stowage, .btn-view {
-    padding: 8px 14px;
-    background-color: #2196f3;
-    color: white;
-    border: none;
-    border-radius: 6px;
-    margin-top: 8px;
-    cursor: pointer;
-    font-size: 0.95rem;
-}
-
-    .btn-stowage:hover, .btn-view:hover {
-        background-color: #1976d2;
-    }

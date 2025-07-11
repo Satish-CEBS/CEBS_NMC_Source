@@ -5,113 +5,423 @@
  * @license     STRICTLY CONFIDENTIAL
  * ------------------------------------------------------------------------
  */
-import React, { useState } from 'react';
-import '../../pages/auth/AuthForm.css';
-import { useNavigate } from 'react-router-dom';
-import Header from '../common/Header';
-import SubHeader from '../common/SubHeader';
-import Footer from '../common/Footer';
-import moeiLogo from '../../assets/moei-logo.png';
-import axios from 'axios';
+import React, { useState } from "react";
+// import {./AuthForm.cssuter-dom";
+import {
+  Box,
+  Typography,
+  TextField,
+  Button,
+  InputAdornment,
+  IconButton,
+  useTheme,
+  styled,
+  Fade,
+  Alert,
+} from "@mui/material";
+import {
+  Email as EmailIcon,
+  Lock as LockIcon,
+  Visibility,
+  VisibilityOff,
+} from "@mui/icons-material";
+import axios from "axios";
+import moeiLogo from "../../assets/moei-logo.png";
+import Header from "../common/Header";
+import SubHeader from "../common/SubHeader";
+import Footer from "../common/Footer";
+import localImage from "./back.png";
+import { useNavigate } from "react-router-dom";
+// Custom styled components
+const GradientText = styled(Typography)(({ theme }) => ({
+  background: `linear-gradient(135deg, #2c3e50, #000000)`, // Dark grey to black
+  WebkitBackgroundClip: "text",
+  backgroundClip: "text",
+  color: "transparent",
+  display: "inline",
+  fontWeight: 700,
+}));
+
+const pulseAnimation = (theme) => ({
+  animation: `pulse 2s infinite ${theme.transitions.easing.easeInOut}`,
+  "@keyframes pulse": {
+    "0%": { transform: "scale(1)" },
+    "50%": { transform: "scale(1.03)" },
+    "100%": { transform: "scale(1)" },
+  },
+});
 
 const Login = () => {
-    const navigate = useNavigate();
+  const navigate = useNavigate();
+  const theme = useTheme();
+  const [formData, setFormData] = useState({
+    email: "",
+    password: "",
+    showPassword: false,
+  });
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState(null);
 
-    const [formData, setFormData] = useState({
-        email: '',
-        password: ''
-    });
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({ ...prev, [name]: value }));
+  };
 
-    const handleChange = (e) => {
-        setFormData(prev => ({ ...prev, [e.target.name]: e.target.value }));
-    };
+  const handleTogglePassword = () => {
+    setFormData((prev) => ({ ...prev, showPassword: !prev.showPassword }));
+  };
 
-    const handleLogin = async (e) => {
-        e.preventDefault();
+  const handleLogin = async (e) => {
+    e.preventDefault();
 
-        try {
-            const response = await axios.post(`${process.env.REACT_APP_API_BASE_URL}/auth/login`, formData);
+    try {
+      const response = await axios.post(
+        `${process.env.REACT_APP_API_BASE_URL}/auth/login`,
+        formData
+      );
 
-            const { token, user } = response.data;
+      const { token, user } = response.data;
 
-            if (user) {
-                localStorage.setItem('user', JSON.stringify(user)); // ✅ Valid JSON string
-            }
+      if (user) {
+        localStorage.setItem("user", JSON.stringify(user)); // ✅ Valid JSON string
+      }
 
-            localStorage.setItem('token', token);
+      localStorage.setItem("token", token);
 
-            navigate('/dashboard');
-        } catch (err) {
-            console.error('Login failed:', err);
-            alert('Invalid credentials. Please try again.');
-        }
-    };
+      navigate("/dashboard");
+    } catch (err) {
+      console.error("Login failed:", err);
+      alert("Invalid credentials. Please try again.");
+    }
+  };
 
+  return (
+    <>
+      <Header />
+      <SubHeader />
 
+      <Box
+        sx={{
+          display: "flex",
+          minHeight: "calc(100vh - 144px)",
+          backgroundColor: "#f9f8f3",
+        }}
+      >
+        {/* Left Form Section */}
+        <Box
+          sx={{
+            flex: 1,
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            padding: 4,
+            background:
+              "linear-gradient(135deg, rgba(249,248,243,1) 0%, rgba(230,230,220,1) 100%)",
+          }}
+        >
+          <Box
+            sx={{
+              maxWidth: 500,
+              width: "100%",
+              padding: 4,
+              borderRadius: 4,
+              boxShadow: "0 8px 32px rgba(0,0,0,0.05)",
+              backgroundColor: "rgba(255,255,255,0.9)",
+              backdropFilter: "blur(8px)",
+              border: "1px solid rgba(255,255,255,0.2)",
+              transition: "all 0.3s ease",
+              "&:hover": {
+                boxShadow: "0 12px 40px rgba(0,0,0,0.1)",
+              },
+            }}
+          >
+            <Box
+              sx={{
+                display: "flex",
+                justifyContent: "center",
+                mb: 4,
+              }}
+            >
+              <Box
+                component="img"
+                src={moeiLogo}
+                alt="MOEI Logo"
+                sx={{
+                  height: 80,
+                  width: "auto",
+                  ...pulseAnimation(theme),
+                }}
+              />
+            </Box>
 
-    return (
-        <>
-            <Header />
-            <SubHeader />
+            <Typography
+              variant="h4"
+              component="h1"
+              align="center"
+              sx={{
+                mb: 3,
+                fontWeight: 700,
+                color: theme.palette.text.primary,
+              }}
+            >
+              Login
+            </Typography>
 
-            <div className="login-page">
-                {/* LEFT FORM SECTION */}
-                <div className="login-form-container">
-                    <div className="form-box">
-                        <img src={moeiLogo} alt="MOEI Logo" className="moei-login-logo" />
-                        <h2 className="form-heading">Login to <span className="highlight">NMC</span></h2>
+            {error && (
+              <Fade in={!!error}>
+                <Alert severity="error" sx={{ mb: 3 }}>
+                  {error}
+                </Alert>
+              </Fade>
+            )}
 
-                        <form onSubmit={handleLogin} className="form-fields">
-                            <input
-                                type="email"
-                                name="email"
-                                placeholder="Email"
-                                value={formData.email}
-                                onChange={handleChange}
-                                required
-                            />
-                            <input
-                                type="password"
-                                name="password"
-                                placeholder="Password"
-                                value={formData.password}
-                                onChange={handleChange}
-                                required
-                            />
-                            <button type="submit" className="login-btn">Login</button>
-                        </form>
+            <Box component="form" onSubmit={handleLogin} sx={{ mt: 1 }}>
+              <TextField
+                fullWidth
+                margin="normal"
+                placeholder="Email Address"
+                name="email"
+                type="email"
+                value={formData.email}
+                onChange={handleChange}
+                required
+                InputProps={{
+                  startAdornment: (
+                    <InputAdornment position="start">
+                      <EmailIcon color="action" />
+                    </InputAdornment>
+                  ),
+                }}
+                sx={{
+                  "& .MuiOutlinedInput-root": {
+                    borderRadius: 3,
+                    "& fieldset": {
+                      borderColor: "rgba(0,0,0,0.1)",
+                    },
+                    "&:hover fieldset": {
+                      borderColor: theme.palette.primary.light,
+                    },
+                  },
+                }}
+              />
 
-                        <div className="register-link">
-                            New user? <a href="/register">Register here</a>
-                        </div>
-                    </div>
-                </div>
+              <TextField
+                fullWidth
+                margin="normal"
+                placeholder="Password"
+                name="password"
+                type={formData.showPassword ? "text" : "password"}
+                value={formData.password}
+                onChange={handleChange}
+                required
+                InputProps={{
+                  startAdornment: (
+                    <InputAdornment position="start">
+                      <LockIcon color="action" />
+                    </InputAdornment>
+                  ),
+                  endAdornment: (
+                    <InputAdornment position="end">
+                      <IconButton
+                        aria-label="toggle password visibility"
+                        onClick={handleTogglePassword}
+                        edge="end"
+                      >
+                        {formData.showPassword ? (
+                          <VisibilityOff />
+                        ) : (
+                          <Visibility />
+                        )}
+                      </IconButton>
+                    </InputAdornment>
+                  ),
+                }}
+                sx={{
+                  "& .MuiOutlinedInput-root": {
+                    borderRadius: 3,
+                    "& fieldset": {
+                      borderColor: "rgba(0,0,0,0.1)",
+                    },
+                    "&:hover fieldset": {
+                      borderColor: theme.palette.primary.light,
+                    },
+                  },
+                }}
+              />
 
-                {/* RIGHT INFO PANEL */}
-                <div className="login-info-panel">
-                    <h3>The UAE National Maritime Center (NMC)</h3>
-                    <p>
-                        A unified digital gateway bringing together maritime data from all Emirates onto a single, secure platform.
-                        By integrating port operations, vessel clearance, customs, immigration, and health formalities, NMC
-                        streamlines compliance with international IMO standards.
-                    </p>
-                    <p>
-                        Powered by <strong>Artificial Intelligence</strong>, it delivers real-time insights and predictive analytics
-                        to enhance national maritime safety, efficiency, and decision-making across the UAE’s strategic coastal infrastructure.
-                    </p>
-                    <ul className="nmc-keywords">
-                        <li><span className="icon">✔</span> <strong>Unified national platform</strong></li>
-                        <li><span className="icon">✔</span> <strong>All Emirates covered</strong></li>
-                        <li><span className="icon">✔</span> <strong>AI-powered insights & predictive analytics</strong></li>
-                        <li><span className="icon">✔</span> <strong>Real-time maritime coordination</strong></li>
-                        <li><span className="icon">✔</span> <strong>IMO compliance</strong></li>
-                    </ul>
-                </div>
-            </div>
+              <Button
+                fullWidth
+                type="submit"
+                variant="contained"
+                sx={{
+                  mt: 3,
+                  mb: 2,
+                  py: 1.5,
+                  borderRadius: 3,
+                  fontSize: "1rem",
+                  fontWeight: 600,
+                  textTransform: "none",
+                  letterSpacing: 0.5,
+                  background: `linear-gradient(135deg, #2c3e50, #000000)`, // Dark grey to black
+                  "&:hover": {
+                    transform: "translateY(-2px)",
+                    boxShadow: `0 4px 12px ${theme.palette.primary.light}`,
+                    background: `linear-gradient(135deg, ${theme.palette.primary.dark}, ${theme.palette.secondary.dark})`,
+                  },
+                  transition: "all 0.3s ease",
+                }}
+                disabled={loading}
+              >
+                {loading ? "Signing In..." : "Sign In"}
+              </Button>
 
-            <Footer />
-        </>
-    );
+              <Typography
+                variant="body2"
+                align="center"
+                sx={{
+                  mt: 2,
+                  color: theme.palette.text.secondary,
+                }}
+              >
+                New user?{" "}
+                <Button
+                  variant="text"
+                  sx={{
+                    textTransform: "none",
+                    fontWeight: 600,
+                    color: theme.palette.primary.main,
+                    "&:hover": {
+                      textDecoration: "underline",
+                    },
+                  }}
+                  onClick={() => navigate("/register")}
+                >
+                  Create an account
+                </Button>
+              </Typography>
+            </Box>
+          </Box>
+        </Box>
+
+        <Box
+          sx={{
+            flex: 1,
+            display: { xs: "none", md: "flex" },
+            flexDirection: "column",
+            justifyContent: "center",
+            padding: 8,
+            background: `linear-gradient(135deg, #2c3e50, #000000)`,
+            color: "white",
+            position: "relative",
+            overflow: "hidden",
+            "&::before": {
+              content: '""',
+              position: "absolute",
+              top: 0,
+              left: 0,
+              right: 0,
+              bottom: 0,
+              background: `url(${localImage}) center/cover`,
+              opacity: 0.15,
+              zIndex: 0,
+            },
+          }}
+        >
+          <Box sx={{ position: "relative", zIndex: 1 }}>
+            <Typography
+              variant="h3"
+              component="h2"
+              sx={{
+                mb: 3,
+                fontWeight: 700,
+                lineHeight: 1.2,
+              }}
+            >
+              UAE National Maritime Center
+            </Typography>
+
+            <Typography
+              variant="body1"
+              paragraph
+              sx={{
+                mb: 3,
+                fontSize: "1.1rem",
+                lineHeight: 1.6,
+              }}
+            >
+              The unified digital gateway integrating maritime operations across
+              all seven Emirates. NMC streamlines vessel clearance, port
+              operations, and regulatory compliance through advanced AI and
+              real-time data analytics.
+            </Typography>
+
+            <Box
+              component="ul"
+              sx={{
+                pl: 0,
+                listStyle: "none",
+                "& li": {
+                  mb: 1.5,
+                  display: "flex",
+                  alignItems: "flex-start",
+                },
+              }}
+            >
+              {[
+                "Centralized maritime operations platform",
+                "AI-powered predictive analytics",
+                "Real-time vessel tracking and coordination",
+                "Automated compliance with IMO regulations",
+                "Integrated customs and immigration processes",
+                "Secure data sharing between all Emirates",
+              ].map((item, index) => (
+                <Box component="li" key={index}>
+                  <Box
+                    sx={{
+                      display: "inline-flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                      mr: 2,
+                      width: 24,
+                      height: 24,
+                      borderRadius: "50%",
+                      backgroundColor: "rgba(255,255,255,0.2)",
+                      color: "white",
+                      flexShrink: 0,
+                    }}
+                  >
+                    ✓
+                  </Box>
+                  <Typography variant="body1">{item}</Typography>
+                </Box>
+              ))}
+            </Box>
+
+            <Box
+              sx={{
+                mt: 4,
+                pt: 3,
+                borderTop: "1px solid rgba(255,255,255,0.1)",
+              }}
+            >
+              <Typography
+                variant="body2"
+                sx={{
+                  fontStyle: "italic",
+                  opacity: 0.9,
+                }}
+              >
+                "Transforming UAE's maritime sector through digital innovation
+                and unified governance."
+              </Typography>
+            </Box>
+          </Box>
+        </Box>
+      </Box>
+
+      <Footer />
+    </>
+  );
 };
 
 export default Login;

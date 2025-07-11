@@ -9,9 +9,9 @@ logs/
 .vs/ 
 *.sql
 DBScripts/*.sql
-*.json
-/frontend/src/pages/dashboard/*.json
-/backend/data/*.json
+# *.json
+# /frontend/src/pages/dashboard/*.json
+# /backend/data/*.json
 *.zip
 *.rar
 *.tar.gz
